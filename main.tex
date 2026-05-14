@@ -1,0 +1,127 @@
+\documentclass[a4paper,12pt]{book}
+\let\cleardoublepage\clearpage 
+
+% =========================
+% Encodage et langue
+% =========================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[numbers]{natbib}
+\usepackage[french]{babel}
+\usepackage{float}
+
+% =========================
+% Mise en page
+% =========================
+\usepackage[a4paper,left=25mm,right=25mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.25}
+
+% =========================
+% Graphiques
+% =========================
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{caption}
+\usepackage{float}
+
+% =========================
+% Tables
+% =========================
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+
+% =========================
+% Divers
+% =========================
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{acronym}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{pdfpages}
+
+% =========================
+% Hyperlinks
+% =========================
+\usepackage[
+linktoc=all,
+colorlinks=true,
+linkcolor=black,
+citecolor=black
+]{hyperref}
+
+% =========================
+% Chapter style
+% =========================
+\usepackage[Lenny]{fncychap}
+
+% =========================
+% Header / Footer
+% =========================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{\nouppercase{\leftmark}}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{27.5pt}
+
+\usepackage{minitoc}
+\raggedbottom
+
+% =========================
+% DOCUMENT
+% =========================
+\usepackage{graphicx}   % pour resizebox
+\usepackage[table]{xcolor} % pour les couleurs
+\usepackage{array}      % pour m{...}
+\usepackage{amssymb}    % pour \checkmark et \times
+\begin{document}
+
+% initialize minitocs for chapters
+\setcounter{minitocdepth}{2}
+\dominitoc
+
+\frontmatter
+
+\input{page_de_garde}
+\input{dedicaces}
+\input{remerciement}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+\input{chap_intro}
+\input{chap_01}
+\input{chap_02}
+\input{chap_03}
+\input{chap_04}
+\input{chap_conclusion}
+
+
+
+
+
+\appendix
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\backmatter
+
+\input{resume}
+
+\end{document}

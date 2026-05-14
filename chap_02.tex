@@ -1,0 +1,351 @@
+\chapter{Architecture, outils et environnement de développement}
+\minitoc
+
+\newcommand{\bluecheck}{}%
+\DeclareRobustCommand{\greencheck}{%
+  \tikz\fill[scale=0.4, color=green]
+  (0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;%
+}
+
+
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+Ce chapitre décrit le sprint zéro, qui constitue la première étape de la réalisation de notre projet SafeTrack. Nous commençons par identifier les différents acteurs de l’application, puis nous listons les besoins fonctionnels et non fonctionnels du système. Ensuite, nous détaillons l’organisation du travail selon la méthodologie Scrum présentée dans le chapitre précédent. Enfin, nous présentons un aperçu du matériel de base, des technologies et des langages de programmation utilisés pour configurer l’environnement de développement.
+
+
+\section{Capture des besoins}
+
+\subsection{Identification des acteurs}
+
+L’application SafeTrack se compose de trois types d’utilisateurs principaux : Administrateur, organisation et Utilisateur, chacun ayant des rôles et responsabilités spécifiques.
+
+\subsubsection*{Administrateur}
+L'administrateur est responsable de la supervision globale de la plateforme. Il a un contrôle complet sur les utilisateurs, les alertes et les statistiques. Ses responsabilités incluent :
+\begin{itemize}
+    \item Gestion des comptes utilisateurs et des organisations
+    \item Consultation des historiques de déplacements et des rapports statistiques
+    \item Accès aux visualisations et tableaux de bord
+\end{itemize}
+
+
+
+\subsection*{Organisation}
+Les organisations (écoles, maisons de retraite, centres de soins) utilisent SafeTrack pour suivre les personnes sous leur responsabilité. Elles peuvent :
+\begin{itemize}
+    \item Gérer et suivre les utilisateurs qui leur sont attribués
+    \item Vérifier les trajets et déplacements (ex. transport scolaire ou déplacements des résidents)
+    \item Recevoir et gérer les alertes liées aux utilisateurs
+\end{itemize}
+
+
+\subsection*{Utilisateur}
+L'utilisateur peut être un individu vulnérable (enfant, personne âgée) ou son aidant/parent. Leurs capacités diffèrent selon le rôle :
+
+\textbf{Aidant / Parent :}
+\begin{itemize}
+    \item Visualiser la position en temps réel de l'enfant ou de la personne vulnérable
+    \item Définir et gérer des zones sécurisées
+    \item Accéder à l'historique de déplacements de l'enfant ou de la personne vulnérable sous sa responsabilité
+    \item Recevoir des notifications et des alertes SOS
+\end{itemize}
+
+\textbf{Enfant / Personne Vulnérable :}
+\begin{itemize}
+    \item Visualiser leur propre position en temps réel
+    \item Envoyer des alertes SOS en cas de danger
+    \item Recevoir des notifications
+    \item Interagir avec le système sans accès administratif global
+\end{itemize}
+
+\subsection{Besoins fonctionnels}
+
+Les besoins fonctionnels décrivent les actions attendues de chaque acteur de l’application SafeTrack, en termes de suivi, sécurité et communication.
+
+\subsubsection*{Pour l'Administrateur}
+\begin{itemize}
+    \item Gérer les comptes utilisateurs et les organisations (ajouter, supprimer, modifier)
+    \item Consulter les historiques de déplacements et générer des rapports statistiques
+    \item Accéder aux tableaux de bord pour visualiser l’activité globale et les performances du système
+\end{itemize}
+
+
+\subsection*{Pour l’Organisation (écoles, maisons de retraite, centres de soins)}
+\begin{itemize}
+    \item Suivre les utilisateurs sous leur responsabilité en temps réel
+    \item Gérer et organiser les trajets (ex. transport scolaire, déplacements des résidents)
+    \item Recevoir et traiter les alertes liées aux utilisateurs
+    \item Consulter l’historique de déplacements et les rapports pour optimiser la sécurité
+\end{itemize}
+
+\subsection*{Pour l'Aidant / Parent}
+\begin{itemize}
+    \item Visualiser la position en temps réel de l'enfant ou de la personne vulnérable
+    \item Définir et gérer des zones sécurisées (domicile, école, centre de soins, etc.)
+    \item Consulter l'historique de déplacements de l'enfant ou de la personne vulnérable sous sa responsabilité
+    \item Recevoir des notifications et des alertes SOS
+    \item Passer automatiquement des appels d'urgence aux contacts de confiance en cas d'alerte
+\end{itemize}
+
+\subsection*{Pour l'Enfant / Personne Vulnérable}
+\begin{itemize}
+    \item Visualiser leur propre position en temps réel
+    \item Envoyer des alertes SOS en cas d'urgence avec localisation exacte
+    \item Recevoir des notifications et alertes liées à la sécurité et aux situations à risque
+    \item Interagir avec le système sans accès administratif global
+\end{itemize}
+
+\section{Besoins non fonctionnels}
+
+Les besoins non fonctionnels décrivent les critères qualitatifs essentiels pour garantir une expérience utilisateur optimale et le bon fonctionnement de l’application \textbf{SafeTrack}.
+
+\begin{itemize}
+    \item \textbf{Performance :} L’application doit mettre à jour la position des utilisateurs en temps réel et envoyer les alertes sans latence notable, même avec un grand nombre d’utilisateurs simultanés.
+    
+    \item \textbf{Fiabilité :} L’application doit être stable et exempte de bugs. En cas de problème technique, elle doit pouvoir se rétablir rapidement avec un minimum d’impact pour les utilisateurs.
+    
+    \item \textbf{Sécurité :} Les données personnelles et sensibles doivent être protégées par chiffrement. Les connexions doivent utiliser des protocoles sécurisés (HTTPS) et la gestion des identifiants (par exemple via JWT) doit empêcher tout accès non autorisé.
+    
+    \item \textbf{Scalabilité :} L’application doit pouvoir évoluer facilement pour gérer l’augmentation du nombre d’utilisateurs et de données. L’utilisation de conteneurs (Docker) permet de dupliquer les services et d’assurer une montée en charge fluide et contrôlée.
+    
+    \item \textbf{Maintenabilité :} Le code doit être bien structuré, documenté et facile à maintenir, facilitant ainsi les futures mises à jour et évolutions.
+    
+    \item \textbf{Compatibilité :} L’application doit être compatible avec les principaux systèmes d’exploitation mobiles (Android, iOS) et navigateurs Web modernes (Chrome, Firefox, Safari), ainsi qu’avec les plateformes Windows, macOS et Linux pour le dashboard.
+    
+    \item \textbf{Disponibilité :} L’application doit être opérationnelle 24h/24 et 7j/7 pour garantir la sécurité des utilisateurs vulnérables.
+\end{itemize}
+
+\section{Product Backlog}
+À cette étape, en jouant le rôle de Product Owner (PO) et en s’appuyant sur l’analyse des besoins présentée précédemment, il est essentiel de préparer le Product Backlog. Celui-ci regroupe toutes les fonctionnalités attendues sous forme de Product Backlog Items (PBI). Chaque PBI reflète un besoin des utilisateurs ou des parties prenantes, et peut être exprimé sous forme de User Stories pour faciliter la compréhension et la planification.
+
+Pour le projet SafeTrack, les PBI incluent par exemple : le suivi en temps réel, la gestion des zones sécurisées, les alertes SOS, l’historique des déplacements et l’intégration de l’intelligence artificielle pour la détection des situations à risque.
+
+Il est également important, à ce stade, de définir une technique de priorisation du Product Backlog afin de déterminer quelles fonctionnalités doivent être développées en premier, en fonction de leur valeur pour les utilisateurs et de leur impact sur la sécurité et l’efficacité de l’application.
+\newpage
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{0.27\textwidth}|>{\raggedright\arraybackslash}p{0.58\textwidth}|>{\centering\arraybackslash}p{0.09\textwidth}|}
+\hline
+\textbf{Groupe de Fonctionnalités} & \textbf{User Stories} & \textbf{Priorité}  \\
+\hline
+\hline
+
+Authentification et Gestion des Utilisateurs 
+& En tant que parent, aidant ou organisation, je peux créer un compte afin d’accéder à la plateforme SafeTrack et gérer mes responsabilités. 
+& Haute \\
+\cline{2-3}
+& En tant qu’utilisateur autorisé, je peux m’authentifier de manière sécurisée afin d’accéder à mon espace personnel. 
+& Haute \\
+\cline{2-3}
+& En tant qu’administrateur, je peux consulter, modifier ou supprimer des comptes utilisateurs afin d’assurer la gestion globale du système. 
+& Haute \\
+\hline
+
+Gestion des Profils (Enfants et Personnes Âgées) 
+& En tant que parent ou aidant, je peux créer et gérer des profils pour des enfants ou des personnes âgées dépendantes afin d’assurer leur suivi. 
+& Haute \\
+\cline{2-3}
+& En tant que parent ou aidant, je peux associer un profil à une organisation (école, centre de soins) ou choisir de ne pas l’associer. 
+& Haute \\
+\hline
+
+Suivi en Temps Réel 
+& En tant que parent, aidant ou organisation, je peux visualiser la localisation des profils suivis en temps réel sur une carte interactive. 
+& Haute \\
+\cline{2-3}
+& En tant qu’utilisateur, je peux recevoir des notifications en temps réel lors de changements significatifs de position. 
+& Haute \\
+\hline
+
+Zones Sécurisées (Geofencing) 
+& En tant que parent ou aidant, je peux définir des zones sécurisées (domicile, école, centre de soins) afin de surveiller les déplacements. 
+& Haute \\
+\cline{2-3}
+& En tant qu’utilisateur, je peux recevoir des alertes lorsque le profil suivi entre ou sort d’une zone sécurisée. 
+& Haute \\
+\hline
+
+Historique des Déplacements 
+& En tant que parent, aidant ou organisation, je peux consulter l’historique des déplacements afin d’analyser les trajets et comportements passés. 
+& Moyenne \\
+\hline
+
+Alertes SOS et Gestion des Urgences 
+& En tant que parent ou aidant, je peux recevoir une alerte SOS avec la localisation en temps réel afin d’intervenir rapidement en cas de danger. 
+& Haute \\
+\cline{2-3}
+& En tant qu’enfant ou personne âgée suivie, je peux déclencher un appel d’urgence afin de contacter rapidement mes proches ou aidants en situation critique. 
+& Haute \\
+\hline
+
+Intelligence Artificielle (RAG et Détection des Risques) 
+& En tant que système SafeTrack, je peux analyser les données de localisation afin de détecter des comportements anormaux ou des situations à risque. 
+& Haute \\
+\cline{2-3}
+& En tant que parent, aidant ou organisation, je peux recevoir des alertes intelligentes et des recommandations basées sur l’analyse des données. 
+& Haute \\
+\hline
+
+Tableau de Bord (Administration et organisations) 
+& En tant qu’administrateur ou organisation, je peux consulter un tableau de bord affichant des statistiques et visualisations afin de superviser l’activité globale des utilisateurs. 
+& Haute \\
+\hline
+
+\end{longtable}
+\normalsize
+
+
+
+Le Product Backlog représente un élément central de la méthodologie agile utilisée pour le développement de SafeTrack. Il compile, sous forme de liste priorisée, toutes les fonctionnalités, améliorations et corrections à apporter à l’application, appelées user stories. Chaque user story décrit une fonctionnalité spécifique, précise les critères d’acceptation et fournit une estimation de l’effort nécessaire à sa réalisation. Ce document est évolutif et est régulièrement mis à jour tout au long du projet, afin de garantir que l’équipe se concentre constamment sur les tâches les plus importantes et les plus pertinentes pour atteindre les objectifs fixés.
+\section{Les Diagrammes }
+\subsection{Diagramme de cas d’utilisation global}
+Le diagramme de cas d’utilisation est un outil clé pour représenter les interactions entre les différents acteurs et le système. Il fournit une vue d’ensemble des actions réalisables par les utilisateurs, notamment les utilisateurs finaux, les organisations et l’administrateur. Ce diagramme met en avant les principales fonctionnalités de l’application et montre comment chaque acteur les utilise. Il facilite la compréhension des échanges entre le système et ses utilisateurs, tout en permettant d’identifier d’éventuelles lacunes ou incohérences dans le fonctionnement global de SafeTrack.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\columnwidth, height=0.95\textheight]{images/uc globale finale.png}
+\caption{Diagramme des cas d’utilisation global}
+\label{fig_useCase_global}
+\end{figure}
+\subsection{Diagramme de classes global}
+Le diagramme de classes constitue un élément central de la documentation de conception. Il illustre la structure du système en présentant les classes, leurs attributs et méthodes, ainsi que les relations qui les lient. Ce diagramme sert de plan pour le développement du code, en clarifiant la manière dont les différentes parties de l’application interagissent. Il permet de s’assurer que la conception est cohérente, logique et bien organisée, facilitant ainsi la phase de mise en œuvre de SafeTrack.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\columnwidth, height=1\textheight]{images/globaleclasse_diagram.drawio.png}
+\caption{Diagramme de classes global }
+\label{fig_classes_global}
+\end{figure}
+
+\section{Architecture de l’application}
+
+Dans le cadre du projet SafeTrack, nous avons adopté une architecture client--serveur moderne basée sur des services modulaires, afin de garantir la scalabilité, la sécurité et la maintenabilité du système. Cette architecture permet de séparer clairement les différentes responsabilités du système et de faciliter l’évolution future de l’application.
+
+L’application SafeTrack est composée de trois parties principales : une application mobile développée avec Flutter, une application web (dashboard) développée avec React, ainsi qu’un backend basé sur Node.js avec le framework NestJS. L’application mobile représente l’interface utilisateur principale destinée aux utilisateurs finaux, leur permettant de consulter leur position en temps réel, de recevoir des alertes et d’interagir avec les différentes fonctionnalités de sécurité proposées par le système.
+
+L’application web, quant à elle, est principalement destinée aux administrateurs et aux organisations (telles que les écoles ou les centres de soins). Elle offre une interface de gestion permettant de superviser les utilisateurs, de consulter l’historique des déplacements, de configurer les zones sécurisées (SafeZones) et de gérer les alertes. Elle facilite également l’analyse des données et la prise de décision grâce à une visualisation claire des informations.
+
+Au niveau du backend, nous avons adopté une architecture modulaire inspirée du modèle MVC (Modèle--Vue--Contrôleur). Cette organisation permet de séparer la logique métier, la gestion des données et les points d’accès API, ce qui facilite la maintenance du code et améliore la lisibilité de l’architecture logicielle.
+
+Le backend expose une série d’API REST sécurisées qui permettent à l’application mobile ainsi qu’à l’application web d’interagir avec les différents services du système. Ces API sont organisées en plusieurs modules fonctionnels, chacun responsable d’une fonctionnalité spécifique du système. Parmi les principaux modules, on retrouve :
+
+\begin{itemize}
+    \item Module d’authentification : gère l’inscription, la connexion et la gestion des comptes utilisateurs.
+    \item Module de localisation : assure le suivi en temps réel de la position des personnes vulnérables.
+    \item Module SafeZone : permet de définir des zones sécurisées et de déclencher des alertes lorsqu’un utilisateur quitte une zone autorisée.
+    \item Module SOS : permet d’envoyer des alertes d’urgence aux personnes responsables en cas de danger.
+    \item Module History : enregistre l’historique des déplacements pour permettre une consultation ultérieure.
+    \item Module Sharing : permet de partager temporairement l’accès à la localisation avec d’autres utilisateurs autorisés.
+\end{itemize}
+
+Pour la gestion des données, nous utilisons MongoDB, une base de données NoSQL adaptée aux applications manipulant des données géographiques et des structures flexibles. Elle permet de stocker efficacement les positions GPS, l’historique des déplacements ainsi que les informations des utilisateurs.
+
+Afin d’assurer la sécurité du système, l’authentification des utilisateurs est réalisée à l’aide de JSON Web Tokens (JWT). Après connexion, chaque utilisateur reçoit un token sécurisé qui doit être inclus dans les requêtes vers les API. Cela permet de vérifier l’identité de l’utilisateur et de contrôler l’accès aux différentes fonctionnalités du système.
+
+La géolocalisation en temps réel constitue une fonctionnalité centrale de SafeTrack. L’application mobile envoie régulièrement la position GPS de l’utilisateur au serveur, qui la stocke et la transmet aux utilisateurs autorisés via l’application mobile ou le dashboard web. Cela permet aux parents ou aux responsables de suivre les déplacements des personnes vulnérables de manière sécurisée.
+
+Le système intègre également un mécanisme de notifications et d’alertes, permettant d’informer immédiatement les utilisateurs en cas de situation anormale, comme la sortie d’une zone sécurisée ou l’activation d’une alerte SOS.
+
+Enfin, afin de faciliter le déploiement et la gestion de l’application, les services backend peuvent être conteneurisés à l’aide de Docker, ce qui permet d’assurer une portabilité et une cohérence de l’environnement d’exécution entre les différentes phases de développement et de production.
+
+Grâce à cette architecture, l’application SafeTrack garantit une bonne performance, une sécurité renforcée et une grande évolutivité, tout en offrant une expérience utilisateur fluide et fiable pour la protection et la localisation des personnes vulnérables.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/architecture de l'app.png}
+    \caption{Architecture proposée pour la plateforme}
+    \label{fig_architecture_physique}
+\end{figure}
+
+
+
+
+
+\section{Outils et environnement de développement}
+
+\subsection{Environnement matériel}
+
+Dans le cadre de ce projet, plusieurs machines ont été utilisées pour le développement et les tests. Voici les caractéristiques principales des équipements utilisés :
+
+\begin{itemize}
+\item[$\bullet$] PC 1 (ASUS Vivobook) :
+\begin{itemize}
+\item Carte graphique : 128 MB intel(R) UHD Graphics
+\item Mémoire RAM : 16 Go
+\item Disque : 477GB
+\end{itemize}
+
+\item[$\bullet$] **PC 2 (Lenovo LOQ)** :
+\begin{itemize}
+    \item Carte graphique : NIVIDIA GeForce RTX 3050 6 GB
+    \item Mémoire RAM : 16 Go
+    \item Disque : 477 GB
+\end{itemize}
+\end{itemize}
+
+\subsection{Environnement technique}
+
+\begin{tabular}{| m{2.5cm} | m{13cm} |}
+\hline
+
+\includegraphics[width=2cm]{images/nestjs.png} & 
+\textbf{NestJS : \cite{nestjs}}  
+Framework backend basé sur Node.js permettant de développer des API REST robustes et structurées grâce à une architecture modulaire inspirée du modèle MVC.
+\\
+\hline
+
+\includegraphics[width=2cm]{images/react.png} & 
+\textbf{React.js : \cite{reactjs}}  
+Bibliothèque JavaScript utilisée pour le développement de l’application web (dashboard), offrant une interface interactive et dynamique pour la gestion et la supervision des utilisateurs.
+\\
+\hline
+
+\includegraphics[width=2cm]{images/flutter.png} & 
+\textbf{Flutter : \cite{flutter}}  
+Framework multiplateforme utilisé pour le développement de l’application mobile, permettant une expérience utilisateur fluide sur Android et iOS.
+\\
+\hline
+
+\includegraphics[width=2cm]{images/nodejs.png} & 
+\textbf{Node.js : \cite{nodejs}}  
+Environnement d’exécution JavaScript côté serveur utilisé pour le développement du backend.
+\\
+\hline
+
+\includegraphics[width=2cm]{images/mongodb.png} & 
+\textbf{MongoDB : \cite{mongodb}}  
+Base de données NoSQL utilisée pour stocker les informations des utilisateurs ainsi que les données de géolocalisation en temps réel.
+\\
+\hline
+
+\includegraphics[width=2cm]{images/docker.png} & 
+\textbf{Docker \& Docker Compose : \cite{docker}}  
+Utilisés pour la conteneurisation des services et la gestion des environnements de déploiement.
+\\
+\hline
+
+\includegraphics[width=1cm]{images/gitlab.jpg}
+\includegraphics[width=1cm]{images/github.png} & 
+\textbf{GitLab \& GitHub : \cite{github} \cite{gitlab}}  
+Outils de gestion de version et de collaboration permettant le suivi du code source ainsi que l’intégration continue (CI/CD).
+\\
+\hline
+
+\includegraphics[width=2cm]{images/vscode.png} & 
+\textbf{Visual Studio Code : \cite{vscode}}  
+Éditeur de code utilisé pour le développement grâce à ses nombreuses extensions.
+\\
+\hline
+
+\end{tabular}
+
+
+
+
+
+
+
+
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+En conclusion, Ce chapitre a posé les bases de notre projet en identifiant les acteurs, les besoins fonctionnels et non fonctionnels, et en élaborant un Product Backlog détaillé. Les diagrammes UML ont facilité la compréhension de l’architecture de l’application, tandis que le choix des technologies adaptées a permis de garantir une solution à la fois performante et sécurisée. Les outils et l’environnement de développement sélectionnés ont optimisé notre productivité et préparent efficacement les prochaines étapes de mise en œuvre présentées dans les chapitres suivants.
+

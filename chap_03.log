@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  13 MAY 2026 09:51
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./chap_03.tex
+(chap_03.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+! Undefined control sequence.
+l.2 \chapter
+            {Sprint 1\&2 : Authentification , Gestion des comptes \&  Profil...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ 
+Here is how much of TeX's memory you used:
+ 16 strings out of 467871
+ 409 string characters out of 5417892
+ 433733 words of memory out of 5000000
+ 28995 multiletter control sequences out of 15000+600000
+ 627721 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 12i,0n,13p,117b,8s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
