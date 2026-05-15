@@ -1,7 +1,6 @@
-
-
-\chapter{Release 2: Gestion des posts,des stories ,et des interactions sociales \& Le dashboard administrateur,un système de notifications.}
-\label{chap_concep}
+﻿
+\chapter{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}
+\label{chap_realisation2}
 
 \minitoc
 
@@ -12,439 +11,250 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Ce chapitre présente deux sprints clés du projet. Le premier concerne la gestion des posts, stories et interactions sociales (likes, commentaires), favorisant l’engagement entre utilisateurs. Le second porte sur la création d’un dashboard pour l’administrateur, offrant une vue globale sur les statistiques de la plateforme, ainsi que l’intégration d’un système de notifications pour informer les utilisateurs des activités importantes (commentaires, interactions, suggestions). Ces fonctionnalités renforcent la communication, la coordination et le suivi en temps réel sur la plateforme.
+Suite à l’analyse des besoins, ce chapitre présente la réalisation des sprints 3 et 4 du projet SafeTrack selon une approche Agile. Ces sprints portent sur les fonctionnalités avancées de l’application, notamment le suivi en temps réel, la gestion des alertes et des zones de sécurité, ainsi que le module institutionnel. Ils présentent également les principaux aspects de conception et de réalisation du système.
 
+\section{Sprint 3 : Localisation et carte}
 
+L’objectif du sprint 3 est de mettre en place les fonctionnalités essentielles de suivi et de sécurité de l’application SafeTrack. Ce sprint constitue une étape importante dans l’évolution du système, car il permet d’assurer le suivi en temps réel des utilisateurs ainsi que la détection des situations critiques, notamment à travers les mécanismes de géolocalisation et de geofencing.
 
+Les fonctionnalités développées incluent la collecte et la transmission des positions GPS, la gestion des zones de sécurité, la détection des sorties de périmètre, ainsi que la génération et l’envoi des alertes en temps réel. Une attention particulière est accordée à la fiabilité du suivi et à la réactivité du système afin de garantir une supervision efficace des utilisateurs.
 
-\section{Objectifs des Sprint 3 \& 4}
+À l’issue de ce sprint, l’application est capable d’assurer un suivi continu et sécurisé des enfants, permettant ainsi aux parents et institutions de recevoir des notifications en cas de comportement anormal ou de danger potentiel.
 
+\subsection{Backlog Sprint 3 – Localisation et carte}
 
+Le tableau ci-dessous présente les user stories liées à la localisation et au suivi en temps réel.
 
-\subsection{Objectif du sprint 3 }
-
-Le troisième sprint marque une étape clé dans l’amélioration de l’expérience utilisateur. Il a permis de créer un espace dédié à la gestion des posts et stories, avec l’intégration d’interactions sociales comme les likes et commentaires. L’objectif est de faire de la plateforme un véritable réseau interactif, favorisant l’expression et l’engagement.
-
-Nous avons veillé à concevoir une interface moderne, ergonomique et réactive, encourageant les utilisateurs à créer et interagir facilement. Ce travail contribue à un environnement numérique vivant, au cœur de la stratégie de communication de l’application.
-
-
-
-\subsection{Objectif du sprint 4}
-Le quatrième sprint marque une étape stratégique avec l’implémentation d’un dashboard administrateur et d’un système de notifications. Le tableau de bord offre une vue globale en temps réel sur l’activité de la plateforme, incluant les utilisateurs actifs, les publications, les interactions et les statistiques clés, facilitant ainsi le pilotage et la prise de décision. En parallèle, le système de notifications informe l’utilisateur des actions le concernant (messages, commentaires, mises à jour), renforçant ainsi l’engagement et la réactivité. Ce sprint contribue à améliorer à la fois la supervision côté administrateur et la communication côté utilisateur.
-
-
-\section{ Backlog Fonctionnel – Sprints 3 \& 4}
-\subsection{Backlog Produit – Gestion des posts \&  des stories \& des interactions sociales }
-
-
-\setlength{\LTpre}{0pt}
-\setlength{\LTpost}{0pt}
-
-\renewcommand{\arraystretch}{1.3}
-
-\begin{longtable}{|p{4cm}|p{8cm}|p{2cm}|p{3cm}|}
-
-\hline
-\textbf{User Story} & \textbf{Description} & \textbf{Priorité} \\
-\hline
-\endfirsthead
-
-\hline
-\textbf{User Story} & \textbf{Description} & \textbf{Priorité} \\
-\hline
-\endhead
-
-\hline
-\endfoot
-
-\hline
-\endlastfoot
-
-US-16 & En tant qu'utilisateur, je peux pouvoir publier du contenu textuel dans mon domaine professionnel. & Haute \\
-\hline
-US-17 & En tant qu'utilisateur, je peux pouvoir publier des images, vidéos  à mes publications. & Moyenne \\
-\hline
-US-18 & En tant qu'utilisateur, je peux pouvoir ajouter des hashtags à mes posts pour améliorer leur visibilité. & Basse \\
-\hline
-US-19 & En tant qu'utilisateur, je peux pouvoir ajouter des tags à mes posts pour améliorer leur visibilité. & Basse \\
-\hline
-US-20 & En tant qu'utilisateur, je peux pouvoir joindre un lien (URL) à mes posts pour partager des ressources ou rediriger vers du contenu externe. & Moyenne \\
-\hline
-US-21 & En tant qu'utilisateur, je peux pouvoir supprimer mes posts. & Haute \\
-\hline
-US-22 & En tant qu'utilisateur, je peux pouvoir consulter les posts des autres utilisateurs que je suis. & Moyenne \\
-\hline
-US-23 & En tant qu'utilisateur, je peux pouvoir rechercher des posts par mots-clés. & Moyenne \\
-\hline
-US-24 & En tant qu'utilisateur, je peux pouvoir aimer les publications d'autres utilisateurs. & Moyenne \\
-\hline
-US-25 & En tant qu'utilisateur, je peux pouvoir commenter les publications. & Moyenne \\
-\hline
-US-26 & En tant qu'utilisateur, je peux pouvoir supprimer mes propres commentaires pour corriger une erreur ou retirer une intervention. & Basse \\
-\hline
-US-27 & En tant qu'utilisateur, je peux pouvoir voir le nombre total de likes reçus sur tous les posts afin d'évaluer la popularité des publications. & Moyenne \\
-\hline
-US-28 & En tant qu'utilisateur, je peux pouvoir voir le nombre total de commentaires reçus sur tous les posts afin de mesurer le niveau d'interaction. & Moyenne \\
-\hline
-US-29 & En tant qu'utilisateur, je peux pouvoir répondre aux commentaires sur les posts. & Basse \\
-\hline
-US-30 & En tant qu'utilisateur, je peux pouvoir voir qui a aimé mes publications. & Basse \\
-\hline
-US-31 & En tant qu'utilisateur, je peux pouvoir partager les publications d'autres utilisateurs. & Basse \\
-\hline
-US-32 & En tant qu'utilisateur, je peux pouvoir créer des stories textuelles éphémères avec personnalisation de couleurs. & Moyenne \\
-\hline
-US-33 & En tant qu'utilisateur, je peux pouvoir créer des stories avec des images. & Moyenne \\
-\hline
-US-34 & En tant qu'utilisateur, je peux pouvoir créer des stories avec des vidéos. & Moyenne \\
-\hline
-US-35 & En tant qu'utilisateur, je peux voir combien de personnes ont vu mes stories et qui exactement. & Basse \\
-\hline
-US-36 & En tant qu'utilisateur, je peux être alerté lorsqu'un utilisateur que je suis a publié une nouvelle story. & Moyenne \\
-\hline
-US-37 & En tant qu'utilisateur, je peux pouvoir voir les stories des utilisateurs que je suis. & Moyenne \\
-\hline
-US-38 & En tant qu'utilisateur, je peux que mes stories expirent automatiquement après 24 heures. & Haute \\
-\hline
-US-39 & En tant qu'utilisateur, je peux pouvoir supprimer mes stories pour retirer un contenu que je ne souhaite plus partager. & Moyenne \\
-\hline
-US-40 & En tant qu'utilisateur, je peux pouvoir supprimer mes stories pour retirer un contenu que je ne souhaite plus partager. & Moyenne \\
-\hline
-US-41 & En tant qu'utilisateur, je peux voir un fil d'actualité avec les publications des utilisateurs que je suis. & Haute \\
-\hline
-US-42 & En tant qu'utilisateur, je peux pouvoir filtrer mon fil d'actualité par domaine professionnel. & Moyenne \\
-\hline
-US-43 & En tant qu'utilisateur, je peux voir les publications les plus populaires dans mon domaine. & Basse \\
-\hline
-US-44 & En tant qu'utilisateur, je peux un fil d'actualité qui se met à jour en temps réel. & Moyenne \\
-\hline 
-\caption{Liste des User Stories} \label{tab:userstories} \\
-\end{longtable}
-\subsection{Backlog Produit – Le dashboard administrateur \&  un système de notifications }
 \begin{table}[H]
+\caption{Tableau des User Stories – Sprint 3}
 \centering
-\begin{tabularx}{\textwidth}{|c|X|c|}
-\hline
-\textbf{User Story} & \textbf{Description} & \textbf{Priorité} \\
-\hline
-US-45 & En tant qu'administrateur, je peux avoir accès à un tableau de bord avec des statistiques sur l'activité des utilisateurs. & Moyenne \\
-\hline
-US-46 & En tant qu'administrateur, je peux voir des métriques sur les publications des utilisateurs (vues, likes, commentaires). & Moyenne \\
-\hline
-US-47 & En tant qu'administrateur, je peux voir des statistiques sur les offres d'emploi et projets publiés. & Moyenne \\
-\hline
-US-48 & En tant qu'administrateur, je peux consulter des graphiques sur l'engagement global avec les publications et offres. & Basse \\
-\hline
-US-49 & En tant qu'administrateur, je peux voir des statistiques globales sur la plateforme. & Basse \\
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\setlength{\parskip}{0pt}
+
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.08\textwidth}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.10\textwidth}|}
 \hline
 
-US-50 & En tant qu'utilisateur, je peux recevoir des notifications pour les nouvelles interactions sur mes publications. & Haute \\
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
-US-51 & En tant qu'utilisateur, je peux recevoir des notifications pour les nouveaux abonnés. & Moyenne \\
+
+US-01 & En tant que parent, je peux suivre la position de mon enfant en temps réel afin de savoir où il se trouve à tout moment.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Implémenter la collecte GPS côté mobile
+\item Envoyer les positions vers le backend
+\item Stockage des positions en base de données
+\item Affichage de la position sur carte (Google Maps)
+\item Mise à jour en temps réel (Socket.IO)
+\end{itemize}
+\end{minipage}
+& 4 jours \\
 \hline
-US-52 & En tant qu'utilisateur, je peux pouvoir marquer des notifications individuelles comme lues. & Moyenne \\
+
+US-02 & En tant que système, je dois détecter automatiquement les sorties de zone sécurisée (geofence) afin de déclencher une alerte.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Création des zones de sécurité (geofencing)
+\item Calcul de position par rapport aux zones
+\item Détection de sortie de zone
+\item Génération d’événements d’alerte
+\end{itemize}
+\end{minipage}
+& 3 jours \\
 \hline
-US-53 & En tant qu'utilisateur, je peux pouvoir marquer toutes mes notifications comme lues en un clic. & Moyenne \\
+
+US-03 & En tant que parent, je reçois des alertes en temps réel lorsqu’un événement critique est détecté.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Implémentation du module d’alertes backend
+\item Envoi de notifications push
+\item Intégration Socket.IO côté mobile
+\item Affichage des alertes dans l’application
+\end{itemize}
+\end{minipage}
+& 3 jours \\
 \hline
-US-54 & En tant qu'utilisateur, je peux pouvoir voir le nombre de notifications non lues. & Haute \\
+
+US-04 & En tant qu’utilisateur, je peux consulter l’historique des déplacements de mon enfant.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Stockage des historiques GPS
+\item API de récupération des trajets
+\item Affichage des parcours sur carte
+\item Filtrage par date
+\end{itemize}
+\end{minipage}
+& 3 jours \\
 \hline
-US-55 & En tant qu'utilisateur, je peux pouvoir supprimer des notifications individuelles. & Basse \\
+
+US-05 & En tant que système, je dois assurer la transmission continue des données de localisation.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Mise en place du background tracking mobile
+\item Optimisation consommation batterie
+\item Envoi périodique des positions
+\item Gestion des pertes de connexion
+\end{itemize}
+\end{minipage}
+& 3 jours \\
 \hline
-US-56 & En tant qu'utilisateur, je peux pouvoir supprimer toutes mes notifications en un clic. & Basse \\
+
+US-06 & En tant qu’administrateur, je peux visualiser les zones à risque et les événements critiques.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Dashboard des alertes
+\item Visualisation des zones dangereuses
+\item Filtrage des événements
+\item Statistiques des incidents
+\end{itemize}
+\end{minipage}
+& 2 jours \\
 \hline
-US-57 & En tant qu'utilisateur, je peux recevoir des notifications en temps réel. & Haute \\
-\hline
+
 \end{tabularx}
-\caption{User Stories liées au tableau de bord (administrateur) et aux notifications (utilisateur)}
 \end{table}
+\subsection{Diagramme de cas d'utilisation du Sprint 3}
 
-\section{ Raffinement des cas d'utilisation }
-\subsection{Raffinement des cas d'utilisation de sprint 1 }
-\subsubsection{Raffinement de cas d'utilisation Gestion post}
-la figure 4.1 présente le raffinement de cas d'utilisation Gestion post,suivie par leur description textuelle dans le tableau 4.2
+Cette section présente le diagramme de cas d'utilisation du Sprint 3, qui met en évidence les principales interactions entre les utilisateurs et le système SafeTrack. Ce sprint est principalement centré sur les fonctionnalités de suivi en temps réel, de géolocalisation, de gestion des zones de sécurité (geofencing) ainsi que sur la génération des alertes en cas d’événements critiques.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gerer postsfinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion post}
-    \label{fig:chap4_post_refinement}
+    \includegraphics[width=1\textwidth]{images/Diagramme cas d'utilisation sprint 3.drawio.png}
+    \caption{Diagramme de cas d'utilisation – Sprint 3}
+    \label{fig:chap4_cas_utilisation_sprint3}
 \end{figure}
-Le cas d’utilisation "Publier un post" permet à l’utilisateur de partager du contenu sur la plateforme sous différentes formes : texte, image, ou vidéo. Lors de la création du post, l’utilisateur peut enrichir sa publication en ajoutant des hashtags, des émoticônes, ou encore en joignant une URL pour fournir des références ou rediriger vers d’autres contenus.
+\subsection{Réalisation du Sprint 3 : Localisation et carte}
 
-\begin{table}[h!]
+Cette section décrit la réalisation technique du Sprint 3, axée sur le module de localisation et l’intégration de la carte interactive. Elle permet de visualiser en temps réel la position des utilisateurs sur une carte, de suivre leurs déplacements et de détecter automatiquement les sorties de zones sécurisées. Cette fonctionnalité constitue un élément central du système SafeTrack, garantissant un suivi continu et une meilleure réactivité en cas de danger.
+
+\section{Sprint 4 : Historique, alertes, SOS et partage}
+
+Le quatrième sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
+
+\subsection{Backlog Sprint 4 – Sécurité SOS et Partage}
+
+\begin{table}[H]
+\caption{Tableau des User Stories – Sprint 4}
 \centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\setlength{\parskip}{0pt}
+
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.08\textwidth}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.10\textwidth}|}
 \hline
-\textbf{Élément}        & \textbf{Description} \\ \hline
-Cas d'utilisation       & Publier post \\ \hline
-Acteur                  & Utilisateur \\ \hline
-Précondition            & L'utilisateur doit être authentifié pour pouvoir publier un post. \\ \hline
-Postcondition           & Le post est enregistré dans le système et visible selon la configuration choisie (profil ou fil d'actualité). \\ \hline
-Scénario nominal        & 
-1. L'utilisateur clique sur « Publier ». \newline
-2. Le système affiche l'interface de création de post. \newline
-3. L'utilisateur saisit un texte, ajoute éventuellement une image ou une vidéo. \newline
-4. L'utilisateur peut ajouter des hashtags, des emojis et/ou un lien. \newline
-5. L'utilisateur choisit où publier le post (profil ou fil d'actualité). \newline
-6. Le système enregistre le post et l'affiche dans la section choisie. \\ \hline
 
-Scénario alternatif     & 
-1a. Si l'utilisateur n'est pas connecté, le système le redirige vers la page d'authentification. \newline
-2a. Si le post est vide, le système empêche la publication et demande à l'utilisateur d'ajouter du contenu. \\ \hline
-\end{tabular}
-\caption{Description textuelle du cas d'utilisation Publier post}
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
+\hline
+
+US-01 & En tant qu’établissement (institution), je peux consulter un tableau de bord dédié afin de suivre les enfants qui me sont rattachés.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Création du dashboard institution
+\item Affichage des statistiques globales
+\item Intégration des données enfants
+\item Sécurisation par rôle (Institution)
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-02 & En tant qu’établissement, je peux gérer la liste des enfants (consultation et suivi de statut).
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item API liste des enfants par institution
+\item Affichage des statuts (présent/absent)
+\item Recherche et filtrage
+\item Interface mobile/web institution
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-03 & En tant qu’établissement, je peux effectuer des check-in et check-out manuels des enfants.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Implémentation API check-in/check-out
+\item Gestion des enregistrements d’assiduité
+\item Mise à jour du statut enfant
+\item Synchronisation en temps réel
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-04 & En tant qu’établissement, je peux consulter les rapports de présence des enfants.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Génération des rapports d’assiduité
+\item Filtrage par date et enfant
+\item Calcul des statistiques de présence
+\item Export des données
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-05 & En tant que système, je dois gérer les demandes d’inscription et d’enrôlement des enfants dans une institution.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Création du module d’enrôlement
+\item Gestion des demandes parent/institution
+\item Acceptation et rejet des demandes
+\item Notification aux parents
+\end{itemize}
+\end{minipage}
+& 4 jours \\
+\hline
+
+US-06 & En tant qu’établissement, je peux recevoir des alertes liées aux enfants qui me sont assignés.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Intégration module alertes institution
+\item Filtrage par enfants rattachés
+\item Notifications temps réel
+\item Historique des alertes
+\end{itemize}
+\end{minipage}
+& 2 jours \\
+\hline
+
+US-07 & En tant qu’administrateur institutionnel, je peux configurer les paramètres de suivi automatique.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Configuration des géofences automatiques
+\item Paramétrage des notifications
+\item Règles de présence automatique
+\item Sauvegarde des paramètres
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+\end{tabularx}
 \end{table}
+\subsection{Diagramme de cas d'utilisation du Sprint 4}
 
- 
-\subsubsection{Raffinement de cas d'utilisation Gestion Story}
-la figure 4.2 présente le raffinement de cas d'utilisation Gestion story,suivie par leur description textuelle dans le tableau 4.3
+Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités institutionnelles. Ce sprint se concentre principalement sur la gestion des établissements, le suivi des enfants rattachés, les opérations de check-in/check-out, ainsi que la consultation des rapports et des alertes.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gerer storyfinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion story}
-    \label{fig:chap4_story_refinement}
+    \includegraphics[width=1\textwidth]{images/Diagramme cas d'utilisation sprint 4.drawio.png}
+    \caption{Diagramme de cas d'utilisation – Sprint 4}
+    \label{fig:chap4_cas_utilisation_sprint4}
 \end{figure}
-Le cas d’utilisation "Gérer une story" permet à l’utilisateur de publier du contenu éphémère sous forme de texte, image ou courte vidéo. Les stories offrent un moyen rapide et expressif de partager des moments ou des idées, sans encombrer le fil principal. Elles sont temporaires et disparaissent automatiquement après 24 heures, renforçant l’aspect spontané et dynamique de l’interaction sur la plateforme. Cette fonctionnalité vise à stimuler l’engagement quotidien tout en offrant un espace de communication plus libre et instantané.
+\subsection{Réalisation du Sprint 4 : Historique, alertes, SOS et partage}
+Cette section décrit la réalisation du Sprint 4, qui introduit les fonctionnalités avancées de sécurité, notamment le système SOS, le partage d’accès entre utilisateurs et institutions, ainsi que la gestion des autorisations. Ces fonctionnalités renforcent la sécurité globale de la plateforme en permettant une réaction rapide en cas d’urgence et un contrôle précis des droits d’accès aux données sensibles.
+\section{Présentation des interfaces de l'application}
 
+Dans cette section, nous présentons les interfaces relatives à la localisation et au système SOS.
 
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Publier une story \\ \hline
-Acteur & Utilisateur \\ \hline
-Postcondition & La story est publiée et visible par les utilisateurs abonnés pendant 24 heures. \\ \hline
-Scénario nominal & 1. L'utilisateur ouvre l'interface story. \newline 2. Le système affiche l'interface de création de story. \newline 3. L'utilisateur choisit le type de contenu (texte/image/vidéo). \newline 4. L'utilisateur saisit/sélectionne le contenu et publie. \newline 5. Le système enregistre et rend la story disponible temporairement. \\ \hline
-Scénario alternatif & 1a. Si l'utilisateur n'est pas connecté, le système redirige vers la page de connexion. \newline 3a. Si aucun contenu n'est ajouté, le système empêche la publication et demande à l'utilisateur d'ajouter un contenu. \\ \hline
-\end{tabular}
-\caption{Description textuelle du cas d'utilisation Publier une story}
-\end{table}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gestion des interactions socialesfinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion des interactions sociales}
-    \label{fig:chap4_social_refinement}
-\end{figure}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Ajouter like \\ \hline
-Acteur & Utilisateur \\ \hline
-Précondition & L'utilisateur doit être authentifié et accéder à un post. \\ \hline
-Postcondition & Le like est ajouté ou retiré selon l'action. \\ \hline
-Scénario nominal & 1. L'utilisateur clique sur le bouton de like. \newline 2. Le système vérifie si l'utilisateur a déjà liké. \newline 3a. Si ce n'est pas le cas, un like est ajouté. \newline 3b. Sinon, le like est retiré. \\ \hline
-Scénario alternatif & 1a. Si l'utilisateur n'est pas authentifié, il est redirigé vers la page de connexion. \newline 2a. Si une erreur réseau survient, le like n'est pas enregistré. \\ \hline
-\end{tabular}
-\caption{Description du cas d'utilisation : Gérer les likes des posts}
-\end{table}
-\subsection{Raffinement des cas d'utilisation de sprint 2 }
-\subsection{Raffinement de cas d'utilisation de Gestion de dashboard administrateur}
-Voici le raffinement du diagramme de cas d'utilisation relatif à la gestion du dashboard administrateur, afin de mieux définir les interactions possibles et les fonctionnalités spécifiques réservées à ce rôle. 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gestion dashboard.finaledrawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion du dashboard}
-    \label{fig:chap4_dashboard_refinement}
-\end{figure}
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Consulter les métriques sur des publications . \\ \hline
-Acteur & Admin \\ \hline
-Précondition & L'admin est authentifié et a accès au tableau de bord. \\ \hline
-Postcondition & Les métriques relatives aux publications des utilisateurs sont affichées à l'admin sous forme de données chiffrées et/ou graphiques. \\ \hline
-Scénario nominal & 
-1. L'admin accède au tableau de bord. \newline
-2. Il sélectionne l'option «Consulter les métriques des publications». \newline
-3. Le système interroge la base de données. \newline
-4. Les données sont traitées et formatées. \newline
-5. Le système affiche les métriques sous forme de tableaux ou graphiques. \\ \hline
-Scénario alternatif & 
-1a. Si les données sont indisponibles (ex. erreur de serveur ou base vide), le système affiche un message d'erreur. \newline
-2a. L'admin peut réessayer ultérieurement ou contacter le support technique. \\ \hline
-\end{tabular}
-\caption{Description textuelle du cas d'utilisation : Voir les métriques sur les publications des utilisateurs}
-\end{table}
-\subsection{Raffinement de cas d'utilisation de Gestion de Systéme de notification}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gestion notificationdrawiofinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion de Systéme de notification}
-    \label{fig:chap4_notifications_refinement}
-\end{figure}
-Le tableau ci-dessous présente en détail le cas d'utilisation « Recevoir des notifications pour les nouveaux abonnés », décrivant ses préconditions, postconditions, scénario nominal et scénarios alternatifs.
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Consulter les notifications \\ \hline
-Acteur & Utilisateur \\ \hline
-Précondition & L’utilisateur doit être authentifié sur la plateforme. \\ \hline
-Postcondition & La liste des notifications est affichée à l’utilisateur. \\ \hline
-Scénario nominal & 
-1. L’utilisateur accède à la plateforme. \newline
-2. Il clique sur l’icône ou le menu "Notifications". \newline
-3. Le système vérifie l’authentification. \newline
-4. Le système affiche les notifications disponibles (lues et non lues). \\ \hline
-Scénario alternatif & 
-1a. Si l’utilisateur n’est pas authentifié, il est redirigé vers la page de connexion. \\ \hline
-\end{tabular}
-\caption{Description du cas d'utilisation : Consulter les notifications}
-\end{table}
-
-
-\section{Détails des cas d'utilisation}
-\subsection{Détails des cas d'utilisation du sprint 1}
-
-\subsubsection{Cas d'utilisation : Gestion post}
-La figure~\ref{fig:chap4_post_refinement} présente le diagramme du cas d'utilisation "Publier post".
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gerer postsfinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion post}
-    \label{fig:chap4_post_refinement}
-\end{figure}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-	extbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Publier post \\ \hline
-Acteur & Utilisateur \\ \hline
-Précondition & L'utilisateur doit être authentifié pour pouvoir publier un post. \\ \hline
-Postcondition & Le post est enregistré dans le système et visible selon la configuration choisie (profil ou fil d'actualité). \\ \hline
-Scénario nominal & 1. L'utilisateur clique sur « Publier ». \\ 2. Le système affiche l'interface de création de post. \\ 3. L'utilisateur saisit le contenu et/ou ajoute une image/vidéo. \\ 4. L'utilisateur peut ajouter hashtags / emojis / lien. \\ 5. Le système enregistre et affiche le post. \\ \hline
-Scénario alternatif & 1a. Si l'utilisateur n'est pas connecté, redirection vers l'authentification. \\ 2a. Si le post est vide, publication empêchée. \\ \hline
-\end{tabular}
-\caption{Description textuelle du cas d'utilisation Publier post}
-\end{table}
-
-\subsubsection{Cas d'utilisation : Gestion Story}
-La figure~\ref{fig:chap4_story_refinement} présente le diagramme du cas d'utilisation "Gérer une story".
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gerer storyfinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion story}
-    \label{fig:chap4_story_refinement}
-\end{figure}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-	extbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Publier une story \\ \hline
-Acteur & Utilisateur \\ \hline
-Précondition & L'utilisateur est authentifié. \\ \hline
-Postcondition & La story est publiée et visible pendant 24 heures par les abonnés. \\ \hline
-Scénario nominal & 1. L'utilisateur ouvre l'interface story. \\ 2. Il choisit le type de contenu (texte/image/vidéo). \\ 3. Il saisit/sélectionne le contenu et publie. \\ 4. Le système enregistre et rend la story disponible temporairement. \\ \hline
-Scénario alternatif & 1a. Si non authentifié, redirection. \\ 2a. Si aucun contenu, publication empêchée. \\ \hline
-\end{tabular}
-\caption{Description textuelle du cas d'utilisation : Publier une story}
-\end{table}
-
-\subsubsection{Cas d'utilisation : Gestion des interactions sociales}
-La figure~\ref{fig:chap4_social_refinement} présente le diagramme des interactions sociales.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gestion des interactions socialesfinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion des interactions sociales}
-    \label{fig:chap4_social_refinement}
-\end{figure}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-	extbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Ajouter/retirer un like \\ \hline
-Acteur & Utilisateur \\ \hline
-Précondition & L'utilisateur est authentifié et visualise un post. \\ \hline
-Postcondition & Le like est ajouté ou retiré. \\ \hline
-Scénario nominal & 1. L'utilisateur clique sur le bouton like. \\ 2. Le système met à jour l'état du like. \\ \hline
-Scénario alternatif & 1a. Si non authentifié, redirection. \\ 2a. En cas d'erreur réseau, action non sauvegardée. \\ \hline
-\end{tabular}
-\caption{Description du cas d'utilisation : Gérer les likes des posts}
-\end{table}
-
-\subsection{Détails des cas d'utilisation du sprint 2}
-
-\subsubsection{Cas d'utilisation : Gestion du dashboard administrateur}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gestion dashboard.finaledrawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion du dashboard}
-    \label{fig:chap4_dashboard_refinement}
-\end{figure}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-	extbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Consulter les métriques sur des publications \\ \hline
-Acteur & Administrateur \\ \hline
-Précondition & L'admin est authentifié et a accès au tableau de bord. \\ \hline
-Postcondition & Les métriques sont affichées sous forme de tableaux ou graphiques. \\ \hline
-Scénario nominal & 1. L'admin accède au tableau de bord. \\ 2. Il sélectionne l'option de métriques. \\ 3. Le système affiche les données. \\ \hline
-Scénario alternatif & 1a. Si données indisponibles, afficher message d'erreur. \\ \hline
-\end{tabular}
-\caption{Description textuelle du cas d'utilisation : Voir les métriques}
-\end{table}
-
-\subsubsection{Cas d'utilisation : Consulter les notifications}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{images/Diagramme gestion notificationdrawiofinale1.drawio.png}
-    \caption{Diagramme de cas d'utilisation de Gestion de Système de notification}
-    \label{fig:chap4_notifications_refinement}
+    \caption{Interface de suivi en temps réel et alertes}
+    \label{fig:chap4_interfaces}
 \end{figure}
 
-\begin{table}[h!]
-\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
-\hline
-	extbf{Élément} & \textbf{Description} \\ \hline
-Cas d'utilisation & Consulter les notifications \\ \hline
-Acteur & Utilisateur \\ \hline
-Précondition & L’utilisateur est authentifié. \\ \hline
-Postcondition & La liste des notifications est affichée. \\ \hline
-Scénario nominal & 1. L’utilisateur clique sur l’icône Notifications. \\ 2. Le système affiche les notifications (lues et non lues). \\ \hline
-Scénario alternatif & 1a. Si non authentifié, redirection vers la page de connexion. \\ \hline
-\end{tabular}
-\caption{Description du cas d'utilisation : Consulter les notifications}
-\end{table}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+Ce chapitre a détaillé la réalisation des Sprints 3 et 4, apportant à SafeTrack ses fonctionnalités de sécurité essentielles. Le suivi en temps réel et le système d'alerte SOS constituent le cœur de la valeur proposée par l'application, assurant une protection efficace et réactive des utilisateurs.

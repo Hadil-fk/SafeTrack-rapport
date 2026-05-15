@@ -31,14 +31,7 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Interface Web – Gérer les utilisateurs – étape 1}}{47}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Interface Mobile – Follow un utilisateur – étape 1}}{47}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Release 2: Gestion des posts,des stories ,et des interactions sociales \& Le dashboard administrateur,un système de notifications.}{49}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de cas d'utilisation de Gestion post}}{54}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de cas d'utilisation de Gestion story}}{55}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagramme de cas d'utilisation de Gestion des interactions sociales}}{56}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagramme de cas d'utilisation de Gestion du dashboard}}{57}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramme de cas d'utilisation de Gestion de Systéme de notification}}{58}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramme de cas d'utilisation de Gestion post}}{59}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramme de cas d'utilisation de Gestion story}}{61}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagramme de cas d'utilisation de Gestion des interactions sociales}}{62}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Diagramme de cas d'utilisation de Gestion du dashboard}}{63}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagramme de cas d'utilisation de Gestion de Système de notification}}{64}{figure.caption.58}%
+\contentsline {xchapter}{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}{49}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de cas d'utilisation – Sprint 3}}{51}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de cas d'utilisation – Sprint 4}}{53}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Interface de suivi en temps réel et alertes}}{54}{figure.caption.43}%
