@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  15 MAY 2026 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  16 MAY 2026 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,22 +705,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
 ]
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 95.
+(babel)             Reported on input line 105.
  [7])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [8] (main.lof)
+ [8] (main.lof [9
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [9
-
-] (main.lot)
+ [10] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [10
+ [11
 
 ] (chap_intro.tex
 Package minitoc Info: I0006
@@ -750,31 +750,31 @@ File: images/sotupub.png Graphic file (type png)
 Package pdftex.def Info: images/sotupub.png  used on input line 24.
 (pdftex.def)             Requested size: 170.71652pt x 79.18417pt.
  [4]
-<images/Capture d'Ã©cran 2026-02-04 121013.png, id=651, 1445.4pt x 903.375pt>
+<images/Capture d'Ã©cran 2026-02-04 121013.png, id=668, 1445.4pt x 903.375pt>
 File: images/Capture d'Ã©cran 2026-02-04 121013.png Graphic file (type png)
 <use images/Capture d'Ã©cran 2026-02-04 121013.png>
 Package pdftex.def Info: images/Capture d'Ã©cran 2026-02-04 121013.png  used on input line 63.
 (pdftex.def)             Requested size: 284.52756pt x 177.83221pt.
  [5 <./images/Capture d'Ã©cran 2026-02-04 121013.png>]
-<images/minifinderapp.png, id=661, 1413.78188pt x 903.375pt>
+<images/minifinderapp.png, id=678, 1413.78188pt x 903.375pt>
 File: images/minifinderapp.png Graphic file (type png)
 <use images/minifinderapp.png>
 Package pdftex.def Info: images/minifinderapp.png  used on input line 88.
 (pdftex.def)             Requested size: 284.52756pt x 181.80211pt.
  [6 <./images/minifinderapp.png>]
-<images/life360.png, id=673, 1422.81563pt x 903.375pt>
+<images/life360.png, id=690, 1422.81563pt x 903.375pt>
 File: images/life360.png Graphic file (type png)
 <use images/life360.png>
 Package pdftex.def Info: images/life360.png  used on input line 113.
 (pdftex.def)             Requested size: 284.52756pt x 180.64423pt.
  [7 <./images/life360.png>]
-<images/mobiletracker.png, id=685, 1415.2875pt x 903.375pt>
+<images/mobiletracker.png, id=702, 1415.2875pt x 903.375pt>
 File: images/mobiletracker.png Graphic file (type png)
 <use images/mobiletracker.png>
 Package pdftex.def Info: images/mobiletracker.png  used on input line 143.
 (pdftex.def)             Requested size: 284.52756pt x 181.60913pt.
  [8 <./images/mobiletracker.png>]
-<images/familesafe.jpg, id=696, 702.625pt x 415.5525pt>
+<images/familesafe.jpg, id=714, 702.625pt x 415.5525pt>
 File: images/familesafe.jpg Graphic file (type jpg)
 <use images/familesafe.jpg>
 Package pdftex.def Info: images/familesafe.jpg  used on input line 173.
@@ -790,19 +790,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 454--455
  []
 
 [12]
-<images/scrum_processus.png, id=728, 1565.85pt x 690.58pt>
+<images/scrum_processus.png, id=745, 1565.85pt x 690.58pt>
 File: images/scrum_processus.png Graphic file (type png)
 <use images/scrum_processus.png>
 Package pdftex.def Info: images/scrum_processus.png  used on input line 465.
 (pdftex.def)             Requested size: 455.24411pt x 200.76886pt.
  [13 <./images/scrum_processus.png>]
-<images/arch_scrum.png, id=734, 974.89218pt x 580.41844pt>
+<images/arch_scrum.png, id=751, 974.89218pt x 580.41844pt>
 File: images/arch_scrum.png Graphic file (type png)
 <use images/arch_scrum.png>
 Package pdftex.def Info: images/arch_scrum.png  used on input line 475.
 (pdftex.def)             Requested size: 455.24411pt x 271.03427pt.
  [14 <./images/arch_scrum.png>]
-<images/sprints.jpg, id=744, 1027.84pt x 297.11pt>
+<images/sprints.jpg, id=762, 1027.84pt x 297.11pt>
 File: images/sprints.jpg Graphic file (type jpg)
 <use images/sprints.jpg>
 Package pdftex.def Info: images/sprints.jpg  used on input line 504.
@@ -831,13 +831,13 @@ Overfull \hbox (10.2864pt too wide) in alignment at lines 127--194
  []
 
 ignored error: Infinite glue shrinkage found in box being split [20]
-<images/uc globale finale.png, id=807, 1051.93pt x 1028.84375pt>
+<images/uc globale finale.png, id=825, 1051.93pt x 1028.84375pt>
 File: images/uc globale finale.png Graphic file (type png)
 <use images/uc globale finale.png>
 Package pdftex.def Info: images/uc globale finale.png  used on input line 205.
 (pdftex.def)             Requested size: 455.24239pt x 694.69077pt.
  [21]
-<images/globaleclasse_diagram.drawio.png, id=813, 784.9325pt x 893.3375pt>
+<images/globaleclasse_diagram.drawio.png, id=830, 784.9325pt x 893.3375pt>
 File: images/globaleclasse_diagram.drawio.png Graphic file (type png)
 <use images/globaleclasse_diagram.drawio.png>
 Package pdftex.def Info: images/globaleclasse_diagram.drawio.png  used on input line 213.
@@ -846,53 +846,53 @@ Package pdftex.def Info: images/globaleclasse_diagram.drawio.png  used on input 
 Overfull \vbox (24.51067pt too high) has occurred while \output is active []
 
  [24 <./images/globaleclasse_diagram.drawio.png>] [25]
-<images/architecture de l'app.png, id=832, 746.79pt x 742.27313pt>
+<images/architecture de l'app.png, id=849, 746.79pt x 742.27313pt>
 File: images/architecture de l'app.png Graphic file (type png)
 <use images/architecture de l'app.png>
 Package pdftex.def Info: images/architecture de l'app.png  used on input line 253.
 (pdftex.def)             Requested size: 455.24411pt x 452.49147pt.
  [26] [27 <./images/architecture de l'app.png>]
-<images/nestjs.png, id=843, 3854.4pt x 1371.1225pt>
+<images/nestjs.png, id=860, 3854.4pt x 1371.1225pt>
 File: images/nestjs.png Graphic file (type png)
 <use images/nestjs.png>
 Package pdftex.def Info: images/nestjs.png  used on input line 289.
 (pdftex.def)             Requested size: 56.9055pt x 20.2312pt.
-<images/react.png, id=845, 927.465pt x 521.95pt>
+<images/react.png, id=862, 927.465pt x 521.95pt>
 File: images/react.png Graphic file (type png)
 <use images/react.png>
 Package pdftex.def Info: images/react.png  used on input line 295.
 (pdftex.def)             Requested size: 56.9055pt x 32.02446pt.
-<images/flutter.png, id=847, 12.045pt x 12.045pt>
+<images/flutter.png, id=864, 12.045pt x 12.045pt>
 File: images/flutter.png Graphic file (type png)
 <use images/flutter.png>
 Package pdftex.def Info: images/flutter.png  used on input line 301.
 (pdftex.def)             Requested size: 56.9055pt x 56.91486pt.
-<images/nodejs.png, id=849, 3764.0625pt x 2304.35907pt>
+<images/nodejs.png, id=866, 3764.0625pt x 2304.35907pt>
 File: images/nodejs.png Graphic file (type png)
 <use images/nodejs.png>
 Package pdftex.def Info: images/nodejs.png  used on input line 307.
 (pdftex.def)             Requested size: 56.9055pt x 34.81001pt.
-<images/mongodb.png, id=851, 1204.5pt x 401.5pt>
+<images/mongodb.png, id=868, 1204.5pt x 401.5pt>
 File: images/mongodb.png Graphic file (type png)
 <use images/mongodb.png>
 Package pdftex.def Info: images/mongodb.png  used on input line 313.
 (pdftex.def)             Requested size: 56.9055pt x 18.96729pt.
-<images/docker.png, id=853, 256.96pt x 256.96pt>
+<images/docker.png, id=870, 256.96pt x 256.96pt>
 File: images/docker.png Graphic file (type png)
 <use images/docker.png>
 Package pdftex.def Info: images/docker.png  used on input line 319.
 (pdftex.def)             Requested size: 56.9055pt x 56.90385pt.
-<images/gitlab.jpg, id=855, 2007.5pt x 1819.79875pt>
+<images/gitlab.jpg, id=872, 2007.5pt x 1819.79875pt>
 File: images/gitlab.jpg Graphic file (type jpg)
 <use images/gitlab.jpg>
 Package pdftex.def Info: images/gitlab.jpg  used on input line 325.
 (pdftex.def)             Requested size: 28.45274pt x 25.76857pt.
-<images/github.png, id=856, 48.18pt x 48.18pt>
+<images/github.png, id=873, 48.18pt x 48.18pt>
 File: images/github.png Graphic file (type png)
 <use images/github.png>
 Package pdftex.def Info: images/github.png  used on input line 326.
 (pdftex.def)             Requested size: 28.45274pt x 28.4524pt.
-<images/vscode.png, id=859, 1204.5pt x 1204.5pt>
+<images/vscode.png, id=876, 1204.5pt x 1204.5pt>
 File: images/vscode.png Graphic file (type png)
 <use images/vscode.png>
 Package pdftex.def Info: images/vscode.png  used on input line 332.
@@ -913,250 +913,292 @@ LaTeX Info: Redefining \greencheck on input line 5.
  [29
 
 ]
-Overfull \hbox (9.19696pt too wide) in paragraph at lines 127--127
- []|\T1/cmr/bx/n/10 Estimation| 
+Underfull \hbox (badness 1668) in paragraph at lines 141--141
+[]\T1/cmr/m/n/10.95 Implémenter l'API d'ins-crip-tion
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 127--127
-[]\T1/cmr/m/n/10 Concevoir l'in-ter-face d'ins-crip-tion
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]\T1/cmr/m/n/10.95 Validation des champs (fron-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]\T1/cmr/m/n/10 Validation des champs (fron-
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]\T1/cmr/m/n/10.95 Redirection vers l'écran de
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 127--127
-[]\T1/cmr/m/n/10 Concevoir l'in-ter-face de connexion
+Underfull \hbox (badness 4872) in paragraph at lines 141--141
+[]\T1/cmr/m/n/10.95 Sécurisation des routes (Auth
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 127--127
-[]\T1/cmr/m/n/10 Génération et ges-tion des to-kens
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]\T1/cmr/m/n/10 Sécurisation des routes (Auth
+Underfull \hbox (badness 4168) in paragraph at lines 141--141
+[]\T1/cmr/m/n/10.95 Protection contre les at-taques
  []
 
 [30]
-<images/authentification User case.png, id=913, 750.805pt x 522.95375pt>
+Overfull \vbox (35.98297pt too high) has occurred while \output is active []
+
+ [31]
+<images/authentification User case.png, id=936, 750.805pt x 522.95375pt>
 File: images/authentification User case.png Graphic file (type png)
 <use images/authentification User case.png>
-Package pdftex.def Info: images/authentification User case.png  used on input line 136.
+Package pdftex.def Info: images/authentification User case.png  used on input line 151.
 (pdftex.def)             Requested size: 409.71692pt x 285.38318pt.
- [31]
-Overfull \hbox (0.74031pt too wide) in paragraph at lines 143--144
+
+Overfull \hbox (0.74031pt too wide) in paragraph at lines 158--159
 \T1/cmr/m/n/12 quelles un vi-si-teur crée un compte Sa-fe-Track, les contrôles ef-fec-tués (va-li-da-tion des champs,
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 148--152
+Overfull \hbox (2.43637pt too wide) in alignment at lines 163--167
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 152--156
+Overfull \hbox (2.43637pt too wide) in alignment at lines 167--171
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 156--159
+Overfull \hbox (2.43637pt too wide) in alignment at lines 171--174
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 159--204
+Overfull \hbox (2.43637pt too wide) in alignment at lines 174--219
  [] [] 
  []
 
 ignored error: Infinite glue shrinkage found in box being split [32 <./images/authentification User case.png>]
-<images/DS s'inscrire.png, id=927, 753.81625pt x 635.37375pt>
+<images/DS s'inscrire.png, id=946, 753.81625pt x 635.37375pt>
 File: images/DS s'inscrire.png Graphic file (type png)
 <use images/DS s'inscrire.png>
-Package pdftex.def Info: images/DS s'inscrire.png  used on input line 211.
+Package pdftex.def Info: images/DS s'inscrire.png  used on input line 226.
 (pdftex.def)             Requested size: 455.23784pt x 383.7091pt.
  [33]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 225--229
+Overfull \hbox (2.43637pt too wide) in alignment at lines 240--244
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 229--233
+Overfull \hbox (2.43637pt too wide) in alignment at lines 244--248
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 233--236
+Overfull \hbox (2.43637pt too wide) in alignment at lines 248--251
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 236--287
+Overfull \hbox (2.43637pt too wide) in alignment at lines 251--302
  [] [] 
  []
 
 ignored error: Infinite glue shrinkage found in box being split [34 <./images/DS s'inscrire.png>]
-<images/DS authentifier.png, id=941, 753.81625pt x 633.36626pt>
+<images/DS authentifier.png, id=959, 753.81625pt x 633.36626pt>
 File: images/DS authentifier.png Graphic file (type png)
 <use images/DS authentifier.png>
-Package pdftex.def Info: images/DS authentifier.png  used on input line 294.
+Package pdftex.def Info: images/DS authentifier.png  used on input line 309.
 (pdftex.def)             Requested size: 455.23784pt x 382.49677pt.
  [35] [36 <./images/DS authentifier.png>] [37]
-<images/uc sprint2 globale.jpeg, id=960, 638.385pt x 402.50375pt>
-File: images/uc sprint2 globale.jpeg Graphic file (type jpg)
-<use images/uc sprint2 globale.jpeg>
-Package pdftex.def Info: images/uc sprint2 globale.jpeg  used on input line 482.
-(pdftex.def)             Requested size: 409.71692pt x 258.32623pt.
+<images/UC_sprint2.png, id=978, 828.09375pt x 835.12pt>
+File: images/UC_sprint2.png Graphic file (type png)
+<use images/UC_sprint2.png>
+Package pdftex.def Info: images/UC_sprint2.png  used on input line 470.
+(pdftex.def)             Requested size: 409.71692pt x 413.2009pt.
  [38]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 495--499
+Overfull \hbox (2.43637pt too wide) in alignment at lines 483--487
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 499--503
+Overfull \hbox (2.43637pt too wide) in alignment at lines 487--491
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 503--506
+Overfull \hbox (2.43637pt too wide) in alignment at lines 491--494
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 506--563
+Overfull \hbox (2.43637pt too wide) in alignment at lines 494--551
  [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [39 <./images/uc sprint2 globale.jpeg>]
+ignored error: Infinite glue shrinkage found in box being split [39 <./images/UC_sprint2.png>]
 ignored error: Infinite glue shrinkage found in box being split [40]
-<images/DS modif profil.png, id=976, 686.565pt x 465.74pt>
-File: images/DS modif profil.png Graphic file (type png)
-<use images/DS modif profil.png>
-Package pdftex.def Info: images/DS modif profil.png  used on input line 571.
+<images/DS_modif profil.png, id=996, 686.565pt x 465.74pt>
+File: images/DS_modif profil.png Graphic file (type png)
+<use images/DS_modif profil.png>
+Package pdftex.def Info: images/DS_modif profil.png  used on input line 559.
 (pdftex.def)             Requested size: 455.24pt x 308.81778pt.
  [41]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 583--587
+Overfull \hbox (2.43637pt too wide) in alignment at lines 571--575
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 587--591
+Overfull \hbox (2.43637pt too wide) in alignment at lines 575--579
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 591--594
+Overfull \hbox (2.43637pt too wide) in alignment at lines 579--582
  [] [] 
  []
 
 
-Overfull \hbox (2.43637pt too wide) in alignment at lines 594--645
+Overfull \hbox (2.43637pt too wide) in alignment at lines 582--633
  [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [42 <./images/DS modif profil.png>]
-<images/UC_gestion_des_enfants.png, id=989, 641.39626pt x 362.35374pt>
-File: images/UC_gestion_des_enfants.png Graphic file (type png)
-<use images/UC_gestion_des_enfants.png>
-Package pdftex.def Info: images/UC_gestion_des_enfants.png  used on input line 653.
-(pdftex.def)             Requested size: 455.2575pt x 257.19554pt.
- [43] [44 <./images/UC_gestion_des_enfants.png>] [45]
-<images/RegisterWeb.png, id=1007, 1872.9975pt x 950.55125pt>
+ignored error: Infinite glue shrinkage found in box being split [42 <./images/DS_modif profil.png>]
+ignored error: Infinite glue shrinkage found in box being split [43]
+<images/DS_Ajouter personne.png, id=1013, 878.28125pt x 493.845pt>
+File: images/DS_Ajouter personne.png Graphic file (type png)
+<use images/DS_Ajouter personne.png>
+Package pdftex.def Info: images/DS_Ajouter personne.png  used on input line 641.
+(pdftex.def)             Requested size: 455.24812pt x 255.9795pt.
+ [44] [45 <./images/DS_Ajouter personne.png>] [46]
+<images/RegisterWeb.png, id=1031, 1872.9975pt x 950.55125pt>
 File: images/RegisterWeb.png Graphic file (type png)
 <use images/RegisterWeb.png>
-Package pdftex.def Info: images/RegisterWeb.png  used on input line 694.
+Package pdftex.def Info: images/RegisterWeb.png  used on input line 688.
 (pdftex.def)             Requested size: 273.13527pt x 138.61688pt.
-<images/Screenshot_1747835775.png, id=1008, 1084.05pt x 2409.0pt>
+<images/Screenshot_1747835775.png, id=1032, 1084.05pt x 2409.0pt>
 File: images/Screenshot_1747835775.png Graphic file (type png)
 <use images/Screenshot_1747835775.png>
-Package pdftex.def Info: images/Screenshot_1747835775.png  used on input line 700.
+Package pdftex.def Info: images/Screenshot_1747835775.png  used on input line 694.
 (pdftex.def)             Requested size: 131.61871pt x 292.48605pt.
-<images/Login.png, id=1009, 1872.9975pt x 950.55125pt>
+<images/Login.png, id=1033, 1872.9975pt x 950.55125pt>
 File: images/Login.png Graphic file (type png)
 <use images/Login.png>
-Package pdftex.def Info: images/Login.png  used on input line 709.
+Package pdftex.def Info: images/Login.png  used on input line 703.
 (pdftex.def)             Requested size: 273.13527pt x 138.61688pt.
-<images/loginMb.png, id=1010, 1084.05pt x 2409.0pt>
+<images/loginMb.png, id=1034, 1084.05pt x 2409.0pt>
 File: images/loginMb.png Graphic file (type png)
 <use images/loginMb.png>
-Package pdftex.def Info: images/loginMb.png  used on input line 715.
+Package pdftex.def Info: images/loginMb.png  used on input line 709.
 (pdftex.def)             Requested size: 131.61871pt x 292.48605pt.
-<images/Diagramme gerer profile.png, id=1011, 1004.75375pt x 1528.71124pt>
+<images/Diagramme gerer profile.png, id=1035, 1004.75375pt x 1528.71124pt>
 File: images/Diagramme gerer profile.png Graphic file (type png)
 <use images/Diagramme gerer profile.png>
-Package pdftex.def Info: images/Diagramme gerer profile.png  used on input line 731.
+Package pdftex.def Info: images/Diagramme gerer profile.png  used on input line 725.
 (pdftex.def)             Requested size: 192.23901pt x 292.48753pt.
-<images/voirProfileMb.png, id=1012, 1084.05pt x 2409.0pt>
+<images/voirProfileMb.png, id=1036, 1084.05pt x 2409.0pt>
 File: images/voirProfileMb.png Graphic file (type png)
 <use images/voirProfileMb.png>
-Package pdftex.def Info: images/voirProfileMb.png  used on input line 737.
+Package pdftex.def Info: images/voirProfileMb.png  used on input line 731.
 (pdftex.def)             Requested size: 131.61871pt x 292.48605pt.
-<images/EditUserDashboard.png, id=1013, 1872.9975pt x 950.55125pt>
+<images/EditUserDashboard.png, id=1037, 1872.9975pt x 950.55125pt>
 File: images/EditUserDashboard.png Graphic file (type png)
 <use images/EditUserDashboard.png>
-Package pdftex.def Info: images/EditUserDashboard.png  used on input line 746.
+Package pdftex.def Info: images/EditUserDashboard.png  used on input line 740.
 (pdftex.def)             Requested size: 273.13527pt x 138.61688pt.
 
-Overfull \hbox (4.98604pt too wide) in paragraph at lines 746--747
+Overfull \hbox (4.98604pt too wide) in paragraph at lines 740--741
  [][] 
  []
 
-<images/Followetaimerpost.png, id=1014, 1084.05pt x 2409.0pt>
+<images/Followetaimerpost.png, id=1038, 1084.05pt x 2409.0pt>
 File: images/Followetaimerpost.png Graphic file (type png)
 <use images/Followetaimerpost.png>
-Package pdftex.def Info: images/Followetaimerpost.png  used on input line 752.
+Package pdftex.def Info: images/Followetaimerpost.png  used on input line 746.
 (pdftex.def)             Requested size: 131.61871pt x 292.48605pt.
-[46 <./images/RegisterWeb.png (PNG copy)> <./images/Screenshot_1747835775.png> <./images/Login.png (PNG copy)> <./images/loginMb.png>] [47 <./images/Diagramme gerer profile.png> <./images/voirProfileMb.png> <./images/EditUserDashboard.png (PNG copy)> <./images/Followetaimerpost.png>]) (chap_04.tex [48]
+[47 <./images/RegisterWeb.png (PNG copy)> <./images/Screenshot_1747835775.png> <./images/Login.png (PNG copy)> <./images/loginMb.png>] [48 <./images/Diagramme gerer profile.png> <./images/voirProfileMb.png> <./images/EditUserDashboard.png (PNG copy)> <./images/Followetaimerpost.png>]) (chap_04.tex [49]
 Chapitre 4.
 \openout3 = `main.mtc'.
 
 \openout3 = `main.mtc'.
 
 (main.mtc5)
-LaTeX Info: Redefining \greencheck on input line 7.
- [49
+LaTeX Info: Redefining \greencheck on input line 6.
+ [50
 
 ]
-Overfull \hbox (9.19696pt too wide) in paragraph at lines 115--115
+Overfull \hbox (9.19696pt too wide) in paragraph at lines 114--114
+ []|\T1/cmr/bx/n/10 Estimation| 
+ []
+
+<images/UC_sprint3.png, id=1083, 854.19125pt x 684.5575pt>
+File: images/UC_sprint3.png Graphic file (type png)
+<use images/UC_sprint3.png>
+Package pdftex.def Info: images/UC_sprint3.png  used on input line 122.
+(pdftex.def)             Requested size: 455.24411pt x 364.82973pt.
+[51]
+Overfull \hbox (2.43637pt too wide) in alignment at lines 133--136
+ [] [] 
+ []
+
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 136--140
+ [] [] 
+ []
+
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 140--143
+ [] [] 
+ []
+
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 143--195
+ [] [] 
+ []
+
+ignored error: Infinite glue shrinkage found in box being split [52 <./images/UC_sprint3.png>] [53]
+<images/DS_AjouterSafeZone.png, id=1100, 643.40375pt x 484.81125pt>
+File: images/DS_AjouterSafeZone.png Graphic file (type png)
+<use images/DS_AjouterSafeZone.png>
+Package pdftex.def Info: images/DS_AjouterSafeZone.png  used on input line 202.
+(pdftex.def)             Requested size: 455.25887pt x 343.04218pt.
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 213--216
+ [] [] 
+ []
+
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 216--220
+ [] [] 
+ []
+
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 220--223
+ [] [] 
+ []
+
+
+Overfull \hbox (2.43637pt too wide) in alignment at lines 223--270
+ [] [] 
+ []
+
+ignored error: Infinite glue shrinkage found in box being split [54 <./images/DS_AjouterSafeZone.png>] [55]
+<images/DS_Tracking temps rÃ©el.png, id=1113, 884.30376pt x 685.56125pt>
+File: images/DS_Tracking temps rÃ©el.png Graphic file (type png)
+<use images/DS_Tracking temps rÃ©el.png>
+Package pdftex.def Info: images/DS_Tracking temps rÃ©el.png  used on input line 276.
+(pdftex.def)             Requested size: 455.25285pt x 352.93723pt.
+ [56 <./images/DS_Tracking temps rÃ©el.png>]
+Overfull \hbox (9.19696pt too wide) in paragraph at lines 420--420
  []|\T1/cmr/bx/n/10 Estimation| 
  []
 
 
-LaTeX Warning: File `images/Diagramme cas d'utilisation sprint 3.drawio.png' not found on input line 122.
-
-
-! Package pdftex.def Error: File `images/Diagramme cas d'utilisation sprint 3.drawio.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...me cas d'utilisation sprint 3.drawio.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[50] [51]
-Overfull \hbox (9.19696pt too wide) in paragraph at lines 234--234
- []|\T1/cmr/bx/n/10 Estimation| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []\T1/cmr/m/n/10 Affichage des sta-tuts (pré-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []\T1/cmr/m/n/10 Gestion des de-mandes pa-
  []
 
+[57]
 
-LaTeX Warning: File `images/Diagramme cas d'utilisation sprint 4.drawio.png' not found on input line 241.
+LaTeX Warning: File `images/Diagramme cas d'utilisation sprint 4.drawio.png' not found on input line 428.
 
 
 ! Package pdftex.def Error: File `images/Diagramme cas d'utilisation sprint 4.drawio.png' not found: using draft setting.
@@ -1165,27 +1207,27 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.241 ...me cas d'utilisation sprint 4.drawio.png}
+l.428 ...me cas d'utilisation sprint 4.drawio.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[52]
-<images/Diagramme gestion notificationdrawiofinale1.drawio.png, id=1072, 946.53625pt x 573.14125pt>
+[58]
+<images/Diagramme gestion notificationdrawiofinale1.drawio.png, id=1132, 946.53625pt x 573.14125pt>
 File: images/Diagramme gestion notificationdrawiofinale1.drawio.png Graphic file (type png)
 <use images/Diagramme gestion notificationdrawiofinale1.drawio.png>
-Package pdftex.def Info: images/Diagramme gestion notificationdrawiofinale1.drawio.png  used on input line 253.
+Package pdftex.def Info: images/Diagramme gestion notificationdrawiofinale1.drawio.png  used on input line 440.
 (pdftex.def)             Requested size: 455.24411pt x 275.65562pt.
- [53]) (chap_conclusion.tex [54 <./images/Diagramme gestion notificationdrawiofinale1.drawio.png>]
+ [59]) (chap_conclusion.tex [60 <./images/Diagramme gestion notificationdrawiofinale1.drawio.png>]
 \openout3 = `main.mtc'.
 
 \openout3 = `main.mtc'.
 
- (main.mtc5) [55
+ (main.mtc5) [61
 
-] [56] [57]) (main.bbl [58] [59
+] [62] [63]) (main.bbl [64] [65
 
-]) [60] (resume.tex
+]) [66] (resume.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -1212,7 +1254,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[61
+[67
 
 
 ] (main.aux)
@@ -1221,20 +1263,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 44AB6080C3A8CDAA4EBD685B071FA5C6;14786.
+(rerunfilecheck)             Checksum: D74F088BAC04916F403C6D83FE7DD6DF;13384.
  ) 
 Here is how much of TeX's memory you used:
- 21229 strings out of 467871
- 350768 string characters out of 5417892
+ 21215 strings out of 467871
+ 349462 string characters out of 5417892
  797948 words of memory out of 5000000
- 49517 multiletter control sequences out of 15000+600000
+ 49489 multiletter control sequences out of 15000+600000
  652444 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,83p,941b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (71 pages, 11248186 bytes).
+Output written on main.pdf (78 pages, 11389324 bytes).
 PDF statistics:
- 1998 PDF objects out of 2073 (max. 8388607)
- 234 named destinations out of 1000 (max. 500000)
- 754 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2040 PDF objects out of 2073 (max. 8388607)
+ 248 named destinations out of 1000 (max. 500000)
+ 769 words of extra memory for PDF output out of 10000 (max. 10000000)
 

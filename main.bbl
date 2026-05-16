@@ -1,38 +1,13 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[cha()]{chartjs}
-Chart.js - simple yet flexible javascript charting.
-\newblock \url{https://www.chartjs.org/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[ela()]{elasticsearch}
-Elasticsearch - search \& analytics engine.
-\newblock \url{https://www.elastic.co/elasticsearch/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[fas()]{fastify}
-Fastify - fast and low overhead web framework, for node.js.
-\newblock \url{https://www.fastify.io/}.
-\newblock (Accessed on 27/02/2025).
-
 \bibitem[git()]{gitlab}
 Gitlab - the devops platform.
 \newblock \url{https://about.gitlab.com/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[gra()]{graphql}
-Graphql - a query language for your api.
-\newblock \url{https://graphql.org/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[jwt()]{jwt}
-Jwt - json web tokens.
-\newblock \url{https://jwt.io/}.
 \newblock (Accessed on 27/02/2025).
 
 \bibitem[mon()]{mongodb}
@@ -48,16 +23,6 @@ What is node.js? - definition from whatis.com.
 \bibitem[rea()]{reactjs}
 React - a javascript library for building user interfaces.
 \newblock \url{https://reactjs.org/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[red()]{redis}
-Redis - the open source, in-memory data store.
-\newblock \url{https://redis.io/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[seq()]{sequelize}
-Sequelize - feature-rich orm for node.js.
-\newblock \url{https://sequelize.org/}.
 \newblock (Accessed on 27/02/2025).
 
 \bibitem[vsc()]{vscode}

@@ -55,45 +55,55 @@
 \contentsline {chapter}{\numberline {3}Sprint 1\&2 : Authentification , Gestion des comptes \& Profil , Gestion des utilisateurs }{29}{chapter.3}%
 \contentsline {section}{Introduction}{29}{section*.26}%
 \contentsline {section}{\numberline {3.1}Sprint 1 : Authentification \& Gestion des comptes}{29}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Backlog Sprint 1 – Authentification \& Gestion des comptes}{30}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Diagramme des cas d’utilisation du Sprint 1}{31}{subsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.2.1}Cas d'utilisation : S'inscrire}{32}{subsubsection.3.1.2.1}%
-\contentsline {subsubsection}{\numberline {3.1.2.2}Diagramme de séquence de \@FB@og S'inscrire \@FB@fg \relax }{33}{subsubsection.3.1.2.2}%
-\contentsline {subsubsection}{\numberline {3.1.2.3}Cas d'utilisation : S'authentifier}{34}{subsubsection.3.1.2.3}%
-\contentsline {subsubsection}{\numberline {3.1.2.4}Diagramme de séquence de \@FB@og S'authentifier \@FB@fg \relax }{35}{subsubsection.3.1.2.4}%
+\contentsline {subsection}{\numberline {3.1.1}Backlog Sprint 1 :}{30}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Diagrammes du Sprint 1}{32}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Diagramme de cas d’utilisation }{32}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Cas d'utilisation : S'inscrire}{32}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Diagramme de séquence de \@FB@og S'inscrire \@FB@fg \relax }{33}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}Cas d'utilisation : S'authentifier}{34}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}Diagramme de séquence de \@FB@og S'authentifier \@FB@fg \relax }{35}{subsubsection.3.1.2.5}%
 \contentsline {subsection}{\numberline {3.1.3}Réalisation du Sprint 1:}{36}{subsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.3.1}Réalisation du cas d’utilisation : S’inscrire}{36}{subsubsection.3.1.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.3.2}Réalisation du cas d’utilisation : S’authentifier}{36}{subsubsection.3.1.3.2}%
 \contentsline {section}{\numberline {3.2}Sprint 2 : Profil \& Gestion des utilisateurs}{37}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Backlog Sprint 2 – Profil \& Gestion des utilisateurs}{37}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Diagramme des cas d’utilisation du Sprint 2}{38}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}Cas d'utilisation : Modifier profil}{39}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Diagramme de séquence de \@FB@og Modifier profil \@FB@fg \relax }{41}{subsubsection.3.2.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}Cas d'utilisation : Gestion des enfants}{42}{subsubsection.3.2.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.2.4}Diagramme de cas d'utilisation de \@FB@og Gestion des enfants \@FB@fg \relax }{43}{subsubsection.3.2.2.4}%
-\contentsline {subsection}{\numberline {3.2.3}Réalisation du Sprint 2 : }{44}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Réalisation du cas d'utilisation : Modifier profil}{44}{subsubsection.3.2.3.1}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Réalisation du cas d'utilisation : Gestion des enfants}{44}{subsubsection.3.2.3.2}%
-\contentsline {section}{\numberline {3.3}Présentation des interface de l'application}{45}{section.3.3}%
-\contentsline {section}{Conclusion}{48}{section*.37}%
-\contentsline {chapter}{\numberline {4}Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}{49}{chapter.4}%
-\contentsline {section}{Introduction}{49}{section*.38}%
-\contentsline {section}{\numberline {4.1}Sprint 3 : Localisation et carte}{49}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Backlog Sprint 3 – Localisation et carte}{50}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Diagramme de cas d'utilisation du Sprint 3}{51}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Réalisation du Sprint 3 : Localisation et carte}{51}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Sprint 4 : Historique, alertes, SOS et partage}{52}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Backlog Sprint 4 – Sécurité SOS et Partage}{52}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Diagramme de cas d'utilisation du Sprint 4}{52}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Réalisation du Sprint 4 : Historique, alertes, SOS et partage}{53}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Présentation des interfaces de l'application}{54}{section.4.3}%
-\contentsline {section}{Conclusion}{54}{section*.44}%
-\contentsline {chapter}{Conclusion}{55}{section*.44}%
-\contentsline {section}{\numberline {4.4}Synthèse du Projet}{55}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Récapitulatif des Réalisations}{55}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Architecture Technique}{56}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Technologies et Innovations}{57}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Défis Relevés}{57}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Perspectives d'Évolution}{57}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Apport Personnel et Professionnel}{58}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Mot de la Fin}{58}{section.4.11}%
+\contentsline {subsection}{\numberline {3.2.1}Backlog Sprint 2 :}{37}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Diagrammes du Sprint 2}{38}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Diagramme de cas d’utilisation }{38}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Cas d'utilisation : Modifier profil}{39}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}Diagramme de séquence de \@FB@og Modifier profil \@FB@fg \relax }{41}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}Cas d'utilisation : Ajouter un enfant/personne vulnérable}{42}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.5}Diagramme de séquence de \@FB@og Ajouter un enfant/personne vulnérable \@FB@fg \relax }{44}{subsubsection.3.2.2.5}%
+\contentsline {subsection}{\numberline {3.2.3}Réalisation du Sprint 2 : }{45}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Réalisation du cas d'utilisation : Modifier profil}{45}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Réalisation du cas d'utilisation : Ajouter un enfant/personne vulnérable}{45}{subsubsection.3.2.3.2}%
+\contentsline {section}{\numberline {3.3}Présentation des interface de l'application}{46}{section.3.3}%
+\contentsline {section}{Conclusion}{49}{section*.37}%
+\contentsline {chapter}{\numberline {4}Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}{50}{chapter.4}%
+\contentsline {section}{Introduction}{50}{section*.38}%
+\contentsline {section}{\numberline {4.1}Sprint 3 : Localisation et carte}{50}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Backlog Sprint 3 :}{51}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Diagrammes du Sprint 3 :}{52}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Diagramme de cas d'utilisation : }{52}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Cas d'utilisation : Ajouter une safezone}{52}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}Diagramme de séquence de \@FB@og Ajouter une safezone \@FB@fg \relax }{54}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}Cas d'utilisation : Suivi en temps réel}{54}{subsubsection.4.1.2.4}%
+\contentsline {subsubsection}{\numberline {4.1.2.5}Diagramme de séquence de \@FB@og Suivi en temps réel \@FB@fg \relax }{56}{subsubsection.4.1.2.5}%
+\contentsline {subsection}{\numberline {4.1.3}Réalisation du Sprint 3 : }{56}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}Réalisation du cas d'utilisation : Ajouter une safezone}{56}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}Réalisation du cas d'utilisation : Suivi en temps réel}{57}{subsubsection.4.1.3.2}%
+\contentsline {section}{\numberline {4.2}Sprint 4 : Historique, alertes, SOS et partage}{57}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Backlog Sprint 4 :}{58}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Diagrammes du Sprint 4:}{58}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Diagramme de cas d'utilisation : }{58}{subsubsection.4.2.2.1}%
+\contentsline {subsection}{\numberline {4.2.3}Réalisation du Sprint 4 : }{59}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Présentation des interfaces de l'application}{59}{section.4.3}%
+\contentsline {section}{Conclusion}{60}{section*.46}%
+\contentsline {chapter}{Conclusion}{61}{section*.46}%
+\contentsline {section}{\numberline {4.4}Synthèse du Projet}{61}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Récapitulatif des Réalisations}{61}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Architecture Technique}{62}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Technologies et Innovations}{63}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Défis Relevés}{63}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Perspectives d'Évolution}{63}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Apport Personnel et Professionnel}{64}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Mot de la Fin}{64}{section.4.11}%

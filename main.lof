@@ -21,17 +21,19 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Diagramme de séquence de S'authentifier (scénario classique)}}{36}{figure.caption.30}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Diagramme de cas d'utilisation de sprint2}}{39}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Diagramme de séquence de Modifier profil}}{42}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagramme de cas d'utilisation de Gestion des enfants}}{44}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Interface Web – Inscription Menova – étape 1}}{46}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Interface Mobile – Inscription Menova – étape 1}}{46}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Interface Web – Page de connexion Menova – étape 2}}{46}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Interface Mobile – Page de connexion Menova – étape 2}}{46}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Interface Web – Ajouter des expériences ou d’éducations + Modifier Profil – étape 1}}{47}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Interface Mobile – Voir Profil – étape 2}}{47}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Interface Web – Gérer les utilisateurs – étape 1}}{47}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Interface Mobile – Follow un utilisateur – étape 1}}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagramme de séquence de Gestion des enfants}}{45}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Interface Web – Inscription Menova – étape 1}}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Interface Mobile – Inscription Menova – étape 1}}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Interface Web – Page de connexion Menova – étape 2}}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Interface Mobile – Page de connexion Menova – étape 2}}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Interface Web – Ajouter des expériences ou d’éducations + Modifier Profil – étape 1}}{48}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Interface Mobile – Voir Profil – étape 2}}{48}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Interface Web – Gérer les utilisateurs – étape 1}}{48}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Interface Mobile – Follow un utilisateur – étape 1}}{48}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}{49}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de cas d'utilisation – Sprint 3}}{51}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de cas d'utilisation – Sprint 4}}{53}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Interface de suivi en temps réel et alertes}}{54}{figure.caption.43}%
+\contentsline {xchapter}{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}{50}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de cas d'utilisation – Sprint 3}}{52}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de séquence de Gestion des safezones}}{54}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagramme de séquence de Suivi en temps réel}}{56}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagramme de cas d'utilisation – Sprint 4}}{59}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Interface de suivi en temps réel et alertes}}{60}{figure.caption.45}%

@@ -1,5 +1,4 @@
-﻿
-\chapter{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}
+﻿\chapter{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}
 \label{chap_realisation2}
 
 \minitoc
@@ -11,7 +10,7 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Suite à l’analyse des besoins, ce chapitre présente la réalisation des sprints 3 et 4 du projet SafeTrack selon une approche Agile. Ces sprints portent sur les fonctionnalités avancées de l’application, notamment le suivi en temps réel, la gestion des alertes et des zones de sécurité, ainsi que le module institutionnel. Ils présentent également les principaux aspects de conception et de réalisation du système.
+Suite à l'analyse des besoins, ce chapitre présente la réalisation des sprints 3 et 4 du projet SafeTrack selon une approche Agile. Ces sprints portent sur les fonctionnalités avancées de l'application, notamment le suivi en temps réel, la gestion des alertes et des zones de sécurité, ainsi que le module organisation. Ils présentent également les principaux aspects de conception et de réalisation du système.
 
 \section{Sprint 3 : Localisation et carte}
 
@@ -21,7 +20,7 @@ Les fonctionnalités développées incluent la collecte et la transmission des p
 
 À l’issue de ce sprint, l’application est capable d’assurer un suivi continu et sécurisé des enfants, permettant ainsi aux parents et institutions de recevoir des notifications en cas de comportement anormal ou de danger potentiel.
 
-\subsection{Backlog Sprint 3 – Localisation et carte}
+\subsection{Backlog Sprint 3 :}
 
 Le tableau ci-dessous présente les user stories liées à la localisation et au suivi en temps réel.
 
@@ -114,24 +113,211 @@ US-06 & En tant qu’administrateur, je peux visualiser les zones à risque et l
 
 \end{tabularx}
 \end{table}
-\subsection{Diagramme de cas d'utilisation du Sprint 3}
+\subsection{Diagrammes du Sprint 3 :}
+\subsubsection{Diagramme de cas d'utilisation : }
 
 Cette section présente le diagramme de cas d'utilisation du Sprint 3, qui met en évidence les principales interactions entre les utilisateurs et le système SafeTrack. Ce sprint est principalement centré sur les fonctionnalités de suivi en temps réel, de géolocalisation, de gestion des zones de sécurité (geofencing) ainsi que sur la génération des alertes en cas d’événements critiques.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme cas d'utilisation sprint 3.drawio.png}
+    \includegraphics[width=1\textwidth]{images/UC_sprint3.png}
     \caption{Diagramme de cas d'utilisation – Sprint 3}
     \label{fig:chap4_cas_utilisation_sprint3}
 \end{figure}
-\subsection{Réalisation du Sprint 3 : Localisation et carte}
+\subsubsection{Cas d'utilisation : Ajouter une safezone}
 
-Cette section décrit la réalisation technique du Sprint 3, axée sur le module de localisation et l’intégration de la carte interactive. Elle permet de visualiser en temps réel la position des utilisateurs sur une carte, de suivre leurs déplacements et de détecter automatiquement les sorties de zones sécurisées. Cette fonctionnalité constitue un élément central du système SafeTrack, garantissant un suivi continu et une meilleure réactivité en cas de danger.
+Le cas d'utilisation \og Ajouter une safezone \fg{} est présenté ci-dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants ou organisations de créer une zone de sécurité (geofence) associée à un enfant ou à un groupe d'enfants afin de déclencher des alertes en cas d'entrée ou de sortie de cette zone.
 
+\small
+\renewcommand{\arraystretch}{1.1}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\caption{Description textuelle du cas d'utilisation Ajouter une safezone} \\ \hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
+
+Cas d'utilisation & Ajouter une safezone \\ \hline
+
+Acteurs & Parent, Aidant, Organisation \\ \hline
+
+Précondition & L'utilisateur est authentifié et dispose des permissions nécessaires pour créer et gérer des zones de sécurité (safezones/geofences). \\ \hline
+
+Postcondition & Une nouvelle safezone est créée et enregistrée dans le système. Elle est associée à un ou plusieurs enfants ou groupes, et utilisée pour le suivi en temps réel et la génération d'alertes (entrée/sortie de zone). \\ \hline
+
+Scénario nominal &
+\begin{itemize}
+\item L'utilisateur accède au module de gestion des safezones.
+\item L'utilisateur clique sur « Ajouter une safezone ».
+\item Le système affiche une carte interactive.
+\item L'utilisateur définit la zone de sécurité (dessin sur carte ou sélection d'un point avec rayon).
+\item L'utilisateur renseigne les informations de la safezone : nom, description (optionnel), rayon, et enfants associés.
+\item Le système valide les données (coordonnées valides, rayon acceptable).
+\item Le système vérifie l'absence de conflit critique avec d'autres zones existantes.
+\item La safezone est enregistrée dans la base de données.
+\item Le système associe la safezone aux enfants sélectionnés.
+\item Le système active le suivi en temps réel pour cette zone.
+\item Une confirmation de création est affichée à l'utilisateur.
+\end{itemize}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item \textbf{Modification d'une safezone existante :}
+\begin{itemize}
+\item L'utilisateur sélectionne une safezone déjà créée.
+\item Il modifie la forme, le rayon ou les paramètres associés.
+\item Le système valide et met à jour la zone.
+\end{itemize}
+
+\item \textbf{Suppression d'une safezone :}
+\begin{itemize}
+\item L'utilisateur choisit de supprimer une safezone.
+\item Le système demande confirmation.
+\item La zone est supprimée et les règles associées désactivées.
+\end{itemize}
+
+\item \textbf{Erreurs ou restrictions :}
+\begin{itemize}
+\item Zone invalide (coordonnées non définies ou hors carte).
+\item Rayon trop petit ou trop grand.
+\item Conflit avec une zone existante critique.
+\item Permissions insuffisantes pour la création.
+\end{itemize}
+\end{itemize}
+\\ \hline
+
+\end{longtable}
+
+\subsubsection{Diagramme de séquence de \og Ajouter une safezone \fg}
+La figure~\ref{fig:chap4_safezone_management_sequence} illustre le diagramme de séquence du cas \og Gestion des safezones \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression de zones de sécurité.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS_AjouterSafeZone.png}
+    \caption{Diagramme de séquence de Gestion des safezones}
+    \label{fig:chap4_safezone_management_sequence}
+\end{figure}
+\subsubsection{Cas d'utilisation : Suivi en temps réel}
+
+Le cas d'utilisation \og Suivi en temps réel \fg{} décrit le processus permettant de suivre la position d’un enfant ou d’une personne vulnérable en temps réel. L’enfant active la localisation sur son appareil, tandis que le parent, l’aidant ou l’organisation peut consulter la position sur une carte interactive selon les personnes placées sous sa responsabilité.
+
+\small
+\renewcommand{\arraystretch}{1.1}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\caption{Description textuelle du cas d'utilisation Suivi en temps réel} \\ \hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
+
+Cas d'utilisation & Suivi en temps réel \\ \hline
+
+Acteurs & Enfant / Personne vulnérable, Parent, Aidant, Organisation \\ \hline
+
+Précondition & 
+L’utilisateur est authentifié. L’enfant ou la personne vulnérable possède un compte actif et un appareil enregistré. Une relation de responsabilité est établie entre le parent/aidant ou l’organisation et la personne suivie. La localisation est activée sur l’appareil de l’enfant. \\ \hline
+
+Postcondition & 
+La position de l’enfant ou de la personne vulnérable est transmise en continu au système et affichée sur la carte côté parent, aidant ou organisation. Les données sont enregistrées pour l’historique et utilisées pour les alertes (safezone, SOS, incidents). \\ \hline
+
+Scénario nominal & 
+\begin{itemize}
+\item L’enfant ou la personne vulnérable ouvre l’application SafeTrack.
+\item L’utilisateur active la localisation (GPS).
+\item Le système envoie les coordonnées GPS vers le backend de manière périodique.
+\item Le backend met à jour la position en temps réel.
+\item Le parent, l’aidant ou l’organisation se connecte à l’application.
+\item Le système vérifie les personnes sous sa responsabilité.
+\item L’utilisateur accède à la carte de suivi.
+\item La position actuelle est affichée et mise à jour automatiquement en temps réel.
+\end{itemize}
+\\ \hline
+
+Scénario alternatif & 
+\begin{itemize}
+\item \textbf{Localisation désactivée côté utilisateur suivi :}
+\begin{itemize}
+\item Le système affiche la dernière position connue.
+\item Une alerte est générée pour indiquer la perte de localisation.
+\end{itemize}
+
+\item \textbf{Perte de connexion Internet :}
+\begin{itemize}
+\item Les positions sont mises en cache localement.
+\item Synchronisation automatique dès rétablissement de la connexion.
+\end{itemize}
+
+\item \textbf{Accès non autorisé :}
+\begin{itemize}
+\item Si la relation de responsabilité n’existe pas, l’accès à la carte est refusé.
+\item Un message d’erreur d’autorisation est affiché.
+\end{itemize}
+\end{itemize}
+\\ \hline
+
+\end{longtable}
+\subsubsection{Diagramme de séquence de \og Suivi en temps réel \fg}
+La figure~\ref{fig:chap4_suivi_management_sequence} illustre le diagramme de séquence du cas \og Gestion des safezones \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression de zones de sécurité.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS_Tracking temps réel.png}
+    \caption{Diagramme de séquence de Suivi en temps réel}
+    \label{fig:chap4_suivi_management_sequence}
+\end{figure}
+
+\subsection{Réalisation du Sprint 3 : }
+
+\subsubsection{Réalisation du cas d'utilisation : Ajouter une safezone}
+
+Le module de gestion des safezones permet aux utilisateurs (parents/aidants et institutions) de définir des zones géographiques sécurisées pour assurer la protection des enfants ou personnes vulnérables.
+
+Fonctionnalités réalisées :
+
+\begin{itemize}
+    \item \textbf{Création d’une safezone :} L’utilisateur définit une zone sur la carte à partir d’un centre (latitude, longitude) et d’un rayon. La zone est ensuite enregistrée dans la base de données et liée à son compte.
+    
+    \item \textbf{Gestion des safezones :} L’utilisateur peut consulter, modifier ou supprimer ses zones sécurisées.
+
+    \item \textbf{Intégration au système d’alertes :} Le système détecte automatiquement les sorties de safezones et génère des alertes en cas de dépassement.
+\end{itemize}
+
+Toutes les opérations sont sécurisées via JWT afin de garantir que seul l’utilisateur autorisé puisse gérer ses safezones.
+
+\subsubsection{Réalisation du cas d'utilisation : Suivi en temps réel}
+
+Le suivi en temps réel permet de visualiser la position des enfants ou personnes vulnérables sur une carte interactive.
+
+Fonctionnalités réalisées :
+
+\begin{itemize}
+    \item \textbf{Collecte de la position :} L’application mobile récupère en continu la position GPS de l’utilisateur via un service de localisation en arrière-plan.
+
+    \item \textbf{Transmission des données :} Les positions sont envoyées au backend de manière sécurisée avec authentification JWT.
+
+    \item \textbf{Affichage en temps réel :} Grâce à Socket.IO, les positions sont diffusées instantanément aux parents et institutions sur une carte interactive.
+
+    \item \textbf{Intégration avec les safezones :} Le système vérifie en temps réel si l’utilisateur est dans une zone sécurisée et déclenche des alertes en cas de sortie.
+\end{itemize}
+
+Ce module garantit un suivi continu, sécurisé et en temps réel des personnes sous surveillance.
 \section{Sprint 4 : Historique, alertes, SOS et partage}
 
 Le quatrième sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
 
-\subsection{Backlog Sprint 4 – Sécurité SOS et Partage}
+\subsection{Backlog Sprint 4 :}
 
 \begin{table}[H]
 \caption{Tableau des User Stories – Sprint 4}
@@ -147,31 +333,31 @@ Le quatrième sprint complète la dimension sécuritaire en introduisant des mé
 \textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
 
-US-01 & En tant qu’établissement (institution), je peux consulter un tableau de bord dédié afin de suivre les enfants qui me sont rattachés.
+US-01 & En tant qu'organisation, je peux consulter un tableau de bord dédié afin de suivre les enfants qui me sont rattachés.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
-\item Création du dashboard institution
+\item Création du dashboard organisation
 \item Affichage des statistiques globales
 \item Intégration des données enfants
-\item Sécurisation par rôle (Institution)
+\item Sécurisation par rôle (Organisation)
 \end{itemize}
 \end{minipage}
 & 3 jours \\
 \hline
 
-US-02 & En tant qu’établissement, je peux gérer la liste des enfants (consultation et suivi de statut).
+US-02 & En tant qu'organisation, je peux gérer la liste des enfants (consultation et suivi de statut).
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
-\item API liste des enfants par institution
+\item API liste des enfants par organisation
 \item Affichage des statuts (présent/absent)
 \item Recherche et filtrage
-\item Interface mobile/web institution
+\item Interface mobile/web organisation
 \end{itemize}
 \end{minipage}
 & 3 jours \\
 \hline
 
-US-03 & En tant qu’établissement, je peux effectuer des check-in et check-out manuels des enfants.
+US-03 & En tant qu'organisation, je peux effectuer des check-in et check-out manuels des enfants.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Implémentation API check-in/check-out
@@ -183,7 +369,7 @@ US-03 & En tant qu’établissement, je peux effectuer des check-in et check-out
 & 3 jours \\
 \hline
 
-US-04 & En tant qu’établissement, je peux consulter les rapports de présence des enfants.
+US-04 & En tant qu'organisation, je peux consulter les rapports de présence des enfants.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Génération des rapports d’assiduité
@@ -207,10 +393,10 @@ US-05 & En tant que système, je dois gérer les demandes d’inscription et d�
 & 4 jours \\
 \hline
 
-US-06 & En tant qu’établissement, je peux recevoir des alertes liées aux enfants qui me sont assignés.
+US-06 & En tant qu'organisation, je peux recevoir des alertes liées aux enfants qui me sont assignés.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
-\item Intégration module alertes institution
+\item Intégration module alertes organisation
 \item Filtrage par enfants rattachés
 \item Notifications temps réel
 \item Historique des alertes
@@ -219,7 +405,7 @@ US-06 & En tant qu’établissement, je peux recevoir des alertes liées aux enf
 & 2 jours \\
 \hline
 
-US-07 & En tant qu’administrateur institutionnel, je peux configurer les paramètres de suivi automatique.
+US-07 & En tant qu'administrateur organisationnel, je peux configurer les paramètres de suivi automatique.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Configuration des géofences automatiques
@@ -233,17 +419,18 @@ US-07 & En tant qu’administrateur institutionnel, je peux configurer les param
 
 \end{tabularx}
 \end{table}
-\subsection{Diagramme de cas d'utilisation du Sprint 4}
+\subsection{Diagrammes du Sprint 4:}
+\subsubsection{Diagramme de cas d'utilisation : }
 
-Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités institutionnelles. Ce sprint se concentre principalement sur la gestion des établissements, le suivi des enfants rattachés, les opérations de check-in/check-out, ainsi que la consultation des rapports et des alertes.
+Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités organisationnelles. Ce sprint se concentre principalement sur la gestion des organisations, le suivi des enfants rattachés, les opérations de check-in/check-out, ainsi que la consultation des rapports et des alertes.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{images/Diagramme cas d'utilisation sprint 4.drawio.png}
     \caption{Diagramme de cas d'utilisation – Sprint 4}
     \label{fig:chap4_cas_utilisation_sprint4}
 \end{figure}
-\subsection{Réalisation du Sprint 4 : Historique, alertes, SOS et partage}
-Cette section décrit la réalisation du Sprint 4, qui introduit les fonctionnalités avancées de sécurité, notamment le système SOS, le partage d’accès entre utilisateurs et institutions, ainsi que la gestion des autorisations. Ces fonctionnalités renforcent la sécurité globale de la plateforme en permettant une réaction rapide en cas d’urgence et un contrôle précis des droits d’accès aux données sensibles.
+\subsection{Réalisation du Sprint 4 : }
+Cette section décrit la réalisation du Sprint 4, qui introduit les fonctionnalités avancées de sécurité, notamment le système SOS, le partage d'accès entre utilisateurs et organisations, ainsi que la gestion des autorisations. Ces fonctionnalités renforcent la sécurité globale de la plateforme en permettant une réaction rapide en cas d'urgence et un contrôle précis des droits d'accès aux données sensibles.
 \section{Présentation des interfaces de l'application}
 
 Dans cette section, nous présentons les interfaces relatives à la localisation et au système SOS.

@@ -19,65 +19,51 @@ Warning--to sort, need author or key in docker
 Warning--to sort, need author or key in github
 Warning--to sort, need author or key in gitlab
 Warning--to sort, need author or key in vscode
-Warning--to sort, need author or key in jwt
-Warning--to sort, need author or key in sequelize
-Warning--to sort, need author or key in fastify
-Warning--to sort, need author or key in chartjs
-Warning--to sort, need author or key in elasticsearch
-Warning--to sort, need author or key in redis
-Warning--to sort, need author or key in graphql
-Warning--empty year in chartjs
-Warning--empty year in elasticsearch
-Warning--empty year in fastify
 Warning--empty year in gitlab
-Warning--empty year in graphql
-Warning--empty year in jwt
 Warning--empty year in mongodb
 Warning--empty year in nodejs
 Warning--empty year in reactjs
-Warning--empty year in redis
-Warning--empty year in sequelize
 Warning--empty year in vscode
 Warning--empty publisher in scrumguide
-You've used 22 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            666 strings with 6714 characters,
-and the built_in function-call counts, 5575 in all, are:
-= -- 563
+            645 strings with 6169 characters,
+and the built_in function-call counts, 3853 in all, are:
+= -- 388
 > -- 21
 < -- 1
-+ -- 28
++ -- 21
 - -- 6
-* -- 321
-:= -- 518
-add.period$ -- 67
-call.type$ -- 22
-change.case$ -- 67
-chr.to.int$ -- 22
-cite$ -- 99
-duplicate$ -- 335
-empty$ -- 768
+* -- 223
+:= -- 371
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 46
+chr.to.int$ -- 15
+cite$ -- 64
+duplicate$ -- 230
+empty$ -- 523
 format.name$ -- 9
-if$ -- 1367
+if$ -- 940
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 2
-newline$ -- 119
+newline$ -- 84
 num.names$ -- 4
-pop$ -- 334
+pop$ -- 215
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 32
 quote$ -- 0
-skip$ -- 232
+skip$ -- 169
 stack$ -- 0
-substring$ -- 65
-swap$ -- 22
+substring$ -- 44
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 237
-warning$ -- 34
+type$ -- 160
+warning$ -- 20
 while$ -- 3
 width$ -- 0
-write$ -- 260
-(There were 34 warnings)
+write$ -- 183
+(There were 20 warnings)

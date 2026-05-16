@@ -23,7 +23,7 @@ Les fonctionnalités développées incluent la création de compte (inscription)
 
 À l’issue de ce sprint, les utilisateurs doivent être en mesure de s’inscrire, de se connecter et d’accéder à leur espace personnel de manière sécurisée, constituant ainsi la base nécessaire à l’utilisation des autres fonctionnalités de l’application.
 
-\subsection{Backlog Sprint 1 – Authentification \& Gestion des comptes}
+\subsection{Backlog Sprint 1 :}
 
 Le tableau ci-dessous présente les user stories liées à l’authentification et à la gestion des comptes utilisateurs. Ce sprint vise à mettre en place les mécanismes d’accès sécurisé à l’application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
 
@@ -32,94 +32,108 @@ Le tableau ci-dessous présente les user stories liées à l’authentification 
 \centering
 \footnotesize
 \setlength{\tabcolsep}{2pt}
-\renewcommand{\arraystretch}{1.05}
+\renewcommand{\arraystretch}{0.9}
 \setlength{\parskip}{0pt}
-\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.08\textwidth}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.10\textwidth}|}
+\begin{tabularx}{\textwidth}{|c|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|c|}
 \hline
 \textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
 
 US-01 & En tant que visiteur, je peux m'inscrire via un formulaire en choisissant mon rôle (parent/aidant ou organisation) afin de créer un compte adapté à mon profil.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
-\item Concevoir l’interface d’inscription (mobile et web)
-\item Permettre le choix du rôle lors de l’inscription
-\item Gérer l’inscription des organisations
-\item Implémenter l’API d’inscription (signup)
+\item Concevoir l'interface d'inscription (mobile et web)
+\item Permettre le choix du rôle lors de l'inscription
+\item Gérer l'inscription des organisations
+\item Implémenter l'API d'inscription (signup)
 \item Validation des champs (frontend/backend)
 \item Hashage sécurisé du mot de passe (bcrypt)
 \item Stockage des données utilisateur
 \end{itemize}
+}
 \end{minipage}
 & 3 jours \\
 \hline
 
 US-02 & En tant qu'utilisateur, je peux me connecter de manière sécurisée à l’application mobile.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
-\item Concevoir l’interface de connexion (mobile)
-\item Implémenter l’API de connexion (login)
+\item Concevoir l'interface de connexion (mobile)
+\item Implémenter l'API de connexion (login)
 \item Génération et gestion des tokens JWT
-\item Gestion des erreurs d’authentification
+\item Gestion des erreurs d'authentification
 \end{itemize}
+}
 \end{minipage}
 & 3 jours \\
 \hline
 
 US-03 & En tant qu'administrateur, je peux me connecter via l’interface web afin d’accéder au tableau de bord d’administration.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
-\item Implémenter l’API de connexion admin
+\item Implémenter l'API de connexion admin
 \item Vérification du rôle (admin)
-\item Sécurisation de l’accès au dashboard web
+\item Sécurisation de l'accès au dashboard web
 \item Interface de connexion web (admin)
 \end{itemize}
+}
 \end{minipage}
 & 2 jours \\
 \hline
 
 US-04 & En tant qu'utilisateur, je peux me déconnecter.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
 \item Implémenter la fonctionnalité logout
 \item Suppression du token côté client
-\item Redirection vers l’écran de connexion
+\item Redirection vers l'écran de connexion
 \end{itemize}
+}
 \end{minipage}
 & 1 jour \\
 \hline
 
 US-05 & En tant qu'utilisateur, je peux réinitialiser mon mot de passe en cas d’oubli.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
 \item Interface "mot de passe oublié"
-\item Génération d’un token de réinitialisation sécurisé
-\item Envoi d’email de récupération
+\item Génération d'un token de réinitialisation sécurisé
+\item Envoi d'email de récupération
 \item Mise à jour du mot de passe
 \end{itemize}
+}
 \end{minipage}
 & 2 jours \\
 \hline
 
 US-06 & En tant qu'utilisateur, je peux rester connecté afin de faciliter l’accès à l’application.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
 \item Implémentation des tokens JWT (access/refresh)
 \item Stockage sécurisé des tokens (secure storage)
-\item Gestion de l’expiration et du renouvellement de session
+\item Gestion de l'expiration et du renouvellement de session
 \end{itemize}
+}
 \end{minipage}
 & 2 jours \\
 \hline
 
 US-07 & En tant que système, je dois sécuriser les accès et les données utilisateurs afin de garantir la confidentialité et l’intégrité des informations.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
+{\small
 \begin{itemize}[leftmargin=*]
 \item Sécurisation des routes (Auth Guards)
 \item Validation des requêtes
 \item Protection contre les attaques (XSS, injection)
 \item Tests de sécurité de base
 \end{itemize}
+}
 \end{minipage}
 & 2 jours \\
 \hline
@@ -128,7 +142,8 @@ US-07 & En tant que système, je dois sécuriser les accès et les données util
 \end{table}
 
 
-\subsection{Diagramme des cas d’utilisation du Sprint 1}
+\subsection{Diagrammes du Sprint 1}
+\subsubsection{Diagramme de cas d’utilisation }
 La figure \ref{fig:cas_image} présente le diagramme des cas d’utilisation du Sprint 1. 
 Ce diagramme illustre les principales interactions entre l’utilisateur et les fonctionnalités liées à l’authentification et à la gestion des comptes.
 \begin{figure}[H]
@@ -338,7 +353,7 @@ En revanche, les personnes vulnérables disposent uniquement d’un accès limit
 
 
 
-\subsection{Backlog Sprint 2 – Profil \& Gestion des utilisateurs}
+\subsection{Backlog Sprint 2 :}
 
 La gestion et la personnalisation du profil utilisateur représentent un aspect essentiel d’une application orientée sécurité. Les user stories suivantes décrivent les fonctionnalités permettant aux acteurs autorisés (parents, aidants ou organisations) de gérer les profils et les contacts.
 
@@ -445,41 +460,14 @@ US-017 & En tant que parent/aidant, je peux rechercher un contact afin de le ret
 \end{tabularx}
 \end{table}
 
-% \begin{table}[H]
-% \centering
-% \begin{tabular}{|p{4cm}|p{10cm}|}
-% \hline
-% \textbf{Élément} & \textbf{Description} \\ \hline
 
-% Cas d'utilisation & Supprimer un utilisateur \\ \hline
-
-% Acteurs & Administrateur \\ \hline
-
-% Précondition & L’administrateur est authentifié et dispose des droits d’accès au module de gestion des utilisateurs. \\ \hline
-
-% Postcondition & Le compte utilisateur sélectionné est définitivement supprimé de la base de données du système SafeTrack. \\ \hline
-
-% Scénario nominal & 
-% 1. L’administrateur s’authentifie dans le système. \newline
-% 2. Il accède au module de gestion des utilisateurs. \newline
-% 3. Il consulte la liste des utilisateurs enregistrés. \newline
-% 4. Il sélectionne l’utilisateur à supprimer. \newline
-% 5. Il confirme l’action de suppression. \newline
-% 6. Le système supprime l’utilisateur et affiche un message de confirmation. \\ \hline
-
-% Scénario alternatif & 
-% 5a. Si une erreur technique survient (ex : problème de base de données ou réseau), le système annule l’opération et affiche un message d’erreur indiquant l’échec de la suppression. \\ \hline
-
-% \end{tabular}
-% \caption{Description textuelle du cas d'utilisation : Supprimer un utilisateur}
-% \label{tab:supprimer_utilisateur}
-% \end{table}
-\subsection{Diagramme des cas d’utilisation du Sprint 2}
+\subsection{Diagrammes du Sprint 2}
+\subsubsection{Diagramme de cas d’utilisation }
 La figure \ref{fig:chap3_sprint2} présente le diagramme des cas d’utilisation du Sprint 2. 
 Ce diagramme illustre les principales interactions entre l’utilisateur et les fonctionnalités liées à la gestion du profil et des contacts dans l’application SafeTrack.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/uc sprint2 globale.jpeg}
+    \includegraphics[width=0.9\textwidth]{images/UC_sprint2.png}
     \caption{Diagramme de cas d'utilisation de sprint2}
     \label{fig:chap3_sprint2}
 \end{figure}
@@ -568,20 +556,20 @@ La figure~\ref{fig:chap3_profile_modify_sequence} illustre le diagramme de séqu
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS modif profil.png}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS_modif profil.png}
     \caption{Diagramme de séquence de Modifier profil}
     \label{fig:chap3_profile_modify_sequence}
 \end{figure}
 
-\subsubsection{Cas d'utilisation : Gestion des enfants}
+\subsubsection{Cas d'utilisation : Ajouter un enfant/personne vulnérable}
 
-Le cas d'utilisation \og Gestion des enfants \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de gérer les profils et les autorisations des enfants ou personnes vulnérables.
+Le cas d'utilisation \og Ajouter un enfant/personne vulnérable \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un enfant ou une personne vulnérable et de générer automatiquement ses identifiants d'accès.
 
 \small
 \renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
 \begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
-\caption{Description textuelle du cas d'utilisation Gestion des enfants} \\
+\caption{Description textuelle du cas d'utilisation Ajouter un enfant/personne vulnérable} \\
 \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
@@ -593,50 +581,50 @@ Le cas d'utilisation \og Gestion des enfants \fg{} est présenté ci‑dessous. 
 \hline
 \endlastfoot
 
-Cas d'utilisation & Gestion des enfants \\ \hline
+Cas d'utilisation & Ajouter un enfant/personne vulnérable \\ \hline
 
-Acteurs & Parent, Aidant, Organisation \\ \hline
+Acteurs & Parent, Aidant \\ \hline
 
-Précondition & L'utilisateur est authentifié, possède un compte actif et dispose des permissions de gestion des enfants/personnes vulnérables. \\ \hline
+Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un compte actif et dispose des permissions de création d'enfants/personnes vulnérables. \\ \hline
 
-Postcondition & La liste des enfants et leurs autorisations/paramètres sont mises à jour dans la base de données. \\ \hline
+Postcondition & Un nouveau profil enfant/personne vulnérable est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
 
 Scénario nominal &
 \begin{itemize}
-\item L'utilisateur accède au module de gestion des enfants.
-\item Le système affiche la liste des enfants/personnes vulnérables associés.
-\item L'utilisateur peut consulter les détails d'un enfant (profil, autorisations, historique).
-\item L'utilisateur peut modifier les autorisations ou paramètres de suivi.
-\item L'utilisateur peut ajouter un nouvel enfant en saisissant les informations requises.
-\item Le système valide les données saisies.
-\item Le nouvel enfant est enregistré et lié au compte du parent.
-\item L'utilisateur reçoit une confirmation d'ajout.
+\item L'utilisateur (parent/aidant) accède au module de gestion des enfants.
+\item L'utilisateur clique sur le bouton « Ajouter un enfant/personne vulnérable ».
+\item Le système affiche un formulaire contenant les champs : nom, email et âge.
+\item L'utilisateur remplit les informations requises.
+\item Le système valide les données saisies (format email, âge valide, champs obligatoires).
+\item Le système génère automatiquement un compte avec un mot de passe sécurisé.
+\item Le nouvel enfant/personne vulnérable est enregistré et lié au compte du parent.
+\item Le système envoie un email au parent contenant l'adresse email et le mot de passe temporaire du compte de l'enfant.
+\item L'utilisateur reçoit une confirmation d'ajout avec les détails du profil créé.
 \end{itemize}
 \\ \hline
 
 Scénario alternatif &
 \begin{itemize}
-\item \textbf{Modifier les paramètres de suivi :}
+\item \textbf{Réinitialisation du mot de passe :}
 \begin{itemize}
-\item Sélection d'un enfant dans la liste.
-\item Modification des zones de sécurité, alertes ou permissions.
-\item Sauvegarde des nouveaux paramètres.
-\item Confirmation des modifications.
+\item Si le parent n'a pas reçu l'email ou souhaite générer un nouveau mot de passe.
+\item Sélection de l'enfant dans la liste et option « Réinitialiser le mot de passe ».
+\item Génération d'un nouveau mot de passe temporaire.
+\item Envoi d'un nouvel email contenant le mot de passe.
 \end{itemize}
 
-\item \textbf{Supprimer un enfant :}
+\item \textbf{Modification du profil enfant :}
 \begin{itemize}
-\item Sélection d'un enfant et demande de suppression.
-\item Confirmation de suppression (avec avertissement).
-\item Suppression du lien parent-enfant ou du profil complet.
-\item Message de confirmation de suppression.
+\item Après création, le parent peut modifier les informations (nom, âge).
+\item Le parent peut configurer les permissions, zones de sécurité et paramètres de suivi.
+\item Sauvegarde et confirmation des modifications.
 \end{itemize}
 
 \item \textbf{Erreurs ou restrictions :}
 \begin{itemize}
-\item Données incomplètes lors de l'ajout.
-\item Enfant déjà associé à ce parent.
-\item Permissions insuffisantes pour la modification.
+\item Email déjà utilisé par un autre profil.
+\item Données incomplètes ou invalides (format email, âge invalide).
+\item Permissions insuffisantes pour l'ajout.
 \item Message d'erreur approprié avec indication de correction.
 \end{itemize}
 \end{itemize}
@@ -644,15 +632,15 @@ Scénario alternatif &
 
 \end{longtable}
 
-\subsubsection{Diagramme de cas d'utilisation de \og Gestion des enfants \fg}
+\subsubsection{Diagramme de séquence de \og Ajouter un enfant/personne vulnérable \fg}
 
-La figure~\ref{fig:chap3_children_management_usecase} illustre le diagramme de cas d'utilisation du cas \og Gestion des enfants \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression d'enfants/personnes vulnérables.
+La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de séquence du cas \og Gestion des enfants \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression d'enfants/personnes vulnérables.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/UC_gestion_des_enfants.png}
-    \caption{Diagramme de cas d'utilisation de Gestion des enfants}
-    \label{fig:chap3_children_management_usecase}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS_Ajouter personne.png}
+    \caption{Diagramme de séquence de Gestion des enfants}
+    \label{fig:chap3_children_management_sequence}
 \end{figure}
 
 
@@ -667,19 +655,25 @@ L’application envoie une requête sécurisée au backend en utilisant le token
 
 Les restrictions d'accès sont respectées : un parent/aidant peut modifier son propre profil et, selon les permissions, les profils des enfants/personnes vulnérables qui lui sont associés.
 
-\subsubsection{Réalisation du cas d'utilisation : Gestion des enfants}
+\subsubsection{Réalisation du cas d'utilisation : Ajouter un enfant/personne vulnérable}
 
-Le module de gestion des enfants permet aux parents/aidants d'ajouter, consulter, modifier et supprimer des profils d'enfants ou de personnes vulnérables.
+Le module de gestion des enfants permet aux parents/aidants de créer, consulter, modifier et supprimer des profils d'enfants ou de personnes vulnérables.
 
 Fonctionnalités réalisées :
+
 \begin{itemize}
-    \item Consultation : affichage de la liste des enfants associés et accès à la fiche détaillée (profil, autorisations, historique).
-    \item Ajout : formulaire d'ajout d'un enfant avec les informations requises ; validation côté client et serveur ; liaison du profil au compte du parent.
-    \item Modification : mise à jour des paramètres de suivi (zones de sécurité, alertes, permissions) et des informations personnelles limitées selon les droits.
-    \item Suppression : détachement ou suppression du profil avec confirmation et messages d'erreur en cas d'échec.
+    \item \textbf{Ajout d'un enfant/personne vulnérable :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'enfant est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'enfant pour son utilisation ultérieure.
+    
+    \item \textbf{Consultation :} Affichage de la liste complète des enfants/personnes vulnérables associés au parent. Accès à la fiche détaillée de chaque profil incluant les informations personnelles (nom, âge, email), les autorisations, les paramètres de suivi et l'historique des activités.
+    
+    \item \textbf{Modification :} Le parent/aidant peut modifier les informations de l'enfant (nom, âge) et configurer les permissions, zones de sécurité et paramètres de suivi. Mise à jour des données en base avec validation des changements et confirmation des modifications.
+    
+    \item \textbf{Réinitialisation du mot de passe :} Si le parent n'a pas reçu l'email initial ou souhaite générer un nouveau mot de passe, il peut accéder à l'option « Réinitialiser le mot de passe » depuis la fiche de l'enfant. Un nouveau mot de passe temporaire est généré et envoyé par email au parent.
+    
+    \item \textbf{Suppression :} Détachement ou suppression du profil avec confirmation préalable. Un message de confirmation de suppression est affiché en cas de succès, et des messages d'erreur appropriés sont retournés en cas d'échec.
 \end{itemize}
 
-Toutes les opérations sont sécurisées et soumises à des contrôles d'autorisation pour prévenir les modifications non autorisées.
+Toutes les opérations sont sécurisées et soumises à des contrôles d'autorisation pour prévenir les modifications non autorisées. Seuls les parents/aidants disposant des droits appropriés peuvent accéder à ces fonctionnalités.
 
 \section{Présentation des interface de l'application}
 \newpage
