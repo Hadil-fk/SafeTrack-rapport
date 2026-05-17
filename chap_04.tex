@@ -317,15 +317,12 @@ Ce module garantit un suivi continu, sécurisé et en temps réel des personnes 
 
 Le quatrième sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
 
-\subsection{Backlog Sprint 4 :}
-
 \begin{table}[H]
-\caption{Tableau des User Stories – Sprint 4}
+\caption{Tableau des User Stories – Sprint 4 (Historique, Alertes, SOS et Partage)}
 \centering
 \footnotesize
 \setlength{\tabcolsep}{2pt}
 \renewcommand{\arraystretch}{1.05}
-\setlength{\parskip}{0pt}
 
 \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.08\textwidth}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.10\textwidth}|}
 \hline
@@ -333,85 +330,116 @@ Le quatrième sprint complète la dimension sécuritaire en introduisant des mé
 \textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
 
-US-01 & En tant qu'organisation, je peux consulter un tableau de bord dédié afin de suivre les enfants qui me sont rattachés.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+US-01 & En tant que parent/aidant, je peux consulter l’historique des déplacements de mon enfant/personne vulnérable.
+& \begin{minipage}[t]{\linewidth}
 \begin{itemize}[leftmargin=*]
-\item Création du dashboard organisation
-\item Affichage des statistiques globales
-\item Intégration des données enfants
-\item Sécurisation par rôle (Organisation)
+\item API historique des positions
+\item Affichage des trajets sur carte
+\item Filtrage par date
+\item Optimisation des requêtes
 \end{itemize}
 \end{minipage}
 & 3 jours \\
 \hline
 
-US-02 & En tant qu'organisation, je peux gérer la liste des enfants (consultation et suivi de statut).
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+US-02 & En tant que parent/aidant, je peux consulter le trajet détaillé d’un déplacement.
+& \begin{minipage}[t]{\linewidth}
 \begin{itemize}[leftmargin=*]
-\item API liste des enfants par organisation
-\item Affichage des statuts (présent/absent)
-\item Recherche et filtrage
-\item Interface mobile/web organisation
-\end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
-
-US-03 & En tant qu'organisation, je peux effectuer des check-in et check-out manuels des enfants.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
-\item Implémentation API check-in/check-out
-\item Gestion des enregistrements d’assiduité
-\item Mise à jour du statut enfant
-\item Synchronisation en temps réel
-\end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
-
-US-04 & En tant qu'organisation, je peux consulter les rapports de présence des enfants.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
-\item Génération des rapports d’assiduité
-\item Filtrage par date et enfant
-\item Calcul des statistiques de présence
-\item Export des données
-\end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
-
-US-05 & En tant que système, je dois gérer les demandes d’inscription et d’enrôlement des enfants dans une institution.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
-\item Création du module d’enrôlement
-\item Gestion des demandes parent/institution
-\item Acceptation et rejet des demandes
-\item Notification aux parents
-\end{itemize}
-\end{minipage}
-& 4 jours \\
-\hline
-
-US-06 & En tant qu'organisation, je peux recevoir des alertes liées aux enfants qui me sont assignés.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
-\item Intégration module alertes organisation
-\item Filtrage par enfants rattachés
-\item Notifications temps réel
-\item Historique des alertes
+\item Reconstruction des parcours
+\item Visualisation chronologique
+\item Carte interactive
 \end{itemize}
 \end{minipage}
 & 2 jours \\
 \hline
 
-US-07 & En tant qu'administrateur organisationnel, je peux configurer les paramètres de suivi automatique.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+US-03 & En tant que parent/aidant, je peux recevoir des alertes liées à mon enfant/personne vulnérable.
+& \begin{minipage}[t]{\linewidth}
 \begin{itemize}[leftmargin=*]
-\item Configuration des géofences automatiques
-\item Paramétrage des notifications
-\item Règles de présence automatique
-\item Sauvegarde des paramètres
+\item Notifications temps réel
+\item Historique des alertes
+\item Gestion des types d’alertes
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-04 & En tant qu’utilisateur, je peux déclencher un SOS (appel ou alerte d’urgence).
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item API SOS
+\item Envoi notification urgente
+\item Intégration appel temps réel
+\item Suivi localisation live
+\end{itemize}
+\end{minipage}
+& 4 jours \\
+\hline
+
+US-05 & En tant que parent/aidant, je peux recevoir et gérer les alertes SOS.
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item Réception alertes SOS
+\item Affichage localisation en temps réel
+\item Historique SOS
+\item Accès rapide appel
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-06 & En tant que parent/aidant, je peux partager l’accès à un enfant/personne vulnérable avec d’autres utilisateurs.
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item Module de partage
+\item Invitation par email
+\item Gestion des accès
+\item Interface de contrôle
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-07 & En tant que parent/aidant, je peux définir des permissions limitées ou complètes lors du partage (tracking, SOS, etc.).
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item Gestion des permissions (tracking/SOS/complet)
+\item Gestion de la durée d’accès
+\item Sécurisation des accès
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-08 & En tant que contact invité, je peux créer un compte pour accéder aux données partagées.
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item Inscription utilisateur
+\item Authentification JWT
+\item Activation du partage
+\end{itemize}
+\end{minipage}
+& 2 jours \\
+\hline
+
+US-09 & En tant qu’organisation, je peux consulter les check-in/check-out des enfants/personnes sous ma responsabilité.
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item Affichage présence (silencieux)
+\item Tableau de bord organisation
+\item Statut en temps réel
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+\hline
+
+US-10 & En tant qu’organisation, je peux recevoir des alertes uniquement en cas d’anomalies (retard, absence, sortie de zone, SOS).
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[leftmargin=*]
+\item Détection anomalies
+\item Notifications temps réel
+\item Filtrage intelligent des alertes
+\item Historique des incidents
 \end{itemize}
 \end{minipage}
 & 3 jours \\
