@@ -199,7 +199,7 @@ La figure~\ref{fig:chap4_safezone_management_sequence} illustre le diagramme de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS_AjouterSafeZone.png}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/Seq_ajouterSafZone_S3.drawio.png}
     \caption{Diagramme de séquence de Gestion des safezones}
     \label{fig:chap4_safezone_management_sequence}
 \end{figure}
@@ -269,11 +269,11 @@ Scénario alternatif &
 
 \end{longtable}
 \subsubsection{Diagramme de séquence de \og Suivi en temps réel \fg}
-La figure~\ref{fig:chap4_suivi_management_sequence} illustre le diagramme de séquence du cas \og Gestion des safezones \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression de zones de sécurité.
+La figure~\ref{fig:chap4_suivi_management_sequence} illustre le diagramme de séquence du cas \og Suivi en temps réel \fg{} pour le scénario nominal.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS_Tracking temps réel.png}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/SeqS3_Suivi temps réel.drawio.png}
     \caption{Diagramme de séquence de Suivi en temps réel}
     \label{fig:chap4_suivi_management_sequence}
 \end{figure}
@@ -453,22 +453,75 @@ US-10 & En tant qu’organisation, je peux recevoir des alertes uniquement en ca
 Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités organisationnelles. Ce sprint se concentre principalement sur la gestion des organisations, le suivi des enfants rattachés, les opérations de check-in/check-out, ainsi que la consultation des rapports et des alertes.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme cas d'utilisation sprint 4.drawio.png}
+    \includegraphics[width=1\textwidth]{images/UC sprint4.0.drawio.png}
     \caption{Diagramme de cas d'utilisation – Sprint 4}
     \label{fig:chap4_cas_utilisation_sprint4}
 \end{figure}
-\subsection{Réalisation du Sprint 4 : }
-Cette section décrit la réalisation du Sprint 4, qui introduit les fonctionnalités avancées de sécurité, notamment le système SOS, le partage d'accès entre utilisateurs et organisations, ainsi que la gestion des autorisations. Ces fonctionnalités renforcent la sécurité globale de la plateforme en permettant une réaction rapide en cas d'urgence et un contrôle précis des droits d'accès aux données sensibles.
-\section{Présentation des interfaces de l'application}
+
+\subsubsection{Diagramme de séquence de \og Déclencher SOS \fg}
+Le diagramme de séquence suivant illustre le processus de déclenchement d'une alerte SOS par un utilisateur et sa réception par les contacts d'urgence.
+
+\vspace{0.5cm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.4\textheight, keepaspectratio]{images/Sq_déclencherSOS_S4.drawio.png}
+    \caption{Diagramme de séquence – Déclencher SOS}
+    \label{fig:chap4_sequence_sos}
+\end{figure}
+\vspace{0.5cm}
+
+\subsubsection{Diagramme de séquence de \og Partager l'accès \fg}
+Ce diagramme détaille les interactions nécessaires pour partager l'accès au suivi d'un utilisateur avec un tiers ou une organisation.
+
+\vspace{0.5cm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.4\textheight, keepaspectratio]{images/Seq_PartagerAcés_S4.drawio.png}
+    \caption{Diagramme de séquence – Partager l'accès}
+    \label{fig:chap4_sequence_partage}
+\end{figure}
+\vspace{0.5cm}
+
+\subsection{Réalisation du Sprint 4 : SOS et partage d’accès}
+
+\subsubsection{Réalisation du cas d'utilisation : Déclenchement SOS}
+
+Le module SOS permet à l’enfant d’envoyer rapidement une alerte d’urgence aux parents en cas
+de danger ou de situation critique.
+
+Lorsque l’enfant appuie sur le bouton SOS depuis l’application mobile, une alerte contenant sa
+position actuelle est immédiatement transmise au backend. Le système enregistre l’événement,
+puis envoie une notification d’urgence aux parents associés afin de permettre une réaction rapide.
+
+Les alertes SOS sont également sauvegardées dans l’historique pour consultation ultérieure.
+
+\subsubsection{Réalisation du cas d'utilisation : Partage d’accès}
+
+Le module de partage d’accès permet à un parent de partager les droits de suivi d’un enfant avec
+un autre parent ou membre autorisé de la famille.
+
+Fonctionnalités réalisées :
+
+\begin{itemize}
+\item \textbf{Partage des permissions :} Le parent saisit l’adresse email du destinataire puis
+sélectionne les permissions à accorder (localisation, historique, alertes SOS ou accès complet).
+
+\item \textbf{Gestion de la durée :} Le système permet de définir une durée d’accès temporaire
+ou permanente selon les besoins du parent.
+
+\item \textbf{Validation et sécurisation :} Le backend vérifie l’existence du compte destinataire,
+enregistre les permissions accordées et applique les restrictions d’accès correspondantes.
+
+\item \textbf{Suivi partagé :} Une fois le partage validé, le second parent peut accéder aux
+fonctionnalités autorisées afin de suivre l’enfant conjointement.
+\end{itemize}
+
+Toutes les opérations de partage sont protégées par des contrôles d’autorisation afin de garantir
+la confidentialité et la sécurité des données.
 
 Dans cette section, nous présentons les interfaces relatives à la localisation et au système SOS.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/Diagramme gestion notificationdrawiofinale1.drawio.png}
-    \caption{Interface de suivi en temps réel et alertes}
-    \label{fig:chap4_interfaces}
-\end{figure}
+
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
