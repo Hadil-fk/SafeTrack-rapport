@@ -246,7 +246,7 @@ Les différentes solutions de suivi et de géolocalisation des personnes vulnér
         \hline
 
         Contrôle parental numérique 
-        & \cellcolor{red!20}$\times$ 
+        & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{yellow!20}Limité 
         & \cellcolor{red!20}$\times$ 
@@ -272,7 +272,7 @@ Les différentes solutions de suivi et de géolocalisation des personnes vulnér
         & \cellcolor{yellow!20}Limité \\
         \hline
 
-        Dashboard web organisationnel 
+        Adapté aux organisations 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ 
@@ -281,8 +281,8 @@ Les différentes solutions de suivi et de géolocalisation des personnes vulnér
         & \cellcolor{red!20}$\times$ \\
         \hline
 
-        Adapté aux organisations 
-        & \cellcolor{green!20}$\checkmark$ 
+        Dashboard web organisationnel 
+        & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{green!20}$\checkmark$ 
@@ -306,34 +306,6 @@ Les différentes solutions de suivi et de géolocalisation des personnes vulnér
 
 Les données de ce tableau sont issues d’une analyse comparative bibliographique des fonctionnalités disponibles dans \cite{findmykids,life360,minifinder,mobiletracker,famisafe}, réalisée entre Janvier et Février 2026
 
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-% \begin{table}[H]
-
-% \centering
-% \resizebox{\textwidth}{!}{%
-% \begin{tabular}{|l|c|c|l|c|}
-% \hline
-% \rowcolor[HTML]{FFCCC9} 
-%  &
-%   \begin{tabular}[c]{@{}c@{}}Mise en relation entre \\ les différents acteurs\end{tabular} &
-%   Intégration de l'IA &
-%   \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Déstiné pour la region \\ Afrique/Moyen Orient\end{tabular}} &
-%   Centralisation des données \\ \hline
-% \cellcolor[HTML]{FFCCC9}\textbf{WIRANO}                    & \begin{tabular}[c]{@{}c@{}}Seulement entre \\ le promoteur et le CRO\end{tabular} & Non & Non & Non \\ \hline
-% \cellcolor[HTML]{FFCCC9}\textbf{Acceliant eClinical Suite} & Non                                                                               & Non & Non & Oui \\ \hline
-% \cellcolor[HTML]{FFCCC9}\textbf{Ofni Clinical}             & Non                                                                               & Non & Non & Oui \\ \hline
-
-% \end{tabular}%
-% }
-% \caption{Tableau comparatif des applications existantes}
-% \label{ref_tab_comp_existant}
-
-% \end{table}
 
 \subsection{Solution proposée}
 Face aux besoins identifiés, SafeTrack se positionne comme une solution complète et innovante pour la protection des personnes vulnérables, notamment les enfants et les personnes âgées. Notre application mobile centralise les fonctionnalités essentielles : suivi en temps réel, gestion des zones sécurisées, alertes automatiques, historique des déplacements, et système SOS avec appel d’urgence — le tout dans un environnement sécurisé et intuitif.
@@ -359,15 +331,7 @@ Le développement de SafeTrack vise à répondre aux enjeux de sécurité des pe
     \item Proposer un tableau de bord web dédié aux organisations afin de centraliser la gestion et le suivi des utilisateurs.
     
     \item Garantir la sécurité et la confidentialité des données à travers des mécanismes de protection adaptés.
-\end{itemize}
-% \textbf{Objectif de la solution proposée :}
-% \begin{itemize}
-% \item[$\bullet$] L'intégration de l'intelligence artificielle pour une meilleure mise en relation entre les différents prestataires du domaine de la Recherche clinique avec le promoteur.  
-% \item[$\bullet$] La promotion des acteurs du domaine de la recherche en Afrique/Moyen Orient dans le monde.
-% \item[$\bullet$] L’amélioration de l’accès aux différents acteurs de la recherche clinique.
-% \item[$\bullet$] La collecte et la centralisation des données de santé.
-% \item[$\bullet$] La mise en avant des compétences de la région Afrique/ Moyen Orient.
-% \end{itemize}
+\end{itemize} 
 
 \section{Méthodologie de travail}
 \subsection{Étude comparative des méthodologies}
@@ -494,90 +458,73 @@ Scrum repose sur trois artefacts principaux permettant d’assurer la transparen
 \end{enumerate}
 \section{Planification itérative du projet}
 
-Afin d’assurer une organisation efficace du travail, le projet a été structuré en plusieurs sprints conformément à l’approche Agile. Chaque sprint représente une itération limitée dans le temps, avec des objectifs clairement définis et des fonctionnalités précises à réaliser.
+Afin d’assurer une organisation efficace du développement, le projet SafeTrack a été structuré en sprints selon une approche Agile. Chaque sprint représente une itération ayant des objectifs précis, alignés avec l’architecture globale du système (backend NestJS, application mobile Flutter et service IA RAG).
 
-Cette planification itérative a permis d’assurer un suivi continu de l’avancement du projet, de prioriser les tâches de manière optimale et d’adapter le développement en fonction des retours obtenus à chaque étape. 
+Cette planification permet un suivi progressif du développement, une priorisation des fonctionnalités critiques (authentification, tracking, sécurité) ainsi qu’une intégration continue des différents modules.
 
-La figure ci-dessous présente la répartition des différentes tâches au sein des sprints.
-\begin{figure}[htpb]
+\begin{table}[htbp]
     \centering
-    \includegraphics[width=14cm]{images/sprints.jpg}
-\end{figure}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|c|p{6.8cm}|c|p{5cm}|}
+        \hline
+        \rowcolor{gray!20}
+        \textbf{Sprint} & \textbf{Fonctionnalités / Activités} & \textbf{Durée} & \textbf{Livrables} \\
+        \hline
 
-% \begin{itemize}
-%  \item[$\bullet$ \textbf{Product Owner (PO) :}] « Propriétaire du produit » autrement dit c’est un Business Analyst
-% qui représente généralement le client, son rôle est de coordonner un backlog partagé alimentant
-% un réseau d’équipes. C’est dans le prochain chapitre que nous montrerons comment nous avons
-% incarné le personnage d’un PO pour jouer son rôle et produire notre Backlog Product.
-%  \item[$\bullet$ \textbf{Scrum of Scrums Master (SoSM) :}]  C’est le Scrum Master du Scrum of Scrums, responsable
-% de la publication des efforts des équipes conjointes.Il doit rendre les progrès visibles. Il travaille
-% en étroite collaboration avec plus qu’une équipe scrum pour déployer un incrément de produit
-% potentiellement livrable au moins à chaque sprint.
-%  \item[$\bullet$ \textbf{ Scrum Master (SM) :}] « Leader de l’équipe Scrum » il est responsable de la supervision
-% globale de l’avancement du projet et des activités de l’équipe. Il assure le coaching de l’équipe de
-% développement dans des environnements organisationnels. Il organise, tient et planifie également des réunions définies dans Scrum.
-%  \item[$\bullet$ \textbf{Dev Team :}] « Équipe de développement » En fait, toute l’équipe Scrum est divisée en groupes
-% plus petits, chaque groupe étant composé conventionnellement de trois à neuf membres
-% de diverses compétences qui s’engagent à transformer le backlog de produit en incréments de
-% fonctionnalités et à élaborer des sprints. Chaque groupe fonctionne comme une équipe Scrum
-% indépendante. De plus, chaque équipe choisit une personne - généralement le Scrum Master - qui
-% représente l’équipe. Les représentants de chacune des équipes participent aux événements Scrum
-% au nom de leur équipe.\\ 
-% \end{itemize} 
+        0 &
+        Mise en place de l’architecture globale du projet :
+        configuration des environnements (Backend, Mobile, RAG),
+        CI/CD, base de données, sécurité initiale (JWT),
+        \textbf{documentation complète des API REST et WebSocket (Swagger + guide technique)} &
+        1 semaine &
+        Architecture initiale, backend structuré, documentation API, environnements configurés \\
+        \hline
 
-% En guise de récapitulatif des rôles et de leur distribution au cours de la conduite de notre plateforme CRAWN, Mme Souad DZIRI jouera le rôle du PO, M. Lotfi BEN ROMDHANE jouera le rôle du SoSM,
-% M. Lotfi BEN ROMDHANE jouera aussi le rôle du SM de l’équipe 1 du profil génie logiciel (Dev web), M. Lotfi AMMAR
-% jouera le rôle du SM de l’équipe 2 des profils cogniticien-mathematicien qui correspondent également à
-% l’intelligence artificielle. L’équipe de développement composée de deux groupes sera réduite à une seule personne
-% qui est moi-même Wissal FARJALLAH.\\
+        1 &
+        Authentification et gestion des utilisateurs :
+        inscription, connexion, rôles (Parent, Institution),
+        gestion des sessions JWT, profil utilisateur &
+        2 semaines &
+        Module d’authentification complet, gestion des rôles, endpoints sécurisés \\
+        \hline
 
-% Dans l’organigramme \ref{fig_organigramme_sos}, nous proposons de jeter un coup d’oeil à la façon dont la répartition des rôles dans notre environnement Scrum Of Scrums est envisagée
+        2 &
+        Gestion des enfants/personnes vulnérables, profils et appareils :
+        création de profils enfants, association aux parents/institutions,
+        gestion des devices et permissions &
+        3 semaines &
+        API enfants, gestion des profils, liaison appareils-utilisateurs, interfaces Flutter \\
+        \hline
 
-% \begin{figure}[htpb]
-% \centering
-% \includegraphics[width=0.9\columnwidth]{images/organigrammeScrum.PNG}
-% \caption{Récapitulatif des rôles}
-% \label{fig_organigramme_sos}
-% \end{figure}
-% \newpage
-%En tant qu’ingénieure en cours d’apprentissage en phase de stage, j’aurai la précieuse occasion
-%de jouer tous ces rôles là. Donc je jouerai le rôle tantôt d’un PO, tantôt d’un SoSM, tantôt d’un SM de
-%l’équipe 1, tantôt d’un SM de l’équipe 2 et tantôt de combien de devTeam member de divers profils.
-% \subsection{Artefacts dans Scrum of Scrums}
-% \begin{itemize}
-% \item[$\bullet$ \textbf{Product Backlog (PB) :}] Un Artefact dynamique qui correspond à une liste priorisée des besoins et des exigences du client. Ces besoins sont représentés sous la forme des «Product Backlog items» classés par priorité. C’est le point central de notre projet, qui sera exposé dans
-% le chapitre qui suit.
+        3 &
+        Localisation temps réel et géofencing :
+        tracking GPS, affichage carte, zones de sécurité,
+        détection entrée/sortie de safezones &
+        3 semaines &
+        Module tracking temps réel, cartes interactives, gestion des safezones \\
+        \hline
 
-% \item[$\bullet$ \textbf{Sprint Backlog (SB) :}] Est l’ensemble des «Product Backlog items» sélectionnés pour la réalisation de l’objectif du Sprint. C’est une image très visible en temps réel du travail que l’équipe de développement a l’intention d’accomplir pendant le sprint.
-% \end{itemize}
+        4 &
+        Alertes et système d’urgence :
+        SOS (appel + alerte), notifications temps réel,
+        historique des événements, partage d’accès sécurisé &
+        3 semaines &
+        Système SOS, alertes live Socket.IO, historique et notifications \\
+        \hline
 
-% \subsection{Événements dans Scrum of Scrums}
-% \begin{itemize}
-% \item[$\bullet$ \textbf{Sprint :}]  À l’issue duquel, l’équipe présente un incrément fini potentiellement publiable. Il
-% possède un (time-box),avec une durée d’au plus un mois.
+        5 &
+        Intelligence artificielle (RAG + LLM) et analyse comportementale :
+        detection d'anomalies, priorisation SOS, ETA,
+        recommandations de zones sures et assistant explicatif &
+        4 semaines &
+        Service IA RAG + LLM, scoring de risque, rapports, assistance securite \\
+        \hline
 
-% \item[$\bullet$ \textbf{Sprint Planning meeting :}] Le travail à accomplir lors d’un sprint est défini lors de cette
-% réunion. Ce plan est élaboré en collaboration avec tous les membres de l’équipe. Selon Scrum
-% Guide \cite{scrum}, cette réunion dure au maximum 8 heures pour un sprint d’un mois, 6 heures pour un
-% sprint de trois semaines et 4 heures pour un sprint de deux semaines.
+    \end{tabular}
+    \caption{Planification par sprints du projet SafeTrack}
+    \label{tab:plan_sprints}
+\end{table}
 
-% \item[$\bullet$ \textbf{ Stand up Meeting  :}]  Le stand up quotidien Scrum et la réunion quotidienne SoS sont des
-% réunions très similaires. Les deux réunions ont pour but de partager l’information, de coordonner
-% les activités et d’identifier les problèmes entre les équipes ou entre les membres de l’équipe.
-
-% \item[$\bullet$ \textbf{Sprint Review :}] Se déroulera à la fin de chaque sprint. A ce stade, la Scrum Team et les
-% «Stakeholders :les parties prenantes» discutent de ce qui a été réalisé durant le sprint en vue de
-% vérifier la qualité de l’incrément potentiellement livrable.
-
-% Remarque : Les Stakeholders peuvent être des (agents bancaires, des experts métier, des experts
-% techniques).
-% \item[$\bullet$ \textbf{Sprint Retrospective :}] Se déroulera après la revue du sprint. C’est l’occasion pour l’équipe
-% Scrum (précisément dans notre cas permettre aux différentes équipes Scrum) de surveiller la
-% qualité du processus Scrum, de s’auto-inspecter et de relever les limites identifiées afin de s’améliorer
-% lors du prochain Sprint.
-% \end{itemize}
-% Au fur et à mesure que nous avancerons dans le rapport, nous observerons le dynamisme de la pratique
-% du principe SOS.
-\section*{Conclusion}
+Le Sprint 0 inclut désormais l’ensemble de la documentation des API REST, WebSocket et services internes, afin de garantir une base technique claire avant le développement des fonctionnalités métier.\section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 Ce premier chapitre a permis de présenter le contexte et les objectifs de notre projet, d'analyser les solutions existantes et de définir les exigences pour notre propre solution. Nous avons également présenté la méthodologie de travail que nous avons adoptée pour ce projet, à savoir le framework Scrum, et discuté des avantages de cette approche. Enfin, nous avons introduit le langage de modélisation UML que nous avons utilisé pour la conception de notre application. Dans les chapitres suivants, nous entrerons dans les détails de la conception et du développement de notre solution.

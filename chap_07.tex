@@ -1,4 +1,4 @@
-\chapter{Release 5:Intégration de l'Intelligence Artificielle}
+\chapter{Sprint 5 : Intelligence Artificielle SafeTrack}
 
 \DeclareRobustCommand{\greencheck}{%
   \tikz\fill[scale=0.4, color=green]
@@ -8,26 +8,41 @@
 \minitoc
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Dans le cadre de la septième phase du développement de notre plateforme dédiée aux projets de fin d'études (PFE), nous avons concentré nos efforts sur l'intégration de solutions d'intelligence artificielle avancées. Ces fonctionnalités permettent non seulement de générer des questions d'entretien personnalisées et d'évaluer des réponses en fonction du domaine et du poste recherché, mais aussi de mettre en correspondance intelligemment les offres d'emploi avec les profils des candidats, enrichissant considérablement l'écosystème de notre plateforme.
+Dans cette cinquième phase, nous avons intégré une couche d'intelligence artificielle au sein de \textit{SafeTrack} afin de renforcer la sécurité proactive. L'IA exploite les données de localisation, l'historique de déplacement, les signaux SOS et le contexte utilisateur pour détecter des situations anormales, prioriser les alertes et fournir une assistance intelligente aux parents, aidants et organisations.
 
-\section{Objectifs du Sprint 7}
+\section{Objectifs du Sprint 5}
 
-\subsection{Intégration de l'Intelligence Artificielle}
-L'objectif principal de ce sprint est de développer et d'intégrer des modules d'intelligence artificielle basés sur des modèles de langage de grande taille (LLM). Ces systèmes doivent permettre :
-
+\subsection{Sécurité proactive et assistance intelligente}
+L'objectif principal est de rendre la plateforme plus prédictive et réactive. Les modules IA doivent permettre :
 \begin{itemize}
-    \item La génération automatique de questions d'entretien adaptées au domaine et au poste
-    \item L'évaluation pertinente des réponses fournies par les candidats
-    \item La mise en correspondance intelligente entre CV et offres d'emploi
-    \item L'analyse sémantique des compétences et exigences
+    \item La détection d'anomalies de déplacement (sorties de zone, immobilité prolongée, vitesse anormale)
+    \item La priorisation des alertes SOS grâce à un score de risque contextualisé
+    \item La prédiction d'itinéraires probables et l'estimation d'ETA
+    \item La recommandation de zones sûres personnalisées (géofencing intelligent)
+    \item L'assistance IA pour expliquer les alertes et guider les actions à entreprendre
+    \item Le matching aidant--personne vulnérable en fonction du profil et des besoins
 \end{itemize}
 
-Pour chaque fonctionnalité, nous avons exploré et implémenté deux approches : une première version simple utilisant uniquement le LLM, et une seconde version avancée intégrant une architecture RAG (Retrieval-Augmented Generation) pour des résultats plus personnalisés et contextualisés.
+\section{Données exploitées}
 
-\section{Backlog Fonctionnel – Sprint 7}
+\subsection{Sources de données}
+Les décisions IA de SafeTrack s'appuient sur un ensemble de sources complémentaires :
+\begin{itemize}
+    \item Localisation GPS en temps réel
+    \item Historique des trajets et habitudes de déplacement
+    \item Alertes SOS et incidents déclarés
+    \item Profils utilisateurs (âge, rôle, vulnérabilité, contraintes)
+    \item Capteurs embarqués (accéléromètre, batterie, connectivité)
+    \item Données externes (météo, trafic, zones sensibles)
+\end{itemize}
+
+\subsection{Prétraitement et conformité}
+Les flux sont nettoyés, lissés et agrégés afin de limiter les erreurs de GPS. Les données sensibles sont pseudonymisées, et l'accès est strictement contrôlé par le mécanisme d'autorisation existant de l'application.
+
+\section{Backlog Fonctionnel – Sprint 5}
 
 \subsection{Backlog Produit – Intelligence Artificielle}
-Le tableau ci-dessous recense les user stories associées aux systèmes d'intelligence artificielle. Ces fonctionnalités ont été priorisées selon trois niveaux (Haute, Moyenne, Basse) selon leur impact sur le fonctionnement de l'application.
+Le tableau suivant présente les user stories prioritaires associées à l'IA SafeTrack.
 
 \begin{table}[H]
 \centering
@@ -35,366 +50,105 @@ Le tableau ci-dessous recense les user stories associées aux systèmes d'intell
 \hline
 \textbf{User Story} & \textbf{Description} & \textbf{Priorité} \\
 \hline
-US-01 & En tant qu'utilisateur, je veux pouvoir générer des questions d'entretien adaptées à mon domaine professionnel. & Haute \\
+US-01 & En tant que parent, je veux être alerté lorsqu'une personne vulnérable sort d'une zone sûre. & Haute \\
 \hline
-US-02 & En tant qu'utilisateur, je veux pouvoir spécifier le type de poste (stage ou emploi) pour obtenir des questions appropriées. & Haute \\
+US-02 & En tant qu'aidant, je veux détecter une immobilité anormale pour réagir rapidement. & Haute \\
 \hline
-US-03 & En tant qu'utilisateur, je veux pouvoir obtenir une évaluation de mes réponses aux questions d'entretien. & Haute \\
+US-03 & En tant qu'utilisateur, je veux que l'application priorise les alertes SOS selon le contexte. & Haute \\
 \hline
-US-04 & En tant qu'utilisateur, je veux recevoir des questions personnalisées en fonction de mon profil et des offres disponibles. & Moyenne \\
+US-04 & En tant que parent, je veux connaître l'ETA estimée d'arrivée en temps réel. & Moyenne \\
 \hline
-US-05 & En tant qu'administrateur, je veux pouvoir ajouter des documents à la base de connaissances du système. & Moyenne \\
+US-05 & En tant qu'utilisateur, je veux recevoir des recommandations de zones sûres personnalisées. & Moyenne \\
 \hline
-US-06 & En tant qu'utilisateur, je veux pouvoir visualiser les questions générées de façon claire et organisée. & Haute \\
+US-06 & En tant qu'utilisateur, je veux un assistant IA qui explique les alertes et les actions à suivre. & Haute \\
 \hline
-US-07 & En tant qu'utilisateur, je veux recevoir des évaluations détaillées sur mes réponses avec des suggestions d'amélioration. & Moyenne \\
+US-07 & En tant qu'administrateur, je veux enrichir la base de connaissances de l'assistant IA. & Moyenne \\
 \hline
-US-08 & En tant qu'étudiant, je veux pouvoir soumettre mon CV pour identifier les offres d'emploi les plus pertinentes. & Haute \\
+US-08 & En tant qu'organisation, je veux faire correspondre un aidant disponible à une personne vulnérable. & Moyenne \\
 \hline
-US-09 & En tant que recruteur, je veux pouvoir trouver les candidats les plus adaptés à une offre d'emploi spécifique. & Haute \\
+US-09 & En tant qu'utilisateur, je veux des notifications avec un niveau de confiance associé. & Haute \\
 \hline
-US-10 & En tant qu'utilisateur, je veux obtenir un score de correspondance et des explications détaillées pour les matchs CV-offres. & Moyenne \\
+US-10 & En tant que parent, je veux consulter l'historique des anomalies détectées. & Moyenne \\
 \hline
 \end{tabular}
-\caption{User Stories liées au système d'intelligence artificielle}
+\caption{User Stories liées au système IA SafeTrack}
 \end{table}
 
-\section{Étude comparative des modèles LLM}
-Dans le cadre de notre projet, nous avons mené une analyse approfondie pour sélectionner le modèle LLM le plus adapté à nos besoins. Cette étude comparative a considéré plusieurs critères essentiels tels que la performance, les ressources requises, la confidentialité des données et les restrictions d'utilisation.
+\section{Choix des modèles et méthodes}
 
-\subsection{Critères de sélection}
-Pour notre plateforme, nous avons évalué les modèles selon les critères suivants :
+\subsection{Approche hybride}
+SafeTrack combine des techniques statistiques, des modèles supervisés et un LLM pour maximiser la fiabilité :
 \begin{itemize}
-    \item \textbf{Performance} : capacité à générer des réponses pertinentes et précises
-    \item \textbf{Ressources requises} : exigences matérielles pour l'exécution du modèle
-    \item \textbf{Confidentialité} : garanties concernant la protection des données utilisateur
-    \item \textbf{Licence} : conditions d'utilisation et restrictions commerciales
-    \item \textbf{Facilité d'intégration} : simplicité de déploiement dans notre architecture
+    \item \textbf{Détection d'anomalies} : Isolation Forest et règles géospatiales pour repérer les comportements inhabituels.
+    \item \textbf{Prédiction d'ETA} : modèles de régression (XGBoost) entraînés sur les historiques de trajets.
+    \item \textbf{Zones sûres} : clustering géographique pour proposer des zones cohérentes avec les habitudes.
+    \item \textbf{Assistant IA} : LLM pour expliquer les alertes et fournir des recommandations compréhensibles.
 \end{itemize}
 
-\subsection{Modèles évalués}
-Nous avons analysé trois modèles majeurs du marché :
+\subsection{Comparatif des LLM}
+Nous avons évalué plusieurs modèles de langage en considérant performance, confidentialité, coûts et facilité d'intégration.
 
 \subsubsection{GPT-3.5 (OpenAI)}
-GPT-3.5 est un modèle très performant développé par OpenAI. Cependant, son utilisation présente plusieurs inconvénients pour notre contexte :
-\begin{itemize}
-    \item Nécessite une connexion cloud payante avec un système de facturation à l'utilisation
-    \item Pose des enjeux de confidentialité car les données transitent par des serveurs externes
-    \item Les informations envoyées pourraient potentiellement être enregistrées ou analysées
-    \item Incompatible avec nos exigences de protection des données et de souveraineté numérique
-\end{itemize}
+Très performant mais dépendant d'un service cloud payant, avec des contraintes fortes de confidentialité.
 
 \subsubsection{LLaMA 2 (Meta)}
-LLaMA 2 est un modèle open-source développé par Meta. Son évaluation a révélé :
-\begin{itemize}
-    \item Performances élevées mais exigences matérielles importantes (GPU très puissants)
-    \item Utilisation commerciale restreinte par une licence imposée par Meta
-    \item Demande d'accès préalable nécessaire
-    \item Conditions spécifiques selon la taille de l'organisation utilisatrice
-    \item Déploiement complexifié dans un cadre professionnel, notamment pour les startups
-\end{itemize}
+Open-source avec de bonnes performances, mais des contraintes de licence et des besoins matériels élevés.
 
 \subsubsection{Mistral 7B}
-Mistral 7B est un modèle open-source plus récent qui a attiré notre attention par ses caractéristiques avantageuses :
-\begin{itemize}
-    \item Excellente performance (plus de 64\% sur le benchmark MMLU)
-    \item Véritablement open-source sans restriction forte
-    \item Code source et poids du modèle librement accessibles et modifiables
-    \item Utilisation commerciale autorisée sans demande préalable
-    \item Relativement léger (fonctionne avec 16 à 32 Go de VRAM)
-    \item Optimisé pour les tâches conversationnelles rapides
-\end{itemize}
+Modèle open-source léger, déployable localement, adapté à un assistant IA embarqué.
 
-\subsection{Choix final : Mistral 7B}
-Après cette évaluation approfondie, notre choix s'est porté sur Mistral 7B pour les raisons suivantes :
-\begin{itemize}
-    \item \textbf{Performance} : Score de 64\% sur MMLU, démontrant sa capacité à comprendre et raisonner sur des sujets variés
-    \item \textbf{Confidentialité} : Déploiement local possible, garantissant que les données restent sous notre contrôle
-    \item \textbf{Économie} : Absence de frais d'utilisation récurrents liés à des API externes
-    \item \textbf{Légèreté} : Fonctionnement possible sur des infrastructures modestes
-    \item \textbf{Liberté d'utilisation} : Aucune restriction commerciale significative
-\end{itemize}
-
-Le benchmark MMLU (Massive Multitask Language Understanding) est particulièrement pertinent car il mesure la capacité du modèle à comprendre et raisonner sur 57 tâches différentes couvrant des domaines variés comme les mathématiques, le droit, la médecine et l'histoire. Le score de 64\% obtenu par Mistral 7B le positionne parmi les meilleurs modèles open-source, prouvant sa polyvalence et sa qualité en tant qu'assistant conversationnel intelligent.
+\subsection{Choix final}
+Nous avons retenu Mistral 7B pour l'assistant IA afin de garantir la souveraineté des données et maîtriser les coûts, tout en conservant une qualité de génération satisfaisante pour les explications d'alertes.
 
 \section{Architecture microservices et intégration}
-Le développement de notre solution IA a été abordé selon deux axes principaux : un système de génération et d'évaluation de questions d'entretien, et un système de matching entre CV et offres d'emploi. Pour chacun de ces axes, nous avons d'abord développé une version simple utilisant directement le LLM, puis une version avancée intégrant une architecture RAG (Retrieval-Augmented Generation) pour des résultats plus personnalisés et contextualisés.
+Le module IA est implémenté sous forme de microservice dédié, intégré à l'API Gateway existante. Il interagit avec les services de localisation, de profils, d'alertes et de gestion des zones.
 
-En accord avec l'architecture microservices globale de notre plateforme, le module d'intelligence artificielle a été conçu comme un microservice dédié, entièrement intégré à notre backend existant. Toutes les API du système d'IA sont exposées via notre API Gateway principale, assurant ainsi une cohérence d'accès et une sécurité unifiée avec le reste de l'application.
-
-\subsection{Système de questions d'entretien}
-
-\subsubsection{Version sans RAG}
-La première version de notre système de génération et d'évaluation de questions d'entretien repose sur une approche directe utilisant uniquement le modèle Mistral 7B. Cette architecture comprend plusieurs composants interconnectés :
-
+\subsection{Détection d'anomalies de déplacement}
+Deux niveaux sont utilisés :
 \begin{itemize}
-    \item \textbf{Ollama} : Plateforme open-source qui simplifie le déploiement local de LLMs comme Mistral. Ollama gère automatiquement le téléchargement, le chargement en mémoire et les interactions avec le modèle.
-    
-    \item \textbf{Microservice FastAPI Python} : Service API dédié à l'IA qui expose des endpoints pour interagir avec le modèle Mistral. Ce service est intégré à notre architecture microservices globale et accessible via l'API Gateway centrale.
-    
-    \item \textbf{Backend Node.js} : Service principal de notre application qui communique avec le microservice IA et transmet les données entre l'interface utilisateur et le modèle d'IA.
-    
-    \item \textbf{Frontend} : Interface utilisateur permettant aux utilisateurs de sélectionner leur domaine et type de poste, et d'afficher les questions générées ou les évaluations reçues.
+    \item \textbf{Règles rapides} : franchissement de zone, vitesse seuil, coupure brutale de signal.
+    \item \textbf{IA contextuelle} : modèles d'anomalies entraînés sur les habitudes individuelles.
 \end{itemize}
+Les alertes sont exposées via l'endpoint \texttt{/ai/anomaly-score} et enrichies d'un niveau de confiance.
 
-Le microservice IA expose deux endpoints principaux via notre API Gateway :
-\begin{itemize}
-    \item \texttt{/generate-question/} : Génère des questions d'entretien basées sur le domaine et le niveau spécifiés
-    \item \texttt{/evaluate-answer/} : Évalue les réponses fournies par l'utilisateur et peut proposer une question suivante
-\end{itemize}
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{images/architecturesansrag.png}
-    \caption{Architecture Sans RAG pour les questions / évaluation}
-    \label{fig:enter-label}
-\end{figure}
-\newpage
-Le flux de données pour cette version sans RAG suit ce processus :
+\subsection{Priorisation des alertes SOS}
+Chaque alerte SOS est évaluée à l'aide d'un score de risque combinant : distance aux zones sûres, historique d'incidents, contexte temporel et état du terminal. Le microservice IA renvoie un \textit{risk score} qui alimente le tri des notifications.
 
-\begin{enumerate}
-    \item L'utilisateur sélectionne son domaine (ex : intelligence artificielle, cloud, flutter) et le niveau (stage ou travail) via l'interface web.
-    \item Ces données sont envoyées sous forme de requête HTTP à l'API Gateway.
-    \item L'API Gateway route la requête vers le microservice IA.
-    \item Le microservice prépare un prompt formaté incluant le domaine et le niveau pour générer une question pertinente.
-    \item Le prompt est envoyé au modèle Mistral via Ollama.
-    \item Le modèle Mistral génère une question et la renvoie au microservice.
-    \item Le microservice formate la réponse en JSON et la renvoie via l'API Gateway.
-    \item Les données traversent le backend Node.js qui les relaie à l'interface utilisateur.
-    \item La question générée s'affiche à l'écran pour l'utilisateur.
-\end{enumerate}
+\subsection{Prédiction d'itinéraires et ETA}
+Un module de prédiction estime la trajectoire probable et l'heure d'arrivée en se basant sur l'historique de déplacements et la situation actuelle. Les résultats sont exposés via \texttt{/ai/eta-predict}.
 
-\subsubsection{Version avec RAG pour les questions}
-Pour améliorer la pertinence et le contexte des questions générées, nous avons également développé une version RAG de notre système de questions d'entretien. Cette approche enrichit les prompts envoyés au modèle LLM avec des informations précises et ciblées issues de documents internes :
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{images/architectureRAG.png}
-    \caption{Architecture IA RAG avec Microservice}
-    \label{fig:architecture_RAG}
-\end{figure}
+\subsection{Recommandations de zones sûres}
+Les zones sûres sont proposées à partir des lieux fréquemment visités, enrichies par des données externes (trafic, météo, zones sensibles). L'IA suggère des périmètres adaptés à chaque profil.
 
-\begin{itemize}
-    \item \textbf{Corpus de connaissances} : Collection de documents pertinents comme des descriptions de cours, des programmes de formation, des fiches de postes internes et des comptes-rendus d'entretiens précédents.
-    
-    \item \textbf{Modèle d'embedding} : Convertit les documents et requêtes utilisateurs en vecteurs numériques capturant leur contenu sémantique.
-    
-    \item \textbf{Base de données vectorielle} : Stocke les vecteurs des documents et permet une recherche par similarité sémantique.
-    
-    \item \textbf{Sélection de contexte} : Identifie les passages les plus pertinents en fonction du domaine et du niveau demandés par l'utilisateur.
-    
-    \item \textbf{Prompt enrichi} : Intègre les passages sélectionnés dans le prompt envoyé au modèle Mistral.
-\end{itemize}
+\subsection{Assistant IA et RAG}
+L'assistant IA fournit des explications claires sur les alertes et propose des actions immédiates. Une base de connaissances interne (procédures d'urgence, consignes de sécurité, FAQ) est indexée dans une base vectorielle. Le RAG permet d'injecter des informations fiables et contextualisées dans les réponses.
 
-Cette version avec RAG génère des questions beaucoup plus spécifiques et contextualisées, alignées sur le contenu pédagogique de notre plateforme et les exigences réelles du marché du travail. Le flux de données est similaire à la version sans RAG, mais inclut des étapes supplémentaires de recherche et enrichissement de contexte.
-
-
-\subsection{Comparaison entre l'approche simple et l'approche RAG pour le matching CV-emploi}
-
-\subsubsection{Diagramme de performance}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/performance_metrics.png}
-    \caption{Comparaison des métriques de performance entre approche simple et RAG}
-\end{figure}
-
-Ce diagramme compare l'approche simple et l'approche RAG à travers quatre visualisations :
-
-\begin{itemize}
-    \item \textbf{Graphique 1 – Métriques principales} : 
-    \begin{itemize}
-        \item Précision : 60\% (simple) vs 90\% (RAG), soit une amélioration de +50\%.
-        \item Pertinence : 45\% vs 95\%, soit +111\%.
-        \item Compréhension du contexte : 30\% vs 95\%, soit +217\%.
-        \item Scalabilité : 70\% vs 85\%, soit +21\%.
-        \item Satisfaction utilisateur : 50\% vs 92\%, soit +84\%.
-    \end{itemize}
-    
-    \item \textbf{Graphique 2 – Radar des performances} : la zone verte (RAG) recouvre entièrement la zone rouge (approche simple), montrant la supériorité de RAG sur tous les critères.
-    
-    \item \textbf{Graphique 3 – Temps de traitement et qualité} : RAG prend plus de temps (13s vs 8s), mais fournit une qualité 3 fois supérieure, justifiant l'investissement en ressources.
-    
-    \item \textbf{Graphique 4 – Coûts et ROI} : Malgré des coûts plus élevés, RAG offre un retour sur investissement favorable grâce à sa qualité de matching accrue.
-\end{itemize}
-
-\subsubsection{Diagramme des bonnes pratiques}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/best_practices.png}
-    \caption{Évolution et avantages de l'approche RAG sur 6 mois}
-\end{figure}
-
-Ce diagramme évalue l'évolution des performances de RAG sur six mois :
-
-\begin{itemize}
-    \item \textbf{Graphique 1 – Progression dans le temps} : 
-    \begin{itemize}
-        \item Approche simple : 60\% à 65\% (+8\%).
-        \item RAG : 75\% à 95\% (+27\%), soit une amélioration 4 fois plus rapide.
-    \end{itemize}
-
-    \item \textbf{Graphique 2 – Fonctionnalités clés de RAG} :
-    \begin{itemize}
-        \item Compréhension sémantique : 95\%.
-        \item Conscience du contexte : 90\%.
-        \item Explicabilité : 88\%.
-        \item Données temps réel : 85\%.
-        \item Scalabilité : 82\%.
-    \end{itemize}
-
-    \item \textbf{Graphique 3 – Réduction des erreurs} :
-    \begin{itemize}
-        \item Erreurs de contexte : -89\%.
-        \item Faux positifs : -68\%.
-        \item Faux négatifs : -60\%.
-        \item Erreurs de pertinence : -71\%.
-    \end{itemize}
-
-    \item \textbf{Graphique 4 – ROI} :
-    \begin{itemize}
-        \item Valeur business : +200\%.
-        \item Satisfaction utilisateur : +180\%.
-        \item Ces gains compensent les coûts de développement plus élevés.
-    \end{itemize}
-\end{itemize}
-
-\subsubsection{Pourquoi Nous Avons Choisi RAG pour le Matching CV-Emploi}
-
-\begin{itemize}
-    \item \textbf{Performances immédiates} : 
-    \begin{itemize}
-        \item Précision : +50\%.
-        \item Pertinence : +111\%.
-        \item Compréhension du contexte : +217\%.
-    \end{itemize}
-    
-    \item \textbf{Amélioration continue} : RAG progresse 4 fois plus vite que l’approche simple, grâce à ses capacités d’apprentissage automatique.
-    
-    \item \textbf{Expérience utilisateur} :
-    \begin{itemize}
-        \item Satisfaction : 92\% (RAG) vs 50\% (simple).
-        \item Explicabilité : 88\%, offrant des justifications transparentes.
-    \end{itemize}
-    
-    \item \textbf{Réduction des erreurs} :
-    \begin{itemize}
-        \item Erreurs de contexte : -89\%.
-        \item Faux positifs : -68\%.
-        \item Erreurs de pertinence : -71\%.
-    \end{itemize}
-    
-    \item \textbf{Retour sur investissement} : 
-    \begin{itemize}
-        \item Valeur business : +200\%.
-        \item Satisfaction utilisateur : +180\%.
-        \item Les bénéfices compensent largement les coûts initiaux.
-    \end{itemize}
-    
-    \item \textbf{Capacités techniques avancées} :
-    \begin{itemize}
-        \item Intégration d’API externes pour les données temps réel.
-        \item Recherche sémantique via Qdrant.
-        \item Intelligence artificielle explicable.
-        \item Scalabilité adaptée aux gros volumes.
-    \end{itemize}
-\end{itemize}
-
-\textbf{Conclusion} : L’approche RAG représente un choix stratégique optimal combinant performance, évolutivité et satisfaction utilisateur pour notre système de matching CV-emploi.
-
-\subsection{Système de matching CV-offres}
-
-\subsubsection{Version sans RAG}
-Notre première approche pour le matching entre CV et offres d'emploi utilisait également une approche directe avec le modèle Mistral, sans contexte spécifique :
-
-\begin{itemize}
-    \item Les CV et offres étaient fournis directement au modèle Mistral via des prompts élaborés
-    \item Le modèle analysait les textes et générait une évaluation des correspondances
-    \item Les scores et explications étaient basés uniquement sur les connaissances générales du modèle
-    \item Aucune base de connaissances externe ou mémoire n'était utilisée
-\end{itemize}
-
-Cette approche, bien que fonctionnelle, présentait plusieurs limitations :
-\begin{itemize}
-    \item Traitement limité par la taille de contexte du modèle
-    \item Manque de compréhension des spécificités de notre domaine et exigences
-    \item Absence de standardisation dans l'analyse des compétences
-    \item Inconsistance dans les évaluations d'un même profil
-\end{itemize}
-
-\subsubsection{Version avec RAG pour le matching}
-Pour surmonter ces limitations, nous avons développé une architecture avancée intégrant le RAG pour le matching CV-offres. Cette approche utilise une base de données vectorielle pour stocker et rechercher efficacement les documents pertinents :
-
-\begin{itemize}
-    \item \textbf{Modèle d'embedding} : Utilisation de modèles préentraînés pour transformer les documents et requêtes en vecteurs numériques représentant leur contenu sémantique.
-    
-    \item \textbf{Base de données vectorielle Qdrant} : Stocke les vecteurs des documents indexés (CV et offres d'emploi) et permet une recherche rapide par similarité sémantique.
-    
-    \item \textbf{Pipeline d'indexation} : Système qui traite les documents JSON (CV et offres), les encode sous forme de vecteurs via le modèle d'embedding, et les stocke dans Qdrant avec des métadonnées associées (ex: "it" pour le domaine informatique).
-    
-    \item \textbf{Moteur de recherche sémantique} : Modules spécifiques qui identifient respectivement les offres d'emploi ou les CV les plus pertinents en fonction d'une requête.
-\end{itemize}
-
-Ces composants sont regroupés dans notre microservice IA et exposés via l'API Gateway principale avec deux endpoints majeurs :
-\begin{itemize}
-    \item \texttt{/match-cv-to-offers} : Reçoit un CV et trouve les offres les plus adaptées
-    \item \texttt{/match-offer-to-cvs} : Reçoit une offre et trouve les candidats les plus adaptés
-\end{itemize}
-
-Le processus RAG pour le matching CV-Offres suit ce flux :
-
-\begin{enumerate}
-    \item L'utilisateur initie une recherche de correspondance depuis l'interface
-    \item La requête est envoyée à l'API Gateway qui la route vers le microservice IA
-    \item Le microservice IA récupère automatiquement les données du CV depuis le microservice "profil" qui les fournit au format JSON (incluant éducation, expériences professionnelles et compétences)
-    \item Les offres d'emploi pertinentes sont récupérées depuis le service d'offres d'emploi
-    \item Le contenu du CV est encodé en un vecteur par le modèle d'embedding
-    \item Ce vecteur est utilisé pour interroger la base de données Qdrant et récupérer les offres d'emploi les plus similaires sémantiquement, correspondant au filtre de métadonnées
-    \item Les offres récupérées et le CV sont combinés dans un prompt élaboré envoyé au modèle Mistral
-    \item Le modèle Mistral analyse les correspondances et génère un rapport détaillé avec des scores et explications
-    \item L'API renvoie les résultats via l'API Gateway jusqu'à l'interface utilisateur
-\end{enumerate}
-
-Un flux similaire mais inverse est utilisé pour le matching d'une offre avec des profils de candidats.
-
-\subsection{Intégration dans l'architecture globale}
-Notre microservice d'IA s'intègre parfaitement dans l'architecture microservices existante de la plateforme :
-
-\begin{itemize}
-    \item \textbf{Communication API Gateway} : Toutes les requêtes vers le microservice IA passent par l'API Gateway centrale, assurant cohérence, sécurité et traçabilité.
-    
-    \item \textbf{Authentification unifiée} : Le système utilise le même mécanisme d'authentification que les autres services, via JWT transmis par l'API Gateway.
-    
-    \item \textbf{Découverte de service} : Le microservice IA est enregistré automatiquement auprès de notre système de découverte de services pour faciliter la communication inter-services.
-    
-    \item \textbf{Logging centralisé} : Les journaux du microservice sont intégrés au système de logging centralisé de la plateforme.
-    
-    \item \textbf{Monitoring} : Les métriques de performance du service IA sont collectées et visualisées à travers le même système de monitoring que les autres services.
-\end{itemize}
-
-Cette approche d'intégration en tant que microservice dédié nous permet de faire évoluer et de scaler les fonctionnalités IA indépendamment du reste de l'application, tout en maintenant une expérience utilisateur cohérente.
-
-\subsection{Comparaison des approches sans RAG et avec RAG}
-Pour les deux fonctionnalités développées (génération de questions et matching CV-offres), l'approche RAG offre des avantages significatifs par rapport à l'approche simple :
-
+\section{Comparaison règles simples vs IA contextualisée}
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
 \hline
-\textbf{Aspect} & \textbf{Sans RAG} & \textbf{Avec RAG} \\ \hline
-Questions générées & Questions standards et génériques comme « Quelle est la différence entre l'apprentissage supervisé et non supervisé ? » & Questions ciblées comme « Peux-tu expliquer comment tu utiliserais PyTorch pour entraîner un modèle CNN pour notre projet d'analyse d'images médicales ? » \\ \hline
-Matching CV-Offre & Évaluations basiques limitées par le contexte du modèle & Matching précis basé sur l'analyse sémantique des compétences, avec scores et justifications détaillées \\ \hline
-Contextualisation & Faible, basée uniquement sur les connaissances générales du modèle & Élevée, enrichie par des documents spécifiques à notre contexte \\ \hline
-Personnalisation & Limitée au domaine général spécifié & Adaptée aux spécificités de nos formations et offres \\ \hline
-Précision & Correcte mais générique & Élevée et liée à notre écosystème réel \\ \hline
-Ressources requises & Modérées & Plus importantes (stockage et traitement des vecteurs) \\ \hline
+\textbf{Aspect} & \textbf{Règles simples} & \textbf{IA contextualisée} \\ \hline
+Détection d'anomalies & Déclenchements binaires (zone, vitesse) & Analyse des habitudes et réduction des faux positifs \\ \hline
+Priorisation SOS & Ordre fixe & Score de risque dynamique et explicable \\ \hline
+ETA & Basé sur distance brute & Modèle prédictif tenant compte du contexte \\ \hline
+Personnalisation & Faible & Adaptée au profil et à l'historique \\ \hline
+Coût de calcul & Faible & Plus élevé mais maîtrisé \\ \hline
 \end{tabular}
-\caption{Comparaison des approches sans RAG et avec RAG}
+\caption{Comparaison entre approche simple et IA contextualisée}
 \end{table}
 
 \section{Réalisation technique}
 
-\subsection{Installation et déploiement de Mistral via Ollama}
-L'installation de Mistral 7B a été réalisée grâce à Ollama, une plateforme facilitant le déploiement local de modèles de langage. Le processus a suivi ces étapes clés :
+\subsection{Déploiement du service IA}
+Le microservice IA est déployé en Python (FastAPI) et communique avec les services Node.js via l'API Gateway. Mistral 7B est orchestré localement via Ollama. Les modèles d'anomalies et d'ETA sont servis en mode REST et mis à jour périodiquement.
+
+\subsection{Monitoring et évaluation}
+Les métriques suivies incluent : taux de faux positifs, temps de réponse, précision des ETA et taux de résolution des alertes. Les résultats sont observés via le système de monitoring centralisé de SafeTrack.
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+Cette phase a permis d'introduire une IA centrée sur la sécurité, combinant détection proactive, explicabilité et assistance. SafeTrack dispose désormais d'un socle intelligent capable d'améliorer l'expérience utilisateur tout en réduisant les risques au quotidien.
 
 \begin{enumerate}
     \item Installation d'Ollama sur notre serveur dédié à l'IA
@@ -501,7 +255,7 @@ Bien que notre microservice d'IA réponde aux besoins initiaux, plusieurs pistes
 \end{itemize}
 
 \section{Technologies et Outils Utilisés}
-Dans le cadre du sprint 7 dédié à l'intégration de l'intelligence artificielle, nous avons employé plusieurs technologies et outils spécialisés pour réaliser nos objectifs. Voici les principaux composants techniques qui ont permis le développement de nos fonctionnalités d'IA :
+Dans le cadre du Sprint 5 dédié à l'intégration de l'intelligence artificielle, nous avons employé plusieurs technologies et outils spécialisés pour réaliser nos objectifs. Voici les principaux composants techniques qui ont permis le développement de nos fonctionnalités d'IA :
 
 \vspace{0.5cm}
 \begin{tabular}{| m{2.5cm} | m{13cm} |}
@@ -594,7 +348,7 @@ Langage de programmation principal pour le développement du microservice d'IA e
 \newpage
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
-Le sprint 7 a permis d'enrichir notre plateforme avec un microservice d'intelligence artificielle puissant et complètement intégré à notre architecture existante. En exposant ses fonctionnalités à travers notre API Gateway principale, nous assurons une expérience utilisateur cohérente tout en maintenant la modularité technique de notre système.
+Le Sprint 5 a permis d'enrichir notre plateforme avec un microservice d'intelligence artificielle puissant et complètement intégré à notre architecture existante. En exposant ses fonctionnalités à travers notre API Gateway principale, nous assurons une expérience utilisateur cohérente tout en maintenant la modularité technique de notre système.
 
 L'intégration du modèle Mistral 7B, déployé localement via Ollama et enrichi par une architecture RAG, démontre notre capacité à exploiter les technologies d'IA les plus récentes tout en respectant les contraintes de confidentialité et de ressources. L'approche microservice nous offre également la flexibilité nécessaire pour faire évoluer ce système indépendamment des autres composants de la plateforme.
 

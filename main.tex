@@ -109,13 +109,16 @@ citecolor=black
 \input{chap_02}
 \input{chap_03}
 \input{chap_04}
-\input{chap_conclusion}
+\input{chap_07}
 
 
 
 
 
 \appendix
+
+% Ensure environment tech citations appear in the bibliography
+\nocite{nestjs,reactjs,flutter,nodejs,mongodb,docker,github,gitlab,ioredis,vscode}
 
 \bibliographystyle{plainnat}
 \bibliography{references}

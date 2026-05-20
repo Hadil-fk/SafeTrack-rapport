@@ -50,7 +50,7 @@ L'utilisateur peut être un individu vulnérable (enfant, personne âgée) ou so
     \item Recevoir des notifications et des alertes SOS
 \end{itemize}
 
-\textbf{Enfant / Personne Vulnérable :}
+\textbf{Personne Dépendant (Enfant, Personne Âgée) :}
 \begin{itemize}
     \item Visualiser leur propre position en temps réel
     \item Envoyer des alertes SOS en cas de danger
@@ -87,7 +87,7 @@ Les besoins fonctionnels décrivent les actions attendues de chaque acteur de l�
     \item Passer automatiquement des appels d'urgence aux contacts de confiance en cas d'alerte
 \end{itemize}
 
-\subsection*{Pour l'Enfant / Personne Vulnérable}
+\subsection*{Pour le Personne Dépendant (Enfant, Personne Âgée)}
 \begin{itemize}
     \item Visualiser leur propre position en temps réel
     \item Envoyer des alertes SOS en cas d'urgence avec localisation exacte
@@ -95,7 +95,7 @@ Les besoins fonctionnels décrivent les actions attendues de chaque acteur de l�
     \item Interagir avec le système sans accès administratif global
 \end{itemize}
 
-\section{Besoins non fonctionnels}
+\subsection{Besoins non fonctionnels}
 
 Les besoins non fonctionnels décrivent les critères qualitatifs essentiels pour garantir une expérience utilisateur optimale et le bon fonctionnement de l’application \textbf{SafeTrack}.
 
@@ -104,13 +104,13 @@ Les besoins non fonctionnels décrivent les critères qualitatifs essentiels pou
     
     \item \textbf{Fiabilité :} L’application doit être stable et exempte de bugs. En cas de problème technique, elle doit pouvoir se rétablir rapidement avec un minimum d’impact pour les utilisateurs.
     
-    \item \textbf{Sécurité :} Les données personnelles et sensibles doivent être protégées par chiffrement. Les connexions doivent utiliser des protocoles sécurisés (HTTPS) et la gestion des identifiants (par exemple via JWT) doit empêcher tout accès non autorisé.
+    \item \textbf{Sécurité :} Les données personnelles et sensibles doivent être protégées par chiffrement. Les connexions doivent utiliser des protocoles sécurisés (HTTPS) et la gestion des identifiants (JWT) doit empêcher tout accès non autorisé.RBAC (Role-Based Access Control) doit être mis en place pour garantir que les utilisateurs n’accèdent qu’aux fonctionnalités et données qui leur sont autorisées.
     
     \item \textbf{Scalabilité :} L’application doit pouvoir évoluer facilement pour gérer l’augmentation du nombre d’utilisateurs et de données. L’utilisation de conteneurs (Docker) permet de dupliquer les services et d’assurer une montée en charge fluide et contrôlée.
     
     \item \textbf{Maintenabilité :} Le code doit être bien structuré, documenté et facile à maintenir, facilitant ainsi les futures mises à jour et évolutions.
     
-    \item \textbf{Compatibilité :} L’application doit être compatible avec les principaux systèmes d’exploitation mobiles (Android, iOS) et navigateurs Web modernes (Chrome, Firefox, Safari), ainsi qu’avec les plateformes Windows, macOS et Linux pour le dashboard.
+    \item \textbf{Compatibilité :} L’application doit être compatible avec les principaux systèmes d’exploitation mobiles (Android, iOS) et navigateurs Web (Chrome, Firefox, Safari), ainsi qu’avec les plateformes Windows, macOS et Linux pour le dashboard.
     
     \item \textbf{Disponibilité :} L’application doit être opérationnelle 24h/24 et 7j/7 pour garantir la sécurité des utilisateurs vulnérables.
 \end{itemize}
@@ -155,6 +155,9 @@ Suivi en Temps Réel
 \cline{2-3}
 & En tant qu’utilisateur, je peux recevoir des notifications en temps réel lors de changements significatifs de position. 
 & Haute \\
+\cline{2-3}
+& En tant qu’utilisateur, je peux activer un mode économie de batterie pour réduire la fréquence d’envoi de position. 
+& Basse \\
 \hline
 
 Zones Sécurisées (Geofencing) 
@@ -168,6 +171,9 @@ Zones Sécurisées (Geofencing)
 Historique des Déplacements 
 & En tant que parent, aidant ou organisation, je peux consulter l’historique des déplacements afin d’analyser les trajets et comportements passés. 
 & Moyenne \\
+\cline{2-3}
+& En tant qu’administrateur, je peux exporter l’historique en PDF ou CSV pour archivage. 
+& Basse \\
 \hline
 
 Alertes SOS et Gestion des Urgences 
@@ -176,14 +182,20 @@ Alertes SOS et Gestion des Urgences
 \cline{2-3}
 & En tant qu’enfant ou personne âgée suivie, je peux déclencher un appel d’urgence afin de contacter rapidement mes proches ou aidants en situation critique. 
 & Haute \\
+\cline{2-3}
+& En tant qu’utilisateur, je peux activer une alerte discrète (mode silencieux) en situation sensible. 
+& Basse \\
 \hline
 
-Intelligence Artificielle (RAG et Détection des Risques) 
-& En tant que système SafeTrack, je peux analyser les données de localisation afin de détecter des comportements anormaux ou des situations à risque. 
+Intelligence Artificielle (RAG + LLM) 
+& En tant que système SafeTrack, je peux analyser les données de localisation pour détecter des anomalies et prioriser les alertes SOS. 
 & Haute \\
 \cline{2-3}
-& En tant que parent, aidant ou organisation, je peux recevoir des alertes intelligentes et des recommandations basées sur l’analyse des données. 
+& En tant que parent, aidant ou organisation, je peux recevoir des alertes intelligentes, des ETA et des recommandations de zones sures. 
 & Haute \\
+\cline{2-3}
+& En tant que parent, je peux ajuster le niveau de sensibilité de la détection d’anomalies selon le profil suivi. 
+& Basse \\
 \hline
 
 Tableau de Bord (Administration et organisations) 
@@ -326,6 +338,12 @@ Utilisés pour la conteneurisation des services et la gestion des environnements
 \includegraphics[width=1cm]{images/github.png} & 
 \textbf{GitLab \& GitHub : \cite{github} \cite{gitlab}}  
 Outils de gestion de version et de collaboration permettant le suivi du code source ainsi que l’intégration continue (CI/CD).
+\\
+\hline
+
+\includegraphics[width=2cm]{images/ioredis.png} & 
+\textbf{ioredis : \cite{ioredis}}  
+Client Redis utilise pour la gestion du cache et la communication temps reel entre services.
 \\
 \hline
 

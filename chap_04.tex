@@ -312,7 +312,6 @@ Fonctionnalités réalisées :
     \item \textbf{Intégration avec les safezones :} Le système vérifie en temps réel si l’utilisateur est dans une zone sécurisée et déclenche des alertes en cas de sortie.
 \end{itemize}
 
-Ce module garantit un suivi continu, sécurisé et en temps réel des personnes sous surveillance.
 \section{Sprint 4 : Historique, alertes, SOS et partage}
 
 Le quatrième sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
@@ -330,7 +329,7 @@ Le quatrième sprint complète la dimension sécuritaire en introduisant des mé
 \textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
 
-US-01 & En tant que parent/aidant, je peux consulter l’historique des déplacements de mon enfant/personne vulnérable.
+US-01 & En tant que parent/aidant, je peux consulter l’historique des déplacements de mon Personne Dépendant.
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[leftmargin=*]
 \item API historique des positions
@@ -353,7 +352,7 @@ US-02 & En tant que parent/aidant, je peux consulter le trajet détaillé d’un
 & 2 jours \\
 \hline
 
-US-03 & En tant que parent/aidant, je peux recevoir des alertes liées à mon enfant/personne vulnérable.
+US-03 & En tant que parent/aidant, je peux recevoir des alertes liées à mon Personne Dépendant.
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[leftmargin=*]
 \item Notifications temps réel
@@ -388,7 +387,7 @@ US-05 & En tant que parent/aidant, je peux recevoir et gérer les alertes SOS.
 & 3 jours \\
 \hline
 
-US-06 & En tant que parent/aidant, je peux partager l’accès à un enfant/personne vulnérable avec d’autres utilisateurs.
+US-06 & En tant que parent/aidant, je peux partager l’accès à un Personne Dépendant avec d’autres utilisateurs.
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[leftmargin=*]
 \item Module de partage
@@ -453,10 +452,100 @@ US-10 & En tant qu’organisation, je peux recevoir des alertes uniquement en ca
 Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités organisationnelles. Ce sprint se concentre principalement sur la gestion des organisations, le suivi des enfants rattachés, les opérations de check-in/check-out, ainsi que la consultation des rapports et des alertes.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/UC sprint4.0.drawio.png}
+    \includegraphics[width=1\textwidth]{images/UC sprint4.png}
     \caption{Diagramme de cas d'utilisation – Sprint 4}
     \label{fig:chap4_cas_utilisation_sprint4}
 \end{figure}
+
+\subsubsection{Cas d'utilisation : Déclencher un SOS}
+
+Le cas d'utilisation \og Déclencher un SOS \fg{} est présenté ci-dessous. Cette description couvre l'ensemble des opérations permettant à un enfant ou une personne vulnérable d’envoyer une alerte d’urgence ou de démarrer un appel SOS vers ses contacts, accompagnée de sa localisation en temps réel.
+
+\small
+\renewcommand{\arraystretch}{1.1}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\caption{Description textuelle du cas d'utilisation Déclencher un SOS} \\ \hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
+
+Cas d'utilisation & Déclencher un SOS \\ \hline
+
+Acteurs & Enfant / Personne vulnérable \\ \hline
+
+Précondition & L’utilisateur est authentifié, dispose d’une connexion réseau et des services de localisation activés. \\ \hline
+
+Postcondition & Une alerte SOS est envoyée aux contacts et/ou un appel SOS est établi. La localisation est partagée en temps réel jusqu’à la résolution de l’événement. \\ \hline
+
+Scénario nominal &
+\begin{itemize}
+\item L’utilisateur accède à l’application.
+\item L’utilisateur appuie sur le bouton « SOS ».
+\item Le système propose le choix : alerte SOS ou appel SOS.
+\item L’utilisateur sélectionne le type de SOS.
+
+\item Le système récupère la position actuelle.
+
+\item Le système crée un événement SOS actif.
+
+\item Le système envoie une notification aux contacts.
+
+\item Le système active le suivi en temps réel.
+
+\item \textbf{Si SOS call :}
+\begin{itemize}
+\item Le système initie un appel vers les contacts.
+\item Les contacts peuvent accepter l’appel.
+\end{itemize}
+
+\item \textbf{Si SOS alerte :}
+\begin{itemize}
+\item Les contacts reçoivent l’alerte et consultent la localisation.
+\end{itemize}
+
+\item Une confirmation est affichée à l’utilisateur.
+\end{itemize}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+
+\item \textbf{Annulation du SOS :}
+\begin{itemize}
+\item L’utilisateur annule l’alerte.
+\item Le système désactive le SOS.
+\item Les contacts sont informés.
+\end{itemize}
+
+\item \textbf{Échec de l’appel SOS :}
+\begin{itemize}
+\item L’appel ne peut pas être établi.
+\item Le système continue l’envoi des alertes et du tracking.
+\end{itemize}
+
+\item \textbf{Absence de localisation :}
+\begin{itemize}
+\item La position n’est pas disponible.
+\item Une alerte est envoyée sans localisation précise.
+\end{itemize}
+
+\item \textbf{Problème réseau :}
+\begin{itemize}
+\item L’envoi échoue.
+\item Le système tente une retransmission.
+\end{itemize}
+
+\end{itemize}
+\\ \hline
+
+\end{longtable}
 
 \subsubsection{Diagramme de séquence de \og Déclencher SOS \fg}
 Le diagramme de séquence suivant illustre le processus de déclenchement d'une alerte SOS par un utilisateur et sa réception par les contacts d'urgence.
@@ -469,7 +558,95 @@ Le diagramme de séquence suivant illustre le processus de déclenchement d'une 
     \label{fig:chap4_sequence_sos}
 \end{figure}
 \vspace{0.5cm}
+\subsubsection{Cas d'utilisation : Partager l'accès}
 
+Le cas d'utilisation \og Partager l'accès \fg{} est présenté ci-dessous. Cette description couvre l'ensemble des opérations permettant à un parent ou aidant de partager l’accès aux informations d’un enfant ou d’une personne vulnérable avec un autre utilisateur, en définissant des permissions spécifiques.
+
+\small
+\renewcommand{\arraystretch}{1.1}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\caption{Description textuelle du cas d'utilisation Partager l'accès} \\ \hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
+
+Cas d'utilisation & Partager l'accès \\ \hline
+
+Acteurs & Parent/Aidant (propriétaire), Parent/Aidant (invité) \\ \hline
+
+Précondition & L’utilisateur est authentifié et dispose des droits nécessaires pour partager l’accès. \\ \hline
+
+Postcondition & Un accès est accordé à un autre utilisateur (Parent/Aidant invité) avec des permissions définies. \\ \hline
+
+Scénario nominal &
+\begin{itemize}
+\item L’utilisateur accède au module de partage.
+\item Il sélectionne l’Personne Dépendant.
+\item Il clique sur « Partager l’accès ».
+\item Le système affiche le formulaire.
+
+\item L’utilisateur saisit l’email de l’utilisateur invité.
+\item Il définit les permissions (tracking, SOS, accès complet).
+\item Il définit éventuellement une durée.
+
+\item Le système valide les données.
+\item Le système envoie une invitation.
+
+\item L’utilisateur invité reçoit l’invitation.
+
+\item S’il ne possède pas de compte :
+\begin{itemize}
+\item Il crée un compte (Parent/Aidant).
+\end{itemize}
+
+\item L’utilisateur invité s’authentifie.
+\item Il accepte le partage.
+
+\item Le système active l’accès avec les permissions définies.
+
+\item Une confirmation est affichée.
+\end{itemize}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+
+\item \textbf{Révocation de l’accès :}
+\begin{itemize}
+\item Le propriétaire retire l’accès.
+\item Le système désactive les permissions.
+\end{itemize}
+
+\item \textbf{Expiration :}
+\begin{itemize}
+\item La durée expire.
+\item Le système désactive automatiquement l’accès.
+\end{itemize}
+
+\item \textbf{Refus :}
+\begin{itemize}
+\item L’utilisateur invité refuse l’invitation.
+\item Le partage est annulé.
+\end{itemize}
+
+\item \textbf{Erreurs :}
+\begin{itemize}
+\item Email invalide
+\item Permissions incorrectes
+\item Droits insuffisants
+\end{itemize}
+
+\end{itemize}
+\\ \hline
+
+\end{longtable}
 \subsubsection{Diagramme de séquence de \og Partager l'accès \fg}
 Ce diagramme détaille les interactions nécessaires pour partager l'accès au suivi d'un utilisateur avec un tiers ou une organisation.
 
@@ -521,7 +698,44 @@ la confidentialité et la sécurité des données.
 
 Dans cette section, nous présentons les interfaces relatives à la localisation et au système SOS.
 
+\section{Présentation des interface de l'application}
 
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.49\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=0.45\textheight, keepaspectratio]{images/Trackingmap.jpg}}
+        \caption{Carte de suivi en temps réel}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.49\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=0.45\textheight, keepaspectratio]{images/Safezone.jpg}}
+        \caption{Gestion d'une SafeZone (geofencing)}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.32\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=0.28\textheight, keepaspectratio]{images/alertshistory.jpg}}
+        \caption{Historique des alertes}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.32\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=0.28\textheight, keepaspectratio]{images/share1.jpg}}
+        \caption{Partage — étape 1}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.32\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=0.28\textheight, keepaspectratio]{images/share3.jpg}}
+        \caption{Partage — étape 3}
+    \end{minipage}
+\end{figure}
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}

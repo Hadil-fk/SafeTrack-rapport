@@ -194,45 +194,9 @@ Scénario nominal &
 \end{itemize}
 \\ \hline
 
-Scénario alternatif &
-\begin{itemize}
-\item \textbf{Email déjà utilisé :}
-\begin{itemize}
-\item Le système détecte l'existence d’un compte associé à l’adresse email.
-\item Un message d’erreur est affiché.
-\end{itemize}
-
-\item \textbf{Mot de passe non conforme :}
-\begin{itemize}
-\item Le mot de passe ne respecte pas les règles de sécurité.
-\item Le système demande une correction.
-\end{itemize}
-
-\item \textbf{Données incomplètes :}
-\begin{itemize}
-\item Certains champs obligatoires sont manquants.
-\item Le système empêche la création du compte et signale les erreurs.
-\end{itemize}
-\end{itemize}
-\\ \hline
-
+% Inline (non-floating) presentation of interface images to avoid page breaks
 \end{longtable}
-\subsubsection{Diagramme de séquence de \og S'inscrire \fg}
 
-La figure~\ref{fig:chap3_signup_sequence} illustre le diagramme de séquence du cas d'utilisation \og S'inscrire \fg{} pour le scénario nominal. Les interactions couvrent la saisie des données, leur validation et la création du compte utilisateur.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/DS s'inscrire.png}
-    \caption{Diagramme de séquence de S'inscrire}
-    \label{fig:chap3_signup_sequence}
-\end{figure}
-
-\subsubsection{Cas d'utilisation : S'authentifier}
-
-Le cas d'utilisation \og S'authentifier \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des méthodes d'accès au système SafeTrack : 
-authentification classique par email et mot de passe, authentification biométrique, 
-et authentification via Google OAuth.
 
 \small
 \renewcommand{\arraystretch}{1.1}
@@ -249,8 +213,6 @@ et authentification via Google OAuth.
 
 \hline
 \endlastfoot
-
-Cas d'utilisation & S'authentifier \\ \hline
 
 Acteurs & Utilisateur (Parent / Enfant), Administrateur \\ \hline
 
@@ -496,7 +458,7 @@ Le cas d'utilisation \og Modifier profil \fg{} est présenté ci‑dessous. Cett
 
 Cas d'utilisation & Modifier profil \\ \hline
 
-Acteurs & Parent, Aidant, Organisation, Enfant/Personne vulnérable \\ \hline
+Acteurs & Parent, Aidant, Organisation, Personne Dépendant \\ \hline
 
 Précondition & L'utilisateur est authentifié, possède un compte actif et dispose des permissions de modification de profil (son propre profil ou celui de ses enfants/personnes vulnérables associées). \\ \hline
 
@@ -504,7 +466,7 @@ Postcondition & Les modifications du profil sont enregistrées dans la base de d
 
 Scénario nominal &
 \begin{itemize}
-\item L'utilisateur accède à son espace profil ou sélectionne un enfant/personne vulnérable.
+\item L'utilisateur accède à son espace profil ou sélectionne un Personne Dépendant.
 \item Le système affiche le formulaire de modification avec les données actuelles.
 \item L'utilisateur édite les champs souhaités (nom, email, téléphone, permissions, etc.).
 \item L'utilisateur peut importer une photo de profil.
@@ -517,7 +479,7 @@ Scénario nominal &
 
 Scénario alternatif &
 \begin{itemize}
-\item \textbf{Modification du profil d'un enfant/personne vulnérable :}
+\item \textbf{Modification du profil d'un Personne Dépendant :}
 \begin{itemize}
 \item Parent sélectionne un enfant dans la liste des personnes associées.
 \item Modification des informations de l'enfant (restrictions appliquées selon les droits).
@@ -534,7 +496,7 @@ Scénario alternatif &
 
 \item \textbf{Restrictions d'accès :}
 \begin{itemize}
-\item Enfant/personne vulnérable avec accès lecture seule sur son propre profil.
+\item Personne Dépendant avec accès lecture seule sur son propre profil.
 \item Modification possible uniquement par le parent/aidant responsable.
 \item Certains champs non modifiables par l'enfant (permissions, alertes, etc.).
 \end{itemize}
@@ -562,15 +524,15 @@ La figure~\ref{fig:chap3_profile_modify_sequence} illustre le diagramme de séqu
     \label{fig:chap3_profile_modify_sequence}
 \end{figure}
 
-\subsubsection{Cas d'utilisation : Ajouter un enfant/personne vulnérable}
+\subsubsection{Cas d'utilisation : Ajouter un Personne Dépendant}
 
-Le cas d'utilisation \og Ajouter un enfant/personne vulnérable \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un enfant ou une personne vulnérable et de générer automatiquement ses identifiants d'accès.
+Le cas d'utilisation \og Ajouter un Personne Dépendant \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un enfant ou une personne vulnérable et de générer automatiquement ses identifiants d'accès.
 
 \small
 \renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
 \begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
-\caption{Description textuelle du cas d'utilisation Ajouter un enfant/personne vulnérable} \\
+\caption{Description textuelle du cas d'utilisation Ajouter un Personne Dépendant} \\
 \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
@@ -582,23 +544,23 @@ Le cas d'utilisation \og Ajouter un enfant/personne vulnérable \fg{} est prése
 \hline
 \endlastfoot
 
-Cas d'utilisation & Ajouter un enfant/personne vulnérable \\ \hline
+Cas d'utilisation & Ajouter un Personne Dépendant \\ \hline
 
 Acteurs & Parent, Aidant \\ \hline
 
 Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un compte actif et dispose des permissions de création d'enfants/personnes vulnérables. \\ \hline
 
-Postcondition & Un nouveau profil enfant/personne vulnérable est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
+Postcondition & Un nouveau profil Personne Dépendant est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
 
 Scénario nominal &
 \begin{itemize}
 \item L'utilisateur (parent/aidant) accède au module de gestion des enfants.
-\item L'utilisateur clique sur le bouton « Ajouter un enfant/personne vulnérable ».
+\item L'utilisateur clique sur le bouton « Ajouter un Personne Dépendant ».
 \item Le système affiche un formulaire contenant les champs : nom, email et âge.
 \item L'utilisateur remplit les informations requises.
 \item Le système valide les données saisies (format email, âge valide, champs obligatoires).
 \item Le système génère automatiquement un compte avec un mot de passe sécurisé.
-\item Le nouvel enfant/personne vulnérable est enregistré et lié au compte du parent.
+\item Le nouvel Personne Dépendant est enregistré et lié au compte du parent.
 \item Le système envoie un email au parent contenant l'adresse email et le mot de passe temporaire du compte de l'enfant.
 \item L'utilisateur reçoit une confirmation d'ajout avec les détails du profil créé.
 \end{itemize}
@@ -633,7 +595,7 @@ Scénario alternatif &
 
 \end{longtable}
 
-\subsubsection{Diagramme de séquence de \og Ajouter un enfant/personne vulnérable \fg}
+\subsubsection{Diagramme de séquence de \og Ajouter un Personne Dépendant \fg}
 
 La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de séquence du cas \og Gestion des enfants \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression d'enfants/personnes vulnérables.
 
@@ -656,14 +618,14 @@ L’application envoie une requête sécurisée au backend en utilisant le token
 
 Les restrictions d'accès sont respectées : un parent/aidant peut modifier son propre profil et, selon les permissions, les profils des enfants/personnes vulnérables qui lui sont associés.
 
-\subsubsection{Réalisation du cas d'utilisation : Ajouter un enfant/personne vulnérable}
+\subsubsection{Réalisation du cas d'utilisation : Ajouter un Personne Dépendant}
 
 Le module de gestion des enfants permet aux parents/aidants de créer, consulter, modifier et supprimer des profils d'enfants ou de personnes vulnérables.
 
 Fonctionnalités réalisées :
 
 \begin{itemize}
-    \item \textbf{Ajout d'un enfant/personne vulnérable :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'enfant est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'enfant pour son utilisation ultérieure.
+    \item \textbf{Ajout d'un Personne Dépendant :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'enfant est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'enfant pour son utilisation ultérieure.
     
     \item \textbf{Consultation :} Affichage de la liste complète des enfants/personnes vulnérables associés au parent. Accès à la fiche détaillée de chaque profil incluant les informations personnelles (nom, âge, email), les autorisations, les paramètres de suivi et l'historique des activités.
     
@@ -677,81 +639,49 @@ Fonctionnalités réalisées :
 Toutes les opérations sont sécurisées et soumises à des contrôles d'autorisation pour prévenir les modifications non autorisées. Seuls les parents/aidants disposant des droits appropriés peuvent accéder à ces fonctionnalités.
 
 \section{Présentation des interface de l'application}
-\newpage
 
 
+% Adjusted figures: smaller heights and fixed placement to keep interfaces near the section
 \begin{figure}[H]
     \centering
-
-    % First row: Web + Mobile side by side (larger)
-    \begin{minipage}[b]{0.6\textwidth}
+    \begin{minipage}[b]{0.32\textwidth}
         \centering
-        \includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/RegisterWeb.png}
-        \caption{Interface Web – Inscription Menova – étape 1}
-    \end{minipage}
+        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signup1.jpg}}
+        \caption{Interface Mobile – Inscription SafeTrack – étape 1}
+    \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.38\textwidth}
+    \begin{minipage}[b]{0.32\textwidth}
         \centering
-        \includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/Screenshot_1747835775.png}
-        \caption{Interface Mobile – Inscription Menova – étape 1}
-    \end{minipage}
-
-    \vspace{1.8em}
-
-    % Second row: Web + Mobile side by side (larger)
-    \begin{minipage}[b]{0.6\textwidth}
-        \centering
-        \includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/Login.png}
-        \caption{Interface Web – Page de connexion Menova – étape 2}
-    \end{minipage}
+        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signup2.jpg}}
+        \caption{Interface Mobile – Inscription SafeTrack – étape 2}
+    \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.38\textwidth}
+    \begin{minipage}[b]{0.32\textwidth}
         \centering
-        \includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/loginMb.png}
-        \caption{Interface Mobile – Page de connexion Menova – étape 2}
+        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signin.jpg}}
+        \caption{Interface Mobile – Page de connexion SafeTrack}
     \end{minipage}
-
 \end{figure}
-
 \begin{figure}[H]
     \centering
-
-    % Paramètres du cadre
-    \setlength{\fboxsep}{2pt}  % espace entre image et cadre
-    \setlength{\fboxrule}{0.5pt} % épaisseur du cadre
-
-    % Première rangée : Web + Mobile
-    \begin{minipage}[b]{0.6\textwidth}
+    \begin{minipage}[b]{0.31\textwidth}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/Diagramme gerer profile.png}}
-        \caption{Interface Web – Ajouter des expériences ou d’éducations + Modifier Profil – étape 1}
-    \end{minipage}
+        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/modif profil.jpg}}
+        \caption{Interface mobile - Modifier Profil}
+    \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.38\textwidth}
+    \begin{minipage}[b]{0.31\textwidth}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/voirProfileMb.png}}
-        \caption{Interface Mobile – Voir Profil – étape 2}
-    \end{minipage}
-
-    \vspace{1.8em}
-
-    % Deuxième rangée : Web + Mobile
-    \begin{minipage}[b]{0.6\textwidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/EditUserDashboard.png}}
-        \caption{Interface Web – Gérer les utilisateurs – étape 1}
-    \end{minipage}
+        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/profile.jpg}}
+        \caption{Interface Mobile – Voir Profil}
+    \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.38\textwidth}
+    \begin{minipage}[b]{0.31\textwidth}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/Followetaimerpost.png}}
-        \caption{Interface Mobile – Follow un utilisateur – étape 1}
+        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/addchild.jpg}}
+        \caption{Interface mobile – Ajouter un Personne Dépendant}
     \end{minipage}
-
 \end{figure}
-
-
-\newpage
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 En conclusion, ce chapitre a présenté la mise en place du socle technique de SafeTrack à travers les sprints 1 et 2, notamment l'authentification sécurisée et la gestion des comptes. Ces fondations permettent désormais d'aborder le chapitre suivant, dédié à l'intégration du suivi en temps réel par localisation ainsi qu'au déploiement des systèmes d'alertes et de sécurité SOS .
