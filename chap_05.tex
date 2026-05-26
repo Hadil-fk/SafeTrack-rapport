@@ -1,4 +1,4 @@
-
+﻿﻿
 
 \chapter{Release 3:Gestion des Offres d'Emploi,Projets Freelance,et Système de Messagerie }
 
@@ -8,6 +8,7 @@
 }
 
 \minitoc
+\newpage
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 Dans le cadre de la cinquième phase du développement de notre application, nous avons concentré nos efforts sur trois modules essentiels : la gestion des offres d'emploi, les projets freelance et le système de messagerie. Ces fonctionnalités constituent une extension significative de notre plateforme, permettant aux utilisateurs de trouver des opportunités professionnelles, de proposer ou postuler à des projets freelance, et de communiquer efficacement entre eux.
@@ -23,9 +24,9 @@ Ce module a pour but de créer un espace où les utilisateurs peuvent publier de
 \subsection{Système de Messagerie}
 L'objectif de ce module est d'implémenter un système de communication complet au sein de la plateforme, permettant aux utilisateurs d'échanger des messages directs, de créer des conversations de groupe, et de partager différents types de médias. Les fonctionnalités de notification, de recherche dans l'historique et de gestion des statuts de lecture visent à offrir une expérience de communication fluide et efficace, essentielle pour la collaboration professionnelle.
 
-\section{Backlog Fonctionnel – Sprint 5}
+\section{Backlog Fonctionnel —“ Sprint 5}
 
-\subsection{Backlog Produit – Offres d'Emploi}
+\subsection{Backlog Produit —“ Offres d'Emploi}
 Le tableau ci-dessous recense les user stories associées à la gestion des offres d'emploi. 
 
 \usepackage{tabularx}
@@ -76,7 +77,7 @@ US-12 & En tant qu'entreprise, je veux recevoir une notification lorsqu'un candi
 
 
 
-\subsection{Backlog Produit – Projets Freelance}
+\subsection{Backlog Produit —“ Projets Freelance}
 Le tableau ci-dessous présente les user stories liées à la gestion des projets freelance, permettant aux employeurs de publier des projets et aux freelances de proposer leurs services.
 
 \begin{table}[H]
@@ -130,7 +131,7 @@ US-28 & En tant qu'utilisateur, je veux pouvoir proposer des avenants au contrat
 \end{table}
 
 
-\subsection{Backlog Produit – Messagerie}
+\subsection{Backlog Produit —“ Messagerie}
 Ce tableau présente les user stories associées au système de messagerie, permettant aux utilisateurs de communiquer efficacement sur la plateforme.
 
 \begin{table}[H]
@@ -206,7 +207,7 @@ La figure 5.2 présente le raffinement du cas d'utilisation "Postuler à une off
     \caption{Diagramme des cas d'utilisation Postuler à une offre d'emploi}
     \label{fig:postuler_offre_emploi}
 \end{figure}
-Lors de la recherche d’offres d’emploi sur notre plateforme, l’utilisateur a la possibilité d’affiner ses résultats grâce à plusieurs filtres. Il peut notamment spécifier le niveau d’expérience requis, le domaine d’activité, le type de contrat (CDI, CDD, stage, etc.), ainsi que la localisation géographique à l’aide d’une carte interactive. Ces filtres permettent de cibler rapidement les opportunités correspondant au profil et aux préférences du candidat, rendant la recherche plus efficace et personnalisée.
+Lors de la recherche d'offres d'emploi sur notre plateforme, l'utilisateur a la possibilité d'affiner ses résultats grâce à plusieurs filtres. Il peut notamment spécifier le niveau d'expérience requis, le domaine d'activité, le type de contrat (CDI, CDD, stage, etc.), ainsi que la localisation géographique à l'aide d'une carte interactive. Ces filtres permettent de cibler rapidement les opportunités correspondant au profil et aux préférences du candidat, rendant la recherche plus efficace et personnalisée.
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{4cm}|p{10cm}|}
@@ -509,7 +510,7 @@ Le système de contrats constitue un élément central du module \textit{Projets
 
 \paragraph{La signature électronique :}
 
-La signature électronique est un procédé numérique permettant d’authentifier un document de manière sécurisée et juridiquement reconnue. Elle garantit que le document signé provient bien du signataire et qu’il n’a pas été altéré depuis la signature. La signature électronique repose sur des technologies cryptographiques, comme la clé publique/clé privée, assurant ainsi la confidentialité, l’intégrité et la non-répudiation du document. Grâce à des fournisseurs de services spécialisés tels que DocuSign, la signature électronique répond aux exigences légales internationales, notamment le règlement européen eIDAS et la loi américaine ESIGN Act, conférant aux documents signés une valeur légale équivalente à une signature manuscrite traditionnelle.
+La signature électronique est un procédé numérique permettant d'authentifier un document de manière sécurisée et juridiquement reconnue. Elle garantit que le document signé provient bien du signataire et qu'il n'a pas été altéré depuis la signature. La signature électronique repose sur des technologies cryptographiques, comme la clé publique/clé privée, assurant ainsi la confidentialité, l'intégrité et la non-répudiation du document. Grâce à des fournisseurs de services spécialisés tels que DocuSign, la signature électronique répond aux exigences légales internationales, notamment le règlement européen eIDAS et la loi américaine ESIGN Act, conférant aux documents signés une valeur légale équivalente à une signature manuscrite traditionnelle.
 
 \paragraph{Architecture du système de contrats}
 L'architecture repose sur une intégration modulaire combinant des mécanismes de génération, de signature et de vérification des contrats. Elle s'articule autour de quatre composants clés :
@@ -517,11 +518,11 @@ L'architecture repose sur une intégration modulaire combinant des mécanismes d
 \begin{itemize}
     \item \textbf{Générateur de contrats} : Moteur de création dynamique de documents juridiques basé sur des modèles prédéfinis, paramétrables selon les informations du projet (durée, montant, responsabilités, etc.).
 
-    \item \textbf{Intégration \textbf{DocuSign} (Provider)} : Un fournisseur tiers, \textbf{DocuSign}, est intégré au système pour la gestion de la signature électronique. Il assure la conformité légale (\textbf{eIDAS, ESIGN Act}) et permet une expérience utilisateur sécurisée via une interface de confirmation et d’authentification.
+    \item \textbf{Intégration \textbf{DocuSign} (Provider)} : Un fournisseur tiers, \textbf{DocuSign}, est intégré au système pour la gestion de la signature électronique. Il assure la conformité légale (\textbf{eIDAS, ESIGN Act}) et permet une expérience utilisateur sécurisée via une interface de confirmation et d'authentification.
 
-    \item \textbf{Système de confirmation et de hashage} : Après validation de la signature par DocuSign, un hachage cryptographique (\textbf{SHA-1}) est généré à partir du contenu du contrat signé. Ce hash est stocké de manière immuable afin de permettre une vérification ultérieure de l’intégrité du document.
+    \item \textbf{Système de confirmation et de hashage} : Après validation de la signature par DocuSign, un hachage cryptographique (\textbf{SHA-1}) est généré à partir du contenu du contrat signé. Ce hash est stocké de manière immuable afin de permettre une vérification ultérieure de l'intégrité du document.
 
-    \item \textbf{Gestionnaire de cycle de vie des contrats} : Ce composant assure le suivi des statuts (en attente, signé, expiré), l’archivage sécurisé, ainsi que la consultation des historiques. Il garantit la traçabilité et la conservation des contrats dans le temps.
+    \item \textbf{Gestionnaire de cycle de vie des contrats} : Ce composant assure le suivi des statuts (en attente, signé, expiré), l'archivage sécurisé, ainsi que la consultation des historiques. Il garantit la traçabilité et la conservation des contrats dans le temps.
 \end{itemize}
 
 \paragraph{Sécurité et conformité}
@@ -674,7 +675,7 @@ API de cartographie utilisée pour implémenter les fonctionnalités de géoloca
     \centering
     % Mobile interface below (centered smaller image)
     \includegraphics[width=0.35\textwidth]{images/créerConv.png}
-    \caption{Interface Mobile – Création de Conversation – étape 1}
+    \caption{Interface Mobile —“ Création de Conversation —“ étape 1}
 
    
     \label{fig:web-mobile-messaging}
@@ -684,7 +685,7 @@ API de cartographie utilisée pour implémenter les fonctionnalités de géoloca
 
      % Web interface on top (full width)
     \includegraphics[width=0.9\textwidth]{Tarekconv.png}
-    \caption{Interface Web – Messagerie – étape 2}
+    \caption{Interface Web —“ Messagerie —“ étape 2}
 \end{figure}
 
 
@@ -700,7 +701,7 @@ API de cartographie utilisée pour implémenter les fonctionnalités de géoloca
     \begin{minipage}[b]{0.48\textwidth}
         \centering
         \includegraphics[height=250px]{images/mobilepostuleroffre.png}
-        \caption{Interface Mobile – Postuler à une offre – étape 2}
+        \caption{Interface Mobile —“ Postuler à une offre —“ étape 2}
         \label{fig:mobile-postuler}
     \end{minipage}
 \end{figure}
@@ -710,14 +711,14 @@ API de cartographie utilisée pour implémenter les fonctionnalités de géoloca
     \begin{minipage}[b]{0.48\textwidth}
         \centering
         \includegraphics[height=250px]{mobilecreatecontract.png}
-        \caption{Interface Mobile – Accepter une offre – étape 3}
+        \caption{Interface Mobile —“ Accepter une offre —“ étape 3}
         \label{fig:mobile-accepter}
     \end{minipage}
     \hfill
     \begin{minipage}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{images/ContratSigned.png}
-        \caption{Interface Web – Contrat signé – étape 4}
+        \caption{Interface Web —“ Contrat signé —“ étape 4}
         \label{fig:web-contrat}
     \end{minipage}
 \end{figure}
@@ -725,14 +726,14 @@ API de cartographie utilisée pour implémenter les fonctionnalités de géoloca
     \centering
     % Web interface on top (full width)
     \includegraphics[width=0.8\textwidth]{images/voirprojects.png}
-    \caption{Interface Web – Voir projects - étape 1}
+    \caption{Interface Web —“ Voir projects - étape 1}
 
     \vspace{1em} % Optional vertical spacing
 
     % Mobile interface below (centered smaller image)
     \includegraphics[width=0.35\textwidth]{images/SubmitProposalProject.png}
 
-    \caption{Interface Mobile – Envoie une condidature – étape 2}
+    \caption{Interface Mobile —“ Envoie une condidature —“ étape 2}
     \label{fig:web-mobile-messaging}
 \end{figure}
       \newpage

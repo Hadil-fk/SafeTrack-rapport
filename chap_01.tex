@@ -1,4 +1,4 @@
-
+﻿﻿
 
 
 
@@ -9,13 +9,14 @@
 
 \chapter{Présentation générale du projet}
 \minitoc
+\newpage
 %\label{chap_biblio}
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Dans ce chapitre, nous commençons par présenter la société d’accueil dans laquelle s’est déroulé notre projet de fin d’études. Par la suite, nous analysons la situation actuelle afin de mettre en évidence les limites existantes, puis nous présentons la solution proposée, qui sera développée en détail dans les chapitres suivants. Enfin, nous terminons ce chapitre par la description de la méthodologie adoptée pour la conception du projet.
+Dans ce chapitre, nous commençons par présenter la société d'accueil dans laquelle s'est déroulé notre projet de fin d'études. Par la suite, nous analysons la situation actuelle afin de mettre en évidence les limites existantes, puis nous présentons la solution proposée, qui sera développée en détail dans les chapitres suivants. Enfin, nous terminons ce chapitre par la description de la méthodologie adoptée pour la conception du projet.
 
-\section{Organisme d’accueil}
+\section{Organisme d'accueil}
 \subsection{Présentation de société}
 Nous avons réalisé notre stage de fin d'études au sein de l'entreprise "SOTUPUB", spécialisée dans les services informatiques pour les entreprises. Elle propose une large gamme de presentations, allant de la fourniture et l'installation de systèmes informatiques à la maintenance, la sécurisation, la conception de sites web et d'applications, et le développement informatique sur mesure. SOTUPUB répond ainsi aux besoins croissants du marché numérique et assure un soutien continu à ses clients.
 
@@ -28,7 +29,7 @@ SOTUPUB se concentre sur huit domaines d'expertise clés :
 \\
 1. Installation et intégration de systèmes informatiques..
 \\
-2. Développement d’applications web et mobiles.
+2. Développement d'applications web et mobiles.
 \\
 3. Maintenance, sécurisation et support des systèmes informatiques.
 \\
@@ -44,20 +45,20 @@ SOTUPUB se concentre sur huit domaines d'expertise clés :
 
 \section{Etude préalable}
 \subsection{Contexte de projet}
-Avec le développement rapide des technologies mobiles et de la géolocalisation, la sécurité des personnes vulnérables, notamment les enfants et les personnes âgées, est devenue un enjeu important. Malgré l’existence de certaines applications de suivi, celles-ci restent limitées et ne permettent pas une détection intelligente des situations à risque. Ainsi, il devient nécessaire de proposer une solution mobile fiable et sécurisée, capable d’assurer un suivi en temps réel et d’envoyer des alertes automatiques. C’est dans ce contexte que s’inscrit le projet SafeTrack, visant à renforcer la protection des personnes vulnérables grâce à une application intelligente.
+Avec le développement rapide des technologies mobiles et de la géolocalisation, la sécurité des personnes dépendantes, notamment les enfants et les personnes âgées, est devenue un enjeu important. Malgré l'existence de certaines applications de suivi, celles-ci restent limitées et ne permettent pas une détection intelligente des situations à risque. Ainsi, il devient nécessaire de proposer une solution mobile fiable et sécurisée, capable d'assurer un suivi en temps réel et d'envoyer des alertes automatiques. C'est dans ce contexte que s'inscrit le projet SafeTrack, visant à renforcer la protection des personnes dépendantes grâce à une application intelligente.
 
 \subsection{Problématique}
 
 
-La sécurité des personnes vulnérables, telles que les enfants et les personnes âgées, représente un défi majeur dans la société actuelle. Malgré la disponibilité de certaines solutions de géolocalisation, celles-ci restent souvent limitées à un simple suivi de position, sans permettre une détection intelligente des situations à risque ni une intervention rapide en cas d’urgence. Cette absence de fonctionnalités avancées peut entraîner des retards d’alerte, une surveillance inefficace et une exposition accrue au danger. Il devient ainsi indispensable de concevoir une solution mobile centralisée, intelligente et sécurisée, capable d’assurer un suivi en temps réel, d’analyser les comportements et de faciliter une réaction immédiate afin de garantir une meilleure protection des personnes vulnérables.
+La sécurité des personnes dépendantes, telles que les enfants et les personnes âgées, représente un défi majeur dans la société actuelle. Malgré la disponibilité de certaines solutions de géolocalisation, celles-ci restent souvent limitées à un simple suivi de position, sans permettre une détection intelligente des situations à risque ni une intervention rapide en cas d'urgence. Cette absence de fonctionnalités avancées peut entraîner des retards d'alerte, une surveillance inefficace et une exposition accrue au danger. Il devient ainsi indispensable de concevoir une solution mobile centralisée, intelligente et sécurisée, capable d'assurer un suivi en temps réel, d'analyser les comportements et de faciliter une réaction immédiate afin de garantir une meilleure protection des personnes dépendantes.
 
       
-\subsection{Étude de l’existant}
-À ce jour, un certain nombre de solutions technologiques permettent le suivi de personnes en temps réel, la géolocalisation, la gestion d’alertes et la sécurité des utilisateurs, mais elles restent souvent spécifiques à un usage, sans proposer une solution globale et intelligente pour les personnes vulnérables comme le fait SafeTrack.
+\subsection{Étude de l'existant}
+àce jour, un certain nombre de solutions technologiques permettent le suivi de personnes en temps réel, la géolocalisation, la gestion d'alertes et la sécurité des utilisateurs, mais elles restent souvent spécifiques à un usage, sans proposer une solution globale et intelligente pour les personnes dépendantes comme le fait SafeTrack.
 
 \subsubsection{FindMyKids \cite{findmykids}}
 
-Application mobile de surveillance pour enfants qui permet de suivre leur géolocalisation en temps réel, de définir des zones sécurisées (geofencing) et de recevoir des alertes en cas d’urgence ou de dépassement de zone. Elle offre aussi un historique des mouvements et des notifications spécifiques pour assurer la sécurité des enfants.
+Application mobile de surveillance pour enfants qui permet de suivre leur géolocalisation en temps réel, de définir des zones sécurisées (geofencing) et de recevoir des alertes en cas d'urgence ou de dépassement de zone. Elle offre aussi un historique des mouvements et des notifications spécifiques pour assurer la sécurité des enfants.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=10cm]{images/Capture d'écran 2026-02-04 121013.png}
@@ -67,21 +68,21 @@ Application mobile de surveillance pour enfants qui permet de suivre leur géolo
 
 \paragraph{Avantages :}
 \begin{itemize}
-    \item Géolocalisation en temps réel permettant aux parents de suivre les déplacements de l’enfant de manière continue.
-    \item Fonctionnalité de zones sécurisées (geofencing) avec notifications automatiques en cas d’entrée ou de sortie d’une zone définie.
+    \item Géolocalisation en temps réel permettant aux parents de suivre les déplacements de l'enfant de manière continue.
+    \item Fonctionnalité de zones sécurisées (geofencing) avec notifications automatiques en cas d'entrée ou de sortie d'une zone définie.
     \item Interface mobile simple et intuitive, facilitant la prise en main par les utilisateurs non techniques.
 \end{itemize}
 
 \paragraph{Inconvénients :}
 \begin{itemize}
     \item Solution principalement orientée vers les enfants, avec une faible adaptabilité pour les personnes âgées ou atteintes de troubles cognitifs.
-    \item Dépendance à une connexion Internet et à l’état de la batterie du smartphone, ce qui peut limiter la fiabilité en situation critique.
-    \item Absence d’un système avancé d’analyse intelligente des comportements ou d’un dashboard web dédié aux organisations.
+    \item Dépendance à une connexion Internet et à l'état de la batterie du smartphone, ce qui peut limiter la fiabilité en situation critique.
+    \item Absence d'un système avancé d'analyse intelligente des comportements ou d'un dashboard web dédié aux organisations.
 \end{itemize}
 
 \subsubsection{MiniFinder \cite{minifinder}}
 
-MiniFinder Nano / Pico / Watch est une solution de géolocalisation destinée à la sécurité des personnes vulnérables (enfants et personnes âgées). Elle offre un suivi en temps réel via des traceurs GPS et une application mobile ou web, avec des fonctionnalités comme le bouton SOS, le géorepérage et, selon le modèle, la détection de chute. Cependant, elle dépend d’un matériel dédié et propose peu de fonctionnalités d’analyse intelligente, limitant les possibilités de prévention avancée.
+MiniFinder Nano / Pico / Watch est une solution de géolocalisation destinée à la sécurité des personnes dépendantes (enfants et personnes âgées). Elle offre un suivi en temps réel via des traceurs GPS et une application mobile ou web, avec des fonctionnalités comme le bouton SOS, le géorepérage et, selon le modèle, la détection de chute. Cependant, elle dépend d'un matériel dédié et propose peu de fonctionnalités d'analyse intelligente, limitant les possibilités de prévention avancée.
 
 \begin{figure}[htpb]
     \centering
@@ -94,15 +95,15 @@ MiniFinder Nano / Pico / Watch est une solution de géolocalisation destinée à
 \paragraph{Avantages :}
 \begin{itemize}
     \item Géolocalisation en temps réel précise.
-    \item Présence d’un bouton SOS pour les situations d’urgence.
-    \item Utilisation simple, adaptée aux personnes vulnérables.
+    \item Présence d'un bouton SOS pour les situations d'urgence.
+    \item Utilisation simple, adaptée aux personnes dépendantes.
 \end{itemize}
 
 \paragraph{Inconvénients :}
 \begin{itemize}
     \item  Dépendance à un dispositif matériel externe.
     \item Coût relativement élevé.
-    \item Fonctionnalités d’intelligence artificielle limitées.
+    \item Fonctionnalités d'intelligence artificielle limitées.
 \end{itemize}
 
 \subsubsection{Life360 \cite{life360}}
@@ -119,23 +120,23 @@ Application de suivi familial qui partage la position des membres en temps réel
 
 \paragraph{Avantages :}
 \begin{itemize}
-    \item Géolocalisation en temps réel fiable permettant le suivi continu des membres d’un groupe familial.
-    \item Fonctionnalité de géorepérage (geofencing) avec alertes automatiques lors de l’entrée ou de la sortie des zones définies.
+    \item Géolocalisation en temps réel fiable permettant le suivi continu des membres d'un groupe familial.
+    \item Fonctionnalité de géorepérage (geofencing) avec alertes automatiques lors de l'entrée ou de la sortie des zones définies.
     \item Intégration de fonctionnalités de communication et de notifications facilitant la coordination entre les membres.
 \end{itemize}
 
 \paragraph{Inconvénients :}
 \begin{itemize}
     \item Application principalement orientée vers un usage familial, peu adaptée aux besoins des organisations ou des environnements professionnels.
-    \item Absence de mécanismes avancés d’intelligence artificielle pour la détection automatique des comportements à risque.
-    \item Fonctionnalités avancées souvent limitées à la version payante, ce qui peut représenter un frein à l’adoption.
+    \item Absence de mécanismes avancés d'intelligence artificielle pour la détection automatique des comportements à risque.
+    \item Fonctionnalités avancées souvent limitées à la version payante, ce qui peut représenter un frein à l'adoption.
 \end{itemize}
 
 
 
 \subsubsection{Mobile Tracker \cite{mobiletracker}}
 
-Mobile Tracker est une application de géolocalisation permettant le suivi en temps réel des personnes vulnérables, avec des fonctionnalités de zones sécurisées et d’alertes d’urgence, visant à renforcer la sécurité des utilisateurs.
+Mobile Tracker est une application de géolocalisation permettant le suivi en temps réel des personnes dépendantes, avec des fonctionnalités de zones sécurisées et d'alertes d'urgence, visant à renforcer la sécurité des utilisateurs.
 
 
 \begin{figure}[htpb]
@@ -149,22 +150,22 @@ Mobile Tracker est une application de géolocalisation permettant le suivi en te
 
 \paragraph{Avantages :}
 \begin{itemize}
-    \item Géolocalisation en temps réel permettant le suivi des déplacements des personnes vulnérables, notamment les personnes âgées.
+    \item Géolocalisation en temps réel permettant le suivi des déplacements des personnes dépendantes, notamment les personnes âgées.
     \item Mise en place de zones sécurisées avec alertes automatiques en cas de sortie des périmètres définis.
-    \item Fonctionnalité de bouton SOS facilitant l’envoi rapide d’alertes en situation d’urgence.
+    \item Fonctionnalité de bouton SOS facilitant l'envoi rapide d'alertes en situation d'urgence.
 \end{itemize}
 
 \paragraph{Inconvénients :}
 \begin{itemize}
     \item Interface et fonctionnalités souvent limitées, offrant peu de possibilités de personnalisation selon les profils des utilisateurs.
     \item Dépendance aux capteurs et à la connectivité du smartphone, ce qui peut réduire la fiabilité en cas de panne ou de faible batterie.
-    \item Absence d’un tableau de bord web centralisé et de mécanismes intelligents d’analyse des comportements.
+    \item Absence d'un tableau de bord web centralisé et de mécanismes intelligents d'analyse des comportements.
 \end{itemize}
 
 
 
 \subsubsection{FamiSafe \cite{famisafe}}
-FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées, et des alertes aux parents. Elle permet également de contrôler l’accès aux applications et de surveiller certaines activités numériques.
+FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées, et des alertes aux parents. Elle permet également de contrôler l'accès aux applications et de surveiller certaines activités numériques.
 
 
 
@@ -198,7 +199,7 @@ FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées
 
 \subsection{Étude comparative}
 % Le tableau \ref{ref_tab_comp_existant} présente une étude comparative des solutions de suivi et de sécurité existantes.
-Les différentes solutions de suivi et de géolocalisation des personnes vulnérables présentent des fonctionnalités intéressantes, mais restent souvent limitées ou spécialisées. SafeTrack se distingue par une approche globale en regroupant la géolocalisation en temps réel, la gestion des zones sécurisées, les alertes d’urgence et l’analyse intelligente des comportements au sein d’une seule plateforme. Cette intégration permet d’améliorer la prévention des risques, la réactivité en cas d’incident et l’efficacité du suivi.
+Les différentes solutions de suivi et de géolocalisation des personnes dépendantes présentent des fonctionnalités intéressantes, mais restent souvent limitées ou spécialisées. SafeTrack se distingue par une approche globale en regroupant la géolocalisation en temps réel, la gestion des zones sécurisées, les alertes d'urgence et l'analyse intelligente des comportements au sein d'une seule plateforme. Cette intégration permet d'améliorer la prévention des risques, la réactivité en cas d'incident et l'efficacité du suivi.
 \newpage
 
 
@@ -304,27 +305,27 @@ Les différentes solutions de suivi et de géolocalisation des personnes vulnér
     \item $\times$ : Fonctionnalité non disponible
 \end{itemize}
 
-Les données de ce tableau sont issues d’une analyse comparative bibliographique des fonctionnalités disponibles dans \cite{findmykids,life360,minifinder,mobiletracker,famisafe}, réalisée entre Janvier et Février 2026
+Les données de ce tableau sont issues d'une analyse comparative bibliographique des fonctionnalités disponibles dans \cite{findmykids,life360,minifinder,mobiletracker,famisafe}, réalisée entre Janvier et Février 2026
 
 
 \subsection{Solution proposée}
-Face aux besoins identifiés, SafeTrack se positionne comme une solution complète et innovante pour la protection des personnes vulnérables, notamment les enfants et les personnes âgées. Notre application mobile centralise les fonctionnalités essentielles : suivi en temps réel, gestion des zones sécurisées, alertes automatiques, historique des déplacements, et système SOS avec appel d’urgence — le tout dans un environnement sécurisé et intuitif.
+Face aux besoins identifiés, SafeTrack se positionne comme une solution complète et innovante pour la protection des personnes dépendantes, notamment les enfants et les personnes âgées. Notre application mobile centralise les fonctionnalités essentielles : suivi en temps réel, gestion des zones sécurisées, alertes automatiques, historique des déplacements, et système SOS avec appel d'urgence —” le tout dans un environnement sécurisé et intuitif.
 
-Grâce à l’intégration de l’intelligence artificielle, SafeTrack analyse les comportements et détecte les situations à risque, réduisant les fausses alertes et permettant une intervention rapide. L’interface, disponible sur Android et iOS, assure une accessibilité optimale à tout moment et depuis n’importe quel lieu.
+Grâce à l'intégration de l'intelligence artificielle, SafeTrack analyse les comportements et détecte les situations à risque, réduisant les fausses alertes et permettant une intervention rapide. L'interface, disponible sur Android et iOS, assure une accessibilité optimale à tout moment et depuis n'importe quel lieu.
 
-En réunissant sur une seule plateforme toutes les fonctionnalités nécessaires pour les parents, aidants et organisations, SafeTrack facilite la surveillance proactive, renforce la sécurité des utilisateurs et offre une gestion intelligente et centralisée des situations d’urgence.
+En réunissant sur une seule plateforme toutes les fonctionnalités nécessaires pour les parents, aidants et organisations, SafeTrack facilite la surveillance proactive, renforce la sécurité des utilisateurs et offre une gestion intelligente et centralisée des situations d'urgence.
 \subsection{Objectifs}
 
-Le développement de SafeTrack vise à répondre aux enjeux de sécurité des personnes vulnérables à travers les objectifs suivants :
+Le développement de SafeTrack vise à répondre aux enjeux de sécurité des personnes dépendantes à travers les objectifs suivants :
 
 \begin{itemize}
     \item Concevoir une application mobile intuitive permettant la géolocalisation en temps réel des enfants et des personnes âgées.
     
-    \item Mettre en place un système de zones sécurisées (geofencing) avec notifications automatiques en cas d’entrée ou de sortie d’un périmètre défini.
+    \item Mettre en place un système de zones sécurisées (geofencing) avec notifications automatiques en cas d'entrée ou de sortie d'un périmètre défini.
     
-    \item Intégrer un bouton SOS permettant l’envoi rapide d’alertes en situation d’urgence.
+    \item Intégrer un bouton SOS permettant l'envoi rapide d'alertes en situation d'urgence.
     
-    \item Développer un module d’analyse intelligente basé sur l’intelligence artificielle afin de détecter les comportements inhabituels et les situations à risque.
+    \item Développer un module d'analyse intelligente basé sur l'intelligence artificielle afin de détecter les comportements inhabituels et les situations à risque.
     
     \item Fournir un historique détaillé des déplacements pour assurer un suivi continu et structuré.
     
@@ -372,7 +373,7 @@ Le développement de SafeTrack vise à répondre aux enjeux de sécurité des pe
         & \cellcolor{red!20}Limitée \\
         \hline
         
-        Visibilité de l’avancement 
+        Visibilité de l'avancement 
         & \cellcolor{yellow!20}Moyenne 
         & \cellcolor{green!20}Très bonne 
         & \cellcolor{green!20}Bonne \\
@@ -384,7 +385,7 @@ Le développement de SafeTrack vise à répondre aux enjeux de sécurité des pe
         & \cellcolor{green!20}Adapté \\
         \hline
         
-        Complexité d’organisation 
+        Complexité d'organisation 
         & \cellcolor{green!20}Simple 
         & \cellcolor{yellow!20}Moyenne 
         & \cellcolor{green!20}Simple \\
@@ -402,26 +403,26 @@ Le développement de SafeTrack vise à répondre aux enjeux de sécurité des pe
 \end{table}
 \subsection{Méthodologie adaptée}
 
-Le projet SafeTrack, par sa complexité et la diversité de ses composantes incluant le développement mobile, le backend, ainsi que l’intégration de modules d’intelligence artificielle pour la détection de risques nécessite une méthodologie à la fois rigoureuse et flexible.
+Le projet SafeTrack, par sa complexité et la diversité de ses composantes incluant le développement mobile, le backend, ainsi que l'intégration de modules d'intelligence artificielle pour la détection de risques nécessite une méthodologie à la fois rigoureuse et flexible.
 
-Le travail en binôme exige une coordination efficace entre la conception du système d’information (gestion des données, modélisation, sécurité et algorithmes) et le développement des interfaces mobiles et du tableau de bord web (expérience utilisateur, protocoles réseau, notifications et alertes).
+Le travail en binôme exige une coordination efficace entre la conception du système d'information (gestion des données, modélisation, sécurité et algorithmes) et le développement des interfaces mobiles et du tableau de bord web (expérience utilisateur, protocoles réseau, notifications et alertes).
 
-Afin de répondre à ces exigences, une approche agile a été adoptée, favorisant la collaboration continue, l’adaptabilité aux changements et la gestion itérative des tâches. Cette méthodologie permet de gérer les interdépendances entre les différents modules de SafeTrack, d’assurer une visibilité constante sur l’avancement du projet et de réduire les risques grâce à des retours réguliers après chaque itération.
-Le projet SafeTrack, par sa complexité et la diversité de ses composantes incluant le développement mobile, le backend, et l’intégration de modules d’intelligence artificielle pour la détection de risques nécessite une méthodologie de travail à la fois rigoureuse et flexible.
+Afin de répondre à ces exigences, une approche agile a été adoptée, favorisant la collaboration continue, l'adaptabilité aux changements et la gestion itérative des tâches. Cette méthodologie permet de gérer les interdépendances entre les différents modules de SafeTrack, d'assurer une visibilité constante sur l'avancement du projet et de réduire les risques grâce à des retours réguliers après chaque itération.
+Le projet SafeTrack, par sa complexité et la diversité de ses composantes incluant le développement mobile, le backend, et l'intégration de modules d'intelligence artificielle pour la détection de risques nécessite une méthodologie de travail à la fois rigoureuse et flexible.
 
-Travaillant en binôme, nous avons dû coordonner efficacement nos efforts entre la conception du système d’information (gestion des données, modélisation, sécurité et algorithmes) et le développement des interfaces mobiles et du tableau de bord web (expérience utilisateur, protocoles réseau, notifications et alertes).
+Travaillant en binôme, nous avons dû coordonner efficacement nos efforts entre la conception du système d'information (gestion des données, modélisation, sécurité et algorithmes) et le développement des interfaces mobiles et du tableau de bord web (expérience utilisateur, protocoles réseau, notifications et alertes).
 
-Pour répondre à ces défis, nous avons choisi une approche agile, favorisant la collaboration continue, l’adaptabilité aux changements et la gestion itérative des tâches. Cette méthodologie nous permet de gérer les interdépendances entre les différents modules de SafeTrack, d’assurer une visibilité constante sur l’avancement, et de réduire les risques grâce à des retours réguliers après chaque étape de développement.
+Pour répondre à ces défis, nous avons choisi une approche agile, favorisant la collaboration continue, l'adaptabilité aux changements et la gestion itérative des tâches. Cette méthodologie nous permet de gérer les interdépendances entre les différents modules de SafeTrack, d'assurer une visibilité constante sur l'avancement, et de réduire les risques grâce à des retours réguliers après chaque étape de développement.
 
-Dans ce cadre, nous avons adopté le framework Scrum, qui offre un processus structuré basé sur des cycles courts (sprints), la collaboration continue et l’amélioration progressive. Scrum nous permet de planifier et suivre efficacement chaque fonctionnalité du suivi en temps réel et des alertes SOS à l’analyse des comportements par IA tout en conservant la flexibilité nécessaire pour nous adapter aux besoins des utilisateurs et aux imprévus du projet.
+Dans ce cadre, nous avons adopté le framework Scrum, qui offre un processus structuré basé sur des cycles courts (sprints), la collaboration continue et l'amélioration progressive. Scrum nous permet de planifier et suivre efficacement chaque fonctionnalité du suivi en temps réel et des alertes SOS à l'analyse des comportements par IA tout en conservant la flexibilité nécessaire pour nous adapter aux besoins des utilisateurs et aux imprévus du projet.
 \subsection{Framework Scrum}
-Scrum \cite{scrumguide} : un framework qui permet aux utilisateurs de faire face à des situations complexes tout en produisant de manière créative et efficace des produits de qualité optimale. Il ne s’agit pas d’un processus, d’une technique ou d’une méthode rigide, mais d’un cadre dans lequel on utilise différents concepts et pratiques. Scrum met en lumière l’efficacité de la gestion de nos produits et de nos méthodes de travail, favorisant ainsi l’amélioration continue du produit, de l’équipe et de l’environnement de travail. \\
+Scrum \cite{scrumguide} : un framework qui permet aux utilisateurs de faire face à des situations complexes tout en produisant de manière créative et efficace des produits de qualité optimale. Il ne s'agit pas d'un processus, d'une technique ou d'une méthode rigide, mais d'un cadre dans lequel on utilise différents concepts et pratiques. Scrum met en lumière l'efficacité de la gestion de nos produits et de nos méthodes de travail, favorisant ainsi l'amélioration continue du produit, de l'équipe et de l'environnement de travail. \\
 
 % Scrum of Scrums \cite{scrumofscrum} :Une technique Agile à grande échelle qui vous permet de connecter plusieurs équipes devant travailler ensemble pour livrer des solutions complexes.
 % Il aide les équipes à développer et à livrer des produits complexes par le biais de la transparence, de l'inspection et de l'adaptation, le tout à grande échelle. Il est particulièrement efficace lorsque tous les membres de l'équipe Scrum ultra performante visent un objectif commun, se font confiance, se respectent et sont sur la même longueur d'onde.
 
 \subsection{Processus Scrum}
-Scrum est un cadre de travail Agile qui structure et optimise la gestion de projet grâce à un processus itératif et incrémental. Il divise le projet en cycles courts, appelés sprints, d’une durée de 2 à 4 semaines, au terme desquels un produit fonctionnel est livré. Cette méthode repose sur trois principes clés : la transparence, qui assure que toutes les informations sur l’avancement du projet sont accessibles à l’équipe afin de garantir une compréhension partagée, l’inspection, qui consiste en des évaluations régulières permettant d’identifier les obstacles et d’améliorer les processus et l’adaptation, qui permet d’ajuster le projet en continu selon les retours et les besoins des utilisateurs.
+Scrum est un cadre de travail Agile qui structure et optimise la gestion de projet grâce à un processus itératif et incrémental. Il divise le projet en cycles courts, appelés sprints, d'une durée de 2 à 4 semaines, au terme desquels un produit fonctionnel est livré. Cette méthode repose sur trois principes clés : la transparence, qui assure que toutes les informations sur l'avancement du projet sont accessibles à l'équipe afin de garantir une compréhension partagée, l'inspection, qui consiste en des évaluations régulières permettant d'identifier les obstacles et d'améliorer les processus et l'adaptation, qui permet d'ajuster le projet en continu selon les retours et les besoins des utilisateurs.
 La figure \ref{fig_processus_scrum} illustre le processus de déroulement de développement Scrum :
 
 \begin{figure}[htpb]
@@ -431,7 +432,7 @@ La figure \ref{fig_processus_scrum} illustre le processus de déroulement de dé
 \label{fig_processus_scrum}
 \end{figure}
 \subsection{Les avantages de Scrum}
-Scrum offre une grande flexibilité et adaptabilité, permettant à l’équipe de s’ajuster rapidement aux changements et aux nouvelles exigences grâce à une approche itérative. Les sprints courts, d’une durée de 2 à 4 semaines, assurent une livraison rapide et continue des fonctionnalités, ce qui facilite l’obtention de retours fréquents des utilisateurs. La transparence et la collaboration sont renforcées par des réunions quotidiennes et des revues de sprint, garantissant que toute l’équipe partage une vision claire de l’avancement du projet. Enfin, Scrum favorise l’amélioration continue grâce aux rétrospectives de sprint, qui permettent d’identifier les points à améliorer et d’optimiser constamment les processus pour accroître la productivité.
+Scrum offre une grande flexibilité et adaptabilité, permettant à l'équipe de s'ajuster rapidement aux changements et aux nouvelles exigences grâce à une approche itérative. Les sprints courts, d'une durée de 2 à 4 semaines, assurent une livraison rapide et continue des fonctionnalités, ce qui facilite l'obtention de retours fréquents des utilisateurs. La transparence et la collaboration sont renforcées par des réunions quotidiennes et des revues de sprint, garantissant que toute l'équipe partage une vision claire de l'avancement du projet. Enfin, Scrum favorise l'amélioration continue grâce aux rétrospectives de sprint, qui permettent d'identifier les points à améliorer et d'optimiser constamment les processus pour accroître la productivité.
 \newpage
 \subsection{Les acteurs de scrum }
 \begin{figure}[htpb]
@@ -443,24 +444,24 @@ Scrum offre une grande flexibilité et adaptabilité, permettant à l’équipe 
 
 \subsection{Les artefacts de Scrum}
 
-Scrum repose sur trois artefacts principaux permettant d’assurer la transparence, le suivi et la progression du projet :
+Scrum repose sur trois artefacts principaux permettant d'assurer la transparence, le suivi et la progression du projet :
 \begin{enumerate}
 
     \item \textbf{Product Backlog (Backlog Produit)} \\
-    Le Product Backlog est une liste ordonnée et évolutive regroupant l’ensemble des fonctionnalités, améliorations et corrections nécessaires au développement du produit. Il est priorisé selon la valeur métier et les besoins des utilisateurs. Sa gestion est assurée par le \textit{Product Owner}, et son contenu est continuellement affiné au fil du projet.
+    Le Product Backlog est une liste ordonnée et évolutive regroupant l'ensemble des fonctionnalités, améliorations et corrections nécessaires au développement du produit. Il est priorisé selon la valeur métier et les besoins des utilisateurs. Sa gestion est assurée par le \textit{Product Owner}, et son contenu est continuellement affiné au fil du projet.
 
     \item \textbf{Sprint Backlog (Backlog du Sprint)} \\
-    Le Sprint Backlog correspond à l’ensemble des éléments sélectionnés du Product Backlog pour être réalisés durant un sprint donné. Il comprend également le plan d’exécution détaillant les tâches nécessaires à leur réalisation. Cet artefact est géré et actualisé par l’équipe de développement tout au long du sprint.
+    Le Sprint Backlog correspond à l'ensemble des éléments sélectionnés du Product Backlog pour être réalisés durant un sprint donné. Il comprend également le plan d'exécution détaillant les tâches nécessaires à leur réalisation. Cet artefact est géré et actualisé par l'équipe de développement tout au long du sprint.
 
     \item \textbf{Increment (Incrément)} \\
-    L’Incrément représente la version fonctionnelle et potentiellement livrable du produit obtenue à la fin de chaque sprint. Il doit satisfaire aux critères définis dans la \textit{Definition of Done} (Définition de Terminé), garantissant le respect des standards de qualité établis par l’équipe.
+    L'Incrément représente la version fonctionnelle et potentiellement livrable du produit obtenue à la fin de chaque sprint. Il doit satisfaire aux critères définis dans la \textit{Definition of Done} (Définition de Terminé), garantissant le respect des standards de qualité établis par l'équipe.
     
 \end{enumerate}
 \section{Planification itérative du projet}
 
-Afin d’assurer une organisation efficace du développement, le projet SafeTrack a été structuré en sprints selon une approche Agile. Chaque sprint représente une itération ayant des objectifs précis, alignés avec l’architecture globale du système (backend NestJS, application mobile Flutter et service IA RAG).
+Afin d'assurer une organisation efficace du développement, le projet SafeTrack a été structuré en sprints selon une approche Agile. Chaque sprint représente une itération ayant des objectifs précis, alignés avec l'architecture globale du système (backend NestJS, application mobile Flutter et service IA RAG).
 
-Cette planification permet un suivi progressif du développement, une priorisation des fonctionnalités critiques (authentification, tracking, sécurité) ainsi qu’une intégration continue des différents modules.
+Cette planification permet un suivi progressif du développement, une priorisation des fonctionnalités critiques (authentification, tracking, sécurité) ainsi qu'une intégration continue des différents modules.
 
 \begin{table}[htbp]
     \centering
@@ -472,7 +473,7 @@ Cette planification permet un suivi progressif du développement, une priorisati
         \hline
 
         0 &
-        Mise en place de l’architecture globale du projet :
+        Mise en place de l'architecture globale du projet :
         configuration des environnements (Backend, Mobile, RAG),
         CI/CD, base de données, sécurité initiale (JWT),
         \textbf{documentation complète des API REST et WebSocket (Swagger + guide technique)} &
@@ -485,11 +486,11 @@ Cette planification permet un suivi progressif du développement, une priorisati
         inscription, connexion, rôles (Parent, Institution),
         gestion des sessions JWT, profil utilisateur &
         2 semaines &
-        Module d’authentification complet, gestion des rôles, endpoints sécurisés \\
+        Module d'authentification complet, gestion des rôles, endpoints sécurisés \\
         \hline
 
         2 &
-        Gestion des enfants/personnes vulnérables, profils et appareils :
+        Gestion des enfants/personnes dépendantes, profils et appareils :
         création de profils enfants, association aux parents/institutions,
         gestion des devices et permissions &
         3 semaines &
@@ -505,9 +506,9 @@ Cette planification permet un suivi progressif du développement, une priorisati
         \hline
 
         4 &
-        Alertes et système d’urgence :
+        Alertes et système d'urgence :
         SOS (appel + alerte), notifications temps réel,
-        historique des événements, partage d’accès sécurisé &
+        historique des événements, partage d'accès sécurisé &
         3 semaines &
         Système SOS, alertes live Socket.IO, historique et notifications \\
         \hline
@@ -525,6 +526,6 @@ Cette planification permet un suivi progressif du développement, une priorisati
     \label{tab:plan_sprints}
 \end{table}
 
-Le Sprint 0 inclut désormais l’ensemble de la documentation des API REST, WebSocket et services internes, afin de garantir une base technique claire avant le développement des fonctionnalités métier.\section*{Conclusion}
+Le Sprint 0 inclut désormais l'ensemble de la documentation des API REST, WebSocket et services internes, afin de garantir une base technique claire avant le développement des fonctionnalités métier.\section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 Ce premier chapitre a permis de présenter le contexte et les objectifs de notre projet, d'analyser les solutions existantes et de définir les exigences pour notre propre solution. Nous avons également présenté la méthodologie de travail que nous avons adoptée pour ce projet, à savoir le framework Scrum, et discuté des avantages de cette approche. Enfin, nous avons introduit le langage de modélisation UML que nous avons utilisé pour la conception de notre application. Dans les chapitres suivants, nous entrerons dans les détails de la conception et du développement de notre solution.

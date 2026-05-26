@@ -1,6 +1,7 @@
-
+﻿﻿
 \chapter{Sprint 1\&2 : Authentification , Gestion des comptes \&  Profil , Gestion des utilisateurs }
 \minitoc
+\newpage
 
 \DeclareRobustCommand{\greencheck}{%
   \tikz\fill[scale=0.4, color=green]
@@ -10,25 +11,25 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Suite à l’analyse des besoins, ce chapitre présente le lancement du projet SafeTrack selon une approche Agile par sprints.
-Les deux premiers sprints portent sur les fonctionnalités essentielles, notamment l’authentification, la gestion des comptes, des profils et des utilisateurs.
-Ils constituent la base de l’application et introduisent les principaux artefacts de conception et de réalisation.
+Suite à l'analyse des besoins, ce chapitre présente le lancement du projet SafeTrack selon une approche Agile par sprints.
+Les deux premiers sprints portent sur les fonctionnalités essentielles, notamment l'authentification, la gestion des comptes, des profils et des utilisateurs.
+Ils constituent la base de l'application et introduisent les principaux artefacts de conception et de réalisation.
 
 
 \section{Sprint 1 : Authentification \& Gestion des comptes}
 
-L’objectif de ce premier sprint est de mettre en place les fonctionnalités fondamentales permettant à l’utilisateur d’accéder à l’application SafeTrack de manière sécurisée. Ce sprint constitue une étape essentielle, car il assure la gestion des accès, l’authentification des utilisateurs ainsi que la protection des données personnelles.
+L'objectif de ce premier sprint est de mettre en place les fonctionnalités fondamentales permettant à l'utilisateur d'accéder à l'application SafeTrack de manière sécurisée. Ce sprint constitue une étape essentielle, car il assure la gestion des accès, l'authentification des utilisateurs ainsi que la protection des données personnelles.
 
-Les fonctionnalités développées incluent la création de compte (inscription), l’authentification via une interface de connexion, la gestion des sessions sécurisées à l’aide de tokens (JWT), ainsi que la possibilité de réinitialiser le mot de passe en cas d’oubli. Une attention particulière est accordée à la validation des formulaires afin de garantir l’intégrité et la fiabilité des données saisies.
+Les fonctionnalités développées incluent la création de compte (inscription), l'authentification via une interface de connexion, la gestion des sessions sécurisées à l'aide de tokens (JWT), ainsi que la possibilité de réinitialiser le mot de passe en cas d'oubli. Une attention particulière est accordée à la validation des formulaires afin de garantir l'intégrité et la fiabilité des données saisies.
 
-À l’issue de ce sprint, les utilisateurs doivent être en mesure de s’inscrire, de se connecter et d’accéder à leur espace personnel de manière sécurisée, constituant ainsi la base nécessaire à l’utilisation des autres fonctionnalités de l’application.
+à l'issue de ce sprint, les utilisateurs doivent être en mesure de s'inscrire, de se connecter et d'accéder à leur espace personnel de manière sécurisée, constituant ainsi la base nécessaire à l'utilisation des autres fonctionnalités de l'application.
 
 \subsection{Backlog Sprint 1 :}
 
-Le tableau ci-dessous présente les user stories liées à l’authentification et à la gestion des comptes utilisateurs. Ce sprint vise à mettre en place les mécanismes d’accès sécurisé à l’application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
+Le tableau ci-dessous présente les user stories liées à l'authentification et à la gestion des comptes utilisateurs. Ce sprint vise à mettre en place les mécanismes d'accès sécurisé à l'application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
 
 \begin{table}[H]
-    \caption{Tableau des User Stories – Sprint 1}
+    \caption{Tableau des User Stories —“ Sprint 1}
 \centering
 \footnotesize
 \setlength{\tabcolsep}{2pt}
@@ -56,7 +57,7 @@ US-01 & En tant que visiteur, je peux m'inscrire via un formulaire en choisissan
 & 3 jours \\
 \hline
 
-US-02 & En tant qu'utilisateur, je peux me connecter de manière sécurisée à l’application mobile.
+US-02 & En tant qu'utilisateur, je peux me connecter de manière sécurisée à l'application mobile.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
 {\small
 \begin{itemize}[leftmargin=*]
@@ -70,7 +71,7 @@ US-02 & En tant qu'utilisateur, je peux me connecter de manière sécurisée à 
 & 3 jours \\
 \hline
 
-US-03 & En tant qu'administrateur, je peux me connecter via l’interface web afin d’accéder au tableau de bord d’administration.
+US-03 & En tant qu'administrateur, je peux me connecter via l'interface web afin d'accéder au tableau de bord d'administration.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
 {\small
 \begin{itemize}[leftmargin=*]
@@ -97,7 +98,7 @@ US-04 & En tant qu'utilisateur, je peux me déconnecter.
 & 1 jour \\
 \hline
 
-US-05 & En tant qu'utilisateur, je peux réinitialiser mon mot de passe en cas d’oubli.
+US-05 & En tant qu'utilisateur, je peux réinitialiser mon mot de passe en cas d'oubli.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
 {\small
 \begin{itemize}[leftmargin=*]
@@ -111,7 +112,7 @@ US-05 & En tant qu'utilisateur, je peux réinitialiser mon mot de passe en cas d
 & 2 jours \\
 \hline
 
-US-06 & En tant qu'utilisateur, je peux rester connecté afin de faciliter l’accès à l’application.
+US-06 & En tant qu'utilisateur, je peux rester connecté afin de faciliter l'accès à l'application.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
 {\small
 \begin{itemize}[leftmargin=*]
@@ -124,7 +125,7 @@ US-06 & En tant qu'utilisateur, je peux rester connecté afin de faciliter l’a
 & 2 jours \\
 \hline
 
-US-07 & En tant que système, je dois sécuriser les accès et les données utilisateurs afin de garantir la confidentialité et l’intégrité des informations.
+US-07 & En tant que système, je dois sécuriser les accès et les données utilisateurs afin de garantir la confidentialité et l'intégrité des informations.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
 {\small
 \begin{itemize}[leftmargin=*]
@@ -143,9 +144,9 @@ US-07 & En tant que système, je dois sécuriser les accès et les données util
 
 
 \subsection{Diagrammes du Sprint 1}
-\subsubsection{Diagramme de cas d’utilisation }
-La figure \ref{fig:cas_image} présente le diagramme des cas d’utilisation du Sprint 1. 
-Ce diagramme illustre les principales interactions entre l’utilisateur et les fonctionnalités liées à l’authentification et à la gestion des comptes.
+\subsubsection{Diagramme de cas d'utilisation }
+La figure \ref{fig:cas_image} présente le diagramme des cas d'utilisation du Sprint 1. 
+Ce diagramme illustre les principales interactions entre l'utilisateur et les fonctionnalités liées à l'authentification et à la gestion des comptes.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{images/authentification User case.png}
@@ -155,7 +156,7 @@ Ce diagramme illustre les principales interactions entre l’utilisateur et les 
 
 \subsubsection{Cas d'utilisation : S'inscrire}
 
-Le cas d'utilisation \og S'inscrire \fg{} est décrit ci‑dessous. Il présente les étapes par lesquelles un visiteur crée un compte SafeTrack, les contrôles effectués (validation des champs, vérification d'unicité) et les conditions d'acceptation.
+Le cas d'utilisation \og S'inscrire \fg{} est décrit ci—‘dessous. Il présente les étapes par lesquelles un visiteur crée un compte SafeTrack, les contrôles effectués (validation des champs, vérification d'unicité) et les conditions d'acceptation.
 
 \small
 \renewcommand{\arraystretch}{1.1}
@@ -187,10 +188,10 @@ Scénario nominal &
 \item Le système demande au visiteur de choisir un rôle (Parent/Aidant ou Organisation).
 \item Le système affiche les champs requis selon le rôle sélectionné.
 \item Le visiteur saisit les informations demandées.
-\item Le système valide les données (format de l’email, mot de passe, etc.).
-\item Le système vérifie l’unicité de l’adresse email.
+\item Le système valide les données (format de l'email, mot de passe, etc.).
+\item Le système vérifie l'unicité de l'adresse email.
 \item Si les informations sont valides, le système crée le compte correspondant au rôle choisi.
-\item Le visiteur reçoit une confirmation d’inscription.
+\item Le visiteur reçoit une confirmation d'inscription.
 \end{itemize}
 \\ \hline
 
@@ -239,19 +240,19 @@ Scénario alternatif &
 \begin{itemize}
 \item \textbf{Mot de passe oublié :}
 \begin{itemize}
-\item Saisie de l’e-mail.
-\item Réception d’un lien de réinitialisation.
-\item Définition d’un nouveau mot de passe.
+\item Saisie de l'e-mail.
+\item Réception d'un lien de réinitialisation.
+\item Définition d'un nouveau mot de passe.
 \end{itemize}
 
 \item \textbf{Renouvellement de session :}
 \begin{itemize}
 \item Expiration du token.
 \item Utilisation du refresh token.
-\item Génération d’un nouveau token.
+\item Génération d'un nouveau token.
 \end{itemize}
 
-\item \textbf{Erreurs d’authentification :}
+\item \textbf{Erreurs d'authentification :}
 \begin{itemize}
 \item Identifiants incorrects.
 \item Échec biométrique.
@@ -275,53 +276,53 @@ La figure~\ref{fig:chap3_auth_sequence} illustre le diagramme de séquence du ca
 \end{figure}
 \subsection{Réalisation du Sprint 1:}
 
-\subsubsection{Réalisation du cas d’utilisation : S’inscrire}
+\subsubsection{Réalisation du cas d'utilisation : S'inscrire}
 
-Pour s’inscrire dans l’application \textit{SafeTrack}, l’utilisateur commence par remplir le formulaire d’inscription (nom, email, mot de passe, etc.) depuis l’interface mobile ou web.
+Pour s'inscrire dans l'application \textit{SafeTrack}, l'utilisateur commence par remplir le formulaire d'inscription (nom, email, mot de passe, etc.) depuis l'interface mobile ou web.
 
-Les données saisies sont envoyées au backend via l’API d’inscription. Le système procède ensuite à plusieurs vérifications :
+Les données saisies sont envoyées au backend via l'API d'inscription. Le système procède ensuite à plusieurs vérifications :
 
 \begin{itemize}
-    \item validation du format de l’email,
+    \item validation du format de l'email,
     \item contrôle de la conformité du mot de passe (longueur minimale et règles de sécurité),
-    \item vérification de l’unicité de l’email dans la base de données.
+    \item vérification de l'unicité de l'email dans la base de données.
 \end{itemize}
 
 Si toutes les vérifications sont réussies, le système crée un nouveau compte utilisateur et enregistre les informations de manière sécurisée dans la base de données.
 
-\subsubsection{Réalisation du cas d’utilisation : S’authentifier}
+\subsubsection{Réalisation du cas d'utilisation : S'authentifier}
 
-Pour se connecter, l’utilisateur saisit son email et son mot de passe dans l’interface de connexion.
+Pour se connecter, l'utilisateur saisit son email et son mot de passe dans l'interface de connexion.
 
 Les informations sont envoyées au backend, où le système :
 
 \begin{itemize}
-    \item vérifie l’existence de l’utilisateur,
+    \item vérifie l'existence de l'utilisateur,
     \item compare le mot de passe fourni avec celui stocké (haché),
-    \item génère un token d’authentification (JWT) en cas de succès.
+    \item génère un token d'authentification (JWT) en cas de succès.
 \end{itemize}
 
-Ce token permet à l’utilisateur d’accéder aux fonctionnalités protégées de l’application de manière sécurisée, sans avoir à se reconnecter à chaque requête.
+Ce token permet à l'utilisateur d'accéder aux fonctionnalités protégées de l'application de manière sécurisée, sans avoir à se reconnecter à chaque requête.
 
 
 \section{Sprint 2 : Profil \& Gestion des utilisateurs}
 
-Ce deuxième sprint vise à améliorer l’expérience utilisateur en introduisant les fonctionnalités liées à la gestion du profil et des contacts. Il permet principalement aux acteurs responsables (parents, aidants ou organisations) de personnaliser leurs informations et de gérer les relations avec les personnes suivies dans l’application SafeTrack.
+Ce deuxième sprint vise à améliorer l'expérience utilisateur en introduisant les fonctionnalités liées à la gestion du profil et des contacts. Il permet principalement aux acteurs responsables (parents, aidants ou organisations) de personnaliser leurs informations et de gérer les relations avec les personnes suivies dans l'application SafeTrack.
 
 Les fonctionnalités développées incluent la consultation et la modification des informations du profil (nom, prénom, coordonnées, etc.), ainsi que la gestion des contacts (ajout, suppression et consultation). Ces actions sont réservées aux utilisateurs disposant des droits appropriés, notamment les parents, les aidants ou les organisations. 
 
-En revanche, les personnes vulnérables disposent uniquement d’un accès limité en consultation, sans possibilité de modifier leur profil ou de gérer des contacts.
+En revanche, les personnes dépendantes disposent uniquement d'un accès limité en consultation, sans possibilité de modifier leur profil ou de gérer des contacts.
 
-À la fin de ce sprint, l’application offre un espace utilisateur personnalisable et permet d’établir un réseau de confiance entre les différents acteurs, ce qui constitue une base essentielle pour les fonctionnalités de suivi, de localisation et d’alertes développées dans les sprints suivants.
+à la fin de ce sprint, l'application offre un espace utilisateur personnalisable et permet d'établir un réseau de confiance entre les différents acteurs, ce qui constitue une base essentielle pour les fonctionnalités de suivi, de localisation et d'alertes développées dans les sprints suivants.
 
 
 
 \subsection{Backlog Sprint 2 :}
 
-La gestion et la personnalisation du profil utilisateur représentent un aspect essentiel d’une application orientée sécurité. Les user stories suivantes décrivent les fonctionnalités permettant aux acteurs autorisés (parents, aidants ou organisations) de gérer les profils et les contacts.
+La gestion et la personnalisation du profil utilisateur représentent un aspect essentiel d'une application orientée sécurité. Les user stories suivantes décrivent les fonctionnalités permettant aux acteurs autorisés (parents, aidants ou organisations) de gérer les profils et les contacts.
 
 \begin{table}[H]
-    \caption{Backlog Sprint 2 – Gestion des profils et contacts}
+    \caption{Backlog Sprint 2 —“ Gestion des profils et contacts}
 \centering
 \small
 \setlength{\tabcolsep}{3pt}
@@ -354,7 +355,7 @@ US-011 & En tant que parent/aidant/organisation, je peux modifier mon profil afi
 & 3 jours \\
 \hline
 
-US-012 & En tant que parent/aidant, je peux ajouter un contact afin d’étendre mon réseau de confiance.
+US-012 & En tant que parent/aidant, je peux ajouter un contact afin d'étendre mon réseau de confiance.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Formulaire ajout contact
@@ -387,7 +388,7 @@ US-014 & En tant que parent/aidant, je peux consulter la liste des contacts asso
 & 2 jours \\
 \hline
 
-US-015 & En tant que parent/aidant, je peux consulter les détails d’un contact.
+US-015 & En tant que parent/aidant, je peux consulter les détails d'un contact.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Page détail contact
@@ -398,7 +399,7 @@ US-015 & En tant que parent/aidant, je peux consulter les détails d’un contac
 & 1 jour \\
 \hline
 
-US-016 & En tant qu’utilisateur, je peux recevoir un retour visuel lors d’une action afin d’améliorer l’expérience utilisateur.
+US-016 & En tant qu'utilisateur, je peux recevoir un retour visuel lors d'une action afin d'améliorer l'expérience utilisateur.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Messages de confirmation
@@ -425,9 +426,9 @@ US-017 & En tant que parent/aidant, je peux rechercher un contact afin de le ret
 
 
 \subsection{Diagrammes du Sprint 2}
-\subsubsection{Diagramme de cas d’utilisation }
-La figure \ref{fig:chap3_sprint2} présente le diagramme des cas d’utilisation du Sprint 2. 
-Ce diagramme illustre les principales interactions entre l’utilisateur et les fonctionnalités liées à la gestion du profil et des contacts dans l’application SafeTrack.
+\subsubsection{Diagramme de cas d'utilisation }
+La figure \ref{fig:chap3_sprint2} présente le diagramme des cas d'utilisation du Sprint 2. 
+Ce diagramme illustre les principales interactions entre l'utilisateur et les fonctionnalités liées à la gestion du profil et des contacts dans l'application SafeTrack.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{images/UC_sprint2.png}
@@ -438,7 +439,7 @@ Ce diagramme illustre les principales interactions entre l’utilisateur et les 
 
 \subsubsection{Cas d'utilisation : Modifier profil}
 
-Le cas d'utilisation \og Modifier profil \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des opérations permettant à l'utilisateur de mettre à jour ses informations personnelles.
+Le cas d'utilisation \og Modifier profil \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant à l'utilisateur de mettre à jour ses informations personnelles.
 
 \small
 \renewcommand{\arraystretch}{1.1}
@@ -460,7 +461,7 @@ Cas d'utilisation & Modifier profil \\ \hline
 
 Acteurs & Parent, Aidant, Organisation, Personne Dépendant \\ \hline
 
-Précondition & L'utilisateur est authentifié, possède un compte actif et dispose des permissions de modification de profil (son propre profil ou celui de ses enfants/personnes vulnérables associées). \\ \hline
+Précondition & L'utilisateur est authentifié, possède un compte actif et dispose des permissions de modification de profil (son propre profil ou celui de ses enfants/personnes dépendantes associées). \\ \hline
 
 Postcondition & Les modifications du profil sont enregistrées dans la base de données et l'utilisateur en reçoit une confirmation. \\ \hline
 
@@ -526,7 +527,7 @@ La figure~\ref{fig:chap3_profile_modify_sequence} illustre le diagramme de séqu
 
 \subsubsection{Cas d'utilisation : Ajouter un Personne Dépendant}
 
-Le cas d'utilisation \og Ajouter un Personne Dépendant \fg{} est présenté ci‑dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un enfant ou une personne vulnérable et de générer automatiquement ses identifiants d'accès.
+Le cas d'utilisation \og Ajouter un Personne Dépendant \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un enfant ou une personne dépendante et de générer automatiquement ses identifiants d'accès.
 
 \small
 \renewcommand{\arraystretch}{1.1}
@@ -548,7 +549,7 @@ Cas d'utilisation & Ajouter un Personne Dépendant \\ \hline
 
 Acteurs & Parent, Aidant \\ \hline
 
-Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un compte actif et dispose des permissions de création d'enfants/personnes vulnérables. \\ \hline
+Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un compte actif et dispose des permissions de création d'enfants/personnes dépendantes. \\ \hline
 
 Postcondition & Un nouveau profil Personne Dépendant est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
 
@@ -597,7 +598,7 @@ Scénario alternatif &
 
 \subsubsection{Diagramme de séquence de \og Ajouter un Personne Dépendant \fg}
 
-La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de séquence du cas \og Gestion des enfants \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression d'enfants/personnes vulnérables.
+La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de séquence du cas \og Gestion des enfants \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression d'enfants/personnes dépendantes.
 
 \begin{figure}[H]
     \centering
@@ -612,22 +613,22 @@ La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de 
 
 \subsubsection{Réalisation du cas d'utilisation : Modifier profil}
 
-Après authentification, l’utilisateur peut accéder à son espace profil et modifier les informations autorisées.
+Après authentification, l'utilisateur peut accéder à son espace profil et modifier les informations autorisées.
 
-L’application envoie une requête sécurisée au backend en utilisant le token JWT. Le serveur vérifie l’authenticité du token, récupère les données courantes, valide les modifications soumises puis met à jour la base de données. Les changements sont confimés à l’utilisateur via un message de retour.
+L'application envoie une requête sécurisée au backend en utilisant le token JWT. Le serveur vérifie l'authenticité du token, récupère les données courantes, valide les modifications soumises puis met à jour la base de données. Les changements sont confimés à l'utilisateur via un message de retour.
 
-Les restrictions d'accès sont respectées : un parent/aidant peut modifier son propre profil et, selon les permissions, les profils des enfants/personnes vulnérables qui lui sont associés.
+Les restrictions d'accès sont respectées : un parent/aidant peut modifier son propre profil et, selon les permissions, les profils des enfants/personnes dépendantes qui lui sont associés.
 
 \subsubsection{Réalisation du cas d'utilisation : Ajouter un Personne Dépendant}
 
-Le module de gestion des enfants permet aux parents/aidants de créer, consulter, modifier et supprimer des profils d'enfants ou de personnes vulnérables.
+Le module de gestion des enfants permet aux parents/aidants de créer, consulter, modifier et supprimer des profils d'enfants ou de personnes dépendantes.
 
 Fonctionnalités réalisées :
 
 \begin{itemize}
     \item \textbf{Ajout d'un Personne Dépendant :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'enfant est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'enfant pour son utilisation ultérieure.
     
-    \item \textbf{Consultation :} Affichage de la liste complète des enfants/personnes vulnérables associés au parent. Accès à la fiche détaillée de chaque profil incluant les informations personnelles (nom, âge, email), les autorisations, les paramètres de suivi et l'historique des activités.
+    \item \textbf{Consultation :} Affichage de la liste complète des enfants/personnes dépendantes associés au parent. Accès à la fiche détaillée de chaque profil incluant les informations personnelles (nom, âge, email), les autorisations, les paramètres de suivi et l'historique des activités.
     
     \item \textbf{Modification :} Le parent/aidant peut modifier les informations de l'enfant (nom, âge) et configurer les permissions, zones de sécurité et paramètres de suivi. Mise à jour des données en base avec validation des changements et confirmation des modifications.
     
@@ -647,19 +648,19 @@ Toutes les opérations sont sécurisées et soumises à des contrôles d'autoris
     \begin{minipage}[b]{0.32\textwidth}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signup1.jpg}}
-        \caption{Interface Mobile – Inscription SafeTrack – étape 1}
+        \caption{Interface Mobile —“ Inscription SafeTrack —“ étape 1}
     \end{minipage}%
     \hfill
     \begin{minipage}[b]{0.32\textwidth}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signup2.jpg}}
-        \caption{Interface Mobile – Inscription SafeTrack – étape 2}
+        \caption{Interface Mobile —“ Inscription SafeTrack —“ étape 2}
     \end{minipage}%
     \hfill
     \begin{minipage}[b]{0.32\textwidth}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signin.jpg}}
-        \caption{Interface Mobile – Page de connexion SafeTrack}
+        \caption{Interface Mobile —“ Page de connexion SafeTrack}
     \end{minipage}
 \end{figure}
 \begin{figure}[H]
@@ -673,13 +674,13 @@ Toutes les opérations sont sécurisées et soumises à des contrôles d'autoris
     \begin{minipage}[b]{0.31\textwidth}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=7cm]{images/profile.jpg}}
-        \caption{Interface Mobile – Voir Profil}
+        \caption{Interface Mobile —“ Voir Profil}
     \end{minipage}%
     \hfill
     \begin{minipage}[b]{0.31\textwidth}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=7cm]{images/addchild.jpg}}
-        \caption{Interface mobile – Ajouter un Personne Dépendant}
+        \caption{Interface mobile —“ Ajouter un Personne Dépendant}
     \end{minipage}
 \end{figure}
 \section*{Conclusion}

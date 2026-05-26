@@ -1,0 +1,16 @@
+\chapter*{Conclusion Générale}
+\addcontentsline{toc}{chapter}{Conclusion Générale}
+\markboth{Conclusion Générale}{Conclusion Générale}
+\mtcaddchapter[Conclusion Générale]
+
+
+
+Le projet \textbf{SafeTrack} a permis de concevoir et de développer une solution complète de suivi et de sécurité intelligente destinée aux enfants, aux familles ainsi qu’aux institutions. Cette plateforme se compose d’une application mobile multiplateforme développée avec Flutter, d’un backend robuste basé sur NestJS, ainsi que d’un tableau de bord web permettant l’administration, la supervision et l’analyse des données en temps réel.
+
+L’objectif principal de ce projet était de garantir une meilleure sécurité des enfants grâce à des fonctionnalités avancées telles que la géolocalisation en temps réel, les zones sécurisées (\textit{geofencing}), les alertes intelligentes, le suivi de l’historique des déplacements, les appels SOS, le partage d’accès entre parents et aidants, ainsi qu’un système d’analyse intelligent basé sur l’intelligence artificielle et le RAG (\textit{Retrieval Augmented Generation}).
+
+La réalisation de ce projet nous a permis de mettre en pratique plusieurs compétences techniques et méthodologiques, notamment le développement mobile et web, la conception d’API REST sécurisées, l’authentification JWT, la gestion des WebSockets pour le temps réel, l’intégration de bases de données MongoDB, ainsi que l’utilisation des technologies d’intelligence artificielle pour l’analyse des risques et la génération de recommandations contextuelles.
+
+De plus, l’adoption d’une méthodologie Agile organisée en sprints a favorisé une meilleure gestion du projet, une planification efficace des tâches et une amélioration continue des fonctionnalités développées. Cette approche a également permis de répondre progressivement aux besoins des utilisateurs tout en assurant la qualité et la maintenabilité du système.
+
+Ainsi, \textbf{SafeTrack} représente une solution moderne, évolutive et innovante dans le domaine de la sécurité et du suivi intelligent. Ce projet ouvre également plusieurs perspectives d’amélioration futures, telles que l’intégration de modèles d’intelligence artificielle plus avancés, l’optimisation des performances en temps réel, l’ajout de statistiques prédictives, ainsi que le déploiement à grande échelle pour les écoles, centres de santé et institutions spécialisées.
