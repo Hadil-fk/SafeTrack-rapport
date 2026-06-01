@@ -14,7 +14,7 @@ Dans le cadre de la sixième phase du développement de notre application, nous 
 \section{Objectifs du Sprint 6}
 
 \subsection{Système de Réunions Vidéo}
-L'objectif principal de ce sprint est de développer un module de visioconférence intégré à notre plateforme. Ce système doit permettre aux utilisateurs de créer des réunions avec différentes configurations, d'inviter d'autres membres, de gérer le déroulement des sessions et d'accéder à l'historique des réunions passées. Les fonctionnalités avancées incluent l'enregistrement des sessions, le partage de présentations et la consultation de statistiques. L'ensemble du module vise à offrir une expérience fluide et performante pour les réunions professionnelles à distance, renforçant ainsi l'écosystème collaboratif de notre application.
+L'objectif principal de ce Sprint est de développer un module de visioconférence intégré à notre plateforme. Ce système doit permettre aux utilisateurs de créer des réunions avec différentes configurations, d'inviter d'autres membres, de gérer le déroulement des sessions et d'accéder à l'historique des réunions passées. Les fonctionnalités avancées incluent l'enregistrement des sessions, le partage de présentations et la consultation de statistiques. L'ensemble du module vise à offrir une expérience fluide et performante pour les réunions professionnelles à distance, renforçant ainsi l'écosystème collaboratif de notre application.
 
 \section{Backlog Fonctionnel —“ Sprint 6}
 
@@ -225,9 +225,9 @@ La figure 6.6 présente le diagramme de séquence du cas d'utilisation "Gérer l
     \caption{Diagramme de séquence Gérer les enregistrements de réunions}
     \label{fig:gérer_enregistrements_réunion_seq}
 \end{figure}
-\section{Réalisation du sprint 6}
+\section{Réalisation du Sprint 6}
 \subsection{Architecture générale}
-Pour la réalisation du sprint 6, nous avons conservé l'architecture microservices mise en place dans les sprints précédents, en y ajoutant un nouveau microservice dédié à la gestion des réunions vidéo. Ce service s'intègre avec les services existants d'authentification et de notification pour assurer une expérience utilisateur cohérente et sécurisée.
+Pour la réalisation du Sprint 6, nous avons conservé l'architecture microservices mise en place dans les Sprints précédents, en y ajoutant un nouveau microservice dédié à la gestion des réunions vidéo. Ce service s'intègre avec les services existants d'authentification et de notification pour assurer une expérience utilisateur cohérente et sécurisée.
 
 L'architecture du système de réunions repose sur une combinaison de technologies synchrones (WebRTC pour les flux vidéo en temps réel) et asynchrones (WebSockets pour les notifications et signaux de contrôle). Un service de stockage dédié est également implémenté pour la gestion des enregistrements vidéo.
 
@@ -346,7 +346,7 @@ L'intégration de BigBlueButton a été un succès, permettant d'atteindre les p
 Cette intégration nous permet d'offrir une solution de réunions vidéo complète et robuste, parfaitement intégrée à notre plateforme, tout en bénéficiant de la maturité et de la richesse fonctionnelle de BigBlueButton.
 
 \section{Technologies et Outils Utilisés}
-Cette section présente les principales technologies et outils utilisés pour la réalisation du sprint 6, notamment pour le développement du système de réunions vidéo.
+Cette section présente les principales technologies et outils utilisés pour la réalisation du Sprint 6, notamment pour le développement du système de réunions vidéo.
 
 \vspace{0.5cm} %
 \begin{tabular}{| m{2.5cm} | m{13cm} |}
@@ -423,8 +423,8 @@ Framework de test JavaScript utilisé pour les tests unitaires et d'intégration
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
-Le sprint 6 a permis d'enrichir notre plateforme avec un système complet de réunions vidéo, offrant aux utilisateurs la possibilité d'organiser et participer à des sessions collaboratives directement depuis l'application. Cette fonctionnalité répond à un besoin essentiel de communication en temps réel dans un contexte professionnel de plus en plus orienté vers le travail à distance.
+Le Sprint 6 a permis d'enrichir notre plateforme avec un système complet de réunions vidéo, offrant aux utilisateurs la possibilité d'organiser et participer à des sessions collaboratives directement depuis l'application. Cette fonctionnalité répond à un besoin essentiel de communication en temps réel dans un contexte professionnel de plus en plus orienté vers le travail à distance.
 
 Les fonctionnalités avancées comme l'enregistrement des sessions, le partage de présentations et les statistiques de participation positionnent notre solution comme une alternative crédible aux outils de visioconférence spécialisés, avec l'avantage d'une intégration native à notre écosystème collaboratif.
 
-Les développements réalisés durant ce sprint constituent une étape importante dans la transformation de notre application en une plateforme complète de collaboration professionnelle, combinant communication asynchrone (messagerie) et synchrone (réunions vidéo) au sein d'un environnement unifié. 
+Les développements réalisés durant ce Sprint constituent une étape importante dans la transformation de notre application en une plateforme complète de collaboration professionnelle, combinant communication asynchrone (messagerie) et synchrone (réunions vidéo) au sein d'un environnement unifié. 

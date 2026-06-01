@@ -15,60 +15,62 @@ Warning--to sort, need author or key in reactjs
 Warning--to sort, need author or key in flutter
 Warning--to sort, need author or key in nodejs
 Warning--to sort, need author or key in mongodb
+Warning--to sort, need author or key in ioredis
 Warning--to sort, need author or key in docker
 Warning--to sort, need author or key in github
 Warning--to sort, need author or key in gitlab
-Warning--to sort, need author or key in ioredis
 Warning--to sort, need author or key in vscode
+Warning--to sort, need author or key in jwt
+Warning--to sort, need author or key in socketio
 Warning--to sort, need author or key in fastapi
-Warning--to sort, need author or key in qdrant
 Warning--empty year in fastapi
 Warning--empty year in gitlab
+Warning--empty year in jwt
 Warning--empty year in mongodb
 Warning--empty year in nodejs
-Warning--empty year in qdrant
 Warning--empty year in reactjs
+Warning--empty year in socketio
 Warning--empty year in vscode
 Warning--empty publisher in scrumguide
-You've used 20 entries,
+You've used 31 entries,
             2773 wiz_defined-function locations,
-            664 strings with 6946 characters,
-and the built_in function-call counts, 5763 in all, are:
-= -- 555
-> -- 142
-< -- 2
-+ -- 65
-- -- 45
-* -- 364
-:= -- 628
-add.period$ -- 63
-call.type$ -- 20
-change.case$ -- 74
-chr.to.int$ -- 20
-cite$ -- 82
-duplicate$ -- 306
-empty$ -- 693
-format.name$ -- 50
-if$ -- 1359
-int.to.chr$ -- 1
+            708 strings with 8049 characters,
+and the built_in function-call counts, 9110 in all, are:
+= -- 866
+> -- 253
+< -- 12
++ -- 111
+- -- 78
+* -- 522
+:= -- 1127
+add.period$ -- 106
+call.type$ -- 31
+change.case$ -- 118
+chr.to.int$ -- 29
+cite$ -- 107
+duplicate$ -- 471
+empty$ -- 1048
+format.name$ -- 95
+if$ -- 2094
+int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 2
-newline$ -- 111
-num.names$ -- 12
-pop$ -- 307
+newline$ -- 176
+num.names$ -- 52
+pop$ -- 445
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 88
 quote$ -- 0
-skip$ -- 234
+skip$ -- 362
 stack$ -- 0
-substring$ -- 57
-swap$ -- 20
+substring$ -- 80
+swap$ -- 34
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 215
-warning$ -- 25
-while$ -- 9
+type$ -- 336
+warning$ -- 27
+while$ -- 39
 width$ -- 0
-write$ -- 245
-(There were 25 warnings)
+write$ -- 396
+(There were 27 warnings)

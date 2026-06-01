@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,11 @@ Gitlab - the devops platform.
 \newblock \url{https://about.gitlab.com/}.
 \newblock (Accessed on 27/02/2025).
 
+\bibitem[jwt()]{jwt}
+Jwt - json web tokens.
+\newblock \url{https://jwt.io/}.
+\newblock (Accessed on 27/02/2025).
+
 \bibitem[mon()]{mongodb}
 Mongodb: The developer data platform.
 \newblock \url{https://www.mongodb.com/}.
@@ -25,14 +30,14 @@ What is node.js? - definition from whatis.com.
 \newblock \url{https://whatis.techtarget.com/definition/Nodejs}.
 \newblock (Accessed on 27/02/2025).
 
-\bibitem[qdr()]{qdrant}
-Qdrant - vector search engine.
-\newblock \url{https://qdrant.tech/}.
-\newblock (Accessed on 27/02/2025).
-
 \bibitem[rea()]{reactjs}
 React - a javascript library for building user interfaces.
 \newblock \url{https://reactjs.org/}.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[soc()]{socketio}
+Socket.io - real-time bidirectional event-based communication.
+\newblock \url{https://socket.io/}.
 \newblock (Accessed on 27/02/2025).
 
 \bibitem[vsc()]{vscode}
@@ -90,12 +95,50 @@ ioredis - a robust redis client for node.js.
 \newblock \url{https://github.com/redis/ioredis}, 2026.
 \newblock (Accessed on 19/05/2026).
 
+\bibitem[AI(2023)]{mistral7b}
+Mistral AI.
+\newblock Mistral 7b | mistral ai | frontier ai in your hands.
+\newblock \url{https://mistral.ai/news/announcing-mistral-7b/}, 2023.
+\newblock (Accessed on 01/06/2026).
+
+\bibitem[ChromaDB(2024)]{chromadb}
+ChromaDB.
+\newblock Chromadb - the ai-native open-source embedding database.
+\newblock \url{https://www.trychroma.com/}, 2024.
+\newblock (Accessed on 01/06/2026).
+
 \bibitem[Foundation(2025)]{python}
 Python~Software Foundation.
 \newblock Python - a programming language that lets you work quickly and
   integrate systems more effectively.
 \newblock \url{https://www.python.org/}, 2025.
 \newblock (Accessed on 29/05/2025).
+
+\bibitem[Google(2026{\natexlab{a}})]{fcm}
+Google.
+\newblock Firebase cloud messaging documentation.
+\newblock \url{https://firebase.google.com/docs/cloud-messaging},
+  2026{\natexlab{a}}.
+\newblock (Accessed on 01/06/2026).
+
+\bibitem[Google(2026{\natexlab{b}})]{firebase}
+Google.
+\newblock Firebase documentation.
+\newblock \url{https://firebase.google.com/docs}, 2026{\natexlab{b}}.
+\newblock (Accessed on 01/06/2026).
+
+\bibitem[Google(2026{\natexlab{c}})]{googlemaps}
+Google.
+\newblock Google maps platform documentation.
+\newblock \url{https://developers.google.com/maps/documentation},
+  2026{\natexlab{c}}.
+\newblock (Accessed on 01/06/2026).
+
+\bibitem[Initiative(2026)]{openapi}
+OpenAPI Initiative.
+\newblock Openapi specification.
+\newblock \url{https://spec.openapis.org/oas/latest.html}, 2026.
+\newblock (Accessed on 01/06/2026).
 
 \bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
   Küttler, Lewis, tau Yih, Rocktäschel, Riedel, and Kiela]{rag}
@@ -106,11 +149,36 @@ Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
 \newblock \url{https://huggingface.co/docs/transformers/model_doc/rag}, 2020.
 \newblock (Accessed on 29/05/2025).
 
+\bibitem[Ollama(2024)]{ollama}
+Ollama.
+\newblock Ollama - run large language models locally.
+\newblock \url{https://ollama.com/}, 2024.
+\newblock (Accessed on 01/06/2026).
+
+\bibitem[Provos and Mazieres(1999)]{bcrypt}
+Niels Provos and David Mazieres.
+\newblock bcrypt - a future-adaptable password scheme.
+\newblock
+  \url{https://www.usenix.org/legacy/events/usenix99/provos/provos.pdf}, 1999.
+\newblock (Accessed on 01/06/2026).
+
+\bibitem[Qdrant(2026)]{qdrant}
+Qdrant.
+\newblock Qdrant - vector database and vector search engine.
+\newblock \url{https://qdrant.tech/}, 2026.
+\newblock (Accessed on 01/06/2026).
+
 \bibitem[Schwaber and Sutherland(2020)]{scrumguide}
 Ken Schwaber and Jeff Sutherland.
 \newblock \emph{The Scrum Guide – The Definitive Guide to Scrum: The Rules of
   the Game}.
 \newblock 2020.
 \newblock (Accessed on 29/05/2025).
+
+\bibitem[Software(2026)]{swagger}
+SmartBear Software.
+\newblock Swagger - api documentation and design tools.
+\newblock \url{https://swagger.io/}, 2026.
+\newblock (Accessed on 01/06/2026).
 
 \end{thebibliography}

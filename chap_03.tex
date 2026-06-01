@@ -1,5 +1,5 @@
 ﻿﻿
-\chapter{Sprint 1\&2 : Authentification, Gestion des comptes, Profils, Utilisateurs et Appareils}
+\chapter{Sprint 1 et 2 : Authentification, Gestion des comptes, Profils, Utilisateurs et Appareils}
 \minitoc
 \newpage
 
@@ -11,22 +11,22 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Suite à l'analyse des besoins, ce chapitre présente le lancement du projet SafeTrack selon une approche Agile par sprints.
-Les deux premiers sprints portent sur les fonctionnalités essentielles, notamment l'authentification, la gestion des comptes, des profils, des utilisateurs et la gestion des appareils.
+Suite à l'analyse des besoins, ce chapitre présente le lancement du projet SafeTrack selon une approche Agile par Sprints.
+Les deux premiers Sprints portent sur les fonctionnalités essentielles, notamment l'authentification, la gestion des comptes, des profils, des utilisateurs et la gestion des appareils.
 Ils constituent la base de l'application et introduisent les principaux artefacts de conception et de réalisation.
 
 
 \section{Sprint 1 : Authentification \& Gestion des comptes}
 
-L'objectif de ce premier sprint est de mettre en place les fonctionnalités fondamentales permettant à l'utilisateur d'accéder à l'application SafeTrack de manière sécurisée. Ce sprint constitue une étape essentielle, car il assure la gestion des accès, l'authentification des utilisateurs ainsi que la protection des données personnelles.
+L'objectif de ce premier Sprint est de mettre en place les fonctionnalités fondamentales permettant à l'utilisateur d'accéder à l'application SafeTrack de manière sécurisée. Ce Sprint constitue une étape essentielle, car il assure la gestion des accès, l'authentification des utilisateurs ainsi que la protection des données personnelles.
 
 Les fonctionnalités développées incluent la création de compte (inscription), l'authentification via une interface de connexion, la gestion des sessions sécurisées à l'aide de tokens (JWT), ainsi que la possibilité de réinitialiser le mot de passe en cas d'oubli. Une attention particulière est accordée à la validation des formulaires afin de garantir l'intégrité et la fiabilité des données saisies.
 
-à l'issue de ce sprint, les utilisateurs doivent être en mesure de s'inscrire, de se connecter et d'accéder à leur espace personnel de manière sécurisée, constituant ainsi la base nécessaire à l'utilisation des autres fonctionnalités de l'application.
+à l'issue de ce Sprint, les utilisateurs doivent être en mesure de s'inscrire, de se connecter et d'accéder à leur espace personnel de manière sécurisée, constituant ainsi la base nécessaire à l'utilisation des autres fonctionnalités de l'application.
 
 \subsection{Backlog Sprint 1 :}
 
-Le tableau ci-dessous présente les user stories liées à l'authentification et à la gestion des comptes utilisateurs. Ce sprint vise à mettre en place les mécanismes d'accès sécurisé à l'application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
+Le tableau ci-dessous présente les user stories liées à l'authentification et à la gestion des comptes utilisateurs. Ce Sprint vise à mettre en place les mécanismes d'accès sécurisé à l'application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
 
 \begin{table}[H]
     \caption{Tableau des User Stories —“ Sprint 1}
@@ -150,7 +150,7 @@ Ce diagramme illustre les principales interactions entre l'utilisateur et les fo
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{images/authentification User case.png}
-    \caption{Diagramme de cas d'utilisation de sprint 1}
+    \caption{Diagramme de cas d'utilisation de Sprint 1}
     \label{fig:cas_image}
 \end{figure}
 
@@ -214,7 +214,7 @@ Scénario nominal &
 \hline
 \endlastfoot
 
-Acteurs & Utilisateur (Parent / personne dépendantee), Administrateur \\ \hline
+Acteurs & Utilisateur (Parent / personne dépendante), Organisation, Administrateur \\ \hline
 
 Précondition & L'acteur possède un compte valide et peut s'authentifier via mot de passe, biométrie ou Google OAuth. \\ \hline
 
@@ -307,13 +307,13 @@ Ce token permet à l'utilisateur d'accéder aux fonctionnalités protégées de 
 
 \section{Sprint 2 : Gestion des utilisateurs, profils et appareils}
 
-Ce deuxième sprint vise à améliorer l'expérience utilisateur en introduisant les fonctionnalités liées à la gestion des utilisateurs, des profils, des contacts et des appareils de suivi. Il permet principalement aux acteurs responsables (parents, aidants ou organisations) de personnaliser leurs informations, de gérer les relations avec les personnes suivies et d'associer ou configurer les dispositifs de suivi utilisés dans l'application SafeTrack.
+Ce deuxième Sprint vise à améliorer l'expérience utilisateur en introduisant les fonctionnalités liées à la gestion des utilisateurs, des profils, des contacts et des appareils de suivi. Il permet principalement aux acteurs responsables (parents, aidants ou organisations) de personnaliser leurs informations, de gérer les relations avec les personnes suivies et d'associer ou configurer les dispositifs de suivi utilisés dans l'application SafeTrack.
 
 Les fonctionnalités développées incluent la consultation et la modification des informations du profil (nom, prénom, coordonnées, etc.), la gestion des contacts (ajout, suppression et consultation) ainsi que la gestion des appareils (association, dissociation, configuration). Ces actions sont réservées aux utilisateurs disposant des droits appropriés, notamment les parents, les aidants ou les organisations.
 
 En revanche, les personnes dépendantes disposent uniquement d'un accès limité en consultation, sans possibilité de modifier leur profil, de gérer des contacts ou d'administrer des appareils.
 
-À la fin de ce sprint, l'application offre un espace utilisateur personnalisable, un réseau de confiance entre les différents acteurs et la possibilité de gérer les dispositifs de suivi, ce qui constitue une base essentielle pour les fonctionnalités de suivi, de localisation et d'alertes développées dans les sprints suivants.
+À la fin de ce Sprint, l'application offre un espace utilisateur personnalisable, un réseau de confiance entre les différents acteurs et la possibilité de gérer les dispositifs de suivi, ce qui constitue une base essentielle pour les fonctionnalités de suivi, de localisation et d'alertes développées dans les Sprints suivants.
 
 
 
@@ -333,7 +333,7 @@ La gestion, la personnalisation des profils et la gestion des appareils de suivi
 \textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
 
-US-010 & En tant qu'utilisateur, je peux consulter mon profil afin de visualiser mes informations personnelles.
+US-01 & En tant qu'utilisateur, je peux consulter mon profil afin de visualiser mes informations personnelles.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Interface profil
@@ -344,7 +344,7 @@ US-010 & En tant qu'utilisateur, je peux consulter mon profil afin de visualiser
 & 2 jours \\
 \hline
 
-US-011 & En tant que parent/aidant/organisation, je peux modifier mon profil afin de mettre à jour mes informations personnelles.
+US-02 & En tant que parent/aidant/organisation, je peux modifier mon profil afin de mettre à jour mes informations personnelles.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Formulaire modification
@@ -355,7 +355,7 @@ US-011 & En tant que parent/aidant/organisation, je peux modifier mon profil afi
 & 3 jours \\
 \hline
 
-US-012 & En tant que parent/aidant, je peux ajouter un contact afin d'étendre mon réseau de confiance.
+US-03 & En tant que parent/aidant, je peux ajouter un contact afin d'étendre mon réseau de confiance.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Formulaire ajout contact
@@ -366,7 +366,7 @@ US-012 & En tant que parent/aidant, je peux ajouter un contact afin d'étendre m
 & 2 jours \\
 \hline
 
-US-013 & En tant que parent/aidant, je peux supprimer un contact afin de gérer mon réseau.
+US-04 & En tant que parent/aidant, je peux supprimer un contact afin de gérer mon réseau.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Bouton suppression
@@ -377,7 +377,7 @@ US-013 & En tant que parent/aidant, je peux supprimer un contact afin de gérer 
 & 1 jour \\
 \hline
 
-US-014 & En tant que parent/aidant, je peux consulter la liste des contacts associés.
+US-05 & En tant que parent/aidant, je peux consulter la liste des contacts associés.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Interface liste contacts
@@ -388,7 +388,7 @@ US-014 & En tant que parent/aidant, je peux consulter la liste des contacts asso
 & 2 jours \\
 \hline
 
-US-015 & En tant que parent/aidant, je peux consulter les détails d'un contact.
+US-06 & En tant que parent/aidant, je peux consulter les détails d'un contact.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Page détail contact
@@ -399,7 +399,7 @@ US-015 & En tant que parent/aidant, je peux consulter les détails d'un contact.
 & 1 jour \\
 \hline
 
-US-016 & En tant qu'utilisateur, je peux recevoir un retour visuel lors d'une action afin d'améliorer l'expérience utilisateur.
+US-07 & En tant qu'utilisateur, je peux recevoir un retour visuel lors d'une action afin d'améliorer l'expérience utilisateur.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Messages de confirmation
@@ -410,7 +410,7 @@ US-016 & En tant qu'utilisateur, je peux recevoir un retour visuel lors d'une ac
 & 1 jour \\
 \hline
 
-US-017 & En tant que parent/aidant, je peux rechercher un contact afin de le retrouver rapidement.
+US-08 & En tant que parent/aidant, je peux rechercher un contact afin de le retrouver rapidement.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Barre de recherche
@@ -422,7 +422,7 @@ US-017 & En tant que parent/aidant, je peux rechercher un contact afin de le ret
 
 \hline
 
-US-018 & En tant que parent/aidant/organisation, je peux gérer les appareils afin d'associer, dissocier et configurer les dispositifs de suivi.
+US-09 & En tant que parent/aidant/organisation, je peux gérer les appareils afin d'associer, dissocier et configurer les dispositifs de suivi.
 & \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Association d'un appareil
@@ -518,10 +518,25 @@ Scénario alternatif &
 
 \item \textbf{Erreurs de validation :}
 \begin{itemize}
-\item Format email invalide.
-\item Numéro de téléphone non valide.
-\item Champs obligatoires manquants.
-\item Message d'erreur spécifique avec suggestion de correction.
+\item L'utilisateur saisit des données invalides : format email incorrect, numéro de téléphone non valide ou champs obligatoires manquants.
+\item Le système refuse l'enregistrement et affiche un message d'erreur spécifique avec une suggestion de correction.
+\item L'utilisateur corrige les informations puis soumet à nouveau le formulaire.
+\end{itemize}
+
+\item \textbf{Token invalide ou expiré :}
+\begin{itemize}
+\item Le système vérifie le token JWT envoyé avec la requête de modification.
+\item Si le token est invalide, expiré ou absent, la requête est rejetée.
+\item Le système redirige l'utilisateur vers la page de connexion ou déclenche le renouvellement de session avec le refresh token.
+\item Aucune modification n'est enregistrée tant que l'utilisateur n'est pas authentifié.
+\end{itemize}
+
+\item \textbf{Accès non autorisé :}
+\begin{itemize}
+\item L'utilisateur tente de modifier un profil qui ne lui appartient pas ou qui n'est pas associé à son compte.
+\item Le système vérifie les permissions et le rôle de l'utilisateur.
+\item Si l'accès n'est pas autorisé, le système bloque l'opération et affiche un message d'interdiction.
+\item Les données du profil restent inchangées dans la base de données.
 \end{itemize}
 \end{itemize}
 \\ \hline
@@ -539,15 +554,15 @@ La figure~\ref{fig:chap3_profile_modify_sequence} illustre le diagramme de séqu
     \label{fig:chap3_profile_modify_sequence}
 \end{figure}
 
-\subsubsection{Cas d'utilisation : Ajouter une Personne Dépendante}
+\subsubsection{Cas d'utilisation : Ajouter une personne dépendante}
 
-Le cas d'utilisation \og Ajouter une Personne Dépendant \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un personne dépendante ou une personne dépendante et de générer automatiquement ses identifiants d'accès.
+Le cas d'utilisation \og Ajouter une personne dépendante \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour une personne dépendante et de générer automatiquement un lien d'activation sécurisé pour configurer son compte.
 
 \small
 \renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
 \begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
-\caption{Description textuelle du cas d'utilisation Ajouter une Personne Dépendante} \\
+\caption{Description textuelle du cas d'utilisation Ajouter une personne dépendante} \\
 \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
@@ -565,18 +580,18 @@ Acteurs & Parent, Aidant \\ \hline
 
 Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un compte actif et dispose des permissions de création d'enfants/personnes dépendantes. \\ \hline
 
-Postcondition & Un nouveau profil Personne Dépendante est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
+Postcondition & Un nouveau profil Personne Dépendante est créé. Un lien d'activation sécurisé est envoyé par email au parent/aidant pour configurer le compte de la personne dépendante. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
 
 Scénario nominal &
 \begin{itemize}
 \item L'utilisateur (parent/aidant) accède au module de gestion des enfants.
-\item L'utilisateur clique sur le bouton « Ajouter une Personne Dépendante ».
+\item L'utilisateur clique sur le bouton « Ajouter une personne dépendante ».
 \item Le système affiche un formulaire contenant les champs : nom, email et âge.
 \item L'utilisateur remplit les informations requises.
 \item Le système valide les données saisies (format email, âge valide, champs obligatoires).
-\item Le système génère automatiquement un compte avec un mot de passe sécurisé.
-\item Le nouvel Personne Dépendante est enregistré et lié au compte du parent.
-\item Le système envoie un email au parent contenant l'adresse email et le mot de passe temporaire du compte de l'personne dépendante.
+\item Le système crée le compte avec un statut « en attente d'activation ».
+\item La nouvelle personne dépendante est enregistrée et liée au compte du parent.
+\item Le système envoie un email au parent contenant un lien d'activation sécurisé permettant de définir le mot de passe du compte de la personne dépendante.
 \item L'utilisateur reçoit une confirmation d'ajout avec les détails du profil créé.
 \end{itemize}
 \\ \hline
@@ -585,10 +600,10 @@ Scénario alternatif &
 \begin{itemize}
 \item \textbf{Réinitialisation du mot de passe :}
 \begin{itemize}
-\item Si le parent n'a pas reçu l'email ou souhaite générer un nouveau mot de passe.
+\item Si le parent n'a pas reçu l'email ou souhaite configurer un nouveau mot de passe.
 \item Sélection de la personne dépendante dans la liste et option « Réinitialiser le mot de passe ».
-\item Génération d'un nouveau mot de passe temporaire.
-\item Envoi d'un nouvel email contenant le mot de passe.
+\item Génération d'un lien de réinitialisation temporaire.
+\item Envoi d'un nouvel email contenant le lien sécurisé.
 \end{itemize}
 
 \item \textbf{Modification du profil personne dépendante :}
@@ -640,13 +655,13 @@ Le module de gestion des enfants permet aux parents/aidants de créer, consulter
 Fonctionnalités réalisées :
 
 \begin{itemize}
-    \item \textbf{Ajout d'une Personne Dépendante :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'personne dépendante est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'personne dépendante pour son utilisation ultérieure.
+    \item \textbf{Ajout d'une personne dépendante :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé avec un statut « en attente d'activation ». Le profil de la personne dépendante est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant un lien d'activation sécurisé pour définir le mot de passe du compte de la personne dépendante.
     
     \item \textbf{Consultation :} Affichage de la liste complète des enfants/personnes dépendantes associés au parent. Accès à la fiche détaillée de chaque profil incluant les informations personnelles (nom, âge, email), les autorisations, les paramètres de suivi et l'historique des activités.
     
     \item \textbf{Modification :} Le parent/aidant peut modifier les informations de la personne dépendante (nom, âge) et configurer les permissions, zones de sécurité et paramètres de suivi. Mise à jour des données en base avec validation des changements et confirmation des modifications.
     
-    \item \textbf{Réinitialisation du mot de passe :} Si le parent n'a pas reçu l'email initial ou souhaite générer un nouveau mot de passe, il peut accéder à l'option « Réinitialiser le mot de passe » depuis la fiche de la personne dépendante. Un nouveau mot de passe temporaire est généré et envoyé par email au parent.
+    \item \textbf{Réinitialisation du mot de passe :} Si le parent n'a pas reçu l'email initial ou souhaite modifier le mot de passe, il peut accéder à l'option « Réinitialiser le mot de passe » depuis la fiche de la personne dépendante. Un lien de réinitialisation temporaire est généré et envoyé par email au parent.
     
     \item \textbf{Suppression :} Détachement ou suppression du profil avec confirmation préalable. Un message de confirmation de suppression est affiché en cas de succès, et des messages d'erreur appropriés sont retournés en cas d'échec.
 \end{itemize}
@@ -720,7 +735,7 @@ Toutes les opérations sont sécurisées et soumises à des contrôles d'autoris
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
-En conclusion, ce chapitre a présenté la mise en place du socle technique de SafeTrack à travers les sprints 1 et 2, notamment l'authentification sécurisée, la gestion des comptes et la gestion des appareils. Ces fondations permettent désormais d'aborder le chapitre suivant, dédié à l'intégration du suivi en temps réel par localisation, au déploiement des systèmes d'alertes et de sécurité SOS, ainsi qu'au partage d'accès .
+En conclusion, ce chapitre a présenté la mise en place du socle technique de SafeTrack à travers les Sprints 1 et 2, notamment l'authentification sécurisée, la gestion des comptes et la gestion des appareils. Ces fondations permettent désormais d'aborder le chapitre suivant, dédié à l'intégration du suivi en temps réel par localisation, au déploiement des systèmes d'alertes et de sécurité SOS, ainsi qu'au partage d'accès .
 
 
 

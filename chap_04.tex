@@ -1,4 +1,4 @@
-﻿﻿\chapter{Sprint 3\&4 : Localisation en temps réel, Sécurité SOS et Partage}
+﻿﻿\chapter{Sprint 3 et 4 : Localisation en temps réel, Sécurité SOS et Partage}
 \label{chap_realisation2}
 
 \minitoc
@@ -11,15 +11,15 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Suite à l'analyse des besoins, ce chapitre décrit la réalisation des sprints 3 et 4 du projet SafeTrack selon une approche Agile. Il présente les fonctionnalités avancées mises en œuvre : la localisation en temps réel, les mécanismes d'alerte et de sécurité (SOS), la gestion des zones (safezones/geofencing), ainsi que le partage d'accès aux contacts permettant de déléguer et de contrôler les droits d'accès au suivi. Le chapitre expose enfin les choix de conception et les aspects d'implémentation associés à ces fonctionnalités.
+Suite à l'analyse des besoins, ce chapitre décrit la réalisation des Sprints 3 et 4 du projet SafeTrack selon une approche Agile. Il présente les fonctionnalités avancées mises en œuvre : la localisation en temps réel, les mécanismes d'alerte et de sécurité (SOS), la gestion des zones (zones de sécurité/geofencing), ainsi que le partage d'accès aux contacts permettant de déléguer et de contrôler les droits d'accès au suivi. Le chapitre expose enfin les choix de conception et les aspects d'implémentation associés à ces fonctionnalités.
 
 \section{Sprint 3 : Localisation et carte}
 
-L’objectif du sprint 3 est de mettre en place les fonctionnalités essentielles de suivi et de sécurité de l’application SafeTrack. Ce sprint constitue une étape importante dans l’évolution du système, car il permet d’assurer le suivi en temps réel des utilisateurs ainsi que la détection des situations critiques, notamment à travers les mécanismes de géolocalisation et de geofencing.
+L’objectif du Sprint 3 est de mettre en place les fonctionnalités essentielles de suivi et de sécurité de l’application SafeTrack. Ce Sprint constitue une étape importante dans l’évolution du système, car il permet d’assurer le suivi en temps réel des utilisateurs ainsi que la détection des situations critiques, notamment à travers les mécanismes de géolocalisation et de geofencing.
 
 Les fonctionnalités développées incluent la collecte et la transmission des positions GPS, la gestion des zones de sécurité, la détection des sorties de périmètre, ainsi que la génération et l’envoi des alertes en temps réel. Une attention particulière est accordée à la fiabilité du suivi et à la réactivité du système afin de garantir une supervision efficace des utilisateurs.
 
-À l’issue de ce sprint, l’application est capable d’assurer un suivi continu et sécurisé des enfants, permettant ainsi aux parents/aidants et organisations de recevoir des notifications en cas de comportement anormal ou de danger potentiel.
+À l’issue de ce Sprint, l’application est capable d’assurer un suivi continu et sécurisé des enfants, permettant ainsi aux parents/aidants et organisations de recevoir des notifications en cas de comportement anormal ou de danger potentiel.
 
 \subsection{Backlog Sprint 3 :}
 
@@ -116,22 +116,22 @@ US-06 & En tant qu’administrateur, je peux visualiser les zones à risque et l
 \subsection{Diagrammes du Sprint 3 :}
 \subsubsection{Diagramme de cas d'utilisation : }
 
-Cette section présente le diagramme de cas d'utilisation du Sprint 3, qui met en évidence les principales interactions entre les utilisateurs et le système SafeTrack. Ce sprint est principalement centré sur les fonctionnalités de suivi en temps réel, de géolocalisation, de gestion des zones de sécurité (geofencing) ainsi que sur la génération des alertes en cas d’événements critiques.
+Cette section présente le diagramme de cas d'utilisation du Sprint 3, qui met en évidence les principales interactions entre les utilisateurs et le système SafeTrack. Ce Sprint est principalement centré sur les fonctionnalités de suivi en temps réel, de géolocalisation, de gestion des zones de sécurité (geofencing) ainsi que sur la génération des alertes en cas d’événements critiques.
 \begin{figure}[H]
  \centering
  \includegraphics[width=1\textwidth]{images/UC_sprint3.png}
  \caption{Diagramme de cas d'utilisation – Sprint 3}
  \label{fig:chap4_cas_utilisation_sprint3}
 \end{figure}
-\subsubsection{Cas d'utilisation : Ajouter une safezone}
+\subsubsection{Cas d'utilisation : Ajouter une zone de sécurité}
 
-Le cas d'utilisation \og Ajouter une safezone \fg{} est présenté ci-dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants ou organisations de créer une zone de sécurité (geofence) associée à un personne dépendante ou à un groupe d'enfants afin de déclencher des alertes en cas d'entrée ou de sortie de cette zone.
+Le cas d'utilisation \og Ajouter une zone de sécurité \fg{} est présenté ci-dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants ou organisations de créer une zone de sécurité (geofence) associée à un personne dépendante ou à un groupe d'enfants afin de déclencher des alertes en cas d'entrée ou de sortie de cette zone.
 
 \small
 \renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
 \begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
-\caption{Description textuelle du cas d'utilisation Ajouter une safezone} \\ \hline
+\caption{Description textuelle du cas d'utilisation Ajouter une zone de sécurité} \\ \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
 
@@ -142,25 +142,25 @@ Le cas d'utilisation \og Ajouter une safezone \fg{} est présenté ci-dessous. C
 \hline
 \endlastfoot
 
-Cas d'utilisation & Ajouter une safezone \\ \hline
+Cas d'utilisation & Ajouter une zone de sécurité \\ \hline
 
 Acteurs & Parent, Aidant, Organisation \\ \hline
 
-Précondition & L'utilisateur est authentifié et dispose des permissions nécessaires pour créer et gérer des zones de sécurité (safezones/geofences). \\ \hline
+Précondition & L'utilisateur est authentifié et dispose des permissions nécessaires pour créer et gérer des zones de sécurité (geofences). \\ \hline
 
-Postcondition & Une nouvelle safezone est créée et enregistrée dans le système. Elle est associée à un ou plusieurs enfants, et utilisée pour le suivi en temps réel et la génération d'alertes (entrée/sortie de zone). \\ \hline
+Postcondition & Une nouvelle zone de sécurité est créée et enregistrée dans le système. Elle est associée à un ou plusieurs enfants, et utilisée pour le suivi en temps réel et la génération d'alertes (entrée/sortie de zone). \\ \hline
 
 Scénario nominal &
 \begin{itemize}
-\item L'utilisateur accède au module de gestion des safezones.
-\item L'utilisateur clique sur « Ajouter une safezone ».
+\item L'utilisateur accède au module de gestion des zones de sécurité.
+\item L'utilisateur clique sur « Ajouter une zone de sécurité ».
 \item Le système affiche une carte interactive.
 \item L'utilisateur définit la zone de sécurité (dessin sur carte ou sélection d'un point avec rayon).
-\item L'utilisateur renseigne les informations de la safezone : nom, description (optionnelle), rayon et enfants associés.
+\item L'utilisateur renseigne les informations de la zone de sécurité : nom, description (optionnelle), rayon et enfants associés.
 \item Le système valide les données (coordonnées valides, rayon acceptable).
 \item Le système vérifie l'absence de conflit critique avec d'autres zones existantes.
-\item La safezone est enregistrée dans la base de données.
-\item Le système associe la safezone aux enfants sélectionnés.
+\item La zone de sécurité est enregistrée dans la base de données.
+\item Le système associe la zone de sécurité aux enfants sélectionnés.
 \item Le système active le suivi en temps réel pour cette zone.
 \item Une confirmation de création est affiche à l'utilisateur.
 \end{itemize}
@@ -168,16 +168,16 @@ Scénario nominal &
 
 Scénario alternatif &
 \begin{itemize}
-\item \textbf{Modification d'une safezone existante :}
+\item \textbf{Modification d'une zone de sécurité existante :}
 \begin{itemize}
-\item L'utilisateur sélectionne une safezone déjà créée.
+\item L'utilisateur sélectionne une zone de sécurité déjà créée.
 \item Il modifie la forme, le rayon ou les paramètres associés.
 \item Le système valide et met à jour la zone.
 \end{itemize}
 
-\item \textbf{Suppression d'une safezone :}
+\item \textbf{Suppression d'une zone de sécurité :}
 \begin{itemize}
-\item L'utilisateur choisit de supprimer une safezone.
+\item L'utilisateur choisit de supprimer une zone de sécurité.
 \item Le système demande confirmation.
 \item La zone est supprimée et les règles associées désactivées.
 \end{itemize}
@@ -194,13 +194,13 @@ Scénario alternatif &
 
 \end{longtable}
 
-\subsubsection{Diagramme de séquence de \og Ajouter une safezone \fg}
-La figure~\ref{fig:chap4_safezone_management_sequence} illustre le diagramme de séquence du cas \og Gestion des safezones \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression de zones de sécurité.
+\subsubsection{Diagramme de séquence de \og Ajouter une zone de sécurité \fg}
+La figure~\ref{fig:chap4_safezone_management_sequence} illustre le diagramme de séquence du cas \og Gestion des zones de sécurité \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression de zones de sécurité.
 
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.8\textwidth]{images/Seq_ajouterSafZone_S3.drawio.png}
- \caption{Diagramme de séquence de Gestion des safezones}
+ \caption{Diagramme de séquence de Gestion des zones de sécurité}
  \label{fig:chap4_safezone_management_sequence}
 \end{figure}
 \subsubsection{Cas d'utilisation : Suivi en temps réel}
@@ -230,7 +230,7 @@ Précondition &
 L’utilisateur est authentifié. La personne dépendante possède un compte actif et un appareil enregistré. Une relation de responsabilité est établie entre le parent/aidant ou l’organisation et la personne suivie. La localisation est activée sur l’appareil de l’personne dépendante. \\ \hline
 
 Postcondition & 
-La position de la personne dépendante ou de la personne dépendante est transmise en continu au système et est affichée sur la carte côté parent, aidant ou organisation. Les données sont enregistrées pour l’historique et utilisées pour les alertes (safezone, SOS, incidents). \\ \hline
+La position de la personne dépendante ou de la personne dépendante est transmise en continu au système et est affichée sur la carte côté parent, aidant ou organisation. Les données sont enregistrées pour l’historique et utilisées pour les alertes (zones de sécurité, SOS, incidents). \\ \hline
 
 Scénario nominal & 
 \begin{itemize}
@@ -280,21 +280,21 @@ La figure~\ref{fig:chap4_suivi_management_sequence} illustre le diagramme de sé
 
 \subsection{Réalisation du Sprint 3 : }
 
-\subsubsection{Réalisation du cas d'utilisation : Ajouter une safezone}
+\subsubsection{Réalisation du cas d'utilisation : Ajouter une zone de sécurité}
 
-Le module de gestion des safezones permet aux utilisateurs (parents/aidants et organisations) de définir des zones géographiques sécurisées pour assurer la protection des enfants ou personnes dépendantes.
+Le module de gestion des zones de sécurité permet aux utilisateurs (parents/aidants et organisations) de définir des zones géographiques sécurisées pour assurer la protection des enfants ou personnes dépendantes.
 
 Fonctionnalités réalisées :
 
 \begin{itemize}
- \item \textbf{Création d’une safezone :} L’utilisateur définit une zone sur la carte à partir d’un centre (latitude, longitude) et d’un rayon. La zone est ensuite enregistrée dans la base de données et liée à son compte.
+ \item \textbf{Création d’une zone de sécurité :} L’utilisateur définit une zone sur la carte à partir d’un centre (latitude, longitude) et d’un rayon. La zone est ensuite enregistrée dans la base de données et liée à son compte.
  
- \item \textbf{Gestion des safezones :} L’utilisateur peut consulter, modifier ou supprimer ses zones sécurisées.
+ \item \textbf{Gestion des zones de sécurité :} L’utilisateur peut consulter, modifier ou supprimer ses zones sécurisées.
 
- \item \textbf{Intégration au système d’alertes :} Le système détecte automatiquement les sorties de safezones et génère des alertes en cas de dépassement.
+ \item \textbf{Intégration au système d’alertes :} Le système détecte automatiquement les sorties de zones de sécurité et génère des alertes en cas de dépassement.
 \end{itemize}
 
-Toutes les opérations sont sécurisées via JWT afin de garantir que seul l’utilisateur autorisé puisse gérer ses safezones.
+Toutes les opérations sont sécurisées via JWT afin de garantir que seul l’utilisateur autorisé puisse gérer ses zones de sécurité.
 
 \subsubsection{Réalisation du cas d'utilisation : Suivi en temps réel}
 
@@ -308,12 +308,12 @@ Fonctionnalités réalisées :
  \item \textbf{Transmission des données :} Les positions sont envoyées au backend de manière sécurisée avec authentification JWT.
 
 
- \item \textbf{Intégration avec les safezones :} Le système vérifie en temps réel si l’utilisateur est dans une zone sécurisée et déclenche des alertes en cas de sortie.
+ \item \textbf{Intégration avec les zones de sécurité :} Le système vérifie en temps réel si l’utilisateur est dans une zone sécurisée et déclenche des alertes en cas de sortie.
 \end{itemize}
 
 \section{Sprint 4 : Historique, alertes, SOS et partage}
 
-Le quatrième sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
+Le quatrième Sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
 
 \begin{table}[H]
 \caption{Tableau des User Stories – Sprint 4 (Historique, Alertes, SOS et Partage)}
@@ -448,7 +448,7 @@ US-10 & En tant qu’organisation, je peux recevoir des alertes uniquement en ca
 \subsection{Diagrammes du Sprint 4:}
 \subsubsection{Diagramme de cas d'utilisation : }
 
-Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités organisationnelles. Ce sprint se concentre principalement sur l'historique, les alertes, le SOS, le partage d'accès et le suivi de présence des enfants/personnes rattachés.
+Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités organisationnelles. Ce Sprint se concentre principalement sur l'historique, les alertes, le SOS, le partage d'accès et le suivi de présence des enfants/personnes rattachés.
 \begin{figure}[H]
  \centering
  \includegraphics[width=1\textwidth]{images/UC sprint4.png}
@@ -711,7 +711,7 @@ Dans cette section, nous présentons les interfaces relatives à la localisation
  \begin{minipage}[b]{0.49\textwidth}
  \centering
  \fbox{\includegraphics[width=\linewidth, height=0.45\textheight, keepaspectratio]{images/Safezone.jpg}}
- \caption{Gestion d'une SafeZone (geofencing)}
+ \caption{Gestion d'une zone de sécurité (geofencing)}
  \end{minipage}
 \end{figure}
 

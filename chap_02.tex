@@ -1,4 +1,4 @@
-﻿﻿\chapter{Architecture, outils et environnement de développement}
+﻿﻿\chapter{Sprints 1 et 2 : Architecture, outils et environnement de développement}
 \minitoc
 \newpage
 
@@ -12,7 +12,7 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-Ce chapitre décrit le sprint zéro, qui constitue la première étape de la réalisation de notre projet SafeTrack. Nous commençons par identifier les différents acteurs de l'application, puis nous listons les besoins fonctionnels et non fonctionnels du système. Ensuite, nous détaillons l'organisation du travail selon la méthodologie Scrum présentée dans le chapitre précédent. Enfin, nous présentons un aperçu du matériel de base, des technologies et des langages de programmation utilisés pour configurer l'environnement de développement.
+Ce chapitre décrit le Sprint zéro, qui constitue la première étape de la réalisation de notre projet SafeTrack. Nous commençons par identifier les différents acteurs de l'application, puis nous listons les besoins fonctionnels et non fonctionnels du système. Ensuite, nous détaillons l'organisation du travail selon la méthodologie Scrum présentée dans le chapitre précédent. Enfin, nous présentons un aperçu du matériel de base, des technologies et des langages de programmation utilisés pour configurer l'environnement de développement.
 
 
 \section{Capture des besoins}
@@ -125,9 +125,20 @@ Il est également important, à ce stade, de définir une technique de priorisat
 \small
 \renewcommand{\arraystretch}{1.2}
 \begin{longtable}{|>{\raggedright\arraybackslash}p{0.27\textwidth}|>{\raggedright\arraybackslash}p{0.58\textwidth}|>{\centering\arraybackslash}p{0.09\textwidth}|}
+\caption{Product Backlog} \label{tab:product_backlog} \\
 \hline
 \textbf{Groupe de Fonctionnalités} & \textbf{User Stories} & \textbf{Priorité}  \\
 \hline
+\endfirsthead
+\caption[]{Product Backlog (suite)} \\
+\hline
+\textbf{Groupe de Fonctionnalités} & \textbf{User Stories} & \textbf{Priorité}  \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
 \hline
 
 Authentification et Gestion des Utilisateurs 
@@ -229,42 +240,75 @@ Le diagramme de classes constitue un élément central de la documentation de co
 
 \section{Architecture de l'application}
 
-Dans le cadre du projet SafeTrack, nous avons adopté une architecture client--serveur moderne basée sur des services modulaires, afin de garantir la scalabilité, la sécurité et la maintenabilité du système. Cette architecture permet de séparer clairement les différentes responsabilités du système et de faciliter l'évolution future de l'application.
+Dans le cadre du projet SafeTrack, nous avons adopté une architecture client--serveur modulaire basée sur des services spécialisés afin de garantir la scalabilité, la sécurité, la maintenabilité et l'évolutivité du système. Cette architecture permet de séparer les différentes responsabilités applicatives tout en facilitant l'intégration de nouvelles fonctionnalités, notamment celles basées sur l'intelligence artificielle.
 
-L'application SafeTrack est composée de trois parties principales : une application mobile développée avec Flutter, une application web d'administration développée avec React, ainsi qu'un backend basé sur Node.js avec le framework NestJS. L'application mobile représente l'interface utilisateur principale destinée aux parents, aidants et organisations, leur permettant de consulter leur position en temps réel, de recevoir des alertes et d'interagir avec les différentes fonctionnalités de sécurité proposées par le système.
-
-L'application web, quant à elle, est destinée à deux types d'utilisateurs : l'administrateur et les parents.
-
-L'administrateur dispose d'un tableau de bord global lui permettant de consulter les statistiques, visualiser les données du système et suivre les indicateurs de performance. Cette interface facilite la supervision globale et la prise de décision.
-Le parent, en revanche, bénéficie d'une interface de gestion inspirée de l'application mobile, lui permettant de suivre les personnes dépendantes, gérer les alertes et administrer les informations liées à ses enfants ou proches.
-Au niveau du backend, nous avons adopté une architecture modulaire inspirée du modèle MVC (Modèle--Vue--Contrôleur). Cette organisation permet de séparer la logique métier, la gestion des données et les points d'accès API, ce qui facilite la maintenance du code et améliore la lisibilité de l'architecture logicielle.
-
-Le backend expose une série d'API REST sécurisées qui permettent à l'application mobile ainsi qu'à l'application web d'interagir avec les différents services du système. Ces API sont organisées en plusieurs modules fonctionnels, chacun responsable d'une fonctionnalité spécifique du système. Parmi les principaux modules, on retrouve :
+L'écosystème SafeTrack est constitué de quatre composants principaux :
 
 \begin{itemize}
-    \item Module d'authentification : gère l'inscription, la connexion et la gestion des comptes utilisateurs.
-    \item Module de localisation : assure le suivi en temps réel de la position des personnes dépendantes.
-    \item Module SafeZone : permet de définir des zones sécurisées et de déclencher des alertes lorsqu'un utilisateur quitte une zone autorisée.
-    \item Module SOS : permet d'envoyer des alertes d'urgence aux personnes responsables en cas de danger.
-    \item Module History : enregistre l'historique des déplacements pour permettre une consultation ultérieure.
-    \item Module Sharing : permet de partager temporairement l'accès à la localisation avec d'autres utilisateurs autorisés.
+    \item Une application mobile développée avec \textbf{Flutter} destinée aux parents, aux personnes dépendantes et aux responsables autorisés ;
+    
+    \item Une application web d'administration développée avec \textbf{React} permettant la gestion centralisée des utilisateurs, des organisations et des données de sécurité ;
+    
+    \item Un backend principal développé avec \textbf{NestJS} et \textbf{Node.js} assurant la gestion de la logique métier, des données et des communications temps réel ;
+    
+    \item Un microservice d'intelligence artificielle développé avec \textbf{Python}, \textbf{FastAPI} et une architecture \textbf{RAG (Retrieval-Augmented Generation)}, chargé de l'analyse intelligente des incidents et de la génération de recommandations contextuelles.
 \end{itemize}
 
-Pour la gestion des données, nous utilisons MongoDB, une base de données NoSQL adaptée aux applications manipulant des données géographiques et des structures flexibles. Elle permet de stocker efficacement les positions GPS, l'historique des déplacements ainsi que les informations des utilisateurs.
+L'application mobile constitue l'interface principale utilisée par les utilisateurs finaux. Elle permet notamment de consulter la position en temps réel, de recevoir des notifications de sécurité, de gérer les zones sécurisées, d'envoyer des alertes SOS et d'accéder aux fonctionnalités de suivi et de partage de localisation.
 
-Afin d'assurer la sécurité du système, l'authentification des utilisateurs est réalisée à l'aide de JSON Web Tokens (JWT). Après connexion, chaque utilisateur reçoit un token sécurisé qui doit être inclus dans les requêtes vers les API. Cela permet de vérifier l'identité de l'utilisateur et de contrôler l'accès aux différentes fonctionnalités du système.
+L'application web est destinée principalement aux administrateurs et aux organisations partenaires telles que les écoles, les centres de soins ou les associations. Elle offre des outils de supervision permettant la gestion des utilisateurs, le suivi des déplacements, la consultation des alertes, l'administration des \textit{Zones de sécurité} ainsi que la génération de rapports statistiques.
 
-La géolocalisation en temps réel constitue une fonctionnalité centrale de SafeTrack. L'application mobile envoie régulièrement la position GPS de l'utilisateur au serveur, qui la stocke et la transmet aux utilisateurs autorisés via l'application mobile. Cela permet aux parents, aidants ou organisations de suivre les déplacements des personnes dépendantes de manière sécurisée, tandis que l'interface web sert à l'administrateur pour la supervision et les statistiques.
+Le backend NestJS constitue le cœur du système. Il expose un ensemble d'API REST sécurisées ainsi que des services de communication temps réel via \textbf{Socket.IO}. Il centralise les traitements métier, assure la gestion des utilisateurs et orchestre les échanges entre les différents composants de la plateforme.
 
-Le système intègre également un mécanisme de notifications et d'alertes, permettant d'informer immédiatement les utilisateurs en cas de situation anormale, comme la sortie d'une zone sécurisée ou l'activation d'une alerte SOS.
+Le backend est organisé selon une architecture modulaire où chaque module est responsable d'un domaine fonctionnel spécifique :
 
-Enfin, afin de faciliter le déploiement et la gestion de l'application, les services backend peuvent être conteneurisés à l'aide de Docker, ce qui permet d'assurer une portabilité et une cohérence de l'environnement d'exécution entre les différentes phases de développement et de production.
+\begin{itemize}
+    \item \textbf{Module d'authentification} : gestion de l'inscription, de la connexion, des rôles et de la sécurité des comptes ;
+    
+    \item \textbf{Module de suivi de localisation} : réception et traitement des positions GPS en temps réel ;
+    
+    \item \textbf{Module Zone de sécurité} : gestion des zones géographiques sécurisées et détection des sorties ou entrées non autorisées ;
+    
+    \item \textbf{Module SOS} : gestion des alertes d'urgence et des procédures d'escalade ;
+    
+    \item \textbf{Module Historique} : stockage et consultation des déplacements ;
+    
+    \item \textbf{Module Partage} : gestion des autorisations d'accès à la localisation ;
+    
+    \item \textbf{Module Alertes} : création, diffusion et suivi des notifications de sécurité ;
+    
+    \item \textbf{Module Administration} : supervision globale de la plateforme.
+\end{itemize}
 
-Grâce à cette architecture, l'application SafeTrack garantit une bonne performance, une sécurité renforcée et une grande évolutivité, tout en offrant une expérience utilisateur fluide et fiable pour la protection et la localisation des personnes dépendantes.
+Afin d'améliorer les capacités d'analyse et d'assistance à la décision, SafeTrack intègre également un microservice d'intelligence artificielle indépendant. Ce microservice communique avec le backend via des API dédiées et assure plusieurs fonctions avancées :
+
+\begin{itemize}
+    \item Analyse intelligente des incidents de sécurité ;
+    
+    \item Détection des situations à risque à partir des données de localisation ;
+    
+    \item Génération de recommandations contextuelles grâce à l'approche RAG ;
+    
+    \item Production de rapports de sécurité enrichis ;
+    
+    \item Analyse comportementale et détection d'anomalies de déplacement.
+\end{itemize}
+
+Cette séparation sous forme de microservice permet d'isoler les traitements IA du backend principal, d'améliorer la scalabilité du système et de faciliter l'évolution future des modèles d'intelligence artificielle.
+
+Pour la persistance des données, SafeTrack utilise \textbf{MongoDB}, une base de données NoSQL particulièrement adaptée au stockage des informations géographiques, des historiques de déplacement et des données utilisateurs. \textbf{Redis} est utilisé comme système de cache afin d'optimiser les performances des traitements temps réel et la gestion des positions actives.
+
+La sécurité des échanges est assurée par l'utilisation des \textbf{JSON Web Tokens (JWT)}. Après authentification, chaque utilisateur reçoit un jeton sécurisé qui doit être présenté lors des appels aux API. Ce mécanisme permet de contrôler l'accès aux ressources et de garantir l'intégrité des communications.
+
+La localisation en temps réel constitue l'une des fonctionnalités centrales de SafeTrack. Les positions GPS collectées par l'application mobile sont transmises au backend, stockées dans la base de données puis diffusées instantanément aux utilisateurs autorisés grâce aux mécanismes de communication temps réel. Cette approche permet un suivi fiable et réactif des personnes dépendantes.
+
+Enfin, afin de faciliter le déploiement et la portabilité de la solution, les différents services (backend, microservice IA, base de données et cache) peuvent être conteneurisés à l'aide de \textbf{Docker}. Cette approche garantit la cohérence des environnements entre les phases de développement, de test et de production.
+
+Grâce à cette architecture client--serveur modulaire enrichie par un microservice d'intelligence artificielle, SafeTrack offre une plateforme performante, sécurisée et évolutive permettant d'assurer la protection, le suivi et l'assistance intelligente des personnes dépendantes.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{images/architectureVF.png}
+    \includegraphics[width=\textwidth]{images/update_the_architecture_diagram_data_image_image_7_for_safetrack_architecture..png}
     \caption{Architecture proposée pour la plateforme}
     \label{fig_architecture_physique}
 \end{figure}
@@ -287,7 +331,7 @@ Dans le cadre de ce projet, plusieurs machines ont été utilisées pour le dév
 \item Disque : 477GB
 \end{itemize}
 
-\item[$\bullet$] **PC 2 (Lenovo LOQ)** :
+\item[$\bullet$] PC 2 (Lenovo LOQ) :
 \begin{itemize}
     \item Carte graphique : NIVIDIA GeForce RTX 3050 6 GB
     \item Mémoire RAM : 16 Go
@@ -297,65 +341,128 @@ Dans le cadre de ce projet, plusieurs machines ont été utilisées pour le dév
 
 \subsection{Environnement technique}
 
-\begin{tabular}{| m{2.5cm} | m{13cm} |}
+\begin{longtable}{| m{2.5cm} | m{13cm} |}
 \hline
+\textbf{Logo} & \textbf{Outil et Description} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Logo} & \textbf{Outil et Description (suite)} \\
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
 
-\includegraphics[width=2cm]{images/nestjs.png} & 
+\includegraphics[width=1.5cm]{images/nestjs.png} & 
 \textbf{NestJS : \cite{nestjs}}  
 Framework backend basé sur Node.js permettant de développer des API REST robustes et structurées grâce à une architecture modulaire inspirée du modèle MVC.
 \\
 \hline
 
-\includegraphics[width=2cm]{images/react.png} & 
+\includegraphics[width=1.5cm]{images/react.png} & 
 \textbf{React.js : \cite{reactjs}}  
 Bibliothèque JavaScript utilisée pour le développement de l'application web (dashboard), offrant une interface interactive et dynamique pour la gestion et la supervision des utilisateurs.
 \\
 \hline
 
-\includegraphics[width=2cm]{images/flutter.png} & 
+\includegraphics[width=1.5cm]{images/flutter.png} & 
 \textbf{Flutter : \cite{flutter}}  
 Framework multiplateforme utilisé pour le développement de l'application mobile, permettant une expérience utilisateur fluide sur Android et iOS.
 \\
 \hline
 
-\includegraphics[width=2cm]{images/nodejs.png} & 
+\includegraphics[width=1.5cm]{images/nodejs.png} & 
 \textbf{Node.js : \cite{nodejs}}  
 Environnement d'exécution JavaScript côté serveur utilisé pour le développement du backend.
 \\
 \hline
 
-\includegraphics[width=2cm]{images/mongodb.png} & 
+\includegraphics[width=1.5cm]{images/mongodb.png} & 
 \textbf{MongoDB : \cite{mongodb}}  
 Base de données NoSQL utilisée pour stocker les informations des utilisateurs ainsi que les données de géolocalisation en temps réel.
 \\
 \hline
 
-\includegraphics[width=2cm]{images/docker.png} & 
+\includegraphics[width=1.2cm]{images/redis.png} & 
+\textbf{Redis : }  
+Base de données en mémoire utilisée comme système de cache et de gestion des données en temps réel.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/ioredis.png} & 
+\textbf{ioredis : \cite{ioredis}}  
+Client Redis utilisé pour la gestion du cache et la communication temps réel entre services.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/websocket.png} & 
+\textbf{Socket.IO : }  
+Bibliothèque permettant une communication bidirectionnelle et en temps réel entre les clients et le serveur.
+\\
+\hline
+
+\includegraphics[width=1cm]{images/jwt.png} & 
+\textbf{JWT : }  
+Standard utilisé pour l'échange sécurisé de jetons d'authentification entre les différentes parties du système.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/firebaselogo.png} & 
+\textbf{Firebase Cloud Messaging (FCM) : }  
+Service utilisé pour l'envoi de notifications push instantanées sur les appareils mobiles.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/mapslogo.png} & 
+\textbf{Google Maps API : }  
+Service de cartographie utilisé pour visualiser la localisation des utilisateurs et gérer les zones sécurisées.
+\\
+\hline
+
+\includegraphics[width=1.8cm]{images/swaggerlogo.png} & 
+\textbf{Swagger (OpenAPI) : }  
+Documentation et test interactif des API REST du backend.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/ollama.jpeg} & 
+\textbf{Ollama : }  
+Exécution locale des modèles de langage utilisés par le système RAG pour l'analyse et la génération de recommandations.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/chromadblogo.png} & 
+\textbf{ChromaDB : }  
+Base de données vectorielle utilisée par le système RAG pour stocker et rechercher les connaissances contextuelles.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/bcryptlogo.jpg} & 
+\textbf{bcrypt : }  
+Hachage et sécurisation des mots de passe avant leur stockage dans la base de données.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/docker.png} & 
 \textbf{Docker \& Docker Compose : \cite{docker}}  
 Utilisés pour la conteneurisation des services et la gestion des environnements de déploiement.
 \\
 \hline
 
-\includegraphics[width=1cm]{images/gitlab.jpg}
-\includegraphics[width=1cm]{images/github.png} & 
+\includegraphics[width=0.8cm]{images/gitlab.jpg}
+\includegraphics[width=0.8cm]{images/github.png} & 
 \textbf{GitLab \& GitHub : \cite{github} \cite{gitlab}}  
 Outils de gestion de version et de collaboration permettant le suivi du code source ainsi que l'intégration continue (CI/CD).
 \\
 \hline
 
-\includegraphics[width=2cm]{images/ioredis.png} & 
-\textbf{ioredis : \cite{ioredis}}  
-Client Redis utilise pour la gestion du cache et la communication temps reel entre services.
-\\
-\hline
-
-\includegraphics[width=2cm]{images/vscode.png} & 
+\includegraphics[width=1.5cm]{images/vscode.png} & 
 \textbf{Visual Studio Code : \cite{vscode}}  
 Éditeur de code utilisé pour le développement grâce à ses nombreuses extensions.
 \\
-\hline
-
-\end{tabular}
+\end{longtable}
 
 
 
@@ -368,4 +475,5 @@ Client Redis utilise pour la gestion du cache et la communication temps reel ent
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 En conclusion, Ce chapitre a posé les bases de notre projet en identifiant les acteurs, les besoins fonctionnels et non fonctionnels, et en élaborant un Product Backlog détaillé. Les diagrammes UML ont facilité la compréhension de l'architecture de l'application, tandis que le choix des technologies adaptées a permis de garantir une solution à la fois performante et sécurisée. Les outils et l'environnement de développement sélectionnés ont optimisé notre productivité et préparent efficacement les prochaines étapes de mise en œuvre présentées dans les chapitres suivants.
+\enlargethispage{2\baselineskip}
 
