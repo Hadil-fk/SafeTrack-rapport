@@ -1,5 +1,5 @@
 ﻿﻿
-\chapter{Sprint 1\&2 : Authentification , Gestion des comptes \&  Profil , Gestion des utilisateurs }
+\chapter{Sprint 1\&2 : Authentification, Gestion des comptes, Profils, Utilisateurs et Appareils}
 \minitoc
 \newpage
 
@@ -12,7 +12,7 @@
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 Suite à l'analyse des besoins, ce chapitre présente le lancement du projet SafeTrack selon une approche Agile par sprints.
-Les deux premiers sprints portent sur les fonctionnalités essentielles, notamment l'authentification, la gestion des comptes, des profils et des utilisateurs.
+Les deux premiers sprints portent sur les fonctionnalités essentielles, notamment l'authentification, la gestion des comptes, des profils, des utilisateurs et la gestion des appareils.
 Ils constituent la base de l'application et introduisent les principaux artefacts de conception et de réalisation.
 
 
@@ -159,9 +159,9 @@ Ce diagramme illustre les principales interactions entre l'utilisateur et les fo
 Le cas d'utilisation \og S'inscrire \fg{} est décrit ci—‘dessous. Il présente les étapes par lesquelles un visiteur crée un compte SafeTrack, les contrôles effectués (validation des champs, vérification d'unicité) et les conditions d'acceptation.
 
 \small
-\renewcommand{\arraystretch}{1.1}
+\renewcommand{\arraystretch}{1.2}
 \setlength{\parskip}{0pt}
-\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{0.27\textwidth}|>{\raggedright\arraybackslash}p{0.58\textwidth}|}
 \caption{Description textuelle du cas d'utilisation S'inscrire} \\
 \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
@@ -198,7 +198,6 @@ Scénario nominal &
 % Inline (non-floating) presentation of interface images to avoid page breaks
 \end{longtable}
 
-
 \small
 \renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
@@ -215,7 +214,7 @@ Scénario nominal &
 \hline
 \endlastfoot
 
-Acteurs & Utilisateur (Parent / Enfant), Administrateur \\ \hline
+Acteurs & Utilisateur (Parent / personne dépendantee), Administrateur \\ \hline
 
 Précondition & L'acteur possède un compte valide et peut s'authentifier via mot de passe, biométrie ou Google OAuth. \\ \hline
 
@@ -271,9 +270,10 @@ La figure~\ref{fig:chap3_auth_sequence} illustre le diagramme de séquence du ca
     \centering
     \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/Sq_auth.drawio.png
     }
-    \caption{Diagramme de séquence de S'authentifier (scénario classique)}
+    \caption{Diagramme de séquence de S'authentifier}
     \label{fig:chap3_auth_sequence}
 \end{figure}
+
 \subsection{Réalisation du Sprint 1:}
 
 \subsubsection{Réalisation du cas d'utilisation : S'inscrire}
@@ -305,24 +305,24 @@ Les informations sont envoyées au backend, où le système :
 Ce token permet à l'utilisateur d'accéder aux fonctionnalités protégées de l'application de manière sécurisée, sans avoir à se reconnecter à chaque requête.
 
 
-\section{Sprint 2 : Profil \& Gestion des utilisateurs}
+\section{Sprint 2 : Gestion des utilisateurs, profils et appareils}
 
-Ce deuxième sprint vise à améliorer l'expérience utilisateur en introduisant les fonctionnalités liées à la gestion du profil et des contacts. Il permet principalement aux acteurs responsables (parents, aidants ou organisations) de personnaliser leurs informations et de gérer les relations avec les personnes suivies dans l'application SafeTrack.
+Ce deuxième sprint vise à améliorer l'expérience utilisateur en introduisant les fonctionnalités liées à la gestion des utilisateurs, des profils, des contacts et des appareils de suivi. Il permet principalement aux acteurs responsables (parents, aidants ou organisations) de personnaliser leurs informations, de gérer les relations avec les personnes suivies et d'associer ou configurer les dispositifs de suivi utilisés dans l'application SafeTrack.
 
-Les fonctionnalités développées incluent la consultation et la modification des informations du profil (nom, prénom, coordonnées, etc.), ainsi que la gestion des contacts (ajout, suppression et consultation). Ces actions sont réservées aux utilisateurs disposant des droits appropriés, notamment les parents, les aidants ou les organisations. 
+Les fonctionnalités développées incluent la consultation et la modification des informations du profil (nom, prénom, coordonnées, etc.), la gestion des contacts (ajout, suppression et consultation) ainsi que la gestion des appareils (association, dissociation, configuration). Ces actions sont réservées aux utilisateurs disposant des droits appropriés, notamment les parents, les aidants ou les organisations.
 
-En revanche, les personnes dépendantes disposent uniquement d'un accès limité en consultation, sans possibilité de modifier leur profil ou de gérer des contacts.
+En revanche, les personnes dépendantes disposent uniquement d'un accès limité en consultation, sans possibilité de modifier leur profil, de gérer des contacts ou d'administrer des appareils.
 
-à la fin de ce sprint, l'application offre un espace utilisateur personnalisable et permet d'établir un réseau de confiance entre les différents acteurs, ce qui constitue une base essentielle pour les fonctionnalités de suivi, de localisation et d'alertes développées dans les sprints suivants.
+À la fin de ce sprint, l'application offre un espace utilisateur personnalisable, un réseau de confiance entre les différents acteurs et la possibilité de gérer les dispositifs de suivi, ce qui constitue une base essentielle pour les fonctionnalités de suivi, de localisation et d'alertes développées dans les sprints suivants.
 
 
 
 \subsection{Backlog Sprint 2 :}
 
-La gestion et la personnalisation du profil utilisateur représentent un aspect essentiel d'une application orientée sécurité. Les user stories suivantes décrivent les fonctionnalités permettant aux acteurs autorisés (parents, aidants ou organisations) de gérer les profils et les contacts.
+La gestion, la personnalisation des profils et la gestion des appareils de suivi représentent des aspects essentiels d'une application orientée sécurité. Les user stories suivantes décrivent les fonctionnalités permettant aux acteurs autorisés (parents, aidants ou organisations) de gérer les profils, les contacts et les appareils associés.
 
 \begin{table}[H]
-    \caption{Backlog Sprint 2 —“ Gestion des profils et contacts}
+    \caption{Backlog Sprint 2 — Gestion des profils, contacts et appareils}
 \centering
 \small
 \setlength{\tabcolsep}{3pt}
@@ -421,6 +421,20 @@ US-017 & En tant que parent/aidant, je peux rechercher un contact afin de le ret
 & 2 jours \\
 
 \hline
+
+US-018 & En tant que parent/aidant/organisation, je peux gérer les appareils afin d'associer, dissocier et configurer les dispositifs de suivi.
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
+\begin{itemize}[leftmargin=*]
+\item Association d'un appareil
+\item Dissociation d'un appareil
+\item Configuration et paramètres (nom, fréquence de mise à jour)
+\item API gestion des appareils
+\item Tests et validation
+\end{itemize}
+\end{minipage}
+& 3 jours \\
+
+\hline
 \end{tabularx}
 \end{table}
 
@@ -439,7 +453,7 @@ Ce diagramme illustre les principales interactions entre l'utilisateur et les fo
 
 \subsubsection{Cas d'utilisation : Modifier profil}
 
-Le cas d'utilisation \og Modifier profil \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant à l'utilisateur de mettre à jour ses informations personnelles.
+Le cas d'utilisation \og Modifier profil \fg{} est présenté ci dessous. Cette description couvre l'ensemble des opérations permettant à l'utilisateur de mettre à jour ses informations personnelles.
 
 \small
 \renewcommand{\arraystretch}{1.1}
@@ -459,7 +473,7 @@ Le cas d'utilisation \og Modifier profil \fg{} est présenté ci—‘dessous. C
 
 Cas d'utilisation & Modifier profil \\ \hline
 
-Acteurs & Parent, Aidant, Organisation, Personne Dépendant \\ \hline
+Acteurs & Parent, Aidant, Organisation, personne dépendante \\ \hline
 
 Précondition & L'utilisateur est authentifié, possède un compte actif et dispose des permissions de modification de profil (son propre profil ou celui de ses enfants/personnes dépendantes associées). \\ \hline
 
@@ -467,7 +481,7 @@ Postcondition & Les modifications du profil sont enregistrées dans la base de d
 
 Scénario nominal &
 \begin{itemize}
-\item L'utilisateur accède à son espace profil ou sélectionne un Personne Dépendant.
+\item L'utilisateur accède à son espace profil ou sélectionne une personne dépendante.
 \item Le système affiche le formulaire de modification avec les données actuelles.
 \item L'utilisateur édite les champs souhaités (nom, email, téléphone, permissions, etc.).
 \item L'utilisateur peut importer une photo de profil.
@@ -480,11 +494,11 @@ Scénario nominal &
 
 Scénario alternatif &
 \begin{itemize}
-\item \textbf{Modification du profil d'un Personne Dépendant :}
+\item \textbf{Modification du profil d'une Personne Dépendant :}
 \begin{itemize}
-\item Parent sélectionne un enfant dans la liste des personnes associées.
-\item Modification des informations de l'enfant (restrictions appliquées selon les droits).
-\item Modification des permissions et autorisations de l'enfant.
+\item Parent sélectionne une personne dépendante dans la liste des personnes associées.
+\item Modification des informations de la personne dépendante (restrictions appliquées selon les droits).
+\item Modification des permissions et autorisations de la personne dépendante.
 \item Validation et enregistrement des modifications.
 \end{itemize}
 
@@ -497,9 +511,9 @@ Scénario alternatif &
 
 \item \textbf{Restrictions d'accès :}
 \begin{itemize}
-\item Personne Dépendant avec accès lecture seule sur son propre profil.
+\item Personne Dépendante avec accès lecture seule sur son propre profil.
 \item Modification possible uniquement par le parent/aidant responsable.
-\item Certains champs non modifiables par l'enfant (permissions, alertes, etc.).
+\item Certains champs non modifiables par la personne dépendante (permissions, alertes, etc.).
 \end{itemize}
 
 \item \textbf{Erreurs de validation :}
@@ -525,15 +539,15 @@ La figure~\ref{fig:chap3_profile_modify_sequence} illustre le diagramme de séqu
     \label{fig:chap3_profile_modify_sequence}
 \end{figure}
 
-\subsubsection{Cas d'utilisation : Ajouter un Personne Dépendant}
+\subsubsection{Cas d'utilisation : Ajouter une Personne Dépendante}
 
-Le cas d'utilisation \og Ajouter un Personne Dépendant \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un enfant ou une personne dépendante et de générer automatiquement ses identifiants d'accès.
+Le cas d'utilisation \og Ajouter une Personne Dépendant \fg{} est présenté ci—‘dessous. Cette description couvre l'ensemble des opérations permettant aux parents/aidants de créer un profil pour un personne dépendante ou une personne dépendante et de générer automatiquement ses identifiants d'accès.
 
 \small
 \renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
 \begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
-\caption{Description textuelle du cas d'utilisation Ajouter un Personne Dépendant} \\
+\caption{Description textuelle du cas d'utilisation Ajouter une Personne Dépendante} \\
 \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
@@ -545,24 +559,24 @@ Le cas d'utilisation \og Ajouter un Personne Dépendant \fg{} est présenté ci�
 \hline
 \endlastfoot
 
-Cas d'utilisation & Ajouter un Personne Dépendant \\ \hline
+Cas d'utilisation & Ajouter une Personne Dépendante \\ \hline
 
 Acteurs & Parent, Aidant \\ \hline
 
 Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un compte actif et dispose des permissions de création d'enfants/personnes dépendantes. \\ \hline
 
-Postcondition & Un nouveau profil Personne Dépendant est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
+Postcondition & Un nouveau profil Personne Dépendante est créé avec un compte d'accès généré. Les identifiants sont transmis au parent/aidant par email. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
 
 Scénario nominal &
 \begin{itemize}
 \item L'utilisateur (parent/aidant) accède au module de gestion des enfants.
-\item L'utilisateur clique sur le bouton « Ajouter un Personne Dépendant ».
+\item L'utilisateur clique sur le bouton « Ajouter une Personne Dépendante ».
 \item Le système affiche un formulaire contenant les champs : nom, email et âge.
 \item L'utilisateur remplit les informations requises.
 \item Le système valide les données saisies (format email, âge valide, champs obligatoires).
 \item Le système génère automatiquement un compte avec un mot de passe sécurisé.
-\item Le nouvel Personne Dépendant est enregistré et lié au compte du parent.
-\item Le système envoie un email au parent contenant l'adresse email et le mot de passe temporaire du compte de l'enfant.
+\item Le nouvel Personne Dépendante est enregistré et lié au compte du parent.
+\item Le système envoie un email au parent contenant l'adresse email et le mot de passe temporaire du compte de l'personne dépendante.
 \item L'utilisateur reçoit une confirmation d'ajout avec les détails du profil créé.
 \end{itemize}
 \\ \hline
@@ -572,12 +586,12 @@ Scénario alternatif &
 \item \textbf{Réinitialisation du mot de passe :}
 \begin{itemize}
 \item Si le parent n'a pas reçu l'email ou souhaite générer un nouveau mot de passe.
-\item Sélection de l'enfant dans la liste et option « Réinitialiser le mot de passe ».
+\item Sélection de la personne dépendante dans la liste et option « Réinitialiser le mot de passe ».
 \item Génération d'un nouveau mot de passe temporaire.
 \item Envoi d'un nouvel email contenant le mot de passe.
 \end{itemize}
 
-\item \textbf{Modification du profil enfant :}
+\item \textbf{Modification du profil personne dépendante :}
 \begin{itemize}
 \item Après création, le parent peut modifier les informations (nom, âge).
 \item Le parent peut configurer les permissions, zones de sécurité et paramètres de suivi.
@@ -596,7 +610,7 @@ Scénario alternatif &
 
 \end{longtable}
 
-\subsubsection{Diagramme de séquence de \og Ajouter un Personne Dépendant \fg}
+\subsubsection{Diagramme de séquence de \og Ajouter une Personne Dépendante \fg}
 
 La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de séquence du cas \og Gestion des enfants \fg{} pour le scénario nominal. Les interactions couvrent les opérations d'ajout, consultation, modification et suppression d'enfants/personnes dépendantes.
 
@@ -619,20 +633,20 @@ L'application envoie une requête sécurisée au backend en utilisant le token J
 
 Les restrictions d'accès sont respectées : un parent/aidant peut modifier son propre profil et, selon les permissions, les profils des enfants/personnes dépendantes qui lui sont associés.
 
-\subsubsection{Réalisation du cas d'utilisation : Ajouter un Personne Dépendant}
+\subsubsection{Réalisation du cas d'utilisation : Ajouter une Personne Dépendante}
 
 Le module de gestion des enfants permet aux parents/aidants de créer, consulter, modifier et supprimer des profils d'enfants ou de personnes dépendantes.
 
 Fonctionnalités réalisées :
 
 \begin{itemize}
-    \item \textbf{Ajout d'un Personne Dépendant :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'enfant est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'enfant pour son utilisation ultérieure.
+    \item \textbf{Ajout d'une Personne Dépendante :} Le parent/aidant remplit un formulaire simple contenant les champs suivants : nom, email et âge. Le système valide les données saisies (format email valide, âge cohérent, champs obligatoires). Un compte d'accès est créé automatiquement avec un mot de passe sécurisé généré par le système. Le profil de l'personne dépendante est lié au compte du parent et enregistré en base de données. Le parent reçoit un email contenant l'adresse email et le mot de passe temporaire du compte de l'personne dépendante pour son utilisation ultérieure.
     
     \item \textbf{Consultation :} Affichage de la liste complète des enfants/personnes dépendantes associés au parent. Accès à la fiche détaillée de chaque profil incluant les informations personnelles (nom, âge, email), les autorisations, les paramètres de suivi et l'historique des activités.
     
-    \item \textbf{Modification :} Le parent/aidant peut modifier les informations de l'enfant (nom, âge) et configurer les permissions, zones de sécurité et paramètres de suivi. Mise à jour des données en base avec validation des changements et confirmation des modifications.
+    \item \textbf{Modification :} Le parent/aidant peut modifier les informations de la personne dépendante (nom, âge) et configurer les permissions, zones de sécurité et paramètres de suivi. Mise à jour des données en base avec validation des changements et confirmation des modifications.
     
-    \item \textbf{Réinitialisation du mot de passe :} Si le parent n'a pas reçu l'email initial ou souhaite générer un nouveau mot de passe, il peut accéder à l'option « Réinitialiser le mot de passe » depuis la fiche de l'enfant. Un nouveau mot de passe temporaire est généré et envoyé par email au parent.
+    \item \textbf{Réinitialisation du mot de passe :} Si le parent n'a pas reçu l'email initial ou souhaite générer un nouveau mot de passe, il peut accéder à l'option « Réinitialiser le mot de passe » depuis la fiche de la personne dépendante. Un nouveau mot de passe temporaire est généré et envoyé par email au parent.
     
     \item \textbf{Suppression :} Détachement ou suppression du profil avec confirmation préalable. Un message de confirmation de suppression est affiché en cas de succès, et des messages d'erreur appropriés sont retournés en cas d'échec.
 \end{itemize}
@@ -642,50 +656,60 @@ Toutes les opérations sont sécurisées et soumises à des contrôles d'autoris
 \section{Présentation des interface de l'application}
 
 
-% Adjusted figures: smaller heights and fixed placement to keep interfaces near the section
+% Mobile interfaces: portrait-like screenshots with compact widths and taller frames
 \begin{figure}[H]
     \centering
-    \begin{minipage}[b]{0.32\textwidth}
+    \begin{minipage}[b]{0.30\textwidth}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signup1.jpg}}
-        \caption{Interface Mobile —“ Inscription SafeTrack —“ étape 1}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/page1.jpg}}
+        \caption{Interface Mobile — Écrans d’onboarding}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.32\textwidth}
+    \begin{minipage}[b]{0.30\textwidth}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signup2.jpg}}
-        \caption{Interface Mobile —“ Inscription SafeTrack —“ étape 2}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/signup1.jpg}}
+        \caption{Interface Mobile — Inscription SafeTrack}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.32\textwidth}
+    \begin{minipage}[b]{0.30\textwidth}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/signin.jpg}}
-        \caption{Interface Mobile —“ Page de connexion SafeTrack}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/signin.jpg}}
+        \caption{Interface Mobile — Page de connexion SafeTrack}
     \end{minipage}
+\end{figure}
+% Web interface: wider screenshot suitable for desktop layout
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/signinweb.png}}
+    \caption{Interface Web — Page de connexion SafeTrack}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \begin{minipage}[b]{0.31\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/modif profil.jpg}}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/modif profil.jpg}}
         \caption{Interface mobile - Modifier Profil}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.31\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/profile.jpg}}
-        \caption{Interface Mobile —“ Voir Profil}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/profile.jpg}}
+        \caption{Interface Mobile — Voir Profil}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.31\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
-        \fbox{\includegraphics[width=\linewidth, height=7cm]{images/addchild.jpg}}
-        \caption{Interface mobile —“ Ajouter un Personne Dépendant}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/addchild.jpg}}
+        \caption{Interface mobile — Ajouter une Personne Dépendante}
     \end{minipage}
 \end{figure}
+
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
-En conclusion, ce chapitre a présenté la mise en place du socle technique de SafeTrack à travers les sprints 1 et 2, notamment l'authentification sécurisée et la gestion des comptes. Ces fondations permettent désormais d'aborder le chapitre suivant, dédié à l'intégration du suivi en temps réel par localisation ainsi qu'au déploiement des systèmes d'alertes et de sécurité SOS .
+En conclusion, ce chapitre a présenté la mise en place du socle technique de SafeTrack à travers les sprints 1 et 2, notamment l'authentification sécurisée, la gestion des comptes et la gestion des appareils. Ces fondations permettent désormais d'aborder le chapitre suivant, dédié à l'intégration du suivi en temps réel par localisation, au déploiement des systèmes d'alertes et de sécurité SOS, ainsi qu'au partage d'accès .
 
 
 

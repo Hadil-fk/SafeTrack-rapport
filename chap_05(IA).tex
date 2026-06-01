@@ -26,7 +26,7 @@ L'objectif principal est de rendre la plateforme plus prédictive et réactive. 
 Les décisions IA de SafeTrack s'appuient sur un ensemble de sources complémentaires :
 \begin{itemize}
     \item Localisation GPS en temps réel
-    \item Historique des trajets et habitudes de déplacement
+ \item Historique des trajets et habitudes de déplacement
     \item Alertes SOS et incidents déclarés
     \item Profils utilisateurs (âge, rôle, Dépendantes, contraintes)
 \end{itemize}
@@ -45,7 +45,7 @@ Le tableau suivant présente les User Stories prioritaires associées à l'IA Sa
 \hline
 \textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
-US1 & En tant que parent, je souhaite recevoir des alertes intelligentes lorsque mon enfant entre dans une zone dangereuse... & 
+US1 & En tant que parent, je souhaite recevoir des alertes intelligentes lorsque mon personne dépendante entre dans une zone dangereuse... & 
 \begin{itemize}[nosep, leftmargin=*]
     \item Développer le module de détection géospatiale
     \item Implémenter l’analyse des zones dangereuses
@@ -55,6 +55,7 @@ US2 & En tant que parent, je souhaite recevoir des recommandations IA contextual
 \begin{itemize}[nosep, leftmargin=*]
     \item Intégrer le modèle LLM via Ollama
     \item Développer le microservice FastAPI
+    \item Générer les réponses intelligentes
     \item Générer les réponses intelligentes
 \end{itemize} & 6 jours \\ \hline
 US3 & En tant qu’utilisateur, je souhaite que le système analyse les comportements inhabituels... & 
@@ -410,7 +411,7 @@ Les tests réalisés sur le microservice d’intelligence artificielle de SafeTr
 
 \subsubsection{Exemple d’analyse d’anomalie}
 
-Lorsqu’un enfant quitte une zone sécurisée définie par les parents durant une période nocturne, le système détecte automatiquement une anomalie et génère une alerte intelligente contenant :
+Lorsqu’un personne dépendante quitte une zone sécurisée définie par les parents durant une période nocturne, le système détecte automatiquement une anomalie et génère une alerte intelligente contenant :
 
 \begin{itemize}
     \item le niveau de risque ;
@@ -422,7 +423,7 @@ Lorsqu’un enfant quitte une zone sécurisée définie par les parents durant u
 Par exemple, le système peut générer une recommandation telle que :
 
 \begin{quote}
-« Déplacement inhabituel détecté en dehors de la zone sécurisée pendant la nuit. Il est recommandé de vérifier immédiatement la situation et de contacter l’enfant si nécessaire. »
+« Déplacement inhabituel détecté en dehors de la zone sécurisée pendant la nuit. Il est recommandé de vérifier immédiatement la situation et de contacter l’personne dépendante si nécessaire. »
 \end{quote}
 
 \subsubsection{Exemple de recommandation IA avec RAG}
