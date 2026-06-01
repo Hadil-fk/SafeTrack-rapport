@@ -117,7 +117,7 @@ Les besoins non fonctionnels décrivent les critères qualitatifs essentiels pou
 \end{itemize}
 
 \section{Product Backlog}
-à cette étape, en jouant le rôle de Product Owner (PO) et en s'appuyant sur l'analyse des besoins présentée précédemment, il est essentiel de préparer le Product Backlog. Celui-ci regroupe toutes les fonctionnalités attendues sous forme de Product Backlog Items (PBI). Chaque PBI reflète un besoin des utilisateurs ou des parties prenantes, et peut être exprimé sous forme de User Stories pour faciliter la compréhension et la planification.
+À cette étape, en jouant le rôle de Product Owner (PO) et en s'appuyant sur l'analyse des besoins présentée précédemment, il est essentiel de préparer le Product Backlog. Celui-ci regroupe toutes les fonctionnalités attendues sous forme de Product Backlog Items (PBI). Chaque PBI reflète un besoin des utilisateurs ou des parties prenantes, et peut être exprimé sous forme de User Stories pour faciliter la compréhension et la planification.
 
 Pour le projet SafeTrack, les PBI incluent par exemple : le suivi en temps réel, la gestion des zones sécurisées, les alertes SOS, l'historique des déplacements et l'intégration de l'intelligence artificielle pour la détection des situations à risque.
 
@@ -231,10 +231,12 @@ Le diagramme de classes constitue un élément central de la documentation de co
 
 Dans le cadre du projet SafeTrack, nous avons adopté une architecture client--serveur moderne basée sur des services modulaires, afin de garantir la scalabilité, la sécurité et la maintenabilité du système. Cette architecture permet de séparer clairement les différentes responsabilités du système et de faciliter l'évolution future de l'application.
 
-L'application SafeTrack est composée de trois parties principales : une application mobile développée avec Flutter, une application web (dashboard) développée avec React, ainsi qu'un backend basé sur Node.js avec le framework NestJS. L'application mobile représente l'interface utilisateur principale destinée aux utilisateurs finaux, leur permettant de consulter leur position en temps réel, de recevoir des alertes et d'interagir avec les différentes fonctionnalités de sécurité proposées par le système.
+L'application SafeTrack est composée de trois parties principales : une application mobile développée avec Flutter, une application web d'administration développée avec React, ainsi qu'un backend basé sur Node.js avec le framework NestJS. L'application mobile représente l'interface utilisateur principale destinée aux parents, aidants et organisations, leur permettant de consulter leur position en temps réel, de recevoir des alertes et d'interagir avec les différentes fonctionnalités de sécurité proposées par le système.
 
-L'application web, quant à elle, est principalement destinée aux administrateurs et aux organisations (telles que les écoles ou les centres de soins). Elle offre une interface de gestion permettant de superviser les utilisateurs, de consulter l'historique des déplacements, de configurer les zones sécurisées (SafeZones) et de gérer les alertes. Elle facilite également l'analyse des données et la prise de décision grâce à une visualisation claire des informations.
+L'application web, quant à elle, est destinée à deux types d'utilisateurs : l'administrateur et les parents.
 
+L'administrateur dispose d'un tableau de bord global lui permettant de consulter les statistiques, visualiser les données du système et suivre les indicateurs de performance. Cette interface facilite la supervision globale et la prise de décision.
+Le parent, en revanche, bénéficie d'une interface de gestion inspirée de l'application mobile, lui permettant de suivre les personnes dépendantes, gérer les alertes et administrer les informations liées à ses enfants ou proches.
 Au niveau du backend, nous avons adopté une architecture modulaire inspirée du modèle MVC (Modèle--Vue--Contrôleur). Cette organisation permet de séparer la logique métier, la gestion des données et les points d'accès API, ce qui facilite la maintenance du code et améliore la lisibilité de l'architecture logicielle.
 
 Le backend expose une série d'API REST sécurisées qui permettent à l'application mobile ainsi qu'à l'application web d'interagir avec les différents services du système. Ces API sont organisées en plusieurs modules fonctionnels, chacun responsable d'une fonctionnalité spécifique du système. Parmi les principaux modules, on retrouve :
@@ -252,7 +254,7 @@ Pour la gestion des données, nous utilisons MongoDB, une base de données NoSQL
 
 Afin d'assurer la sécurité du système, l'authentification des utilisateurs est réalisée à l'aide de JSON Web Tokens (JWT). Après connexion, chaque utilisateur reçoit un token sécurisé qui doit être inclus dans les requêtes vers les API. Cela permet de vérifier l'identité de l'utilisateur et de contrôler l'accès aux différentes fonctionnalités du système.
 
-La géolocalisation en temps réel constitue une fonctionnalité centrale de SafeTrack. L'application mobile envoie régulièrement la position GPS de l'utilisateur au serveur, qui la stocke et la transmet aux utilisateurs autorisés via l'application mobile ou le dashboard web. Cela permet aux parents ou aux responsables de suivre les déplacements des personnes dépendantes de manière sécurisée.
+La géolocalisation en temps réel constitue une fonctionnalité centrale de SafeTrack. L'application mobile envoie régulièrement la position GPS de l'utilisateur au serveur, qui la stocke et la transmet aux utilisateurs autorisés via l'application mobile. Cela permet aux parents, aidants ou organisations de suivre les déplacements des personnes dépendantes de manière sécurisée, tandis que l'interface web sert à l'administrateur pour la supervision et les statistiques.
 
 Le système intègre également un mécanisme de notifications et d'alertes, permettant d'informer immédiatement les utilisateurs en cas de situation anormale, comme la sortie d'une zone sécurisée ou l'activation d'une alerte SOS.
 

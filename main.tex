@@ -1,11 +1,11 @@
 ﻿﻿\documentclass[a4paper,12pt]{book}
-\let\cleardoublepage\clearpage 
+\let\cleardoublepage\clearpage
 
 % =========================
-% Encodage et langue
+% Encodage et langue (pdfLaTeX/LaTeX)
 % =========================
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[numbers]{natbib}
 \usepackage[french]{babel}
 \usepackage{float}
@@ -90,6 +90,7 @@ citecolor=black
 
 % initialize minitocs for chapters
 \setcounter{minitocdepth}{2}
+\mtcsettitle{minitoc}{Sommaire}
 \dominitoc
 
 \frontmatter

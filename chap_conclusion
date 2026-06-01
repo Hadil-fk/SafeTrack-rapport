@@ -1,6 +1,6 @@
 \chapter*{Conclusion Générale}
-\addcontentsline{toc}{chapter}{Conclusion Générale}
 \markboth{Conclusion Générale}{Conclusion Générale}
+\phantomsection
 \mtcaddchapter[Conclusion Générale]
 
 
