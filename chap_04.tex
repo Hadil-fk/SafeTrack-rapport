@@ -699,43 +699,70 @@ Dans cette section, nous présentons les interfaces relatives à la localisation
 
 \section{Présentation des interfaces de l'application}
 
+\section{Présentation des interfaces de l'application}
 
+% Mobile interfaces: tracking, safezone, SOS
 \begin{figure}[H]
- \centering
- \begin{minipage}[b]{0.49\textwidth}
- \centering
- \fbox{\includegraphics[width=\linewidth, height=0.45\textheight, keepaspectratio]{images/Trackingmap.jpg}}
- \caption{Carte de suivi en temps réel}
- \end{minipage}%
- \hfill
- \begin{minipage}[b]{0.49\textwidth}
- \centering
- \fbox{\includegraphics[width=\linewidth, height=0.45\textheight, keepaspectratio]{images/Safezone.jpg}}
- \caption{Gestion d'une zone de sécurité (geofencing)}
- \end{minipage}
+    \centering
+    \begin{minipage}[b]{0.30\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/trackingmobile.jpg}}
+        \caption{Interface Mobile — Suivi en temps réel}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.30\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/addsafezonemobile.jpg}}
+        \caption{Interface Mobile — Gestion d'une SafeZone}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.30\textwidth}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/sos.jpg}}
+        \caption{Interface Mobile — Alerte SOS}
+    \end{minipage}
 \end{figure}
-
+% Web interface: tracking map
 \begin{figure}[H]
- \centering
- \begin{minipage}[b]{0.32\textwidth}
- \centering
- \fbox{\includegraphics[width=\linewidth, height=0.28\textheight, keepaspectratio]{images/alertshistory.jpg}}
- \caption{Historique des alertes}
- \end{minipage}%
- \hfill
- \begin{minipage}[b]{0.32\textwidth}
- \centering
- \fbox{\includegraphics[width=\linewidth, height=0.28\textheight, keepaspectratio]{images/share1.jpg}}
- \caption{Partage — étape 1}
- \end{minipage}%
- \hfill
- \begin{minipage}[b]{0.32\textwidth}
- \centering
- \fbox{\includegraphics[width=\linewidth, height=0.28\textheight, keepaspectratio]{images/share3.jpg}}
- \caption{Partage — étape 3}
- \end{minipage}
+    \centering
+    \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/trackingweb.png}}
+    \caption{Interface Web — Suivi en temps réel}
 \end{figure}
-
+% Mobile interfaces: access control
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/accessmobile.jpg}}
+        \caption{Interface Mobile — Contrôle d'accès}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/accessmobile1.jpg}}
+        \caption{Interface Mobile — Contrôle d'accès (détail)}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/accessmobile2.jpg}}
+        \caption{Interface Mobile — Gestion des appareils}
+    \end{minipage}
+\end{figure}
+% Web interfaces: access control and device management
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/accessweb.png}}
+    \caption{Interface Web — Contrôle d'accès}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/adddeviceweb.png}}
+    \caption{Interface Web — Gestion des appareils}
+\end{figure}
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 Ce chapitre a détaillé la réalisation des Sprints 3 et 4, apportant à SafeTrack ses fonctionnalités de sécurité essentielles. Le suivi en temps réel et le système d'alerte SOS constituent le cœur de la valeur proposée par l'application, assurant une protection efficace et réactive des utilisateurs.

@@ -29,11 +29,11 @@ Les fonctionnalités développées incluent la création de compte (inscription)
 Le tableau ci-dessous présente les user stories liées à l'authentification et à la gestion des comptes utilisateurs. Ce Sprint vise à mettre en place les mécanismes d'accès sécurisé à l'application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
 
 \begin{table}[H]
-    \caption{Tableau des User Stories —“ Sprint 1}
+    \caption{Tableau des User Stories — Sprint 1}
 \centering
-\footnotesize
-\setlength{\tabcolsep}{2pt}
-\renewcommand{\arraystretch}{0.9}
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.0}
 \setlength{\parskip}{0pt}
 \begin{tabularx}{\textwidth}{|c|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|c|}
 \hline
@@ -41,8 +41,7 @@ Le tableau ci-dessous présente les user stories liées à l'authentification et
 \hline
 
 US-01 & En tant que visiteur, je peux m'inscrire via un formulaire en choisissant mon rôle (parent/aidant ou organisation) afin de créer un compte adapté à mon profil.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Concevoir l'interface d'inscription (mobile et web)
 \item Permettre le choix du rôle lors de l'inscription
@@ -52,96 +51,82 @@ US-01 & En tant que visiteur, je peux m'inscrire via un formulaire en choisissan
 \item Hashage sécurisé du mot de passe (bcrypt)
 \item Stockage des données utilisateur
 \end{itemize}
-}
 \end{minipage}
 & 3 jours \\
 \hline
 
 US-02 & En tant qu'utilisateur, je peux me connecter de manière sécurisée à l'application mobile.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Concevoir l'interface de connexion (mobile)
 \item Implémenter l'API de connexion (login)
 \item Génération et gestion des tokens JWT
 \item Gestion des erreurs d'authentification
 \end{itemize}
-}
 \end{minipage}
 & 3 jours \\
 \hline
 
 US-03 & En tant qu'administrateur, je peux me connecter via l'interface web afin d'accéder au tableau de bord d'administration.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Implémenter l'API de connexion admin
 \item Vérification du rôle (admin)
 \item Sécurisation de l'accès au dashboard web
 \item Interface de connexion web (admin)
 \end{itemize}
-}
 \end{minipage}
 & 2 jours \\
 \hline
 
 US-04 & En tant qu'utilisateur, je peux me déconnecter.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Implémenter la fonctionnalité logout
 \item Suppression du token côté client
 \item Redirection vers l'écran de connexion
 \end{itemize}
-}
 \end{minipage}
 & 1 jour \\
 \hline
 
 US-05 & En tant qu'utilisateur, je peux réinitialiser mon mot de passe en cas d'oubli.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Interface "mot de passe oublié"
 \item Génération d'un token de réinitialisation sécurisé
 \item Envoi d'email de récupération
 \item Mise à jour du mot de passe
 \end{itemize}
-}
 \end{minipage}
 & 2 jours \\
 \hline
 
 US-06 & En tant qu'utilisateur, je peux rester connecté afin de faciliter l'accès à l'application.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Implémentation des tokens JWT (access/refresh)
 \item Stockage sécurisé des tokens (secure storage)
 \item Gestion de l'expiration et du renouvellement de session
 \end{itemize}
-}
 \end{minipage}
 & 2 jours \\
 \hline
 
 US-07 & En tant que système, je dois sécuriser les accès et les données utilisateurs afin de garantir la confidentialité et l'intégrité des informations.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-3pt}
-{\small
+& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
 \begin{itemize}[leftmargin=*]
 \item Sécurisation des routes (Auth Guards)
 \item Validation des requêtes
 \item Protection contre les attaques (XSS, injection)
 \item Tests de sécurité de base
 \end{itemize}
-}
 \end{minipage}
 & 2 jours \\
 \hline
 
 \end{tabularx}
 \end{table}
-
 
 \subsection{Diagrammes du Sprint 1}
 \subsubsection{Diagramme de cas d'utilisation }
@@ -674,19 +659,22 @@ Toutes les opérations sont sécurisées et soumises à des contrôles d'autoris
 % Mobile interfaces: portrait-like screenshots with compact widths and taller frames
 \begin{figure}[H]
     \centering
-    \begin{minipage}[b]{0.30\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/page1.jpg}}
         \caption{Interface Mobile — Écrans d’onboarding}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.30\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/signup1.jpg}}
         \caption{Interface Mobile — Inscription SafeTrack}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.30\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/signin.jpg}}
         \caption{Interface Mobile — Page de connexion SafeTrack}

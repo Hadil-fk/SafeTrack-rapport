@@ -521,64 +521,35 @@ Langage de programmation principal pour le développement du microservice d'IA e
 \end{tabular}
 
 \section{Présentation des interfaces de l'application}
-\newpage
+% Mobile interfaces: daily report and AI card
+ Mobile interfaces: daily report and AI card
 \begin{figure}[H]
     \centering
-
-    % Top row: two mobile screenshots side by side
-    \begin{minipage}[b]{0.45\textwidth}
+    \begin{minipage}[t]{0.45\textwidth}
+        \vspace{0pt}
         \centering
-        \includegraphics[height=0.45\textheight, keepaspectratio]{images/selectdomaine.png}
-        \caption{Interface Mobile – Sélectionner un Domaine d'interview IA – étape 1}
-    \end{minipage}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/aidailyrapport.jpg}}
+        \caption{Interface Mobile — Rapport journalier IA}
+    \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.45\textwidth}
+    \begin{minipage}[t]{0.45\textwidth}
+        \vspace{0pt}
         \centering
-        \includegraphics[height=0.45\textheight, keepaspectratio]{images/submitanswerInterview.png}
-        \caption{Interface Mobile – Envoyer la réponse – étape 2}
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/aicard.jpg}}
+        \caption{Interface Mobile — Carte IA}
     \end{minipage}
-
-    \vspace{1em}
-
-    % Bottom row: two more mobile screenshots side by side
-    \begin{minipage}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[height=0.45\textheight, keepaspectratio]{images/EvaluationInterview.png}
-        \caption{Interface Mobile – Résultat de l'évaluation de la réponse – étape 3}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[height=0.45\textheight, keepaspectratio]{images/interviewresult.png}
-        \caption{Interface Mobile – Voir le résultat et le score de l'Interview – étape 4}
-    \end{minipage}
-
 \end{figure}
+% Mobile interface: AI dashboard
 \begin{figure}[H]
     \centering
-
-    % Image 1
-    \includegraphics[width=0.9\textwidth, height=0.3\textheight, keepaspectratio]{images/interviewHistorique.png}
-    \caption{Interface Web – Historiques des entretiens – étape 5}
-
-   
-
-    % Image 2
-    \includegraphics[width=0.9\textwidth, height=0.3\textheight, keepaspectratio]{images/interviewHistoriqueDetails.png}
-    \caption{Interface Web – Voir détails d'un Historique – étape 6}
-
-   
-
-    % Image 3
-    \includegraphics[width=0.9\textwidth, height=0.3\textheight, keepaspectratio]{images/matchingOffers.png}
-    \caption{Interface Web – Match les Offres d'emploi – étape 1}
-
-
-    \label{fig:web-interfaces-combined}
+    \begin{minipage}[t]{0.45\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/aidashboard.jpg}}
+        \caption{Interface Mobile — Tableau de bord IA}
+    \end{minipage}
 \end{figure}
 
-
-\newpage
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 Le Sprint 5 a permis d’enrichir la plateforme SafeTrack avec un microservice d’intelligence artificielle avancé, entièrement intégré à l’architecture existante. Ce microservice, exposé via l’API Gateway principale, assure une communication fluide avec les différents services du système tels que la localisation en temps réel, la gestion des alertes et les zones de sécurité, garantissant ainsi une expérience utilisateur cohérente et centralisée.
