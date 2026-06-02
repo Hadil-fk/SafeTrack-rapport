@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  2 JUN 2026 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  2 JUN 2026 05:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/LENOVO/Documents/Safetrack/Rapport_SafeTrack/main.tex
-(c:/Users/LENOVO/Documents/Safetrack/Rapport_SafeTrack/main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -23,31 +23,44 @@ File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count284
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
 \babel@savecnt=\count285
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
 \U@D=\dimen149
 \l@unhyphenated=\language79
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count286
 Package babel Info: Configuration files are deprecated, as
@@ -58,13 +71,20 @@ Package babel Info: Configuration files are deprecated, as
 * Local config file bblopts.cfg used
 *
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel-french.tex)
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babe
+l-french.tex)
 Package babel Info: Importing font and identification data for french
 (babel)             from babel-fr.ini. Reported on input line 4320.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.
+ldf
 Language: french 2025-08-15 v4.0e French support from the babel system
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.ldf
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3
+.ldf
 Language: french 2025-08-15 v3.7e French support from the babel system
 \FB@stdchar=\count287
 Package babel Info: Making : an active character on input line 273.
@@ -87,21 +107,27 @@ Package babel Info: Making ? an active character on input line 276.
 \leftmarginFB=\dimen156
 \parindentFFN=\dimen157
 \FBfnindent=\dimen158
-))) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count294
 \float@exts=\toks20
 \float@box=\box53
 \@float@everytoks=\toks21
 \@floatcapt=\box54
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count295
@@ -116,26 +142,37 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen165
 \Gm@layoutvoffset=\dimen166
 \Gm@dimlist=\toks23
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen167
 \Gin@req@width=\dimen168
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen169
 \captionmargin=\dimen170
@@ -153,7 +190,8 @@ Package caption Info: french babel package is loaded.
 Package caption Info: float package is loaded.
 ) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen177
 \ar@mcellbox=\box55
@@ -170,13 +208,15 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@delta=\dimen183
 \TX@cols=\count300
 \TX@ftn=\toks25
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip55
 \multirow@cntb=\count301
 \multirow@dima=\skip56
 \bigstrutjot=\dimen184
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.st
+y
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen185
 \lightrulewidth=\dimen186
@@ -215,11 +255,14 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LT@p@ftn=\toks26
 ) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
+)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -229,12 +272,14 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 \everycr=\toks27
 \minrowclearance=\skip61
 \rownum=\count311
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
+y
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip62
 \enit@outerparindent=\dimen199
@@ -244,7 +289,7 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitdp@description=\count313
 ) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks29
 \symAMSa=\mathgroup4
@@ -252,14 +297,19 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.s
+ty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
  (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks30
 \c@algorithm=\count314
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic
+.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count315
 \c@ALC@line=\count316
@@ -267,25 +317,32 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@depth=\count318
 \ALC@tlm=\skip63
 \algorithmicindent=\skip64
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks31
 \verbatim@line=\toks32
 \verbatim@in@stream=\read3
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
 Package: acronym 2025/01/17 v1.50 Support for acronyms (Tobias Oetiker)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
 \xs_counta=\count319
 \xs_countb=\count320
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 \AC@clearlist=\toks33
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count321
 \lst@gtempboxa=\box63
 \lst@token=\toks34
@@ -298,14 +355,16 @@ Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 \lst@newlines=\count325
 \lst@lineno=\count326
 \lst@maxwidth=\dimen259
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count327
 \lst@skipnumbers=\count328
 \lst@framebox=\box64
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
+g
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
@@ -325,9 +384,11 @@ Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
 \rot@mess@toks=\toks35
 ) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count330
 \calc@Bcount=\count331
@@ -339,18 +400,20 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count332
 \calc@Cskip=\skip69
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
 \ESO@tempdima=\dimen262
 \ESO@tempdimb=\dimen263
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count333
 )
 \AM@pagewidth=\dimen264
 \AM@pageheight=\dimen265
 \AM@fboxrule=\dimen266
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count334
@@ -361,22 +424,46 @@ File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks38
 \c@AM@survey=\count336
 \AM@templatesizebox=\box67
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
+.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
+ty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common.tex
 \pgfutil@everybye=\toks39
 \pgfutil@tempdima=\dimen267
 \pgfutil@tempdimb=\dimen268
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-latex.def
 \pgfutil@abb=\box68
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
+.code.tex
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
+)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
+.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
+.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex
 \pgfkeys@pathtoks=\toks40
 \pgfkeys@temptoks=\toks41
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+slibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks42
 ))
 \pgf@x=\dimen269
@@ -399,32 +486,76 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks44
 \t@pgf@tokc=\toks45
 \pgf@sys@id@count=\count341
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
+cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+)))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+yssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count342
 \pgfsyssoftpath@bigbuffer@items=\count343
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+re.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
+.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
+er.code.tex
 \pgfmath@dimen=\dimen279
 \pgfmath@count=\count344
 \pgfmath@box=\box69
 \pgfmath@toks=\toks46
 \pgfmath@stack@operand=\toks47
 \pgfmath@stack@operation=\toks48
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.basic.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.trigonometric.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.random.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.comparison.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.base.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.round.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.misc.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
+.code.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
+t.code.tex
 \c@pgfmathroundto@lastzeros=\count345
-)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
+.tex)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen280
 \pgf@picmaxx=\dimen281
@@ -440,75 +571,130 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen291
 \pgf@zx=\dimen292
 \pgf@zy=\dimen293
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen294
 \pgf@path@lasty=\dimen295
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen296
 \pgf@shorten@start@additional=\dimen297
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box70
 \pgf@hbox=\box71
 \pgf@layerbox@main=\box72
 \pgf@picture@serial@count=\count346
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+regraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen298
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen299
 \pgf@pt@y=\dimen300
 \pgf@pt@temp=\dimen301
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+requick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen302
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen303
 \pgf@sys@shading@range@num=\count347
 \pgf@shadingcount=\count348
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box73
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+relayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+)))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box74
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen304
 \pgf@nodesepend=\dimen305
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
+ty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
+sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
+.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen306
 \pgffor@skip=\dimen307
 \pgffor@stack=\toks49
 \pgffor@toks=\toks50
-)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count349
 \pgfplotmarksize=\dimen308
@@ -529,60 +715,89 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofchildren=\count351
 \tikznumberofcurrentchild=\count352
 \tikz@fig@count=\count353
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+ematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count354
 \pgfmatrixcurrentcolumn=\count355
 \pgf@matrix@numberofcolumns=\count356
 )
 \tikz@expandcount=\count357
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+)))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
+y
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+))
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count358
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
 )
 \@linkdim=\dimen317
 \Hy@linkcounter=\count359
 \Hy@pagecounter=\count360
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count361
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -596,16 +811,21 @@ Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count362
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen318
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count363
 \Field@Width=\dimen319
@@ -622,19 +842,26 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count366
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count367
 \c@bookmark@seq@number=\count368
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
 )
 \Hy@SectionHShift=\skip70
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip71
 \mylen=\skip72
@@ -643,8 +870,10 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip75
 \pyy=\skip76
 \pxx=\skip77
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
+y
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
 \f@nch@headwidth=\skip78
 \f@nch@offset@elh=\skip79
 \f@nch@offset@erh=\skip80
@@ -662,7 +891,8 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \@temptokenb=\toks51
 ) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\minitoc.sty
 Package: minitoc 2018/07/12 v62 Package minitoc
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\mtcmess.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\mtcmess.sty
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -685,7 +915,8 @@ Package minitoc Info: I0002
 
 \openout4 = `main.mtc'.
 
- (main.mtc0)
+
+(main.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -703,9 +934,11 @@ Package minitoc Info: I0031
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\english.mld
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\english.mld
 File: english.mld 2006/01/13
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\english.mld
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\english.mld
 File: english.mld 2006/01/13
 ))
 Package french3.ldf Info: Setting StandardItemizeEnv=true for
@@ -714,7 +947,9 @@ Package french3.ldf Info: Setting StandardItemizeEnv=true for
 Package french3.ldf Info: Setting StandardEnumerateEnv=true for
 (french3.ldf)             compatibility with enumitem package,
 (french3.ldf)             reported on input line 90.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count373
 ) (main.aux
@@ -777,7 +1012,9 @@ LaTeX Info: Redefining \degres on input line 90.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count374
 \scratchdimen=\dimen321
@@ -790,26 +1027,37 @@ LaTeX Info: Redefining \degres on input line 90.
 \MPnumerator=\count378
 \makeMPintoPDFobject=\count379
 \everyMPtoPDFconversion=\toks54
-) (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count380
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.st
+y
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-no
+metadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package hyperref Info: Link coloring ON on input line 90.
@@ -855,29 +1103,35 @@ Package minitoc Info: I0033
 \openout4 = `main.mtc7'.
 
  (page_de_garde.tex
-<images/isitcom.jpg, id=394, 200.75pt x 200.75pt>
+<images/isitcom.jpg, id=386, 200.75pt x 200.75pt>
 File: images/isitcom.jpg Graphic file (type jpg)
 <use images/isitcom.jpg>
 Package pdftex.def Info: images/isitcom.jpg  used on input line 13.
 (pdftex.def)             Requested size: 99.58464pt x 99.5875pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/sotupub.png, id=395, 735.74875pt x 341.275pt>
+<images/sotupub.png, id=387, 735.74875pt x 341.275pt>
 File: images/sotupub.png Graphic file (type png)
 <use images/sotupub.png>
 Package pdftex.def Info: images/sotupub.png  used on input line 63.
 (pdftex.def)             Requested size: 142.26378pt x 65.98856pt.
- [1
+
+[1
 
 
 
-{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/isitcom.jpg> <./images/sotupub.png>]) (dedicaces.tex
+{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/is
+itcom.jpg> <./images/sotupub.png>]) (dedicaces.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -890,12 +1144,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
 ]
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 109.
+(babel)             Reported on input line 95.
  [8])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [9] (main.lof [10
+ [9] (main.lof
+[10
 
 ])
 \tf@lof=\write7
@@ -915,19 +1170,23 @@ Package minitoc Info: I0006
 
 ]) (chap_01.tex [2]
 Chapitre 1.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 10.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
+0.
 (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 10.
- (C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+0.
+
+(C:\Users\LENOVO\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
- (main.mtc2) [3
+
+(main.mtc2) [3
 
 {C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 File: images/sotupub.png Graphic file (type png)
@@ -935,112 +1194,110 @@ File: images/sotupub.png Graphic file (type png)
 Package pdftex.def Info: images/sotupub.png  used on input line 25.
 (pdftex.def)             Requested size: 170.71652pt x 79.18417pt.
  [4]
-<images/Capture d'Ã©cran 2026-02-04 121013.png, id=891, 1445.4pt x 903.375pt>
+<images/Capture d'Ã©cran 2026-02-04 121013.png, id=893, 1445.4pt x 903.375pt>
 File: images/Capture d'Ã©cran 2026-02-04 121013.png Graphic file (type png)
 <use images/Capture d'Ã©cran 2026-02-04 121013.png>
-Package pdftex.def Info: images/Capture d'Ã©cran 2026-02-04 121013.png  used on input line 64.
+Package pdftex.def Info: images/Capture d'Ã©cran 2026-02-04 121013.png  used on
+ input line 66.
 (pdftex.def)             Requested size: 284.52756pt x 177.83221pt.
  [5]
-<images/minifinderapp.png, id=899, 1413.78188pt x 903.375pt>
+<images/minifinderapp.png, id=902, 1413.78188pt x 903.375pt>
 File: images/minifinderapp.png Graphic file (type png)
 <use images/minifinderapp.png>
-Package pdftex.def Info: images/minifinderapp.png  used on input line 90.
+Package pdftex.def Info: images/minifinderapp.png  used on input line 92.
 (pdftex.def)             Requested size: 284.52756pt x 181.80211pt.
  [6 <./images/Capture d'Ã©cran 2026-02-04 121013.png>]
-<images/life360.png, id=911, 1422.81563pt x 903.375pt>
+<images/life360.png, id=912, 1422.81563pt x 903.375pt>
 File: images/life360.png Graphic file (type png)
 <use images/life360.png>
-Package pdftex.def Info: images/life360.png  used on input line 116.
+Package pdftex.def Info: images/life360.png  used on input line 119.
 (pdftex.def)             Requested size: 284.52756pt x 180.64423pt.
- [7 <./images/minifinderapp.png>]
-<images/mobiletracker.png, id=924, 1415.2875pt x 903.375pt>
+
+[7 <./images/minifinderapp.png> <./images/life360.png>]
+<images/mobiletracker.png, id=923, 1415.2875pt x 903.375pt>
 File: images/mobiletracker.png Graphic file (type png)
 <use images/mobiletracker.png>
-Package pdftex.def Info: images/mobiletracker.png  used on input line 146.
+Package pdftex.def Info: images/mobiletracker.png  used on input line 150.
 (pdftex.def)             Requested size: 284.52756pt x 181.60913pt.
- [8 <./images/life360.png> <./images/mobiletracker.png>]
-<images/familesafe.jpg, id=936, 702.625pt x 415.5525pt>
+ [8 <./images/mobiletracker.png>]
+<images/familesafe.jpg, id=932, 702.625pt x 415.5525pt>
 File: images/familesafe.jpg Graphic file (type jpg)
 <use images/familesafe.jpg>
-Package pdftex.def Info: images/familesafe.jpg  used on input line 176.
+Package pdftex.def Info: images/familesafe.jpg  used on input line 181.
 (pdftex.def)             Requested size: 284.52756pt x 168.27881pt.
- [9 <./images/familesafe.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
-[]|\T1/cmr/bx/n/12 Mobile Tra-
- []
-
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+ [9 <./images/familesafe.jpg>] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
 [12]
-<images/scrum_processus.png, id=968, 1565.85pt x 690.58pt>
+<images/scrum_processus.png, id=960, 1565.85pt x 690.58pt>
 File: images/scrum_processus.png Graphic file (type png)
 <use images/scrum_processus.png>
-Package pdftex.def Info: images/scrum_processus.png  used on input line 428.
+Package pdftex.def Info: images/scrum_processus.png  used on input line 422.
 (pdftex.def)             Requested size: 455.24411pt x 200.76886pt.
-<images/arch_scrum.png, id=969, 974.89218pt x 580.41844pt>
+<images/arch_scrum.png, id=961, 974.89218pt x 580.41844pt>
 File: images/arch_scrum.png Graphic file (type png)
 <use images/arch_scrum.png>
-Package pdftex.def Info: images/arch_scrum.png  used on input line 437.
+Package pdftex.def Info: images/arch_scrum.png  used on input line 431.
 (pdftex.def)             Requested size: 455.24411pt x 271.03427pt.
  [13 <./images/scrum_processus.png>] [14 <./images/arch_scrum.png>]
-Overfull \hbox (10.771pt too wide) in alignment at lines 465--471
+Overfull \hbox (10.771pt too wide) in alignment at lines 459--465
  [] [] [] [] 
  []
 
 
-Overfull \hbox (10.771pt too wide) in alignment at lines 471--474
+Overfull \hbox (10.771pt too wide) in alignment at lines 465--468
  [] [] [] [] 
  []
 
 
-Overfull \hbox (10.771pt too wide) in alignment at lines 474--477
+Overfull \hbox (10.771pt too wide) in alignment at lines 468--471
  [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--486
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 \T1/cmr/m/n/10.95 struc-turé, do-cu-men-ta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 []|\T1/cmr/m/n/10.95 Module d'au-then-ti-fi-ca-tion
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 493--494
+Underfull \hbox (badness 3302) in paragraph at lines 487--488
 \T1/cmr/m/n/10.95 com-plet, ges-tion des rôles,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 497--499
+Underfull \hbox (badness 1502) in paragraph at lines 491--493
 []|\T1/cmr/m/n/10.95 Gestion des en-fants/personnes dé-pen-
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 497--499
+Underfull \hbox (badness 1067) in paragraph at lines 491--493
 \T1/cmr/m/n/10.95 dantes, pro-fils et ap-pa-reils : créa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 []|\T1/cmr/m/n/10.95 API en-fants, ges-tion des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 \T1/cmr/m/n/10.95 pro-fils, liai-son appareils-
  []
 
 
-Overfull \hbox (10.771pt too wide) in alignment at lines 477--528
+Overfull \hbox (10.771pt too wide) in alignment at lines 471--522
  [] [] [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [15]) (chap_02.tex [16]
+ignored error: Infinite glue shrinkage found in box being split [15])
+(chap_02.tex [16]
 Chapitre 2.
 \openout4 = `main.mtc'.
 
@@ -1050,7 +1307,8 @@ Chapitre 2.
 
 ] [18]
 Overfull \hbox (0.45166pt too wide) in paragraph at lines 44--45
-[]\T1/cmr/m/n/10.95 L'utilisateur peut être une per-sonne dé-pen-dante (en-fant, per-sonne âgée) ou son ai-dant/parent.
+[]\T1/cmr/m/n/10.95 L'utilisateur peut être une per-sonne dé-pen-dante (en-fant
+, per-sonne âgée) ou son ai-dant/parent.
  []
 
 [19] [20]
@@ -1094,147 +1352,179 @@ Overfull \hbox (10.2864pt too wide) in alignment at lines 141--217
  []
 
 ignored error: Infinite glue shrinkage found in box being split [21]
-<images/uc globale finale.png, id=1049, 1202.4925pt x 1199.48125pt>
+<images/uc globale finale.png, id=1039, 1161.33875pt x 1200.485pt>
 File: images/uc globale finale.png Graphic file (type png)
 <use images/uc globale finale.png>
 Package pdftex.def Info: images/uc globale finale.png  used on input line 228.
-(pdftex.def)             Requested size: 455.24548pt x 694.69298pt.
- [22] [23]
-<images/globaleclasse_diagram.drawio.png, id=1058, 1712.3975pt x 1718.42pt>
+(pdftex.def)             Requested size: 455.24168pt x 694.68814pt.
+ [22]
+[23]
+<images/globaleclasse_diagram.drawio.png, id=1048, 1681.28125pt x 1649.16125pt>
+
 File: images/globaleclasse_diagram.drawio.png Graphic file (type png)
 <use images/globaleclasse_diagram.drawio.png>
-Package pdftex.def Info: images/globaleclasse_diagram.drawio.png  used on input line 236.
-(pdftex.def)             Requested size: 455.24641pt x 731.2497pt.
+Package pdftex.def Info: images/globaleclasse_diagram.drawio.png  used on input
+ line 236.
+(pdftex.def)             Requested size: 455.23473pt x 731.24481pt.
  [24 <./images/uc globale finale.png>] [25]
-Overfull \vbox (24.51384pt too high) has occurred while \output is active []
+Overfull \vbox (24.50896pt too high) has occurred while \output is active []
 
- [26 <./images/globaleclasse_diagram.drawio.png>] [27]
-<images/update_the_architecture_diagram_data_image_image_7_for_safetrack_architecture..png, id=1078, 1027.84pt x 1027.84pt>
-File: images/update_the_architecture_diagram_data_image_image_7_for_safetrack_architecture..png Graphic file (type png)
-<use images/update_the_architecture_diagram_data_image_image_7_for_safetrack_architecture..png>
-Package pdftex.def Info: images/update_the_architecture_diagram_data_image_image_7_for_safetrack_architecture..png  used on input line 311.
+
+[26 <./images/globaleclasse_diagram.drawio.png>] [27]
+<images/update_the_architecture_diagram_data_image_image_7_for_safetrack_archit
+ecture..png, id=1068, 1027.84pt x 1027.84pt>
+File: images/update_the_architecture_diagram_data_image_image_7_for_safetrack_a
+rchitecture..png Graphic file (type png)
+<use images/update_the_architecture_diagram_data_image_image_7_for_safetrack_ar
+chitecture..png>
+Package pdftex.def Info: images/update_the_architecture_diagram_data_image_imag
+e_7_for_safetrack_architecture..png  used on input line 311.
 (pdftex.def)             Requested size: 455.24411pt x 455.24655pt.
- [28] [29 <./images/update_the_architecture_diagram_data_image_image_7_for_safetrack_architecture..png>]
-Overfull \hbox (10.97357pt too wide) in alignment at lines 344--348
+ [28]
+Overfull \hbox (10.97357pt too wide) in alignment at lines 326--331
  [] [] 
  []
 
 
-Overfull \hbox (10.97357pt too wide) in alignment at lines 348--352
+Overfull \hbox (10.97357pt too wide) in alignment at lines 331--335
  [] [] 
  []
 
 
-Overfull \hbox (10.97357pt too wide) in alignment at lines 352--354
+Overfull \hbox (10.97357pt too wide) in alignment at lines 335--337
  [] [] 
  []
 
 
-Overfull \hbox (10.97357pt too wide) in alignment at lines 354--356
+Overfull \hbox (10.97357pt too wide) in alignment at lines 337--339
  [] [] 
  []
 
-<images/nestjs.png, id=1087, 3854.4pt x 1371.1225pt>
+<images/nestjs.png, id=1073, 3854.4pt x 1371.1225pt>
 File: images/nestjs.png Graphic file (type png)
 <use images/nestjs.png>
-Package pdftex.def Info: images/nestjs.png  used on input line 358.
+Package pdftex.def Info: images/nestjs.png  used on input line 341.
 (pdftex.def)             Requested size: 42.67912pt x 15.16817pt.
-<images/react.png, id=1089, 927.465pt x 521.95pt>
+<images/react.png, id=1075, 927.465pt x 521.95pt>
 File: images/react.png Graphic file (type png)
 <use images/react.png>
-Package pdftex.def Info: images/react.png  used on input line 364.
+Package pdftex.def Info: images/react.png  used on input line 347.
 (pdftex.def)             Requested size: 42.67912pt x 24.01237pt.
-<images/flutter.png, id=1091, 12.045pt x 12.045pt>
+<images/flutter.png, id=1077, 12.045pt x 12.045pt>
 File: images/flutter.png Graphic file (type png)
 <use images/flutter.png>
-Package pdftex.def Info: images/flutter.png  used on input line 370.
+Package pdftex.def Info: images/flutter.png  used on input line 353.
 (pdftex.def)             Requested size: 42.67912pt x 42.6861pt.
-<images/nodejs.png, id=1093, 3764.0625pt x 2304.35907pt>
+<images/nodejs.png, id=1079, 3764.0625pt x 2304.35907pt>
 File: images/nodejs.png Graphic file (type png)
 <use images/nodejs.png>
-Package pdftex.def Info: images/nodejs.png  used on input line 376.
+Package pdftex.def Info: images/nodejs.png  used on input line 359.
 (pdftex.def)             Requested size: 42.67912pt x 26.12509pt.
-<images/mongodb.png, id=1095, 1204.5pt x 401.5pt>
+<images/mongodb.png, id=1081, 1204.5pt x 401.5pt>
 File: images/mongodb.png Graphic file (type png)
 <use images/mongodb.png>
-Package pdftex.def Info: images/mongodb.png  used on input line 382.
+Package pdftex.def Info: images/mongodb.png  used on input line 365.
 (pdftex.def)             Requested size: 42.67912pt x 14.22546pt.
-<images/redis.png, id=1097, 256.96pt x 256.96pt>
+<images/redis.png, id=1083, 256.96pt x 256.96pt>
 File: images/redis.png Graphic file (type png)
 <use images/redis.png>
-Package pdftex.def Info: images/redis.png  used on input line 388.
+Package pdftex.def Info: images/redis.png  used on input line 371.
 (pdftex.def)             Requested size: 34.14322pt x 34.1431pt.
-<images/ioredis.png, id=1098, 215.6055pt x 84.91725pt>
+<images/ioredis.png, id=1085, 215.6055pt x 84.91725pt>
 File: images/ioredis.png Graphic file (type png)
 <use images/ioredis.png>
-Package pdftex.def Info: images/ioredis.png  used on input line 394.
+Package pdftex.def Info: images/ioredis.png  used on input line 377.
 (pdftex.def)             Requested size: 42.67912pt x 16.80951pt.
-<images/websocket.png, id=1100, 256.96pt x 256.96pt>
+<images/websocket.png, id=1087, 256.96pt x 256.96pt>
 File: images/websocket.png Graphic file (type png)
 <use images/websocket.png>
-Package pdftex.def Info: images/websocket.png  used on input line 400.
+Package pdftex.def Info: images/websocket.png  used on input line 383.
 (pdftex.def)             Requested size: 34.14322pt x 34.1431pt.
-<images/jwt.png, id=1101, 602.25pt x 602.25pt>
+<images/jwt.png, id=1089, 602.25pt x 602.25pt>
 File: images/jwt.png Graphic file (type png)
 <use images/jwt.png>
-Package pdftex.def Info: images/jwt.png  used on input line 406.
+Package pdftex.def Info: images/jwt.png  used on input line 389.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
-<images/firebaselogo.png, id=1102, 170.6375pt x 148.555pt>
+<images/firebaselogo.png, id=1091, 170.6375pt x 148.555pt>
 File: images/firebaselogo.png Graphic file (type png)
 <use images/firebaselogo.png>
-Package pdftex.def Info: images/firebaselogo.png  used on input line 412.
+Package pdftex.def Info: images/firebaselogo.png  used on input line 395.
 (pdftex.def)             Requested size: 34.14322pt x 29.72406pt.
-<images/mapslogo.png, id=1103, 295.1025pt x 172.645pt>
+<images/mapslogo.png, id=1093, 295.1025pt x 172.645pt>
 File: images/mapslogo.png Graphic file (type png)
 <use images/mapslogo.png>
-Package pdftex.def Info: images/mapslogo.png  used on input line 418.
+Package pdftex.def Info: images/mapslogo.png  used on input line 401.
 (pdftex.def)             Requested size: 42.67912pt x 24.96834pt.
-<images/swaggerlogo.png, id=1104, 208.78pt x 148.555pt>
+<images/swaggerlogo.png, id=1095, 208.78pt x 148.555pt>
 File: images/swaggerlogo.png Graphic file (type png)
 <use images/swaggerlogo.png>
-Package pdftex.def Info: images/swaggerlogo.png  used on input line 424.
+Package pdftex.def Info: images/swaggerlogo.png  used on input line 407.
 (pdftex.def)             Requested size: 51.21504pt x 36.44049pt.
-<images/ollama.jpeg, id=1105, 401.5pt x 401.5pt>
+<images/ollama.jpeg, id=1097, 401.5pt x 401.5pt>
 File: images/ollama.jpeg Graphic file (type jpg)
 <use images/ollama.jpeg>
-Package pdftex.def Info: images/ollama.jpeg  used on input line 430.
+Package pdftex.def Info: images/ollama.jpeg  used on input line 413.
 (pdftex.def)             Requested size: 34.14322pt x 34.14235pt.
-<images/chromadblogo.png, id=1106, 1047.915pt x 989.6975pt>
+<images/fast-api.jpg, id=1099, 602.25pt x 602.25pt>
+File: images/fast-api.jpg Graphic file (type jpg)
+<use images/fast-api.jpg>
+Package pdftex.def Info: images/fast-api.jpg  used on input line 419.
+(pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
+<images/chromadblogo.png, id=1101, 1047.915pt x 989.6975pt>
 File: images/chromadblogo.png Graphic file (type png)
 <use images/chromadblogo.png>
-Package pdftex.def Info: images/chromadblogo.png  used on input line 436.
+Package pdftex.def Info: images/chromadblogo.png  used on input line 425.
 (pdftex.def)             Requested size: 34.14322pt x 32.2418pt.
+<images/rag.jpg, id=1103, 983.675pt x 983.675pt>
+File: images/rag.jpg Graphic file (type jpg)
+<use images/rag.jpg>
+Package pdftex.def Info: images/rag.jpg  used on input line 431.
+(pdftex.def)             Requested size: 42.67912pt x 42.67244pt.
+<images/python.png, id=1105, 3363.84pt x 976.46625pt>
+File: images/python.png Graphic file (type png)
+<use images/python.png>
+Package pdftex.def Info: images/python.png  used on input line 437.
+(pdftex.def)             Requested size: 42.67912pt x 12.3816pt.
 <images/bcryptlogo.jpg, id=1107, 148.555pt x 148.555pt>
 File: images/bcryptlogo.jpg Graphic file (type jpg)
 <use images/bcryptlogo.jpg>
-Package pdftex.def Info: images/bcryptlogo.jpg  used on input line 442.
+Package pdftex.def Info: images/bcryptlogo.jpg  used on input line 443.
 (pdftex.def)             Requested size: 42.67912pt x 42.67862pt.
-<images/docker.png, id=1108, 256.96pt x 256.96pt>
+<images/docker.png, id=1109, 256.96pt x 256.96pt>
 File: images/docker.png Graphic file (type png)
 <use images/docker.png>
-Package pdftex.def Info: images/docker.png  used on input line 448.
+Package pdftex.def Info: images/docker.png  used on input line 449.
 (pdftex.def)             Requested size: 42.67912pt x 42.67886pt.
-<images/gitlab.jpg, id=1110, 2007.5pt x 1819.79875pt>
+<images/gitlab.jpg, id=1111, 2007.5pt x 1819.79875pt>
 File: images/gitlab.jpg Graphic file (type jpg)
 <use images/gitlab.jpg>
-Package pdftex.def Info: images/gitlab.jpg  used on input line 454.
+Package pdftex.def Info: images/gitlab.jpg  used on input line 455.
 (pdftex.def)             Requested size: 22.76228pt x 20.63152pt.
-<images/github.png, id=1111, 48.18pt x 48.18pt>
+<images/github.png, id=1112, 48.18pt x 48.18pt>
 File: images/github.png Graphic file (type png)
 <use images/github.png>
-Package pdftex.def Info: images/github.png  used on input line 455.
+Package pdftex.def Info: images/github.png  used on input line 456.
 (pdftex.def)             Requested size: 22.76228pt x 22.7622pt.
-<images/vscode.png, id=1114, 1204.5pt x 1204.5pt>
+<images/vscode.png, id=1115, 1204.5pt x 1204.5pt>
 File: images/vscode.png Graphic file (type png)
 <use images/vscode.png>
-Package pdftex.def Info: images/vscode.png  used on input line 461.
+Package pdftex.def Info: images/vscode.png  used on input line 462.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
 
-Overfull \hbox (10.97357pt too wide) in alignment at lines 356--465
+Overfull \hbox (10.97357pt too wide) in alignment at lines 339--466
  [] [] 
  []
 
-ignored error: Infinite glue shrinkage found in box being split [30 <./images/nestjs.png> <./images/react.png> <./images/flutter.png> <./images/nodejs.png> <./images/mongodb.png> <./images/redis.png> <./images/ioredis.png> <./images/websocket.png> <./images/jwt.png> <./images/firebaselogo.png> <./images/mapslogo.png> <./images/swaggerlogo.png> <./images/ollama.jpeg>]) (chap_03.tex [31 <./images/chromadblogo.png> <./images/bcryptlogo.jpg> <./images/docker.png> <./images/gitlab.jpg> <./images/github.png> <./images/vscode.png>]
+[29 <./images/update_the_architecture_diagram_data_image_image_7_for_safetrack_
+architecture..png>]
+ignored error: Infinite glue shrinkage found in box being split [30 <./images/n
+estjs.png> <./images/react.png> <./images/flutter.png> <./images/nodejs.png> <.
+/images/mongodb.png> <./images/redis.png> <./images/ioredis.png> <./images/webs
+ocket.png> <./images/jwt.png> <./images/firebaselogo.png> <./images/mapslogo.pn
+g> <./images/swaggerlogo.png> <./images/ollama.jpeg> <./images/fast-api.jpg>])
+(chap_03.tex [31 <./images/chromadblogo.png> <./images/rag.jpg> <./images/pytho
+n.png> <./images/bcryptlogo.jpg> <./images/docker.png> <./images/gitlab.jpg> <.
+/images/github.png> <./images/vscode.png>]
 Chapitre 3.
 \openout4 = `main.mtc'.
 
@@ -1244,427 +1534,278 @@ Chapitre 3.
 
 ]
 LaTeX Info: Redefining \greencheck on input line 6.
-
-Underfull \hbox (badness 1275) in paragraph at lines 128--128
-[]\T1/cmr/m/n/10.95 Concevoir l'in-ter-face d'ins-crip-
- []
-
-
-Underfull \hbox (badness 2680) in paragraph at lines 128--128
-[]\T1/cmr/m/n/10.95 Validation des champs (fron-
- []
-
-
-Underfull \hbox (badness 2556) in paragraph at lines 128--128
-[]\T1/cmr/m/n/10.95 Hashage sé-cu-risé du mot de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-[]\T1/cmr/m/n/10.95 Concevoir l'in-ter-face de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-[]\T1/cmr/m/n/10.95 Redirection vers l'écran de
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 128--128
-[]\T1/cmr/m/n/10.95 Sécurisation des routes (Auth
- []
-
-[33]
-Overfull \vbox (51.85274pt too high) has occurred while \output is active []
-
- [34]
-<images/authentification User case.png, id=1187, 751.80875pt x 523.9575pt>
+ [33]
+ignored error: Infinite glue shrinkage found in box being split [34]
+<images/authentification User case.png, id=1204, 751.80875pt x 523.9575pt>
 File: images/authentification User case.png Graphic file (type png)
 <use images/authentification User case.png>
-Package pdftex.def Info: images/authentification User case.png  used on input line 137.
+Package pdftex.def Info: images/authentification User case.png  used on input l
+ine 121.
 (pdftex.def)             Requested size: 409.71692pt x 285.54718pt.
-
-ignored error: Infinite glue shrinkage found in box being split [35 <./images/authentification User case.png>]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 189--193
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 193--197
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 197--200
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 200--249
- [] [] 
- []
-
-ignored error: Infinite glue shrinkage found in box being split [36]
-<images/Sq_auth.drawio.png, id=1200, 7119.59875pt x 5925.13625pt>
+ [35]
+ignored error: Infinite glue shrinkage found in box being split [36 <./images/a
+uthentification User case.png>]
+<images/Sq_auth.drawio.png, id=1217, 7119.59875pt x 5925.13625pt>
 File: images/Sq_auth.drawio.png Graphic file (type png)
 <use images/Sq_auth.drawio.png>
-Package pdftex.def Info: images/Sq_auth.drawio.png  used on input line 257.
+Package pdftex.def Info: images/Sq_auth.drawio.png  used on input line 195.
 (pdftex.def)             Requested size: 455.18564pt x 378.81866pt.
- [37] [38 <./images/Sq_auth.drawio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
+ [37]
+ignored error: Infinite glue shrinkage found in box being split [38 <./images/S
+q_auth.drawio.png>] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 404--404
 []\T1/cmr/m/n/10.95 Configuration et pa-ra-mètres
  []
 
-[39]
-<images/UC_sprint2.png, id=1220, 828.09375pt x 835.12pt>
+[40]
+<images/UC_sprint2.png, id=1242, 828.09375pt x 835.12pt>
 File: images/UC_sprint2.png Graphic file (type png)
 <use images/UC_sprint2.png>
-Package pdftex.def Info: images/UC_sprint2.png  used on input line 433.
+Package pdftex.def Info: images/UC_sprint2.png  used on input line 415.
 (pdftex.def)             Requested size: 409.71692pt x 413.2009pt.
- [40]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 446--450
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 450--454
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 454--457
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 457--529
- [] [] 
- []
-
-ignored error: Infinite glue shrinkage found in box being split [41 <./images/UC_sprint2.png>]
-ignored error: Infinite glue shrinkage found in box being split [42]
-ignored error: Infinite glue shrinkage found in box being split [43]
-<images/modifierProfil_S2.drawio.png, id=1242, 686.565pt x 547.04375pt>
+ [41]
+ignored error: Infinite glue shrinkage found in box being split [42 <./images/U
+C_sprint2.png>]
+<images/modifierProfil_S2.drawio.png, id=1255, 686.565pt x 547.04375pt>
 File: images/modifierProfil_S2.drawio.png Graphic file (type png)
 <use images/modifierProfil_S2.drawio.png>
-Package pdftex.def Info: images/modifierProfil_S2.drawio.png  used on input line 537.
+Package pdftex.def Info: images/modifierProfil_S2.drawio.png  used on input lin
+e 524.
 (pdftex.def)             Requested size: 455.24pt x 362.72777pt.
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 549--553
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 553--557
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 557--560
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 560--611
- [] [] 
- []
-
-ignored error: Infinite glue shrinkage found in box being split [44 <./images/modifierProfil_S2.drawio.png>]
-ignored error: Infinite glue shrinkage found in box being split [45]
-<images/DS_ Ajouter personne_S2.drawio.png, id=1255, 915.42pt x 906.38625pt>
+ [43]
+ignored error: Infinite glue shrinkage found in box being split [44 <./images/m
+odifierProfil_S2.drawio.png>] [45]
+<images/DS_ Ajouter personne_S2.drawio.png, id=1273, 915.42pt x 906.38625pt>
 File: images/DS_ Ajouter personne_S2.drawio.png Graphic file (type png)
 <use images/DS_ Ajouter personne_S2.drawio.png>
-Package pdftex.def Info: images/DS_ Ajouter personne_S2.drawio.png  used on input line 619.
+Package pdftex.def Info: images/DS_ Ajouter personne_S2.drawio.png  used on inp
+ut line 602.
 (pdftex.def)             Requested size: 455.23651pt x 450.74405pt.
- [46] [47 <./images/DS_ Ajouter personne_S2.drawio.png>]
-<images/page1.jpg, id=1267, 1084.05pt x 2348.775pt>
+ [46 <./images/DS_ Ajouter personne_S2.drawio.png>]
+<images/page1.jpg, id=1281, 1084.05pt x 2348.775pt>
 File: images/page1.jpg Graphic file (type jpg)
 <use images/page1.jpg>
-Package pdftex.def Info: images/page1.jpg  used on input line 665.
+Package pdftex.def Info: images/page1.jpg  used on input line 650.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 666--666
+Underfull \hbox (badness 1975) in paragraph at lines 651--651
 []\T1/cmr/m/sc/12 Figure 3.6 \T1/cmr/m/n/12 ^^U |In-ter-face
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 666--666
+Underfull \hbox (badness 2529) in paragraph at lines 651--651
 \T1/cmr/m/n/12 Mo-bile ^^V Écrans d'on-
  []
 
-<images/signup1.jpg, id=1268, 1084.05pt x 2348.775pt>
+<images/signup1.jpg, id=1282, 1084.05pt x 2348.775pt>
 File: images/signup1.jpg Graphic file (type jpg)
 <use images/signup1.jpg>
-Package pdftex.def Info: images/signup1.jpg  used on input line 672.
+Package pdftex.def Info: images/signup1.jpg  used on input line 657.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 673--673
+Underfull \hbox (badness 1975) in paragraph at lines 658--658
 []\T1/cmr/m/sc/12 Figure 3.7 \T1/cmr/m/n/12 ^^U |In-ter-face
  []
 
-<images/signin.jpg, id=1269, 1084.05pt x 2348.775pt>
+<images/signin.jpg, id=1283, 1084.05pt x 2348.775pt>
 File: images/signin.jpg Graphic file (type jpg)
 <use images/signin.jpg>
-Package pdftex.def Info: images/signin.jpg  used on input line 679.
+Package pdftex.def Info: images/signin.jpg  used on input line 664.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
 []\T1/cmr/m/sc/12 Figure 3.8 \T1/cmr/m/n/12 ^^U |In-ter-
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 680--680
+Underfull \hbox (badness 1205) in paragraph at lines 665--665
 \T1/cmr/m/n/12 face Mo-bile ^^V Page de
  []
 
-<images/signinweb.png, id=1270, 843.15pt x 490.83376pt>
+<images/signinweb.png, id=1284, 843.15pt x 490.83376pt>
 File: images/signinweb.png Graphic file (type png)
 <use images/signinweb.png>
-Package pdftex.def Info: images/signinweb.png  used on input line 686.
+Package pdftex.def Info: images/signinweb.png  used on input line 671.
 (pdftex.def)             Requested size: 391.00574pt x 227.62119pt.
-[48]
-<images/modif profil.jpg, id=1276, 1084.05pt x 2348.775pt>
+[47]
+<images/modif profil.jpg, id=1290, 1084.05pt x 2348.775pt>
 File: images/modif profil.jpg Graphic file (type jpg)
 <use images/modif profil.jpg>
-Package pdftex.def Info: images/modif profil.jpg  used on input line 694.
+Package pdftex.def Info: images/modif profil.jpg  used on input line 679.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/profile.jpg, id=1277, 1084.05pt x 2348.775pt>
+<images/profile.jpg, id=1291, 1084.05pt x 2348.775pt>
 File: images/profile.jpg Graphic file (type jpg)
 <use images/profile.jpg>
-Package pdftex.def Info: images/profile.jpg  used on input line 701.
+Package pdftex.def Info: images/profile.jpg  used on input line 686.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/addchild.jpg, id=1278, 1084.05pt x 2348.775pt>
+<images/addchild.jpg, id=1292, 1084.05pt x 2348.775pt>
 File: images/addchild.jpg Graphic file (type jpg)
 <use images/addchild.jpg>
-Package pdftex.def Info: images/addchild.jpg  used on input line 708.
+Package pdftex.def Info: images/addchild.jpg  used on input line 693.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/editweb.png, id=1279, 1422.81563pt x 681.29532pt>
+<images/editweb.png, id=1293, 1422.81563pt x 681.29532pt>
 File: images/editweb.png Graphic file (type png)
 <use images/editweb.png>
-Package pdftex.def Info: images/editweb.png  used on input line 714.
+Package pdftex.def Info: images/editweb.png  used on input line 699.
 (pdftex.def)             Requested size: 432.47098pt x 207.08266pt.
- [49 <./images/page1.jpg> <./images/signup1.jpg> <./images/signin.jpg> <./images/signinweb.png>]
-<images/addweb.png, id=1286, 1444.64719pt x 682.04813pt>
+ [48 <./images/page1.jpg> <./images/signup1.jpg> <./images/signin.jpg> <./image
+s/signinweb.png>]
+<images/addweb.png, id=1299, 1444.64719pt x 682.04813pt>
 File: images/addweb.png Graphic file (type png)
 <use images/addweb.png>
-Package pdftex.def Info: images/addweb.png  used on input line 719.
+Package pdftex.def Info: images/addweb.png  used on input line 704.
 (pdftex.def)             Requested size: 432.47168pt x 204.17891pt.
- [50 <./images/modif profil.jpg> <./images/profile.jpg> <./images/addchild.jpg> <./images/editweb.png>]) (chap_04.tex [51 <./images/addweb.png>]
+ [49 <./images/modif profil.jpg> <./images/profile.jpg> <./images/addchild.jpg>
+ <./images/editweb.png>]) (chap_04.tex [50 <./images/addweb.png>]
 Chapitre 4.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc5) [52
+(main.mtc5) [51
 
 ]
 LaTeX Info: Redefining \greencheck on input line 7.
 
-Underfull \hbox (badness 3260) in paragraph at lines 114--114
-[]\T1/cmr/m/n/10.95 Implémenter la col-lecte GPS
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]\T1/cmr/m/n/10.95 Génération d'évé-ne-ments
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]\T1/cmr/m/n/10.95 Implémentation du mo-dule
- []
-
-[53]
-<images/UC_sprint3.png, id=1327, 782.925pt x 684.5575pt>
+ignored error: Infinite glue shrinkage found in box being split [52]
+<images/UC_sprint3.png, id=1339, 938.50626pt x 683.55376pt>
 File: images/UC_sprint3.png Graphic file (type png)
 <use images/UC_sprint3.png>
-Package pdftex.def Info: images/UC_sprint3.png  used on input line 122.
-(pdftex.def)             Requested size: 455.24411pt x 398.04639pt.
- [54]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 133--136
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 136--140
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 140--143
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 143--195
- [] [] 
- []
-
-[55 <./images/UC_sprint3.png>]
-ignored error: Infinite glue shrinkage found in box being split [56]
-<images/Seq_ajouterSafZone_S3.drawio.png, id=1345, 643.40375pt x 606.265pt>
+Package pdftex.def Info: images/UC_sprint3.png  used on input line 109.
+(pdftex.def)             Requested size: 455.24411pt x 331.5649pt.
+ [53]
+ignored error: Infinite glue shrinkage found in box being split [54 <./images/U
+C_sprint3.png>]
+<images/Seq_ajouterSafZone_S3.drawio.png, id=1352, 643.40375pt x 606.265pt>
 File: images/Seq_ajouterSafZone_S3.drawio.png Graphic file (type png)
 <use images/Seq_ajouterSafZone_S3.drawio.png>
-Package pdftex.def Info: images/Seq_ajouterSafZone_S3.drawio.png  used on input line 202.
+Package pdftex.def Info: images/Seq_ajouterSafZone_S3.drawio.png  used on input
+ line 187.
 (pdftex.def)             Requested size: 364.19667pt x 343.18793pt.
- [57]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 213--216
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 216--220
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 220--223
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 223--270
- [] [] 
- []
-
-ignored error: Infinite glue shrinkage found in box being split [58 <./images/Seq_ajouterSafZone_S3.drawio.png>]
-<images/SeqS3_Suivi temps rÃ©el.drawio.png, id=1358, 723.70375pt x 523.9575pt>
+ [55]
+ignored error: Infinite glue shrinkage found in box being split [56 <./images/S
+eq_ajouterSafZone_S3.drawio.png>]
+<images/SeqS3_Suivi temps rÃ©el.drawio.png, id=1366, 723.70375pt x 523.9575pt>
 File: images/SeqS3_Suivi temps rÃ©el.drawio.png Graphic file (type png)
 <use images/SeqS3_Suivi temps rÃ©el.drawio.png>
-Package pdftex.def Info: images/SeqS3_Suivi temps rÃ©el.drawio.png  used on input line 276.
+Package pdftex.def Info: images/SeqS3_Suivi temps rÃ©el.drawio.png  used on inp
+ut line 261.
 (pdftex.def)             Requested size: 364.19667pt x 263.68103pt.
- [59] [60 <./images/SeqS3_Suivi temps rÃ©el.drawio.png>]
-Overfull \hbox (9.19696pt too wide) in paragraph at lines 446--446
- []|\T1/cmr/bx/n/10 Estimation| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-[]\T1/cmr/m/n/10 Gestion des per-mis-sions (tra-
- []
-
-<images/UC sprint4.png, id=1371, 1139.25626pt x 975.645pt>
+ [57] [58 <./images/SeqS3_Suivi temps rÃ©el.drawio.png>]
+ignored error: Infinite glue shrinkage found in box being split [59]
+<images/UC sprint4.png, id=1383, 1139.25626pt x 975.645pt>
 File: images/UC sprint4.png Graphic file (type png)
 <use images/UC sprint4.png>
-Package pdftex.def Info: images/UC sprint4.png  used on input line 454.
+Package pdftex.def Info: images/UC sprint4.png  used on input line 417.
 (pdftex.def)             Requested size: 455.24411pt x 389.86403pt.
-[61]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 466--469
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 469--473
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 473--476
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 476--547
- [] [] 
- []
-
-[62 <./images/UC sprint4.png>]
-ignored error: Infinite glue shrinkage found in box being split [63]
-<images/Sq_dÃ©clencherSOS_S4.drawio.png, id=1390, 1360.08125pt x 1143.27126pt>
+ [60]
+ignored error: Infinite glue shrinkage found in box being split [61 <./images/U
+C sprint4.png>]
+<images/Sq_dÃ©clencherSOS_S4.drawio.png, id=1396, 1360.08125pt x 1143.27126pt>
 File: images/Sq_dÃ©clencherSOS_S4.drawio.png Graphic file (type png)
 <use images/Sq_dÃ©clencherSOS_S4.drawio.png>
-Package pdftex.def Info: images/Sq_dÃ©clencherSOS_S4.drawio.png  used on input line 555.
+Package pdftex.def Info: images/Sq_dÃ©clencherSOS_S4.drawio.png  used on input 
+line 518.
 (pdftex.def)             Requested size: 347.94717pt x 292.48106pt.
- [64 <./images/Sq_dÃ©clencherSOS_S4.drawio.png>]
-Overfull \hbox (2.43637pt too wide) in alignment at lines 567--570
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 570--574
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 574--577
- [] [] 
- []
-
-
-Overfull \hbox (2.43637pt too wide) in alignment at lines 577--648
- [] [] 
- []
-
-ignored error: Infinite glue shrinkage found in box being split [65]
-<images/seq_partageracces-s4.png, id=1402, 965.6075pt x 1469.49pt>
+ [62]
+ignored error: Infinite glue shrinkage found in box being split [63 <./images/S
+q_dÃ©clencherSOS_S4.drawio.png>]
+<images/seq_partageracces-s4.png, id=1408, 964.60374pt x 818.05624pt>
 File: images/seq_partageracces-s4.png Graphic file (type png)
 <use images/seq_partageracces-s4.png>
-Package pdftex.def Info: images/seq_partageracces-s4.png  used on input line 655.
-(pdftex.def)             Requested size: 192.18983pt x 292.48016pt.
- [66 <./images/seq_partageracces-s4.png>]
-<images/trackingmobile.jpg, id=1409, 1063.975pt x 2304.61pt>
-File: images/trackingmobile.jpg Graphic file (type jpg)
-<use images/trackingmobile.jpg>
-Package pdftex.def Info: images/trackingmobile.jpg  used on input line 709.
-(pdftex.def)             Requested size: 105.07246pt x 227.59093pt.
+Package pdftex.def Info: images/seq_partageracces-s4.png  used on input line 61
+8.
+(pdftex.def)             Requested size: 455.2331pt x 386.07176pt.
+ [64] [65 <./images/seq_partageracces-s4.png>]
+<images/child map.jpg, id=1419, 1084.05pt x 2348.775pt>
+File: images/child map.jpg Graphic file (type jpg)
+<use images/child map.jpg>
+Package pdftex.def Info: images/child map.jpg  used on input line 675.
+(pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 710--710
+Underfull \hbox (badness 1975) in paragraph at lines 676--676
 []\T1/cmr/m/sc/12 Figure 4.7 \T1/cmr/m/n/12 ^^U |In-ter-face
  []
 
-<images/addsafezonemobile.jpg, id=1410, 1084.05pt x 2348.775pt>
-File: images/addsafezonemobile.jpg Graphic file (type jpg)
-<use images/addsafezonemobile.jpg>
-Package pdftex.def Info: images/addsafezonemobile.jpg  used on input line 715.
-(pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
+<images/Trackingmap.jpg, id=1420, 966.61125pt x 2094.82625pt>
+File: images/Trackingmap.jpg Graphic file (type jpg)
+<use images/Trackingmap.jpg>
+Package pdftex.def Info: images/Trackingmap.jpg  used on input line 682.
+(pdftex.def)             Requested size: 105.02962pt x 227.61873pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 716--716
+Underfull \hbox (badness 1975) in paragraph at lines 683--683
 []\T1/cmr/m/sc/12 Figure 4.8 \T1/cmr/m/n/12 ^^U |In-ter-face
  []
 
-<images/sos.jpg, id=1411, 1084.05pt x 2348.775pt>
-File: images/sos.jpg Graphic file (type jpg)
-<use images/sos.jpg>
-Package pdftex.def Info: images/sos.jpg  used on input line 721.
-(pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
+<images/trackingmobile.jpg, id=1421, 1063.975pt x 2304.61pt>
+File: images/trackingmobile.jpg Graphic file (type jpg)
+<use images/trackingmobile.jpg>
+Package pdftex.def Info: images/trackingmobile.jpg  used on input line 690.
+(pdftex.def)             Requested size: 105.07246pt x 227.59093pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 722--722
+Underfull \hbox (badness 1975) in paragraph at lines 691--691
 []\T1/cmr/m/sc/12 Figure 4.9 \T1/cmr/m/n/12 ^^U |In-ter-face
  []
 
-<images/trackingweb.png, id=1412, 1426.57968pt x 687.31781pt>
+<images/addsafezonemobile.jpg, id=1422, 1084.05pt x 2348.775pt>
+File: images/addsafezonemobile.jpg Graphic file (type jpg)
+<use images/addsafezonemobile.jpg>
+Package pdftex.def Info: images/addsafezonemobile.jpg  used on input line 702.
+(pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
+<images/sos.jpg, id=1423, 1084.05pt x 2348.775pt>
+File: images/sos.jpg Graphic file (type jpg)
+<use images/sos.jpg>
+Package pdftex.def Info: images/sos.jpg  used on input line 709.
+(pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
+<images/notifications.jpg, id=1424, 813.0375pt x 1501.10812pt>
+File: images/notifications.jpg Graphic file (type jpg)
+<use images/notifications.jpg>
+Package pdftex.def Info: images/notifications.jpg  used on input line 718.
+(pdftex.def)             Requested size: 123.27779pt x 227.60735pt.
+[66]
+<images/trackingweb.png, id=1431, 1426.57968pt x 687.31781pt>
 File: images/trackingweb.png Graphic file (type png)
 <use images/trackingweb.png>
-Package pdftex.def Info: images/trackingweb.png  used on input line 728.
+Package pdftex.def Info: images/trackingweb.png  used on input line 726.
 (pdftex.def)             Requested size: 432.48314pt x 208.36786pt.
-[67]
-<images/accessmobile.jpg, id=1420, 1084.05pt x 2348.775pt>
+<images/addzoneweb.png, id=1432, 1427.3325pt x 685.8122pt>
+File: images/addzoneweb.png Graphic file (type png)
+<use images/addzoneweb.png>
+Package pdftex.def Info: images/addzoneweb.png  used on input line 731.
+(pdftex.def)             Requested size: 432.4718pt x 207.79631pt.
+ [67 <./images/child map.jpg> <./images/Trackingmap.jpg> <./images/trackingmobi
+le.jpg> <./images/addsafezonemobile.jpg> <./images/sos.jpg> <./images/notificat
+ions.jpg>]
+<images/accessmobile.jpg, id=1438, 1084.05pt x 2348.775pt>
 File: images/accessmobile.jpg Graphic file (type jpg)
 <use images/accessmobile.jpg>
-Package pdftex.def Info: images/accessmobile.jpg  used on input line 737.
+Package pdftex.def Info: images/accessmobile.jpg  used on input line 740.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/accessmobile1.jpg, id=1421, 1084.05pt x 2348.775pt>
+<images/accessmobile1.jpg, id=1439, 1084.05pt x 2348.775pt>
 File: images/accessmobile1.jpg Graphic file (type jpg)
 <use images/accessmobile1.jpg>
-Package pdftex.def Info: images/accessmobile1.jpg  used on input line 744.
+Package pdftex.def Info: images/accessmobile1.jpg  used on input line 747.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/accessmobile2.jpg, id=1422, 1084.05pt x 2348.775pt>
+<images/accessmobile2.jpg, id=1440, 1084.05pt x 2348.775pt>
 File: images/accessmobile2.jpg Graphic file (type jpg)
 <use images/accessmobile2.jpg>
-Package pdftex.def Info: images/accessmobile2.jpg  used on input line 751.
+Package pdftex.def Info: images/accessmobile2.jpg  used on input line 754.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/accessweb.png, id=1423, 1440.13031pt x 680.5425pt>
+<images/accessweb.png, id=1441, 1440.13031pt x 680.5425pt>
 File: images/accessweb.png Graphic file (type png)
 <use images/accessweb.png>
-Package pdftex.def Info: images/accessweb.png  used on input line 758.
+Package pdftex.def Info: images/accessweb.png  used on input line 761.
 (pdftex.def)             Requested size: 432.45995pt x 204.36162pt.
- [68 <./images/trackingmobile.jpg> <./images/addsafezonemobile.jpg> <./images/sos.jpg> <./images/trackingweb.png>]
-<images/adddeviceweb.png, id=1429, 1444.64719pt x 679.78969pt>
+ [68 <./images/trackingweb.png> <./images/addzoneweb.png>]
+<images/adddeviceweb.png, id=1448, 1444.64719pt x 679.78969pt>
 File: images/adddeviceweb.png Graphic file (type png)
 <use images/adddeviceweb.png>
-Package pdftex.def Info: images/adddeviceweb.png  used on input line 763.
+Package pdftex.def Info: images/adddeviceweb.png  used on input line 766.
 (pdftex.def)             Requested size: 432.47168pt x 203.50282pt.
- [69 <./images/accessmobile.jpg> <./images/accessmobile1.jpg> <./images/accessmobile2.jpg> <./images/accessweb.png>]) (chap_05(IA).tex [70 <./images/adddeviceweb.png>]
+
+[69 <./images/accessmobile.jpg> <./images/accessmobile1.jpg> <./images/accessmo
+bile2.jpg> <./images/accessweb.png>]) (chap_05(IA).tex [70 <./images/adddevicew
+eb.png>]
 Chapitre 5.
 LaTeX Info: Redefining \greencheck on input line 3.
 \openout4 = `main.mtc'.
@@ -1673,133 +1814,69 @@ LaTeX Info: Redefining \greencheck on input line 3.
 
 (main.mtc6 [71
 
-]) [72]
-Overfull \hbox (7.32742pt too wide) in paragraph at lines 46--47
-[]|\T1/cmr/bx/n/12 Estimation| 
- []
-
-
-Underfull \hbox (badness 4505) in paragraph at lines 48--48
-[]|\T1/cmr/m/n/12 En tant que pa-rent, je
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-\T1/cmr/m/n/12 in-tel-li-gentes lorsque la
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 54--54
-\T1/cmr/m/n/12 haite re-ce-voir des re-com-
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 61--61
-[]|\T1/cmr/m/n/12 En tant qu'uti-li-sa-teur, je
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 73--73
-[]|\T1/cmr/m/n/12 En tant qu'uti-li-sa-teur, je
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 79--79
-\T1/cmr/m/n/12 je sou-haite su-per-vi-ser les
- []
-
-
-Underfull \hbox (badness 3803) in paragraph at lines 79--79
-\T1/cmr/m/n/12 per-for-mances du sys-tème
- []
-
-
-Underfull \hbox (badness 3240) in paragraph at lines 85--85
-\T1/cmr/m/n/12 haite qu'un as-sis-tant IA
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 85--85
-\T1/cmr/m/n/12 m'ex-plique les alertes et
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 89--90
-[]\T1/cmr/m/n/12 Connecter Chro-maDB et Fas-
- []
-
-
-Overfull \hbox (7.32079pt too wide) in paragraph at lines 44--92
+]) [72] [73]
+ignored error: Infinite glue shrinkage found in box being split [74] [75]
+Overfull \hbox (6.62552pt too wide) in paragraph at lines 171--182
  [][] 
  []
 
-[73] [74]
-Overfull \hbox (42.62552pt too wide) in paragraph at lines 141--152
- [][] 
- []
-
-[75] [76] [77]
-Underfull \hbox (badness 4608) in paragraph at lines 218--219
+[76] [77]
+Underfull \hbox (badness 4608) in paragraph at lines 248--249
 []|\T1/cmr/bx/n/12 IA Sa-fe-Track (ap-proche
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 228--229
+Underfull \hbox (badness 3407) in paragraph at lines 258--259
 []|\T1/cmr/m/n/12 Score de risque dy-na-mique
  []
 
 
-Underfull \hbox (badness 4832) in paragraph at lines 228--229
+Underfull \hbox (badness 4832) in paragraph at lines 258--259
 \T1/cmr/m/n/12 basé sur plu-sieurs fac-teurs
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 228--229
+Underfull \hbox (badness 1728) in paragraph at lines 258--259
 \T1/cmr/m/n/12 tem-po-rel, état du ter-mi-nal)
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 233--234
+Underfull \hbox (badness 1577) in paragraph at lines 263--264
 \T1/cmr/m/n/12 to-rique des dé-pla-ce-ments +
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 233--234
+Underfull \hbox (badness 3579) in paragraph at lines 263--264
 \T1/cmr/m/n/12 si-tua-tion en temps réel +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 []|\T1/cmr/m/n/12 Recommandation de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 []|\T1/cmr/m/n/12 Explicabilité des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 []|\T1/cmr/m/n/12 Architecture mi-cro-ser-vices
  []
 
 
-Underfull \hbox (badness 4792) in paragraph at lines 253--254
+Underfull \hbox (badness 4792) in paragraph at lines 283--284
 \T1/cmr/m/n/12 avec mi-cro-ser-vice IA in-dé-
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 253--254
+Underfull \hbox (badness 1902) in paragraph at lines 283--284
 \T1/cmr/m/n/12 pen-dant connecté via l'API
  []
 
-
-Overfull \hbox (9.14717pt too wide) in paragraph at lines 216--262
- [][] 
- []
-
 [78] [79] [80]
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 []|\T1/cmr/m/n/12 Développement d'un mi-cro-ser-vice Fas-tAPI
  []
 
@@ -1807,51 +1884,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--388
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [81] [82] [83]
-<images/fast-api.jpg, id=1609, 602.25pt x 602.25pt>
-File: images/fast-api.jpg Graphic file (type jpg)
-<use images/fast-api.jpg>
-Package pdftex.def Info: images/fast-api.jpg  used on input line 497.
-(pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
-File: images/chromadblogo.png Graphic file (type png)
-<use images/chromadblogo.png>
-Package pdftex.def Info: images/chromadblogo.png  used on input line 503.
-(pdftex.def)             Requested size: 56.9055pt x 53.73131pt.
-<images/rag.jpg, id=1612, 983.675pt x 983.675pt>
-File: images/rag.jpg Graphic file (type jpg)
-<use images/rag.jpg>
-Package pdftex.def Info: images/rag.jpg  used on input line 509.
-(pdftex.def)             Requested size: 56.9055pt x 56.90158pt.
-<images/python.png, id=1614, 3363.84pt x 976.46625pt>
-File: images/python.png Graphic file (type png)
-<use images/python.png>
-Package pdftex.def Info: images/python.png  used on input line 515.
-(pdftex.def)             Requested size: 56.9055pt x 16.5088pt.
-
-Overfull \hbox (28.59839pt too wide) in paragraph at lines 494--522
-[][] 
- []
-
-<images/aidailyrapport.jpg, id=1616, 1084.05pt x 2348.775pt>
+<images/aidailyrapport.jpg, id=1617, 1084.05pt x 2348.775pt>
 File: images/aidailyrapport.jpg Graphic file (type jpg)
 <use images/aidailyrapport.jpg>
-Package pdftex.def Info: images/aidailyrapport.jpg  used on input line 531.
+Package pdftex.def Info: images/aidailyrapport.jpg  used on input line 526.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-<images/aicard.jpg, id=1617, 1084.05pt x 2348.775pt>
+<images/aicard.jpg, id=1618, 1084.05pt x 2348.775pt>
 File: images/aicard.jpg Graphic file (type jpg)
 <use images/aicard.jpg>
-Package pdftex.def Info: images/aicard.jpg  used on input line 538.
+Package pdftex.def Info: images/aicard.jpg  used on input line 533.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-[84 <./images/fast-api.jpg> <./images/rag.jpg> <./images/python.png>]
-<images/aidashboard.jpg, id=1627, 1084.05pt x 2348.775pt>
+<images/aidashboard.jpg, id=1619, 1084.05pt x 2348.775pt>
 File: images/aidashboard.jpg Graphic file (type jpg)
 <use images/aidashboard.jpg>
-Package pdftex.def Info: images/aidashboard.jpg  used on input line 548.
+Package pdftex.def Info: images/aidashboard.jpg  used on input line 543.
 (pdftex.def)             Requested size: 105.05347pt x 227.61586pt.
-) (chap_Conclusion [85 <./images/aidailyrapport.jpg> <./images/aicard.jpg> <./images/aidashboard.jpg>] [86]) (main.bbl [87
+ [84]) (chap_Conclusion [85 <./images/aidailyrapport.jpg> <./images/aicard.jpg>
+ <./images/aidashboard.jpg>]) (main.bbl [86
 
-] [88
+] [87
 
-] [89]) [90] (resume.tex
+] [88]
+Underfull \hbox (badness 1490) in paragraph at lines 204--208
+[]\T1/cmr/m/n/10.95 Wondershare.  Fa-mi-safe - pa-ren-tal control and gps tra-c
+ker.  [][]$\T1/cmtt/m/n/10.95 https : / / famisafe .
+ []
+
+) [89] (resume.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -1878,7 +1937,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[91
+[90
 
 
 ] (main.aux)
@@ -1887,20 +1946,39 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F80BFEC8B6402BD815D698AC73611F83;19620.
+(rerunfilecheck)             Checksum: D41DC99D1D8423CD50EFE75AE67F161D;19122.
  ) 
 Here is how much of TeX's memory you used:
- 31547 strings out of 467871
- 576642 string characters out of 5417892
- 984744 words of memory out of 5000000
- 59504 multiletter control sequences out of 15000+600000
- 652444 words of font info for 99 fonts, out of 8000000 for 9000
+ 31555 strings out of 467871
+ 576962 string characters out of 5417892
+ 986744 words of memory out of 5000000
+ 59533 multiletter control sequences out of 15000+600000
+ 649638 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,94p,933b,853s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (103 pages, 14992383 bytes).
+ 84i,16n,94p,881b,853s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ect
+t1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecti1095.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecti1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\eccc1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\LENOVO\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\LENOVO\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\LENOVO\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\LEN
+OVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Us
+ers\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+ <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1
+728.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1095.pk><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LENOVO/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/LENOVO/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/LENOVO/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (102 pages, 16545433 bytes).
 PDF statistics:
- 2605 PDF objects out of 2984 (max. 8388607)
- 359 named destinations out of 1000 (max. 500000)
- 1119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2491 PDF objects out of 2984 (max. 8388607)
+ 344 named destinations out of 1000 (max. 500000)
+ 1123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,99 +1,9 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[fas()]{fastapi}
-Fastapi - modern, fast web framework for building apis.
-\newblock \url{https://fastapi.tiangolo.com/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[git()]{gitlab}
-Gitlab - the devops platform.
-\newblock \url{https://about.gitlab.com/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[jwt()]{jwt}
-Jwt - json web tokens.
-\newblock \url{https://jwt.io/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[mon()]{mongodb}
-Mongodb: The developer data platform.
-\newblock \url{https://www.mongodb.com/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[nod()]{nodejs}
-What is node.js? - definition from whatis.com.
-\newblock \url{https://whatis.techtarget.com/definition/Nodejs}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[rea()]{reactjs}
-React - a javascript library for building user interfaces.
-\newblock \url{https://reactjs.org/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[soc()]{socketio}
-Socket.io - real-time bidirectional event-based communication.
-\newblock \url{https://socket.io/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[vsc()]{vscode}
-Visual studio code - code editing.
-\newblock \url{https://code.visualstudio.com/}.
-\newblock (Accessed on 27/02/2025).
-
-\bibitem[fam(2024)]{famisafe}
-Famisafe - parental control and gps tracker.
-\newblock \url{https://famisafe.wondershare.com/fr/}, 2024.
-\newblock (Accessed on 04/02/2026).
-
-\bibitem[fin(2024)]{findmykids}
-Findmykids - child tracking app.
-\newblock \url{https://findmykids.org/}, 2024.
-\newblock (Accessed on 04/02/2026).
-
-\bibitem[lif(2024)]{life360}
-Life360 - family locator and communication app.
-\newblock \url{https://intl.life360.com/}, 2024.
-\newblock (Accessed on 04/02/2026).
-
-\bibitem[min(2024)]{minifinder}
-Minifinder - gps tracker for children and elderly.
-\newblock \url{https://minifinder.com/}, 2024.
-\newblock (Accessed on 04/02/2026).
-
-\bibitem[mob(2024)]{mobiletracker}
-Mobile tracker - gps tracking app.
-\newblock \url{https://mobile-tracker-free.fr/}, 2024.
-\newblock (Accessed on 04/02/2026).
-
-\bibitem[doc(2025)]{docker}
-Docker - container platform.
-\newblock \url{https://www.docker.com/}, 2025.
-\newblock (Accessed on 29/05/2025).
-
-\bibitem[flu(2025)]{flutter}
-Flutter - build apps for any screen.
-\newblock \url{https://flutter.dev/}, 2025.
-\newblock (Accessed on 29/05/2025).
-
-\bibitem[git(2025)]{github}
-Github - code hosting platform.
-\newblock \url{https://github.com/}, 2025.
-\newblock (Accessed on 29/05/2025).
-
-\bibitem[nes(2025)]{nestjs}
-Nestjs - a progressive node.js framework.
-\newblock \url{https://nestjs.com/}, 2025.
-\newblock (Accessed on 11/05/2026).
-
-\bibitem[ior(2026)]{ioredis}
-ioredis - a robust redis client for node.js.
-\newblock \url{https://github.com/redis/ioredis}, 2026.
-\newblock (Accessed on 19/05/2026).
 
 \bibitem[AI(2023)]{mistral7b}
 Mistral AI.
@@ -101,17 +11,48 @@ Mistral AI.
 \newblock \url{https://mistral.ai/news/announcing-mistral-7b/}, 2023.
 \newblock (Accessed on 01/06/2026).
 
+\bibitem[Auth0(2025)]{jwt}
+Auth0.
+\newblock Jwt - json web tokens.
+\newblock \url{https://jwt.io/}, 2025.
+\newblock (Accessed on 27/02/2025).
+
 \bibitem[ChromaDB(2024)]{chromadb}
 ChromaDB.
 \newblock Chromadb - the ai-native open-source embedding database.
 \newblock \url{https://www.trychroma.com/}, 2024.
 \newblock (Accessed on 01/06/2026).
 
-\bibitem[Foundation(2025)]{python}
+\bibitem[FindMyKids(2024)]{findmykids}
+FindMyKids.
+\newblock Findmykids - child tracking app.
+\newblock \url{https://findmykids.org/}, 2024.
+\newblock (Accessed on 04/02/2026).
+
+\bibitem[Foundation(2025{\natexlab{a}})]{nodejs}
+OpenJS Foundation.
+\newblock What is node.js? - definition from whatis.com.
+\newblock \url{https://whatis.techtarget.com/definition/Nodejs},
+  2025{\natexlab{a}}.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[Foundation(2025{\natexlab{b}})]{python}
 Python~Software Foundation.
 \newblock Python - a programming language that lets you work quickly and
   integrate systems more effectively.
-\newblock \url{https://www.python.org/}, 2025.
+\newblock \url{https://www.python.org/}, 2025{\natexlab{b}}.
+\newblock (Accessed on 29/05/2025).
+
+\bibitem[Free(2024)]{mobiletracker}
+Mobile~Tracker Free.
+\newblock Mobile tracker - gps tracking app.
+\newblock \url{https://mobile-tracker-free.fr/}, 2024.
+\newblock (Accessed on 04/02/2026).
+
+\bibitem[Google(2025)]{flutter}
+Google.
+\newblock Flutter - build apps for any screen.
+\newblock \url{https://flutter.dev/}, 2025.
 \newblock (Accessed on 29/05/2025).
 
 \bibitem[Google(2026{\natexlab{a}})]{fcm}
@@ -134,6 +75,30 @@ Google.
   2026{\natexlab{c}}.
 \newblock (Accessed on 01/06/2026).
 
+\bibitem[Inc.(2025{\natexlab{a}})]{docker}
+Docker Inc.
+\newblock Docker - container platform.
+\newblock \url{https://www.docker.com/}, 2025{\natexlab{a}}.
+\newblock (Accessed on 29/05/2025).
+
+\bibitem[Inc.(2025{\natexlab{b}})]{github}
+GitHub Inc.
+\newblock Github - code hosting platform.
+\newblock \url{https://github.com/}, 2025{\natexlab{b}}.
+\newblock (Accessed on 29/05/2025).
+
+\bibitem[Inc.(2025{\natexlab{c}})]{gitlab}
+GitLab Inc.
+\newblock Gitlab - the devops platform.
+\newblock \url{https://about.gitlab.com/}, 2025{\natexlab{c}}.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[Inc.(2025{\natexlab{d}})]{mongodb}
+MongoDB Inc.
+\newblock Mongodb: The developer data platform.
+\newblock \url{https://www.mongodb.com/}, 2025{\natexlab{d}}.
+\newblock (Accessed on 27/02/2025).
+
 \bibitem[Initiative(2026)]{openapi}
 OpenAPI Initiative.
 \newblock Openapi specification.
@@ -148,6 +113,36 @@ Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
 \newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
 \newblock \url{https://huggingface.co/docs/transformers/model_doc/rag}, 2020.
 \newblock (Accessed on 29/05/2025).
+
+\bibitem[Life360(2024)]{life360}
+Life360.
+\newblock Life360 - family locator and communication app.
+\newblock \url{https://intl.life360.com/}, 2024.
+\newblock (Accessed on 04/02/2026).
+
+\bibitem[Meta(2025)]{reactjs}
+Meta.
+\newblock React - a javascript library for building user interfaces.
+\newblock \url{https://reactjs.org/}, 2025.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[Microsoft(2025)]{vscode}
+Microsoft.
+\newblock Visual studio code - code editing.
+\newblock \url{https://code.visualstudio.com/}, 2025.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[MiniFinder(2024)]{minifinder}
+MiniFinder.
+\newblock Minifinder - gps tracker for children and elderly.
+\newblock \url{https://minifinder.com/}, 2024.
+\newblock (Accessed on 04/02/2026).
+
+\bibitem[NestJS(2025)]{nestjs}
+NestJS.
+\newblock Nestjs - a progressive node.js framework.
+\newblock \url{https://nestjs.com/}, 2025.
+\newblock (Accessed on 11/05/2026).
 
 \bibitem[Ollama(2024)]{ollama}
 Ollama.
@@ -168,6 +163,24 @@ Qdrant.
 \newblock \url{https://qdrant.tech/}, 2026.
 \newblock (Accessed on 01/06/2026).
 
+\bibitem[Ramírez(2025)]{fastapi}
+Sebastián Ramírez.
+\newblock Fastapi - modern, fast web framework for building apis.
+\newblock \url{https://fastapi.tiangolo.com/}, 2025.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[Redis(2025)]{redis}
+Redis.
+\newblock Redis - the open source, in-memory data store.
+\newblock \url{https://redis.io/}, 2025.
+\newblock (Accessed on 27/02/2025).
+
+\bibitem[Redis(2026)]{ioredis}
+Redis.
+\newblock ioredis - a robust redis client for node.js.
+\newblock \url{https://github.com/redis/ioredis}, 2026.
+\newblock (Accessed on 19/05/2026).
+
 \bibitem[Schwaber and Sutherland(2020)]{scrumguide}
 Ken Schwaber and Jeff Sutherland.
 \newblock \emph{The Scrum Guide – The Definitive Guide to Scrum: The Rules of
@@ -175,10 +188,22 @@ Ken Schwaber and Jeff Sutherland.
 \newblock 2020.
 \newblock (Accessed on 29/05/2025).
 
+\bibitem[Socket.IO(2025)]{socketio}
+Socket.IO.
+\newblock Socket.io - real-time bidirectional event-based communication.
+\newblock \url{https://socket.io/}, 2025.
+\newblock (Accessed on 27/02/2025).
+
 \bibitem[Software(2026)]{swagger}
 SmartBear Software.
 \newblock Swagger - api documentation and design tools.
 \newblock \url{https://swagger.io/}, 2026.
 \newblock (Accessed on 01/06/2026).
+
+\bibitem[Wondershare(2024)]{famisafe}
+Wondershare.
+\newblock Famisafe - parental control and gps tracker.
+\newblock \url{https://famisafe.wondershare.com/fr/}, 2024.
+\newblock (Accessed on 04/02/2026).
 
 \end{thebibliography}
