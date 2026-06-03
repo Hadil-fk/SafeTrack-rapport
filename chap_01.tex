@@ -56,62 +56,65 @@ La sécurité des personnes dépendantes, telles que les enfants et les personne
 \subsection{Étude de l'existant}
 À ce jour, un certain nombre de solutions technologiques permettent le suivi de personnes en temps réel, la géolocalisation, la gestion d'alertes et la sécurité des utilisateurs, mais elles restent souvent spécifiques à un usage, sans proposer une solution globale et intelligente pour les personnes dépendantes comme le fait SafeTrack.
 
-\subsubsection{FindMyKids \cite{findmykids}}
+\noindent\textbullet\ \textbf{FindMyKids}
 
-Application mobile de surveillance pour enfants qui permet de suivre leur géolocalisation en temps réel, de définir des zones sécurisées (geofencing) et de recevoir des alertes en cas d'urgence ou de dépassement de zone. Elle offre aussi un historique des mouvements et des notifications spécifiques pour assurer la sécurité des enfants.
-\begin{figure}[htpb]
+Application mobile de surveillance pour enfants qui permet de suivre leur géolocalisation en temps réel, de définir des zones sécurisées (geofencing) et de recevoir des alertes en cas d'urgence ou de dépassement de zone. Elle offre aussi un historique des mouvements et des notifications spécifiques pour assurer la sécurité des enfants \cite{findmykids}.
+
+La figure~\ref{fig:findmykids} présente l'interface utilisateur de l'application FindMyKids, étudiée dans le cadre de l'analyse des solutions existantes de géolocalisation et de suivi des enfants.
+\begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{images/Capture d'écran 2026-02-04 121013.png}
     \caption{interface de Findmykids}
     \label{fig:findmykids}
 \end{figure} 
-\newpage
 
-\paragraph{Avantages :}
+\noindent\textbf{Avantages :}
 \begin{itemize}
     \item Géolocalisation en temps réel permettant aux parents de suivre les déplacements de l'personne dépendante de manière continue.
     \item Fonctionnalité de zones sécurisées (geofencing) avec notifications automatiques en cas d'entrée ou de sortie d'une zone définie.
     \item Interface mobile simple et intuitive, facilitant la prise en main par les utilisateurs non techniques.
 \end{itemize}
 
-\paragraph{Inconvénients :}
+\noindent\textbf{Inconvénients :}
 \begin{itemize}
     \item Solution principalement orientée vers les enfants, avec une faible adaptabilité pour les personnes âgées ou atteintes de troubles cognitifs.
     \item Dépendance à une connexion Internet et à l'état de la batterie du smartphone, ce qui peut limiter la fiabilité en situation critique.
     \item Absence d'un système avancé d'analyse intelligente des comportements ou d'un dashboard web dédié aux organisations.
 \end{itemize}
 
-\subsubsection{MiniFinder \cite{minifinder}}
+\noindent\textbullet\ \textbf{MiniFinder}
 
-MiniFinder Nano / Pico / Watch est une solution de géolocalisation destinée à la sécurité des personnes dépendantes (enfants et personnes âgées). Elle offre un suivi en temps réel via des traceurs GPS et une application mobile ou web, avec des fonctionnalités comme le bouton SOS, le géorepérage et, selon le modèle, la détection de chute. Cependant, elle dépend d'un matériel dédié et propose peu de fonctionnalités d'analyse intelligente, limitant les possibilités de prévention avancée.
+MiniFinder Nano / Pico / Watch est une solution de géolocalisation destinée à la sécurité des personnes dépendantes (enfants et personnes âgées). Elle offre un suivi en temps réel via des traceurs GPS et une application mobile ou web, avec des fonctionnalités comme le bouton SOS, le géorepérage et, selon le modèle, la détection de chute. Cependant, elle dépend d'un matériel dédié et propose peu de fonctionnalités d'analyse intelligente, limitant les possibilités de prévention avancée \cite{minifinder}.
 
-\begin{figure}[htpb]
+La figure~\ref{fig:teams} illustre l'interface utilisateur de l'application MiniFinder, analysée dans le cadre de l'étude de l'existant.
+\begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{images/minifinderapp.png}
     \caption{Interface de Minifinder}
     \label{fig:teams}
 \end{figure} 
-\newpage
 
 
-\paragraph{Avantages :}
+\noindent\textbf{Avantages :}
 \begin{itemize}
     \item Géolocalisation en temps réel précise.
     \item Présence d'un bouton SOS pour les situations d'urgence.
     \item Utilisation simple, adaptée aux personnes dépendantes.
 \end{itemize}
 
-\paragraph{Inconvénients :}
+\noindent\textbf{Inconvénients :}
 \begin{itemize}
     \item  Dépendance à un dispositif matériel externe.
     \item Coût relativement élevé.
     \item Fonctionnalités d'intelligence artificielle limitées.
 \end{itemize}
 
-\subsubsection{Life360 \cite{life360}}
+\noindent\textbullet\ \textbf{Life360}
 
-Application de suivi familial qui partage la position des membres en temps réel, facilite la communication entre eux et inclut des fonctionnalités de géorepérage. Elle est largement utilisée pour coordonner la sécurité des membres de la famille, notamment des enfants et des seniors.
-\begin{figure}[htpb]
+Application de suivi familial qui partage la position des membres en temps réel, facilite la communication entre eux et inclut des fonctionnalités de géorepérage. Elle est largement utilisée pour coordonner la sécurité des membres de la famille, notamment des enfants et des seniors \cite{life360}.
+
+La figure~\ref{fig:life360} illustre l'interface utilisateur de l'application Life360, analysée dans le cadre de l'étude de l'existant.
+\begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{images/life360.png}
     \caption{Interface de Life360}
@@ -120,14 +123,14 @@ Application de suivi familial qui partage la position des membres en temps réel
 
 
 
-\paragraph{Avantages :}
+\noindent\textbf{Avantages :}
 \begin{itemize}
     \item Géolocalisation en temps réel fiable permettant le suivi continu des membres d'un groupe familial.
     \item Fonctionnalité de géorepérage (geofencing) avec alertes automatiques lors de l'entrée ou de la sortie des zones définies.
     \item Intégration de fonctionnalités de communication et de notifications facilitant la coordination entre les membres.
 \end{itemize}
 
-\paragraph{Inconvénients :}
+\noindent\textbf{Inconvénients :}
 \begin{itemize}
     \item Application principalement orientée vers un usage familial, peu adaptée aux besoins des organisations ou des environnements professionnels.
     \item Absence de mécanismes avancés d'intelligence artificielle pour la détection automatique des comportements à risque.
@@ -136,12 +139,13 @@ Application de suivi familial qui partage la position des membres en temps réel
 
 
 
-\subsubsection{Mobile Tracker \cite{mobiletracker}}
+\noindent\textbullet\ \textbf{Mobile Tracker}
 
-Mobile Tracker est une application de géolocalisation permettant le suivi en temps réel des personnes dépendantes, avec des fonctionnalités de zones sécurisées et d'alertes d'urgence, visant à renforcer la sécurité des utilisateurs.
+Mobile Tracker est une application de géolocalisation permettant le suivi en temps réel des personnes dépendantes, avec des fonctionnalités de zones sécurisées et d'alertes d'urgence, visant à renforcer la sécurité des utilisateurs \cite{mobiletracker}.
 
+La figure~\ref{fig:mobiletracker} illustre l'interface utilisateur de l'application Mobile Tracker, analysée dans le cadre de l'étude de l'existant.
 
-\begin{figure}[htpb]
+\begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{images/mobiletracker.png}
     \caption{Interface de Mobile Tracker}
@@ -150,14 +154,14 @@ Mobile Tracker est une application de géolocalisation permettant le suivi en te
 
 
 
-\paragraph{Avantages :}
+\noindent\textbf{Avantages :}
 \begin{itemize}
     \item Géolocalisation en temps réel permettant le suivi des déplacements des personnes dépendantes, notamment les personnes âgées.
     \item Mise en place de zones sécurisées avec alertes automatiques en cas de sortie des périmètres définis.
     \item Fonctionnalité de bouton SOS facilitant l'envoi rapide d'alertes en situation d'urgence.
 \end{itemize}
 
-\paragraph{Inconvénients :}
+\noindent\textbf{Inconvénients :}
 \begin{itemize}
     \item Interface et fonctionnalités souvent limitées, offrant peu de possibilités de personnalisation selon les profils des utilisateurs.
     \item Dépendance aux capteurs et à la connectivité du smartphone, ce qui peut réduire la fiabilité en cas de panne ou de faible batterie.
@@ -166,12 +170,13 @@ Mobile Tracker est une application de géolocalisation permettant le suivi en te
 
 
 
-\subsubsection{FamiSafe \cite{famisafe}}
-FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées, et des alertes aux parents. Elle permet également de contrôler l'accès aux applications et de surveiller certaines activités numériques.
+\noindent\textbullet\ \textbf{FamiSafe}
+FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées, et des alertes aux parents. Elle permet également de contrôler l'accès aux applications et de surveiller certaines activités numériques \cite{famisafe}.
 
 
+La figure~\ref{fig:safeWatch} illustre l'interface utilisateur de l'application FamiSafe, analysée dans le cadre de l'étude de l'existant.
 
-\begin{figure}[htpb]
+\begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{images/familesafe.jpg}
     \caption{Interface de mobile tracker famisafe}
@@ -180,7 +185,7 @@ FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées
 
 
 
-\paragraph{Avantages :}
+\noindent\textbf{Avantages :}
 \begin{itemize}
     \item Combine suivi de localisation et contrôle des usages numériques dans une seule application.
     \item Permet de définir des zones géographiques avec notifications automatiques.
@@ -189,7 +194,7 @@ FamiSafe offre un suivi GPS en temps réel, la définition de zones sécurisées
     
 \end{itemize}
 
-\paragraph{Inconvénients :}
+\noindent\textbf{Inconvénients :}
 \begin{itemize}
     \item Les fonctionnalités de sécurité physique restent basiques et non prédictives.
     \item Ne prend pas en charge la gestion scolaire ou le transport des enfants.
@@ -205,24 +210,21 @@ Les différentes solutions de suivi et de géolocalisation des personnes dépend
 
 
 \begin{table}[ht]
+    \caption{Analyse comparative : SafeTrack vs les solutions existantes}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|l|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
+    \begin{tabular}{|l|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
         \hline
         \rowcolor{gray!20}
         \textbf{Critères} 
         & \textbf{SafeTrack} 
         & \textbf{FindMyKids} 
         & \textbf{Life360} 
-        & \textbf{MiniFinder} 
-        & \textbf{Mobile Tracker} 
-        & \textbf{FamiSafe} \\
+        & \shortstack{\textbf{Mobile}\\\textbf{Tracker}} \\
         \hline
         
         Géolocalisation en temps réel 
-        & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
@@ -233,8 +235,6 @@ Les différentes solutions de suivi et de géolocalisation des personnes dépend
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ \\
         \hline
 
@@ -242,23 +242,17 @@ Les différentes solutions de suivi et de géolocalisation des personnes dépend
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{red!20}$\times$ 
-        & \cellcolor{green!20}$\checkmark$ \\
+        & \cellcolor{red!20}$\times$ \\
         \hline
 
         Contrôle parental numérique 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{yellow!20}Limité 
-        & \cellcolor{red!20}$\times$ 
-        & \cellcolor{red!20}$\times$ 
-        & \cellcolor{green!20}$\checkmark$ \\
+        & \cellcolor{red!20}$\times$ \\
         \hline
 
         Historique des déplacements 
-        & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{green!20}$\checkmark$ 
@@ -269,16 +263,12 @@ Les différentes solutions de suivi et de géolocalisation des personnes dépend
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ 
-        & \cellcolor{red!20}$\times$ 
-        & \cellcolor{red!20}$\times$ 
-        & \cellcolor{yellow!20}Limité \\
+        & \cellcolor{red!20}$\times$ \\
         \hline
 
         Adapté aux organisations 
         & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{red!20}$\times$ 
-        & \cellcolor{red!20}$\times$ 
-        & \cellcolor{green!20}$\checkmark$ 
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ \\
         \hline
@@ -287,34 +277,33 @@ Les différentes solutions de suivi et de géolocalisation des personnes dépend
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ 
-        & \cellcolor{green!20}$\checkmark$ 
-        & \cellcolor{red!20}$\times$ 
         & \cellcolor{red!20}$\times$ \\
         \hline
 
     \end{tabular}}
-    \caption{Analyse comparative : SafeTrack vs les solutions existantes}
+    
     \label{tab:comparatif_safetrack}
 \end{table}
 
 \noindent \textbf{Légende :}
 \begin{itemize}
-    \item \colorbox{green!20}{Vert clair} : Fonctionnalité disponible / avantage
-    \item \colorbox{yellow!20}{Jaune clair} : Fonctionnalité disponible de manière limitée
-    \item \colorbox{red!20}{Rouge clair} : Fonctionnalité non disponible ou limitation majeure
-    \item \checkmark : Fonctionnalité disponible
-    \item $\times$ : Fonctionnalité non disponible
+    \item \colorbox{green!20}{$\checkmark$} : Fonctionnalité disponible / avantage
+    \item \colorbox{yellow!20}{Limité} : Fonctionnalité disponible de manière limitée
+    \item \colorbox{red!20}{$\times$} : Fonctionnalité non disponible ou limitation majeure
 \end{itemize}
 
 Les données de ce tableau sont issues d'une analyse comparative bibliographique des fonctionnalités disponibles dans \cite{findmykids,life360,minifinder,mobiletracker,famisafe}, réalisée entre janvier et février 2026
 
 
 \subsection{Solution proposée}
-Face aux besoins identifiés, SafeTrack se positionne comme une solution complète et innovante pour la protection des personnes dépendantes, notamment les enfants et les personnes âgées. Notre application mobile centralise les fonctionnalités essentielles : suivi en temps réel, gestion des zones sécurisées, alertes automatiques, historique des déplacements, et système SOS avec appel d'urgence, le tout dans un environnement sécurisé et intuitif.
+Face aux besoins identifiés, SafeTrack se positionne comme une solution complète et innovante pour la protection des personnes dépendantes, notamment les enfants et les personnes âgées. Notre application mobile centralise les fonctionnalités essentielles : suivi en temps réel, gestion des zones sécurisées, alertes automatiques, historique des déplacements et système SOS avec appel d'urgence, le tout dans un environnement sécurisé et intuitif.
 
 Grâce à l'intégration de l'intelligence artificielle, SafeTrack analyse les comportements et détecte les situations à risque, réduisant les fausses alertes et permettant une intervention rapide. L'interface, disponible sur Android et iOS, assure une accessibilité optimale à tout moment et depuis n'importe quel lieu.
 
+Par ailleurs, SafeTrack intègre un espace dédié aux organisations telles que les écoles, les jardins d'enfants, les centres d'accueil et les établissements de prise en charge des personnes âgées. Ces organisations peuvent gérer les personnes qui leur sont associées, consulter leur localisation en temps réel selon les autorisations accordées, recevoir des alertes de sécurité, définir des zones de surveillance spécifiques et intervenir rapidement en cas d'incident. Cette fonctionnalité favorise une collaboration efficace entre les parents, les aidants et les structures responsables de l'accompagnement des personnes dépendantes.
+
 En réunissant sur une seule plateforme toutes les fonctionnalités nécessaires pour les parents, aidants et organisations, SafeTrack facilite la surveillance proactive, renforce la sécurité des utilisateurs et offre une gestion intelligente et centralisée des situations d'urgence.
+
 \subsection{Objectifs}
 
 Le développement de SafeTrack vise à répondre aux enjeux de sécurité des personnes dépendantes à travers les objectifs suivants :
@@ -336,8 +325,13 @@ Le développement de SafeTrack vise à répondre aux enjeux de sécurité des pe
 \end{itemize} 
 
 \section{Méthodologie de travail}
+
+Le choix d'une méthodologie de travail constitue une étape importante dans la gestion et la réalisation du projet. Dans cette section, nous présentons une étude comparative des différentes méthodologies afin d'identifier celle qui répond le mieux aux exigences du projet.
+
 \subsection{Étude comparative des méthodologies}
+
 \begin{table}[ht]
+    \caption{Étude comparative des méthodologies de développement}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \resizebox{\textwidth}{!}{%
@@ -399,7 +393,7 @@ Le développement de SafeTrack vise à répondre aux enjeux de sécurité des pe
         \hline
         
     \end{tabular}}
-    \caption{Étude comparative des méthodologies de développement}
+    
     \label{tab:comparatif_methodologies}
 \end{table}
 \newpage

@@ -9,21 +9,6 @@
 \contentsline {subsection}{\numberline {1.2.1}Contexte de projet}{5}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Problématique}{5}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Étude de l'existant}{5}{subsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.3.1}FindMyKids \cite {findmykids}}{5}{subsubsection.1.2.3.1}%
-\contentsline {paragraph}{\numberline {1.2.3.1.1}Avantages :}{6}{paragraph.1.2.3.1.1}%
-\contentsline {paragraph}{\numberline {1.2.3.1.2}Inconvénients :}{6}{paragraph.1.2.3.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.3.2}MiniFinder \cite {minifinder}}{6}{subsubsection.1.2.3.2}%
-\contentsline {paragraph}{\numberline {1.2.3.2.1}Avantages :}{7}{paragraph.1.2.3.2.1}%
-\contentsline {paragraph}{\numberline {1.2.3.2.2}Inconvénients :}{7}{paragraph.1.2.3.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3.3}Life360 \cite {life360}}{7}{subsubsection.1.2.3.3}%
-\contentsline {paragraph}{\numberline {1.2.3.3.1}Avantages :}{7}{paragraph.1.2.3.3.1}%
-\contentsline {paragraph}{\numberline {1.2.3.3.2}Inconvénients :}{8}{paragraph.1.2.3.3.2}%
-\contentsline {subsubsection}{\numberline {1.2.3.4}Mobile Tracker \cite {mobiletracker}}{8}{subsubsection.1.2.3.4}%
-\contentsline {paragraph}{\numberline {1.2.3.4.1}Avantages :}{8}{paragraph.1.2.3.4.1}%
-\contentsline {paragraph}{\numberline {1.2.3.4.2}Inconvénients :}{9}{paragraph.1.2.3.4.2}%
-\contentsline {subsubsection}{\numberline {1.2.3.5}FamiSafe \cite {famisafe}}{9}{subsubsection.1.2.3.5}%
-\contentsline {paragraph}{\numberline {1.2.3.5.1}Avantages :}{9}{paragraph.1.2.3.5.1}%
-\contentsline {paragraph}{\numberline {1.2.3.5.2}Inconvénients :}{10}{paragraph.1.2.3.5.2}%
 \contentsline {subsection}{\numberline {1.2.4}Étude comparative}{10}{subsection.1.2.4}%
 \contentsline {subsection}{\numberline {1.2.5}Solution proposée}{10}{subsection.1.2.5}%
 \contentsline {subsection}{\numberline {1.2.6}Objectifs}{11}{subsection.1.2.6}%
