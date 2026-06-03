@@ -28,21 +28,25 @@ Les fonctionnalités développées incluent la création de compte (inscription)
 
 Le tableau ci-dessous présente les user stories liées à l'authentification et à la gestion des comptes utilisateurs. Ce Sprint vise à mettre en place les mécanismes d'accès sécurisé à l'application SafeTrack, aussi bien pour les utilisateurs mobiles que pour les administrateurs via une interface web dédiée.
 
-\begin{table}[H]
-    \caption{Tableau des User Stories — Sprint 1}
-\centering
 \small
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.0}
 \setlength{\parskip}{0pt}
-\begin{tabularx}{\textwidth}{|c|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|c|}
+\begin{longtable}{|>{\centering\arraybackslash}p{0.07\textwidth}|>{\raggedright\arraybackslash}p{0.33\textwidth}|>{\raggedright\arraybackslash}p{0.37\textwidth}|>{\centering\arraybackslash}p{0.13\textwidth}|}
+\caption{Tableau des User Stories — Sprint 1} \\
 \hline
-\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endfirsthead
+
 \hline
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
 
 US-01 & En tant que visiteur, je peux m'inscrire via un formulaire en choisissant mon rôle (parent/aidant ou organisation) afin de créer un compte adapté à mon profil.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Concevoir l'interface d'inscription (mobile et web)
 \item Permettre le choix du rôle lors de l'inscription
 \item Gérer l'inscription des organisations
@@ -51,84 +55,64 @@ US-01 & En tant que visiteur, je peux m'inscrire via un formulaire en choisissan
 \item Hashage sécurisé du mot de passe (bcrypt)
 \item Stockage des données utilisateur
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-02 & En tant qu'utilisateur, je peux me connecter de manière sécurisée à l'application mobile.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Concevoir l'interface de connexion (mobile)
 \item Implémenter l'API de connexion (login)
 \item Génération et gestion des tokens JWT
 \item Gestion des erreurs d'authentification
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-03 & En tant qu'administrateur, je peux me connecter via l'interface web afin d'accéder au tableau de bord d'administration.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Implémenter l'API de connexion admin
 \item Vérification du rôle (admin)
 \item Sécurisation de l'accès au dashboard web
 \item Interface de connexion web (admin)
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
 US-04 & En tant qu'utilisateur, je peux me déconnecter.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Implémenter la fonctionnalité logout
 \item Suppression du token côté client
 \item Redirection vers l'écran de connexion
 \end{itemize}
-\end{minipage}
-& 1 jour \\
-\hline
+& 1 jour \\ \hline
 
 US-05 & En tant qu'utilisateur, je peux réinitialiser mon mot de passe en cas d'oubli.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Interface "mot de passe oublié"
 \item Génération d'un token de réinitialisation sécurisé
 \item Envoi d'email de récupération
 \item Mise à jour du mot de passe
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
 US-06 & En tant qu'utilisateur, je peux rester connecté afin de faciliter l'accès à l'application.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Implémentation des tokens JWT (access/refresh)
 \item Stockage sécurisé des tokens (secure storage)
 \item Gestion de l'expiration et du renouvellement de session
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
 US-07 & En tant que système, je dois sécuriser les accès et les données utilisateurs afin de garantir la confidentialité et l'intégrité des informations.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Sécurisation des routes (Auth Guards)
 \item Validation des requêtes
 \item Protection contre les attaques (XSS, injection)
 \item Tests de sécurité de base
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
-\end{tabularx}
-\end{table}
+\end{longtable}
 
 \subsection{Diagrammes du Sprint 1}
+Cette section présente les diagrammes permettant de modéliser les fonctionnalités implémentées lors du Sprint 1.
 \subsubsection{Diagramme de cas d'utilisation }
 La figure \ref{fig:cas_image} présente le diagramme des cas d'utilisation du Sprint 1. 
 Ce diagramme illustre les principales interactions entre l'utilisateur et les fonctionnalités liées à l'authentification et à la gestion des comptes.
@@ -139,16 +123,88 @@ Ce diagramme illustre les principales interactions entre l'utilisateur et les fo
     \label{fig:cas_image}
 \end{figure}
 
+\subsubsection{Cas d'utilisation : S'authentifier}
+Le cas d'utilisation \og S'authentifier \fg{} est présenté ci-dessous. Cette description couvre l'ensemble des opérations permettant à un utilisateur de se connecter de manière sécurisée à l'application SafeTrack, en utilisant différentes méthodes d'authentification (mot de passe, biométrie, Google OAuth) et en gérant les scénarios alternatifs tels que la réinitialisation du mot de passe ou les erreurs d'authentification.
+
+\small
+\renewcommand{\arraystretch}{1.1}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\caption{Description textuelle du cas d'utilisation S'authentifier} \\
+\hline
+\textbf{Élément} & \textbf{Description} \\ \hline
+\endfirsthead
+
+\endhead
+
+\hline
+\endlastfoot
+
+Acteurs & Utilisateur (Parent / personne dépendante), Organisation, Administrateur \\ \hline
+
+Précondition & L'acteur possède un compte valide et peut s'authentifier via mot de passe, biométrie ou Google OAuth. \\ \hline
+
+Postcondition & L'acteur est authentifié et accède à son espace sécurisé selon son rôle. \\ \hline
+
+Scénario nominal &
+\begin{itemize}[nosep, leftmargin=*]
+\item L'acteur accède à l'interface de connexion.
+\item Le système propose : e-mail/mot de passe, biométrie ou Google.
+\item L'acteur choisit une méthode :
+\begin{itemize}[nosep, leftmargin=*]
+\item Authentification classique : saisie et vérification.
+\item Biométrie : validation de l'empreinte.
+\item Google OAuth : authentification via Google.
+\end{itemize}
+\item Le système génère les tokens d'accès.
+\item L'acteur accède à son tableau de bord.
+\end{itemize}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}[nosep, leftmargin=*]
+\item \textbf{Mot de passe oublié :}
+\begin{itemize}[nosep, leftmargin=*]
+\item Saisie de l'e-mail.
+\item Réception d'un lien de réinitialisation.
+\item Définition d'un nouveau mot de passe.
+\end{itemize}
+\item \textbf{Renouvellement de session :}
+\begin{itemize}[nosep, leftmargin=*]
+\item Expiration du token.
+\item Utilisation du refresh token.
+\item Génération d'un nouveau token.
+\end{itemize}
+\item \textbf{Erreurs d'authentification :}
+\begin{itemize}[nosep, leftmargin=*]
+\item Identifiants incorrects.
+\item Échec biométrique.
+\item Compte non lié ou non vérifié.
+\item Erreur système.
+\end{itemize}
+\end{itemize}
+\\ \hline
+
+\end{longtable}
+\subsubsection{Diagramme de séquence de \og S'authentifier \fg}
+
+La figure~\ref{fig:chap3_auth_sequence} illustre le diagramme de séquence du cas d'utilisation \og S'authentifier \fg{} pour le scénario nominal A (authentification classique). Les scénarios B (biométrique) et C (Google) suivent des flux similaires avec des étapes de validation spécifiques.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/Sq_auth.drawio.png}
+    \caption{Diagramme de séquence de S'authentifier}
+    \label{fig:chap3_auth_sequence}
+\end{figure}
 \subsubsection{Cas d'utilisation : S'inscrire}
 
 Le cas d'utilisation \og S'inscrire \fg{} est décrit ci—‘dessous. Il présente les étapes par lesquelles un visiteur crée un compte SafeTrack, les contrôles effectués (validation des champs, vérification d'unicité) et les conditions d'acceptation.
 
 \small
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \setlength{\parskip}{0pt}
-\begin{longtable}{|>{\raggedright\arraybackslash}p{0.27\textwidth}|>{\raggedright\arraybackslash}p{0.58\textwidth}|}
-\caption{Description textuelle du cas d'utilisation S'inscrire} \\
-\hline
+\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+\caption{Description textuelle du cas d'utilisation S'inscrire} \\ \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
 
@@ -168,7 +224,7 @@ Précondition & Le visiteur ne possède pas encore de compte sur l'application. 
 Postcondition & Un compte est créé selon le rôle choisi et les informations sont enregistrées de manière sécurisée. \\ \hline
 
 Scénario nominal &
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item Le visiteur accède au formulaire d'inscription.
 \item Le système demande au visiteur de choisir un rôle (Parent/Aidant ou Organisation).
 \item Le système affiche les champs requis selon le rôle sélectionné.
@@ -180,86 +236,11 @@ Scénario nominal &
 \end{itemize}
 \\ \hline
 
-% Inline (non-floating) presentation of interface images to avoid page breaks
 \end{longtable}
-
-\small
-\renewcommand{\arraystretch}{1.1}
-\setlength{\parskip}{0pt}
-\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
-\caption{Description textuelle du cas d'utilisation S'authentifier} \\
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
-\endfirsthead
-
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
-\endhead
-
-\hline
-\endlastfoot
-
-Acteurs & Utilisateur (Parent / personne dépendante), Organisation, Administrateur \\ \hline
-
-Précondition & L'acteur possède un compte valide et peut s'authentifier via mot de passe, biométrie ou Google OAuth. \\ \hline
-
-Postcondition & L'acteur est authentifié et accède à son espace sécurisé selon son rôle. \\ \hline
-
-Scénario nominal &
-\begin{itemize}
-\item L'acteur accède à l'interface de connexion.
-\item Le système propose : e-mail/mot de passe, biométrie ou Google.
-\item L'acteur choisit une méthode :
-\begin{itemize}
-\item Authentification classique : saisie et vérification.
-\item Biométrie : validation de l'empreinte.
-\item Google OAuth : authentification via Google.
-\end{itemize}
-\item Le système génère les tokens d'accès.
-\item L'acteur accède à son tableau de bord.
-\end{itemize}
-\\ \hline
-
-Scénario alternatif &
-\begin{itemize}
-\item \textbf{Mot de passe oublié :}
-\begin{itemize}
-\item Saisie de l'e-mail.
-\item Réception d'un lien de réinitialisation.
-\item Définition d'un nouveau mot de passe.
-\end{itemize}
-
-\item \textbf{Renouvellement de session :}
-\begin{itemize}
-\item Expiration du token.
-\item Utilisation du refresh token.
-\item Génération d'un nouveau token.
-\end{itemize}
-
-\item \textbf{Erreurs d'authentification :}
-\begin{itemize}
-\item Identifiants incorrects.
-\item Échec biométrique.
-\item Compte non lié ou non vérifié.
-\item Erreur système.
-\end{itemize}
-\end{itemize}
-\\ \hline
-
-\end{longtable}
-\subsubsection{Diagramme de séquence de \og S'authentifier \fg}
-
-La figure~\ref{fig:chap3_auth_sequence} illustre le diagramme de séquence du cas d'utilisation \og S'authentifier \fg{} pour le scénario nominal A (authentification classique). Les scénarios B (biométrique) et C (Google) suivent des flux similaires avec des étapes de validation spécifiques.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/Sq_auth.drawio.png
-    }
-    \caption{Diagramme de séquence de S'authentifier}
-    \label{fig:chap3_auth_sequence}
-\end{figure}
 
 \subsection{Réalisation du Sprint 1:}
+
+Le Sprint 1 pose les bases sécurisées de SafeTrack en implémentant les mécanismes d'inscription, d'authentification et de gestion des sessions. Cette section décrit les réalisations techniques des principaux cas d'utilisation : création de compte et connexion sécurisée.
 
 \subsubsection{Réalisation du cas d'utilisation : S'inscrire}
 
@@ -425,6 +406,7 @@ US-09 & En tant que parent/aidant/organisation, je peux gérer les appareils afi
 
 
 \subsection{Diagrammes du Sprint 2}
+Cette section présente les diagrammes permettant de modéliser les fonctionnalités implémentées lors du Sprint 2.
 \subsubsection{Diagramme de cas d'utilisation }
 La figure \ref{fig:chap3_sprint2} présente le diagramme des cas d'utilisation du Sprint 2. 
 Ce diagramme illustre les principales interactions entre l'utilisateur et les fonctionnalités liées à la gestion du profil et des contacts dans l'application SafeTrack.
@@ -441,10 +423,13 @@ Ce diagramme illustre les principales interactions entre l'utilisateur et les fo
 Le cas d'utilisation \og Modifier profil \fg{} est présenté ci dessous. Cette description couvre l'ensemble des opérations permettant à l'utilisateur de mettre à jour ses informations personnelles.
 
 \small
-\renewcommand{\arraystretch}{1.1}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
 \setlength{\parskip}{0pt}
-\begin{longtable}{|p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|}
+
+\begin{longtable}{|p{0.28\textwidth}|p{0.68\textwidth}|}
 \caption{Description textuelle du cas d'utilisation Modifier profil} \\
+
 \hline
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
@@ -454,76 +439,78 @@ Le cas d'utilisation \og Modifier profil \fg{} est présenté ci dessous. Cette 
 \endhead
 
 \hline
+\endfoot
+\hline
 \endlastfoot
 
 Cas d'utilisation & Modifier profil \\ \hline
 
-Acteurs & Parent, Aidant, Organisation, personne dépendante \\ \hline
+Acteurs & Parent, Aidant, Organisation, Personne dépendante \\ \hline
 
-Précondition & L'utilisateur est authentifié, possède un compte actif et dispose des permissions de modification de profil (son propre profil ou celui de ses enfants/personnes dépendantes associées). \\ \hline
+Précondition & L'utilisateur est authentifié avec les droits nécessaires. \\ \hline
 
-Postcondition & Les modifications du profil sont enregistrées dans la base de données et l'utilisateur en reçoit une confirmation. \\ \hline
+Postcondition & Modifications enregistrées et confirmation affichée. \\ \hline
 
 Scénario nominal &
-\begin{itemize}
-\item L'utilisateur accède à son espace profil ou sélectionne une personne dépendante.
-\item Le système affiche le formulaire de modification avec les données actuelles.
-\item L'utilisateur édite les champs souhaités (nom, email, téléphone, permissions, etc.).
-\item L'utilisateur peut importer une photo de profil.
-\item Le système valide les données saisies.
-\item L'utilisateur confirme les modifications.
-\item Les nouvelles données sont enregistrées en base de données.
-\item L'utilisateur reçoit un message de confirmation.
+\vspace{-0.4em}
+\begin{itemize}[nosep, topsep=0pt, partopsep=0pt, leftmargin=*]
+\item Accès au profil
+\item Affichage du formulaire
+\item Modification des champs
+\item Ajout/modification photo
+\item Validation des données
+\item Confirmation
+\item Enregistrement
+\item Message de succès
 \end{itemize}
+\vspace{-0.6em}
 \\ \hline
 
-Scénario alternatif &
-\begin{itemize}
-\item \textbf{Modification du profil d'une Personne Dépendant :}
-\begin{itemize}
-\item Parent sélectionne une personne dépendante dans la liste des personnes associées.
-\item Modification des informations de la personne dépendante (restrictions appliquées selon les droits).
-\item Modification des permissions et autorisations de la personne dépendante.
-\item Validation et enregistrement des modifications.
+Scénarios alternatifs &
+\vspace{-0.4em}
+
+\textbf{1. Profil personne dépendante :}
+\begin{itemize}[nosep, topsep=0pt, leftmargin=*]
+\item Sélection
+\item Modification
+\item Mise à jour permissions
+\item Enregistrement
 \end{itemize}
 
-\item \textbf{Modification de photo :}
-\begin{itemize}
-\item Upload d'une nouvelle photo de profil.
-\item Validation du format (JPEG, PNG) et de la taille (max 5MB).
-\item Remplacement de l'ancienne photo ou première importation.
+\textbf{2. Photo :}
+\begin{itemize}[nosep, topsep=0pt, leftmargin=*]
+\item Upload
+\item Vérification format/taille
+\item Remplacement
 \end{itemize}
 
-\item \textbf{Restrictions d'accès :}
-\begin{itemize}
-\item Personne Dépendante avec accès lecture seule sur son propre profil.
-\item Modification possible uniquement par le parent/aidant responsable.
-\item Certains champs non modifiables par la personne dépendante (permissions, alertes, etc.).
+\textbf{3. Restrictions :}
+\begin{itemize}[nosep, topsep=0pt, leftmargin=*]
+\item Accès limité
+\item Champs protégés
 \end{itemize}
 
-\item \textbf{Erreurs de validation :}
-\begin{itemize}
-\item L'utilisateur saisit des données invalides : format email incorrect, numéro de téléphone non valide ou champs obligatoires manquants.
-\item Le système refuse l'enregistrement et affiche un message d'erreur spécifique avec une suggestion de correction.
-\item L'utilisateur corrige les informations puis soumet à nouveau le formulaire.
+\textbf{4. Erreurs :}
+\begin{itemize}[nosep, topsep=0pt, leftmargin=*]
+\item Données invalides
+\item Message d’erreur
+\item Correction
 \end{itemize}
 
-\item \textbf{Token invalide ou expiré :}
-\begin{itemize}
-\item Le système vérifie le token JWT envoyé avec la requête de modification.
-\item Si le token est invalide, expiré ou absent, la requête est rejetée.
-\item Le système redirige l'utilisateur vers la page de connexion ou déclenche le renouvellement de session avec le refresh token.
-\item Aucune modification n'est enregistrée tant que l'utilisateur n'est pas authentifié.
+\textbf{5. Token invalide :}
+\begin{itemize}[nosep, topsep=0pt, leftmargin=*]
+\item Vérification JWT
+\item Rejet
+\item Redirection
 \end{itemize}
 
-\item \textbf{Accès non autorisé :}
-\begin{itemize}
-\item L'utilisateur tente de modifier un profil qui ne lui appartient pas ou qui n'est pas associé à son compte.
-\item Le système vérifie les permissions et le rôle de l'utilisateur.
-\item Si l'accès n'est pas autorisé, le système bloque l'opération et affiche un message d'interdiction.
-\item Les données du profil restent inchangées dans la base de données.
+\textbf{6. Accès refusé :}
+\begin{itemize}[nosep, topsep=0pt, leftmargin=*]
+\item Vérification droits
+\item Blocage
 \end{itemize}
-\end{itemize}
+
+\vspace{-0.6em}
 \\ \hline
 
 \end{longtable}
@@ -552,8 +539,6 @@ Le cas d'utilisation \og Ajouter une personne dépendante \fg{} est présenté c
 \textbf{Élément} & \textbf{Description} \\ \hline
 \endfirsthead
 
-\hline
-\textbf{Élément} & \textbf{Description} \\ \hline
 \endhead
 
 \hline
@@ -568,7 +553,7 @@ Précondition & L'utilisateur (parent ou aidant) est authentifié, possède un c
 Postcondition & Un nouveau profil Personne Dépendante est créé. Un lien d'activation sécurisé est envoyé par email au parent/aidant pour configurer le compte de la personne dépendante. Le profil est lié au compte du parent et enregistré dans la base de données. \\ \hline
 
 Scénario nominal &
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item L'utilisateur (parent/aidant) accède au module de gestion des enfants.
 \item L'utilisateur clique sur le bouton « Ajouter une personne dépendante ».
 \item Le système affiche un formulaire contenant les champs : nom, email et âge.
@@ -582,24 +567,22 @@ Scénario nominal &
 \\ \hline
 
 Scénario alternatif &
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item \textbf{Réinitialisation du mot de passe :}
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item Si le parent n'a pas reçu l'email ou souhaite configurer un nouveau mot de passe.
 \item Sélection de la personne dépendante dans la liste et option « Réinitialiser le mot de passe ».
 \item Génération d'un lien de réinitialisation temporaire.
 \item Envoi d'un nouvel email contenant le lien sécurisé.
 \end{itemize}
-
 \item \textbf{Modification du profil personne dépendante :}
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item Après création, le parent peut modifier les informations (nom, âge).
 \item Le parent peut configurer les permissions, zones de sécurité et paramètres de suivi.
 \item Sauvegarde et confirmation des modifications.
 \end{itemize}
-
 \item \textbf{Erreurs ou restrictions :}
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item Email déjà utilisé par un autre profil.
 \item Données incomplètes ou invalides (format email, âge invalide).
 \item Permissions insuffisantes pour l'ajout.
@@ -624,6 +607,8 @@ La figure~\ref{fig:chap3_children_management_sequence} illustre le diagramme de 
 
 
 \subsection{Réalisation du Sprint 2 : }
+
+Le Sprint 2 enrichit l'application avec la gestion des profils utilisateurs, des personnes dépendantes et des appareils de suivi. Cette section présente les réalisations techniques permettant la modification du profil, l'ajout de personnes dépendantes et la gestion des dispositifs associés.
 
 \subsubsection{Réalisation du cas d'utilisation : Modifier profil}
 

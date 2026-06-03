@@ -5,72 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-Warning--to sort, need author or key in findmykids
-Warning--to sort, need author or key in minifinder
-Warning--to sort, need author or key in life360
-Warning--to sort, need author or key in mobiletracker
-Warning--to sort, need author or key in famisafe
-Warning--to sort, need author or key in nestjs
-Warning--to sort, need author or key in reactjs
-Warning--to sort, need author or key in flutter
-Warning--to sort, need author or key in nodejs
-Warning--to sort, need author or key in mongodb
-Warning--to sort, need author or key in ioredis
-Warning--to sort, need author or key in docker
-Warning--to sort, need author or key in github
-Warning--to sort, need author or key in gitlab
-Warning--to sort, need author or key in vscode
-Warning--to sort, need author or key in jwt
-Warning--to sort, need author or key in socketio
-Warning--to sort, need author or key in fastapi
-Warning--empty year in fastapi
-Warning--empty year in gitlab
-Warning--empty year in jwt
-Warning--empty year in mongodb
-Warning--empty year in nodejs
-Warning--empty year in reactjs
-Warning--empty year in socketio
-Warning--empty year in vscode
 Warning--empty publisher in scrumguide
-You've used 31 entries,
+You've used 32 entries,
             2773 wiz_defined-function locations,
-            708 strings with 8049 characters,
-and the built_in function-call counts, 9110 in all, are:
-= -- 866
-> -- 253
-< -- 12
-+ -- 111
-- -- 78
-* -- 522
-:= -- 1127
-add.period$ -- 106
-call.type$ -- 31
-change.case$ -- 118
-chr.to.int$ -- 29
-cite$ -- 107
-duplicate$ -- 471
-empty$ -- 1048
-format.name$ -- 95
-if$ -- 2094
-int.to.chr$ -- 3
+            728 strings with 8298 characters,
+and the built_in function-call counts, 10441 in all, are:
+= -- 938
+> -- 443
+< -- 31
++ -- 173
+- -- 135
+* -- 529
+:= -- 1630
+add.period$ -- 128
+call.type$ -- 32
+change.case$ -- 140
+chr.to.int$ -- 26
+cite$ -- 65
+duplicate$ -- 486
+empty$ -- 1026
+format.name$ -- 171
+if$ -- 2240
+int.to.chr$ -- 7
 int.to.str$ -- 1
 missing$ -- 2
-newline$ -- 176
-num.names$ -- 52
-pop$ -- 445
+newline$ -- 200
+num.names$ -- 128
+pop$ -- 407
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 109
 quote$ -- 0
-skip$ -- 362
+skip$ -- 390
 stack$ -- 0
-substring$ -- 80
-swap$ -- 34
+substring$ -- 64
+swap$ -- 41
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 336
-warning$ -- 27
-while$ -- 39
+type$ -- 347
+warning$ -- 1
+while$ -- 96
 width$ -- 0
-write$ -- 396
-(There were 27 warnings)
+write$ -- 454
+(There was 1 warning)

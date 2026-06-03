@@ -22,74 +22,104 @@ L'objectif principal est de rendre la plateforme plus prédictive et réactive. 
 
 \section{Données exploitées}
 
+Afin de produire des analyses fiables et des alertes contextualisées, le microservice IA de SafeTrack s'appuie sur plusieurs catégories de données collectées en temps réel et en historique.
+
 \subsection{Sources de données}
 Les décisions IA de SafeTrack s'appuient sur un ensemble de sources complémentaires :
 \begin{itemize}
     \item Localisation GPS en temps réel
- \item Historique des trajets et habitudes de déplacement
+    \item Historique des trajets et habitudes de déplacement
     \item Alertes SOS et incidents déclarés
     \item Profils des utilisateurs : âge, rôle, contraintes médicales ou contextuelles
+    \item Données comportementales issues des capteurs de l'appareil (accéléromètre, gyroscope)
 \end{itemize}
 
+\subsection{Données comportementales et sécurité de conduite}
+
+L'application exploite les paramètres de notification liés au comportement de déplacement afin d'enrichir le modèle d'analyse de risques. Ces signaux permettent de détecter des situations anormales en temps réel et d'affiner la prédiction des zones dangereuses :
+
+\begin{itemize}
+    \item \textbf{Détection d'accident :} identification automatique d'un impact soudain ou d'une immobilisation anormale suite à un choc, déclenchant une alerte prioritaire.
+    \item \textbf{Sécurité de conduite (Driving Safety) :} analyse du comportement global de déplacement pour évaluer si la trajectoire est cohérente avec le contexte (zone scolaire, heure, vitesse).
+    \item \textbf{Freinage brusque (High Braking) :} détection des décélérations brutales indiquant un danger potentiel ou une situation d'urgence imminente.
+    \item \textbf{Accélération anormale :} repérage des variations de vitesse inhabituelles pouvant signaler un comportement à risque.
+\end{itemize}
+
+Ces données comportementales sont agrégées avec les positions GPS pour alimenter le score de risque contextuel calculé par le microservice IA, et contribuent à la génération dynamique des zones à risque basées sur des données réelles.
+
 \subsection{Prétraitement et conformité}
-Les flux sont nettoyés, lissés et agrégés afin de limiter les erreurs de GPS. Les données sensibles sont pseudonymisées, et l'accès est strictement contrôlé par le mécanisme d'autorisation existant de l'application.
+Les flux sont nettoyés, lissés et agrégés afin de limiter les erreurs de GPS. Les données comportementales sont filtrées pour éliminer les faux positifs (ralentissements normaux, virages). Les données sensibles sont pseudonymisées, et l'accès est strictement contrôlé par le mécanisme d'autorisation existant de l'application.
 
 \section{Backlog Fonctionnel – Sprint 5}
 Le tableau suivant présente les User Stories prioritaires associées à l'IA SafeTrack, accompagnées de leurs tâches respectives et de l'estimation de réalisation.
 
-\begin{table}[H]
-\centering
-\caption{User Stories du Sprint 5 : Intelligence Artificielle SafeTrack}
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|p{1cm}|p{5cm}|p{6.5cm}|p{2cm}|}
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.0}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|>{\centering\arraybackslash}p{0.07\textwidth}|>{\raggedright\arraybackslash}p{0.33\textwidth}|>{\raggedright\arraybackslash}p{0.37\textwidth}|>{\centering\arraybackslash}p{0.13\textwidth}|}
+\caption{User Stories du Sprint 5 : Intelligence Artificielle SafeTrack} \\
 \hline
-\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endfirsthead
+
 \hline
-US1 & En tant que parent, je souhaite recevoir des alertes intelligentes lorsque la personne dépendante entre dans une zone dangereuse... & 
-\begin{itemize}[nosep, leftmargin=*]
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
+
+US1 & En tant que parent, je souhaite recevoir des alertes intelligentes lorsque la personne dépendante entre dans une zone dangereuse.
+& \begin{itemize}[leftmargin=*, nosep]
     \item Développer le module de détection géospatiale
     \item Implémenter l’analyse des zones dangereuses
     \item Générer les notifications d’alerte
 \end{itemize} & 5 jours \\ \hline
-US2 & En tant que parent, je souhaite recevoir des recommandations IA contextualisées... & 
-\begin{itemize}[nosep, leftmargin=*]
+
+US2 & En tant que parent, je souhaite recevoir des recommandations IA contextualisées.
+& \begin{itemize}[leftmargin=*, nosep]
     \item Intégrer le modèle LLM via Ollama \cite{ollama}
     \item Développer le microservice FastAPI
     \item Générer les réponses intelligentes
-    \item Générer les réponses intelligentes
 \end{itemize} & 6 jours \\ \hline
-US3 & En tant qu’utilisateur, je souhaite que le système analyse les comportements inhabituels... & 
-\begin{itemize}[nosep, leftmargin=*]
+
+US3 & En tant qu’utilisateur, je souhaite que le système analyse les comportements inhabituels.
+& \begin{itemize}[leftmargin=*, nosep]
     \item Développer les règles de détection
     \item Analyser les historiques de déplacement
     \item Calculer le score de risque
 \end{itemize} & 5 jours \\ \hline
-US4 & En tant que parent, je souhaite obtenir une estimation du temps d’arrivée (ETA)... & 
-\begin{itemize}[nosep, leftmargin=*]
+
+US4 & En tant que parent, je souhaite obtenir une estimation du temps d’arrivée (ETA).
+& \begin{itemize}[leftmargin=*, nosep]
     \item Développer le module ETA
     \item Analyser les données GPS
     \item Exposer l’API \texttt{/ai/eta-predict}
 \end{itemize} & 4 jours \\ \hline
-US5 & En tant qu’utilisateur, je souhaite recevoir des recommandations de zones sûres... & 
-\begin{itemize}[nosep, leftmargin=*]
+
+US5 & En tant qu’utilisateur, je souhaite recevoir des recommandations de zones sûres.
+& \begin{itemize}[leftmargin=*, nosep]
     \item Analyser les lieux fréquents
     \item Générer des suggestions de zones de sécurité
-    \item Analyser l'historique de présence et les habitudes
+    \item Analyser l’historique de présence et les habitudes
 \end{itemize} & 4 jours \\ \hline
-US6 & En tant qu’administrateur, je souhaite superviser les performances du système IA... & 
-\begin{itemize}[nosep, leftmargin=*]
+
+US6 & En tant qu’administrateur, je souhaite superviser les performances du système IA.
+& \begin{itemize}[leftmargin=*, nosep]
     \item Mettre en place le monitoring
     \item Suivre les métriques IA
     \item Gérer les logs et erreurs
 \end{itemize} & 3 jours \\ \hline
-US7 & En tant que parent, je souhaite qu’un assistant IA m’explique les alertes et propose des actions... & 
-\begin{itemize}[nosep, leftmargin=*]
+
+US7 & En tant que parent, je souhaite qu’un assistant IA m’explique les alertes et propose des actions.
+& \begin{itemize}[leftmargin=*, nosep]
     \item Implémenter l’architecture RAG
     \item Indexer les documents de sécurité
     \item Connecter ChromaDB et FastAPI
 \end{itemize} & 6 jours \\ \hline
-\end{tabular}
-\end{table}
+
+\end{longtable}
 
 \section{Choix des modèles et méthodes}
 
@@ -356,9 +386,6 @@ Une seconde interface permet d’afficher les recommandations de sécurité prop
     \item les estimations d’ETA et les analyses de déplacement.
 \end{itemize}
 
-\subsection*{Conclusion}
-
-Cette phase a permis d’intégrer une intelligence artificielle centrée sur la sécurité et l’assistance contextuelle au sein de SafeTrack. Grâce à l’architecture microservices, au système RAG et aux modèles LLM, l’application dispose désormais d’un socle intelligent capable d’améliorer l’expérience utilisateur, d’expliquer les alertes de manière claire et de réduire les risques liés aux déplacements au quotidien.
 
 \subsection{Défis techniques et solutions}
 L'implémentation de ces systèmes a présenté plusieurs défis que nous avons dû surmonter :
@@ -487,42 +514,10 @@ Bien que le microservice d’intelligence artificielle de SafeTrack réponde aux
     
     \item \textbf{Enrichissement de la base RAG :} ajout de nouvelles connaissances liées à la sécurité, aux procédures d’urgence et aux situations à risque afin d’améliorer la pertinence des recommandations.
 \end{itemize}
-\section{Technologies et Outils Utilisés}
-Dans le cadre du Sprint 5 dédié à l'intégration de l'intelligence artificielle, nous avons employé plusieurs technologies et outils spécialisés pour réaliser nos objectifs. Voici les principaux composants techniques qui ont permis le développement de nos fonctionnalités d'IA :
 
-\vspace{0.5cm}
-\begin{tabular}{| m{2.5cm} | m{13cm} |}
-\hline
-
-\includegraphics[width=2cm]{images/fast-api.jpg} & 
-\textbf{FastAPI : \cite{fastapi}}  
-Ce framework Python hautement performant a été utilisé pour développer notre microservice d'IA, offrant une création rapide d'APIs avec validation automatique des données et génération de documentation interactive. Sa nature asynchrone le rend particulièrement adapté aux charges de travail d'IA.
-\\
-\hline
-
-\includegraphics[width=2cm]{images/chromadblogo.png} & 
-\textbf{ChromaDB : \cite{chromadb}}  
-Cette base de données vectorielle a été utilisée pour stocker et rechercher les vecteurs d'embedding des documents de sécurité et des procédures d'urgence, permettant une recherche sémantique rapide et précise au sein de l'architecture RAG.
-\\
-\hline
-
-\includegraphics[width=2cm]{images/rag.jpg} & 
-\textbf{RAG (Retrieval-Augmented Generation) : \cite{rag}}  
-Cette architecture avancée a été implémentée pour enrichir les réponses du LLM avec des informations contextuelles spécifiques à notre domaine, combinant recherche vectorielle et génération de texte pour des résultats personnalisés et précis.
-\\
-\hline
-
-\includegraphics[width=2cm]{images/python.png} & 
-\textbf{Python : \cite{python}}  
-Langage de programmation principal pour le développement du microservice d'IA et les traitements de machine learning, offrant un écosystème riche de bibliothèques pour le traitement du langage naturel et l'intégration avec des modèles d'IA.
-\\
-\hline
-
-\end{tabular}
 
 \section{Présentation des interfaces de l'application}
 % Mobile interfaces: daily report and AI card
- Mobile interfaces: daily report and AI card
 \begin{figure}[H]
     \centering
     \begin{minipage}[t]{0.45\textwidth}
@@ -552,7 +547,4 @@ Langage de programmation principal pour le développement du microservice d'IA e
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
-Le Sprint 5 a permis d’enrichir la plateforme SafeTrack avec un microservice d’intelligence artificielle avancé, entièrement intégré à l’architecture existante. Ce microservice, exposé via l’API Gateway principale, assure une communication fluide avec les différents services du système tels que la localisation en temps réel, la gestion des alertes et les zones de sécurité, garantissant ainsi une expérience utilisateur cohérente et centralisée.
-L’intégration d’un modèle de langage exécuté localement via Ollama, combiné à une architecture RAG, représente une étape importante dans l’évolution de SafeTrack vers un système intelligent et autonome. Cette approche permet non seulement de générer des analyses contextuelles précises, mais aussi de garantir la confidentialité des données sensibles en évitant le recours systématique à des services cloud externes.
-L’utilisation du système RAG renforce considérablement la capacité de la plateforme à fournir des recommandations pertinentes et adaptées aux situations détectées. Grâce à l’exploitation d’une base de connaissances spécialisée en sécurité et en gestion des alertes, SafeTrack est désormais capable d’expliquer les événements, de proposer des actions immédiates et d’accompagner les parents et institutions dans la prise de décision.
-Ce travail constitue une évolution majeure dans l’architecture du projet, en introduisant une couche d’intelligence qui améliore la détection des risques, la compréhension des alertes et la qualité des recommandations. Il ouvre également la voie à plusieurs améliorations futures, notamment l’enrichissement des modèles prédictifs, l’optimisation des performances en temps réel et le développement d’un assistant encore plus personnalisé pour le suivi et la protection des enfants.
+Ce sprint a permis d’intégrer une couche d’intelligence artificielle au sein de SafeTrack, combinant détection d’anomalies, scoring de risque et assistance contextuelle via un modèle LLM local et une architecture RAG. Cette évolution rend la plateforme plus proactive et ouvre la voie à des améliorations continues en matière de sécurité et de personnalisation.

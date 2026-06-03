@@ -319,26 +319,6 @@ Grâce à cette architecture client--serveur modulaire enrichie par un microserv
 
 \section{Outils et environnement de développement}
 
-\subsection{Environnement matériel}
-
-Dans le cadre de ce projet, plusieurs machines ont été utilisées pour le développement et les tests. Voici les caractéristiques principales des équipements utilisés :
-
-\begin{itemize}
-\item[$\bullet$] PC 1 (ASUS Vivobook) :
-\begin{itemize}
-\item Carte graphique : 128 MB intel(R) UHD Graphics
-\item Mémoire RAM : 16 Go
-\item Disque : 477GB
-\end{itemize}
-
-\item[$\bullet$] PC 2 (Lenovo LOQ) :
-\begin{itemize}
-    \item Carte graphique : NIVIDIA GeForce RTX 3050 6 GB
-    \item Mémoire RAM : 16 Go
-    \item Disque : 477 GB
-\end{itemize}
-\end{itemize}
-
 \subsection{Environnement technique}
 
 L’environnement technique regroupe l’ensemble des technologies utilisées pour concevoir, développer et déployer la solution SafeTrack.
@@ -389,79 +369,79 @@ Base de données NoSQL utilisée pour stocker les informations des utilisateurs 
 \hline
 
 \includegraphics[width=1.2cm]{images/redis.png} & 
-\textbf{Redis : }  
+\textbf{Redis : \cite{redis}}
 Base de données en mémoire utilisée comme système de cache et de gestion des données en temps réel.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/ioredis.png} & 
-\textbf{ioredis : \cite{ioredis}}  
+\includegraphics[width=1.5cm]{images/ioredis.png} &
+\textbf{ioredis : \cite{ioredis}}
 Client Redis utilisé pour la gestion du cache et la communication temps réel entre services.
 \\
 \hline
 
-\includegraphics[width=1.2cm]{images/websocket.png} & 
-\textbf{Socket.IO : }  
+\includegraphics[width=1.2cm]{images/websocket.png} &
+\textbf{Socket.IO : \cite{socketio}}
 Bibliothèque permettant une communication bidirectionnelle et en temps réel entre les clients et le serveur.
 \\
 \hline
 
-\includegraphics[width=1cm]{images/jwt.png} & 
-\textbf{JWT : }  
+\includegraphics[width=1cm]{images/jwt.png} &
+\textbf{JWT : \cite{jwt}}
 Standard utilisé pour l'échange sécurisé de jetons d'authentification entre les différentes parties du système.
 \\
 \hline
 
-\includegraphics[width=1.2cm]{images/firebaselogo.png} & 
-\textbf{Firebase Cloud Messaging (FCM) : }  
+\includegraphics[width=1.2cm]{images/firebaselogo.png} &
+\textbf{Firebase Cloud Messaging (FCM) : \cite{fcm}}
 Service utilisé pour l'envoi de notifications push instantanées sur les appareils mobiles.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/mapslogo.png} & 
-\textbf{Google Maps API : }  
+\includegraphics[width=1.5cm]{images/mapslogo.png} &
+\textbf{Google Maps API : \cite{googlemaps}}
 Service de cartographie utilisé pour visualiser la localisation des utilisateurs et gérer les zones sécurisées.
 \\
 \hline
 
-\includegraphics[width=1.8cm]{images/swaggerlogo.png} & 
-\textbf{Swagger (OpenAPI) : }  
+\includegraphics[width=1.8cm]{images/swaggerlogo.png} &
+\textbf{Swagger (OpenAPI) : \cite{swagger}}
 Documentation et test interactif des API REST du backend.
 \\
 \hline
 
-\includegraphics[width=1.2cm]{images/ollama.jpeg} & 
-\textbf{Ollama : }  
+\includegraphics[width=1.2cm]{images/ollama.jpeg} &
+\textbf{Ollama : \cite{ollama}}
 Exécution locale des modèles de langage utilisés par le système RAG pour l'analyse et la génération de recommandations.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/fast-api.jpg} & 
-\textbf{FastAPI : }  
+\includegraphics[width=1.5cm]{images/fast-api.jpg} &
+\textbf{FastAPI : \cite{fastapi}}
 Framework Python utilisé pour développer le microservice d'intelligence artificielle, permettant la création rapide d'API avec validation automatique des données et documentation interactive.
 \\
 \hline
 
-\includegraphics[width=1.2cm]{images/chromadblogo.png} & 
-\textbf{ChromaDB : }  
+\includegraphics[width=1.2cm]{images/chromadblogo.png} &
+\textbf{ChromaDB : \cite{chromadb}}
 Base de données vectorielle utilisée par le système RAG pour stocker et rechercher les connaissances contextuelles.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/rag.jpg} & 
-\textbf{RAG (Retrieval-Augmented Generation) : }  
+\includegraphics[width=1.5cm]{images/rag.jpg} &
+\textbf{RAG (Retrieval-Augmented Generation) : \cite{rag}}
 Architecture utilisée pour enrichir les réponses du modèle de langage avec des informations contextuelles issues de la recherche vectorielle.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/python.png} & 
-\textbf{Python : }  
+\includegraphics[width=1.5cm]{images/python.png} &
+\textbf{Python : \cite{python}}
 Langage de programmation utilisé pour le développement du microservice d'intelligence artificielle et les traitements liés au machine learning.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/bcryptlogo.jpg} & 
-\textbf{bcrypt : }  
+\includegraphics[width=1.5cm]{images/bcryptlogo.jpg} &
+\textbf{bcrypt : \cite{bcrypt}}
 Hachage et sécurisation des mots de passe avant leur stockage dans la base de données.
 \\
 \hline
@@ -484,7 +464,6 @@ Outils de gestion de version et de collaboration permettant le suivi du code sou
 Éditeur de code utilisé pour le développement grâce à ses nombreuses extensions.
 \\
 \end{longtable}
-
 
 
 

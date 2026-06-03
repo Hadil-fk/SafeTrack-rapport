@@ -1,40 +1,40 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Introduction}{\reset@font\mtcSfont 73}{section*.55}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Introduction}{\reset@font\mtcSfont 73}{section*.54}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Objectifs du Sprint 5}{\reset@font\mtcSfont 73}{section.5.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Données exploitées}{\reset@font\mtcSfont 73}{section.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Sources de données}{\reset@font\mtcSSfont 73}{subsection.5.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Prétraitement et conformité}{\reset@font\mtcSSfont 73}{subsection.5.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Backlog Fonctionnel – Sprint 5}{\reset@font\mtcSfont 73}{section.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Choix des modèles et méthodes}{\reset@font\mtcSfont 74}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Approche hybride}{\reset@font\mtcSSfont 74}{subsection.5.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Comparatif des modèles LLM}{\reset@font\mtcSSfont 75}{subsection.5.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.1}GPT-3.5 (OpenAI)}{\reset@font\mtcSSSfont 75}{subsubsection.5.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Données comportementales et sécurité de conduite}{\reset@font\mtcSSfont 73}{subsection.5.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.3}Prétraitement et conformité}{\reset@font\mtcSSfont 74}{subsection.5.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Backlog Fonctionnel – Sprint 5}{\reset@font\mtcSfont 74}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Choix des modèles et méthodes}{\reset@font\mtcSfont 75}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Approche hybride}{\reset@font\mtcSSfont 75}{subsection.5.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Comparatif des modèles LLM}{\reset@font\mtcSSfont 76}{subsection.5.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.1}GPT-3.5 (OpenAI)}{\reset@font\mtcSSSfont 76}{subsubsection.5.4.2.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.2}LLaMA 2 (Meta)}{\reset@font\mtcSSSfont 76}{subsubsection.5.4.2.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.3}Mistral 7B}{\reset@font\mtcSSSfont 76}{subsubsection.5.4.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Choix final}{\reset@font\mtcSSfont 76}{subsection.5.4.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Architecture microservices et intégration}{\reset@font\mtcSfont 76}{section.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Choix final}{\reset@font\mtcSSfont 77}{subsection.5.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Architecture microservices et intégration}{\reset@font\mtcSfont 77}{section.5.5}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Détection des anomalies de déplacement}{\reset@font\mtcSSfont 77}{subsection.5.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Priorisation des alertes SOS}{\reset@font\mtcSSfont 77}{subsection.5.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.3}Prédiction des itinéraires et ETA}{\reset@font\mtcSSfont 77}{subsection.5.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.4}Recommandation de zones sûres}{\reset@font\mtcSSfont 77}{subsection.5.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.5}Assistant IA et approche RAG}{\reset@font\mtcSSfont 77}{subsection.5.5.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Comparaison règles simples vs IA contextualisée}{\reset@font\mtcSfont 78}{section.5.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Priorisation des alertes SOS}{\reset@font\mtcSSfont 78}{subsection.5.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.3}Prédiction des itinéraires et ETA}{\reset@font\mtcSSfont 78}{subsection.5.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.4}Recommandation de zones sûres}{\reset@font\mtcSSfont 78}{subsection.5.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.5}Assistant IA et approche RAG}{\reset@font\mtcSSfont 78}{subsection.5.5.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Comparaison règles simples vs IA contextualisée}{\reset@font\mtcSfont 79}{section.5.6}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Réalisation technique}{\reset@font\mtcSfont 79}{section.5.7}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.1}Déploiement du service IA}{\reset@font\mtcSSfont 79}{subsection.5.7.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.2}Monitoring et évaluation}{\reset@font\mtcSSfont 79}{subsection.5.7.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.3}Déploiement du modèle IA}{\reset@font\mtcSSfont 79}{subsection.5.7.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.4}Développement du microservice FastAPI}{\reset@font\mtcSSfont 79}{subsection.5.7.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.5}Indexation des documents et architecture RAG}{\reset@font\mtcSSfont 80}{subsection.5.7.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.6}Interfaces utilisateur intelligentes}{\reset@font\mtcSSfont 80}{subsection.5.7.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.6.1}Interface des alertes intelligentes}{\reset@font\mtcSSSfont 80}{subsubsection.5.7.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.6.2}Interface de recommandations IA}{\reset@font\mtcSSSfont 80}{subsubsection.5.7.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.2}Monitoring et évaluation}{\reset@font\mtcSSfont 80}{subsection.5.7.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.3}Déploiement du modèle IA}{\reset@font\mtcSSfont 80}{subsection.5.7.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.4}Développement du microservice FastAPI}{\reset@font\mtcSSfont 80}{subsection.5.7.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.5}Indexation des documents et architecture RAG}{\reset@font\mtcSSfont 81}{subsection.5.7.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.6}Interfaces utilisateur intelligentes}{\reset@font\mtcSSfont 81}{subsection.5.7.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.6.1}Interface des alertes intelligentes}{\reset@font\mtcSSSfont 81}{subsubsection.5.7.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.6.2}Interface de recommandations IA}{\reset@font\mtcSSSfont 81}{subsubsection.5.7.6.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.7}Défis techniques et solutions}{\reset@font\mtcSSfont 81}{subsection.5.7.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.8}Renforcement des faiblesses techniques}{\reset@font\mtcSSfont 81}{subsection.5.7.8}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.8}Renforcement des faiblesses techniques}{\reset@font\mtcSSfont 82}{subsection.5.7.8}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.8}Résultats et évaluation}{\reset@font\mtcSfont 83}{section.5.8}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.1}Performances du système}{\reset@font\mtcSSfont 83}{subsection.5.8.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.2}Exemples de résultats}{\reset@font\mtcSSfont 83}{subsection.5.8.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.2.1}Exemple d’analyse d’anomalie}{\reset@font\mtcSSSfont 83}{subsubsection.5.8.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.2.2}Exemple de recommandation IA avec RAG}{\reset@font\mtcSSSfont 83}{subsubsection.5.8.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.2}Exemples de résultats}{\reset@font\mtcSSfont 84}{subsection.5.8.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.2.1}Exemple d’analyse d’anomalie}{\reset@font\mtcSSSfont 84}{subsubsection.5.8.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.8.2.2}Exemple de recommandation IA avec RAG}{\reset@font\mtcSSSfont 84}{subsubsection.5.8.2.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.8.3}Perspectives d’amélioration}{\reset@font\mtcSSfont 84}{subsection.5.8.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.9}Technologies et Outils Utilisés}{\reset@font\mtcSfont 84}{section.5.9}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.10}Présentation des interfaces de l'application}{\reset@font\mtcSfont 85}{section.5.10}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Conclusion}{\reset@font\mtcSfont 85}{section*.63}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.9}Présentation des interfaces de l'application}{\reset@font\mtcSfont 85}{section.5.9}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Conclusion}{\reset@font\mtcSfont 85}{section*.60}}

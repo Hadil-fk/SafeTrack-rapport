@@ -24,96 +24,83 @@ Les fonctionnalités développées incluent la collecte et la transmission des p
 \subsection{Backlog Sprint 3 :}
 
 Le tableau ci-dessous présente les user stories liées à la localisation et au suivi en temps réel.
-\begin{table}[H]
-\caption{Tableau des User Stories – Sprint 3}
-\centering
 \small
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.0}
 \setlength{\parskip}{0pt}
-
-\begin{tabularx}{\textwidth}{|c|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|c|}
+\begin{longtable}{|>{\centering\arraybackslash}p{0.07\textwidth}|>{\raggedright\arraybackslash}p{0.33\textwidth}|>{\raggedright\arraybackslash}p{0.37\textwidth}|>{\centering\arraybackslash}p{0.13\textwidth}|}
+\caption{Tableau des User Stories – Sprint 3} \\
 \hline
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endfirsthead
 
-\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
 
 US-01 & En tant que parent, je peux suivre la position de mon personne dépendante en temps réel afin de savoir où il se trouve à tout moment.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Implémenter la collecte GPS côté mobile
 \item Envoyer les positions vers le backend
 \item Stockage des positions en base de données
 \item Affichage de la position sur carte (Google Maps)
 \item Mise à jour en temps réel (Socket.IO)
 \end{itemize}
-\end{minipage}
-& 4 jours \\
-\hline
+& 4 jours \\ \hline
 
 US-02 & En tant que système, je dois détecter automatiquement les sorties de zone sécurisée (geofence) afin de déclencher une alerte.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Création des zones de sécurité (geofencing)
 \item Calcul de position par rapport aux zones
 \item Détection de sortie de zone
 \item Génération d’événements d’alerte
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-03 & En tant que parent, je reçois des alertes en temps réel lorsqu’un événement critique est détecté.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Implémentation du module d’alertes backend
 \item Envoi de notifications push
 \item Intégration Socket.IO côté mobile
 \item Affichage des alertes dans l’application
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-04 & En tant qu’utilisateur, je peux consulter l’historique des déplacements de mon personne dépendante.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Stockage des historiques GPS
 \item API de récupération des trajets
 \item Affichage des parcours sur carte
 \item Filtrage par date
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-05 & En tant que système, je dois assurer la transmission continue des données de localisation.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Mise en place du background tracking mobile
 \item Optimisation de la consommation batterie
 \item Envoi périodique des positions
 \item Gestion des pertes de connexion
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-06 & En tant qu’administrateur, je peux visualiser les zones à risque et les événements critiques.
-& \begin{minipage}[t]{\linewidth}\setlength{\itemsep}{-2pt}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Dashboard des alertes
 \item Visualisation des zones dangereuses
 \item Filtrage des événements
 \item Statistiques des incidents
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
-\end{tabularx}
-\end{table}
+\end{longtable}
 \subsection{Diagrammes du Sprint 3 :}
+
+Les diagrammes suivants modélisent les principales fonctionnalités du Sprint 3 : géolocalisation, zones de sécurité et alertes en temps réel.
+
 \subsubsection{Diagramme de cas d'utilisation : }
 
 Cette section présente le diagramme de cas d'utilisation du Sprint 3, qui met en évidence les principales interactions entre les utilisateurs et le système SafeTrack. Ce Sprint est principalement centré sur les fonctionnalités de suivi en temps réel, de géolocalisation, de gestion des zones de sécurité (geofencing) ainsi que sur la génération des alertes en cas d’événements critiques.
@@ -151,7 +138,7 @@ Précondition & L'utilisateur est authentifié et dispose des permissions néces
 Postcondition & Une nouvelle zone de sécurité est créée et enregistrée dans le système. Elle est associée à un ou plusieurs enfants, et utilisée pour le suivi en temps réel et la génération d'alertes (entrée/sortie de zone). \\ \hline
 
 Scénario nominal &
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item L'utilisateur accède au module de gestion des zones de sécurité.
 \item L'utilisateur clique sur « Ajouter une zone de sécurité ».
 \item Le système affiche une carte interactive.
@@ -162,28 +149,26 @@ Scénario nominal &
 \item La zone de sécurité est enregistrée dans la base de données.
 \item Le système associe la zone de sécurité aux enfants sélectionnés.
 \item Le système active le suivi en temps réel pour cette zone.
-\item Une confirmation de création est affiche à l'utilisateur.
+\item Une confirmation de création est affichée à l'utilisateur.
 \end{itemize}
 \\ \hline
 
 Scénario alternatif &
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item \textbf{Modification d'une zone de sécurité existante :}
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item L'utilisateur sélectionne une zone de sécurité déjà créée.
 \item Il modifie la forme, le rayon ou les paramètres associés.
 \item Le système valide et met à jour la zone.
 \end{itemize}
-
 \item \textbf{Suppression d'une zone de sécurité :}
-\begin{itemize}
+\begin{itemize}[nosep, leftmargin=*]
 \item L'utilisateur choisit de supprimer une zone de sécurité.
 \item Le système demande confirmation.
 \item La zone est supprimée et les règles associées désactivées.
 \end{itemize}
-
-\item \textbf{Erreurs ou restricions :}
-\begin{itemize}
+\item \textbf{Erreurs ou restrictions :}
+\begin{itemize}[nosep, leftmargin=*]
 \item Zone invalide (coordonnées non définies ou hors carte).
 \item Rayon trop petit ou trop grand.
 \item Conflit avec une zone existante critique.
@@ -280,6 +265,8 @@ La figure~\ref{fig:chap4_suivi_management_sequence} illustre le diagramme de sé
 
 \subsection{Réalisation du Sprint 3 : }
 
+Le Sprint 3 met en œuvre les fonctionnalités de suivi et de sécurité au cœur de SafeTrack : géolocalisation en temps réel, gestion des zones de sécurité (geofencing) et génération d'alertes automatiques. Cette section détaille les réalisations techniques de ces cas d'utilisation.
+
 \subsubsection{Réalisation du cas d'utilisation : Ajouter une zone de sécurité}
 
 Le module de gestion des zones de sécurité permet aux utilisateurs (parents/aidants et organisations) de définir des zones géographiques sécurisées pour assurer la protection des enfants ou personnes dépendantes.
@@ -315,137 +302,113 @@ Fonctionnalités réalisées :
 
 Le quatrième Sprint complète la dimension sécuritaire en introduisant des mécanismes d'urgence et de partage.
 
-\begin{table}[H]
-\caption{Tableau des User Stories – Sprint 4 (Historique, Alertes, SOS et Partage)}
-\centering
-\footnotesize
-\setlength{\tabcolsep}{2pt}
-\renewcommand{\arraystretch}{1.05}
-
-\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{0.08\textwidth}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.10\textwidth}|}
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.0}
+\setlength{\parskip}{0pt}
+\begin{longtable}{|>{\centering\arraybackslash}p{0.07\textwidth}|>{\raggedright\arraybackslash}p{0.33\textwidth}|>{\raggedright\arraybackslash}p{0.37\textwidth}|>{\centering\arraybackslash}p{0.13\textwidth}|}
+\caption{Tableau des User Stories – Sprint 4} \\
 \hline
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endfirsthead
 
-\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\
 \hline
+\textbf{ID} & \textbf{User Story} & \textbf{Tâches} & \textbf{Estimation} \\ \hline
+\endhead
+
+\hline
+\endlastfoot
 
 US-01 & En tant que parent/aidant, je peux consulter l’historique des déplacements de la personne dépendante.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item API historique des positions
 \item Affichage des trajets sur carte
 \item Filtrage par date
 \item Optimisation des requêtes
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-02 & En tant que parent/aidant, je peux consulter le trajet détaillé d’un déplacement.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
-\item Reconstrucion des parcours
+& \begin{itemize}[leftmargin=*, nosep]
+\item Reconstruction des parcours
 \item Visualisation chronologique
 \item Carte interactive
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
 US-03 & En tant que parent/aidant, je peux recevoir des alertes liées à la personne dépendante.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Notifications temps réel
 \item Historique des alertes
 \item Gestion des types d’alertes
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-04 & En tant qu’utilisateur, je peux déclencher un SOS (appel ou alerte d’urgence).
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item API SOS
 \item Envoi notification urgente
 \item Intégration appel temps réel
 \item Suivi localisation live
 \end{itemize}
-\end{minipage}
-& 4 jours \\
-\hline
+& 4 jours \\ \hline
 
 US-05 & En tant que parent/aidant, je peux recevoir et gérer les alertes SOS.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Réception alertes SOS
 \item Affichage localisation en temps réel
 \item Historique SOS
 \item Accès rapide appel
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-06 & En tant que parent/aidant, je peux partager l’accès à une personne dépendante avec d’autres utilisateurs.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Module de partage
 \item Invitation par email
 \item Gestion des accès
 \item Interface de contrôle
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-07 & En tant que parent/aidant, je peux définir des permissions limitées ou complètes lors du partage (tracking, SOS, etc.).
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Gestion des permissions (tracking/SOS/complet)
 \item Gestion de la durée d’accès
 \item Sécurisation des accès
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-08 & En tant que contact invité, je peux créer un compte pour accéder aux données partagées.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Inscription utilisateur
-\item authentification JWT
+\item Authentification JWT
 \item Activation du partage
 \end{itemize}
-\end{minipage}
-& 2 jours \\
-\hline
+& 2 jours \\ \hline
 
 US-09 & En tant qu’organisation, je peux consulter l’historique des présences des enfants/personnes sous ma responsabilité.
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Affichage présence (silencieux)
 \item Tableau de bord organisation
 \item Statut en temps réel
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
 US-10 & En tant qu’organisation, je peux recevoir des alertes uniquement en cas d’anomalies (retard, absence, sortie de zone, SOS).
-& \begin{minipage}[t]{\linewidth}
-\begin{itemize}[leftmargin=*]
+& \begin{itemize}[leftmargin=*, nosep]
 \item Détection anomalies
 \item Notifications temps réel
 \item Filtrage intelligent des alertes
 \item Historique des incidents
 \end{itemize}
-\end{minipage}
-& 3 jours \\
-\hline
+& 3 jours \\ \hline
 
-\end{tabularx}
-\end{table}
+\end{longtable}
 \subsection{Diagrammes du Sprint 4:}
+
+Les diagrammes suivants modélisent les principales fonctionnalités du Sprint 4 : alertes SOS, historique, et partage d'accès.
+
 \subsubsection{Diagramme de cas d'utilisation : }
 
 Cette section présente le diagramme de cas d'utilisation du Sprint 4, qui illustre les interactions entre les utilisateurs et le système SafeTrack dans le cadre des fonctionnalités organisationnelles. Ce Sprint se concentre principalement sur l'historique, les alertes, le SOS, le partage d'accès et le suivi de présence des enfants/personnes rattachés.
@@ -650,15 +613,17 @@ Scénario alternatif &
 Ce diagramme détaille les interactions nécessaires pour partager l'accès au suivi d'un utilisateur avec un tiers ou une organisation.
 
 \vspace{0.5cm}
-\begin{figure}[H]
+\begin{figure}[p]
  \centering
- \includegraphics[width=\textwidth, height=0.4\textheight, keepaspectratio]{images/seq_partageracces-s4.png}
+ \includegraphics[width=\textwidth, height=0.9\textheight, keepaspectratio]{images/seq_partageracces-s4.png}
  \caption{Diagramme de séquence – Partager l'accès}
  \label{fig:chap4_sequence_partage}
 \end{figure}
-\vspace{0.5cm}
 
-\subsection{Réalisation du Sprint 4 : SOS et partage d’accès}
+
+\subsection{Réalisation du Sprint 4 :}
+
+Le Sprint 4 concrétise les fonctionnalités de sécurité avancées de SafeTrack : déclenchement d'alertes SOS, consultation de l'historique des déplacements, gestion des alertes en temps réel et partage d'accès avec contrôle des permissions. Cette section décrit les principales réalisations techniques associées à ces cas d'utilisation.
 
 \subsubsection{Réalisation du cas d'utilisation : Déclenchement SOS}
 
@@ -697,36 +662,74 @@ la confidentialité et la sécurité des données.
 
 Dans cette section, nous présentons les interfaces relatives à la localisation et au système SOS.
 
-\section{Présentation des interfaces de l'application}
 
 \section{Présentation des interfaces de l'application}
 
-% Mobile interfaces: tracking, safezone, SOS
+
+% Mobile interfaces: child map and tracking map
 \begin{figure}[H]
     \centering
-    \begin{minipage}[b]{0.30\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/child map.jpg}}
+        \caption{Interface Mobile — Carte de localisation enfant}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/Trackingmap.jpg}}
+        \caption{Interface Mobile — Carte de suivi en temps réel}
+    \end{minipage}
+     \hfill
+    \centering
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/trackingmobile.jpg}}
         \caption{Interface Mobile — Suivi en temps réel}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.30\textwidth}
+
+\end{figure}
+% Mobile interfaces: tracking, safezone, SOS
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/addsafezonemobile.jpg}}
         \caption{Interface Mobile — Gestion d'une SafeZone}
     \end{minipage}%
     \hfill
-    \begin{minipage}[b]{0.30\textwidth}
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
         \centering
         \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/sos.jpg}}
         \caption{Interface Mobile — Alerte SOS}
     \end{minipage}
+        \hfill
+    % Mobile interface: notifications
+    \centering
+    \begin{minipage}[t]{0.30\textwidth}
+        \vspace{0pt}
+        \centering
+        \fbox{\includegraphics[width=\linewidth, height=8cm, keepaspectratio]{images/notifications.jpg}}
+        \caption{Interface Mobile — Notifications}
+    \end{minipage}
+     \hfill
 \end{figure}
 % Web interface: tracking map
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/trackingweb.png}}
     \caption{Interface Web — Suivi en temps réel}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/addzoneweb.png}}
+    \caption{Interface Web — Ajout d'une zone de sécurité}
 \end{figure}
 % Mobile interfaces: access control
 \begin{figure}[H]
@@ -763,6 +766,7 @@ Dans cette section, nous présentons les interfaces relatives à la localisation
     \fbox{\includegraphics[width=0.95\textwidth, height=8cm, keepaspectratio]{images/adddeviceweb.png}}
     \caption{Interface Web — Gestion des appareils}
 \end{figure}
+
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
-Ce chapitre a détaillé la réalisation des Sprints 3 et 4, apportant à SafeTrack ses fonctionnalités de sécurité essentielles. Le suivi en temps réel et le système d'alerte SOS constituent le cœur de la valeur proposée par l'application, assurant une protection efficace et réactive des utilisateurs.
+Ce chapitre a détaillé la réalisation des Sprints 3 et 4, apportant à SafeTrack ses fonctionnalités de sécurité essentielles. Le suivi en temps réel, le système d'alerte SOS, la gestion des zones de sécurité et le partage d'accès constituent le cœur de la valeur proposée par l'application, assurant une protection efficace et réactive des utilisateurs. Ces fondations techniques et fonctionnelles ouvrent la voie au chapitre suivant, qui présentera l'intégration d'une couche d'intelligence artificielle permettant d'enrichir ces mécanismes par une détection proactive des anomalies et une assistance contextuelle intelligente.
