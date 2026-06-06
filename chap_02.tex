@@ -324,7 +324,8 @@ Grâce à cette architecture client--serveur modulaire enrichie par un microserv
 L’environnement technique regroupe l’ensemble des technologies utilisées pour concevoir, développer et déployer la solution SafeTrack.
 
 \begin{longtable}{| m{2.5cm} | m{13cm} |}
-\caption{Environnement technique du projet SafeTrack} \label{tab:environnement_technique} \\
+\caption{Environnement technique du projet SafeTrack}
+\label{tab:environnement_technique} \\
 \hline
 \textbf{Logo} & \textbf{Outil et Description} \\
 \hline
@@ -338,132 +339,227 @@ L’environnement technique regroupe l’ensemble des technologies utilisées po
 \hline
 \endlastfoot
 
-\includegraphics[width=1.5cm]{images/nestjs.png} & 
-\textbf{NestJS : \cite{nestjs}}  
-Framework backend basé sur Node.js permettant de développer des API REST robustes et structurées grâce à une architecture modulaire inspirée du modèle MVC.
+\includegraphics[width=1.5cm]{images/nestjs.png} &
+\textbf{NestJS : \cite{nestjs}}
+Framework backend basé sur Node.js permettant de développer des API REST robustes
+et structurées grâce à une architecture modulaire inspirée du modèle MVC.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/react.png} & 
-\textbf{React.js : \cite{reactjs}}  
-Bibliothèque JavaScript utilisée pour le développement de l'application web (dashboard), offrant une interface interactive et dynamique pour la gestion et la supervision des utilisateurs.
+\includegraphics[width=1.5cm]{images/react.png} &
+\textbf{React.js : \cite{reactjs}}
+Bibliothèque JavaScript utilisée pour le développement de l'application web
+(dashboard), offrant une interface interactive et dynamique pour la gestion et
+la supervision des utilisateurs.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/flutter.png} & 
-\textbf{Flutter : \cite{flutter}}  
-Framework multiplateforme utilisé pour le développement de l'application mobile, permettant une expérience utilisateur fluide sur Android et iOS.
+\includegraphics[width=1.5cm]{images/flutter.png} &
+\textbf{Flutter : \cite{flutter}}
+Framework multiplateforme utilisé pour le développement de l'application mobile,
+permettant une expérience utilisateur fluide sur Android et iOS.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/nodejs.png} & 
-\textbf{Node.js : \cite{nodejs}}  
-Environnement d'exécution JavaScript côté serveur utilisé pour le développement du backend.
+\includegraphics[width=1.5cm]{images/nodejs.png} &
+\textbf{Node.js : \cite{nodejs}}
+Environnement d'exécution JavaScript côté serveur utilisé pour le développement
+du backend.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/mongodb.png} & 
-\textbf{MongoDB : \cite{mongodb}}  
-Base de données NoSQL utilisée pour stocker les informations des utilisateurs ainsi que les données de géolocalisation en temps réel.
+\includegraphics[width=1.5cm]{images/typescript.png} &
+\textbf{TypeScript : \cite{typescript}}
+Sur-ensemble typé de JavaScript utilisé pour le développement frontend (React.js)
+et backend (NestJS), améliorant la robustesse et la maintenabilité du code.
 \\
 \hline
 
-\includegraphics[width=1.2cm]{images/redis.png} & 
+\includegraphics[width=1.5cm]{images/mongodb.png} &
+\textbf{MongoDB : \cite{mongodb}}
+Base de données NoSQL utilisée pour stocker les informations des utilisateurs ainsi
+que les données de géolocalisation en temps réel.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/redis.png} &
 \textbf{Redis : \cite{redis}}
-Base de données en mémoire utilisée comme système de cache et de gestion des données en temps réel.
+Base de données en mémoire utilisée comme système de cache et de gestion des
+données en temps réel.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/ioredis.png} &
+\includegraphics[width=1.2cm]{images/ioredis.png} &
 \textbf{ioredis : \cite{ioredis}}
-Client Redis utilisé pour la gestion du cache et la communication temps réel entre services.
+Client Redis utilisé pour la gestion du cache et la communication temps réel
+entre services.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/socketio.png} &
+\textbf{Socket.IO : \cite{socketio}}
+Bibliothèque permettant une communication bidirectionnelle et en temps réel
+entre les clients et le serveur.
 \\
 \hline
 
 \includegraphics[width=1.2cm]{images/websocket.png} &
-\textbf{Socket.IO : \cite{socketio}}
-Bibliothèque permettant une communication bidirectionnelle et en temps réel entre les clients et le serveur.
+\textbf{WebSocket : \cite{websocket}}
+Protocole de communication full-duplex utilisé comme couche de transport
+sous-jacente pour les échanges temps réel dans le backend.
 \\
 \hline
 
 \includegraphics[width=1cm]{images/jwt.png} &
 \textbf{JWT : \cite{jwt}}
-Standard utilisé pour l'échange sécurisé de jetons d'authentification entre les différentes parties du système.
-\\
-\hline
-
-\includegraphics[width=1.2cm]{images/firebaselogo.png} &
-\textbf{Firebase Cloud Messaging (FCM) : \cite{fcm}}
-Service utilisé pour l'envoi de notifications push instantanées sur les appareils mobiles.
-\\
-\hline
-
-\includegraphics[width=1.5cm]{images/mapslogo.png} &
-\textbf{Google Maps API : \cite{googlemaps}}
-Service de cartographie utilisé pour visualiser la localisation des utilisateurs et gérer les zones sécurisées.
-\\
-\hline
-
-\includegraphics[width=1.8cm]{images/swaggerlogo.png} &
-\textbf{Swagger (OpenAPI) : \cite{swagger}}
-Documentation et test interactif des API REST du backend.
-\\
-\hline
-
-\includegraphics[width=1.2cm]{images/ollama.jpeg} &
-\textbf{Ollama : \cite{ollama}}
-Exécution locale des modèles de langage utilisés par le système RAG pour l'analyse et la génération de recommandations.
-\\
-\hline
-
-\includegraphics[width=1.5cm]{images/fast-api.jpg} &
-\textbf{FastAPI : \cite{fastapi}}
-Framework Python utilisé pour développer le microservice d'intelligence artificielle, permettant la création rapide d'API avec validation automatique des données et documentation interactive.
-\\
-\hline
-
-\includegraphics[width=1.2cm]{images/chromadblogo.png} &
-\textbf{ChromaDB : \cite{chromadb}}
-Base de données vectorielle utilisée par le système RAG pour stocker et rechercher les connaissances contextuelles.
-\\
-\hline
-
-\includegraphics[width=1.5cm]{images/rag.jpg} &
-\textbf{RAG (Retrieval-Augmented Generation) : \cite{rag}}
-Architecture utilisée pour enrichir les réponses du modèle de langage avec des informations contextuelles issues de la recherche vectorielle.
-\\
-\hline
-
-\includegraphics[width=1.5cm]{images/python.png} &
-\textbf{Python : \cite{python}}
-Langage de programmation utilisé pour le développement du microservice d'intelligence artificielle et les traitements liés au machine learning.
+Standard utilisé pour l'échange sécurisé de jetons d'authentification entre
+les différentes parties du système.
 \\
 \hline
 
 \includegraphics[width=1.5cm]{images/bcryptlogo.jpg} &
 \textbf{bcrypt : \cite{bcrypt}}
-Hachage et sécurisation des mots de passe avant leur stockage dans la base de données.
+Hachage et sécurisation des mots de passe avant leur stockage dans la base
+de données.
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/docker.png} & 
-\textbf{Docker \& Docker Compose : \cite{docker}}  
-Utilisés pour la conteneurisation des services et la gestion des environnements de déploiement.
+\includegraphics[width=1.2cm]{images/firebaselogo.png} &
+\textbf{Firebase Cloud Messaging (FCM) : \cite{fcm}}
+Service utilisé pour l'envoi de notifications push instantanées sur les
+appareils mobiles.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/mapslogo.png} &
+\textbf{Google Maps API : \cite{googlemaps}}
+Service de cartographie utilisé pour visualiser la localisation des utilisateurs
+et gérer les zones sécurisées.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/webrtc.png} &
+\textbf{WebRTC : \cite{webrtc}}
+Technologie utilisée pour les appels audio/vidéo en temps réel dans le cadre
+des alertes SOS de l'application mobile.
+\\
+\hline
+
+\includegraphics[width=1.8cm]{images/swaggerlogo.png}
+\includegraphics[width=1.8cm]{images/OpenAPI.png} &
+\textbf{Swagger / OpenAPI : \cite{swagger}\cite{openapi}}
+Documentation interactive et spécification standard des API REST du backend
+SafeTrack, générée automatiquement via \texttt{@nestjs/swagger}.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/vite.png} &
+\textbf{Vite : \cite{vite}}
+Outil de build frontend ultrarapide utilisé pour le développement et la
+compilation de l'application web React.js.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/tailwindcss.png} &
+\textbf{Tailwind CSS : \cite{tailwindcss}}
+Framework CSS utilitaire utilisé pour styliser l'interface web de manière
+rapide et cohérente.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/python.png} &
+\textbf{Python : \cite{python}}
+Langage de programmation utilisé pour le développement du microservice
+d'intelligence artificielle et les traitements liés au machine learning.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/fast-api.jpg} &
+\textbf{FastAPI : \cite{fastapi}}
+Framework Python utilisé pour développer le microservice d'intelligence
+artificielle, permettant la création rapide d'API avec validation automatique
+des données et documentation interactive.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/langchain.png} &
+\textbf{LangChain : \cite{langchain}}
+Framework utilisé pour orchestrer les chaînes de traitement et intégrer les
+modèles de langage dans le système RAG.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/rag.jpg} &
+\textbf{RAG (Retrieval-Augmented Generation) : \cite{rag}}
+Architecture utilisée pour enrichir les réponses du modèle de langage avec
+des informations contextuelles issues de la recherche vectorielle.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/chromadblogo.png} &
+\textbf{ChromaDB : \cite{chromadb}}
+Base de données vectorielle utilisée par le système RAG pour stocker et
+rechercher les connaissances contextuelles.
+\\
+\hline
+
+\includegraphics[width=1.2cm]{images/ollama.jpeg} &
+\textbf{Ollama : \cite{ollama}}
+Exécution locale des modèles de langage utilisés par le système RAG pour
+l'analyse et la génération de recommandations.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/gemma2.png} &
+\textbf{Gemma 2 : \cite{gemma2}}
+Modèle de langage large (\texttt{gemma2:9b}) utilisé localement via Ollama
+pour générer les recommandations de sécurité dans le système RAG.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/nomic.png} &
+\textbf{Nomic Embed Text : \cite{nomicembedtext}}
+Modèle d'embeddings utilisé pour transformer les documents de la base de
+connaissances en vecteurs sémantiques interrogeables par ChromaDB.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/qwen.png} &
+\textbf{Qwen (qwen-plus) : \cite{qwen}}
+Modèle de langage d'Alibaba Cloud utilisé via l'API DashScope pour l'analyse
+comportementale et la génération de résumés d'alertes intelligents dans le backend.
+\\
+\hline
+
+
+\includegraphics[width=1.5cm]{images/jenkins.png} &
+\textbf{Jenkins : \cite{jenkins}}
+Serveur d'automatisation open-source utilisé pour l'intégration continue et
+le déploiement continu (CI/CD) du projet SafeTrack.
+\\
+\hline
+
+\includegraphics[width=1.5cm]{images/docker.png} &
+\textbf{Docker \& Docker Compose : \cite{docker}\cite{dockercompose}}
+Utilisés pour la conteneurisation des services et la gestion des environnements
+de déploiement.
 \\
 \hline
 
 \includegraphics[width=0.8cm]{images/gitlab.jpg}
-\includegraphics[width=0.8cm]{images/github.png} & 
-\textbf{GitLab \& GitHub : \cite{github} \cite{gitlab}}  
-Outils de gestion de version et de collaboration permettant le suivi du code source ainsi que l'intégration continue (CI/CD).
+\includegraphics[width=0.8cm]{images/github.png} &
+\textbf{GitLab \& GitHub : \cite{gitlab}\cite{github}}
+Outils de gestion de version et de collaboration permettant le suivi du code
+source ainsi que l'intégration continue (CI/CD).
 \\
 \hline
 
-\includegraphics[width=1.5cm]{images/vscode.png} & 
-\textbf{Visual Studio Code : \cite{vscode}}  
+\includegraphics[width=1.5cm]{images/vscode.png} &
+\textbf{Visual Studio Code : \cite{vscode}}
 Éditeur de code utilisé pour le développement grâce à ses nombreuses extensions.
 \\
 \end{longtable}
+
 
 
 

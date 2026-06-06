@@ -5,46 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-Warning--empty publisher in scrumguide
-You've used 32 entries,
+You've used 43 entries,
             2773 wiz_defined-function locations,
-            728 strings with 8298 characters,
-and the built_in function-call counts, 10441 in all, are:
-= -- 938
-> -- 443
-< -- 31
-+ -- 173
-- -- 135
-* -- 529
-:= -- 1630
-add.period$ -- 128
-call.type$ -- 32
-change.case$ -- 140
-chr.to.int$ -- 26
-cite$ -- 65
-duplicate$ -- 486
-empty$ -- 1026
-format.name$ -- 171
-if$ -- 2240
-int.to.chr$ -- 7
+            771 strings with 9286 characters,
+and the built_in function-call counts, 13830 in all, are:
+= -- 1253
+> -- 564
+< -- 42
++ -- 217
+- -- 171
+* -- 670
+:= -- 2159
+add.period$ -- 172
+call.type$ -- 43
+change.case$ -- 185
+chr.to.int$ -- 40
+cite$ -- 86
+duplicate$ -- 651
+empty$ -- 1378
+format.name$ -- 220
+if$ -- 2981
+int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 2
-newline$ -- 200
-num.names$ -- 128
-pop$ -- 407
+newline$ -- 266
+num.names$ -- 172
+pop$ -- 539
 preamble$ -- 1
-purify$ -- 109
+purify$ -- 143
 quote$ -- 0
-skip$ -- 390
+skip$ -- 530
 stack$ -- 0
-substring$ -- 64
-swap$ -- 41
+substring$ -- 86
+swap$ -- 48
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 347
-warning$ -- 1
-while$ -- 96
+type$ -- 468
+warning$ -- 0
+while$ -- 129
 width$ -- 0
-write$ -- 454
-(There was 1 warning)
+write$ -- 609
